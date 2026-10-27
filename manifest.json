@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "tree_sha256": "24aca46f900dc870e06edb9b397fa6d4a328257f4cabcdfab7fabce25c63e096",
+  "tree_sha256": "f60b3f87df94c6057365d66215b7d04f82ce2a2d992b4a7f97e43a0f74316fb2",
   "files": {
     ".github/ISSUE_TEMPLATE/config.yml": {
       "sha256": "1f103c6a9dd07cd13a9a6f17ace6b813f47747eb9cb7e00488cb2073caaf91bb",
@@ -14,21 +14,29 @@
       "sha256": "50b38972a77ac68070783e3c02cf18c285903115fee4caa559e8ab24eb6bf177",
       "bytes": 999
     },
+    ".nojekyll": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
     "CONTRIBUTING.md": {
-      "sha256": "812d33570c0aa1236e8ee06b9cda66f925ffff47cbe5e95bb032bc9b741d23f2",
-      "bytes": 1866
+      "sha256": "d4ac77cf44e4689a4baa871da8a9e06f54f394ffce9aa4df6c556bb30622f741",
+      "bytes": 2307
     },
     "LICENSE": {
       "sha256": "cde7883b9050a1104f4ac19a1572aafd6e5d7323b68351aaf51fbf4beba54966",
       "bytes": 18375
     },
     "NOTICE.md": {
-      "sha256": "6f988417ed7002835a0b9f20afb5ed5ee21adbf0e0ed819b394405d3da97292c",
-      "bytes": 1486
+      "sha256": "f4295be895904196d23325de5092461b31b639cdff610f797ac5f53b8648b8dd",
+      "bytes": 1522
     },
     "README.md": {
-      "sha256": "52e34f398717b7ca60caf837b5a0cb09a0d75b3121e7d35739964adaed1128c0",
-      "bytes": 2132
+      "sha256": "6a106979a39f043dfb19463eafa492b9d86739acdfef68a371f61186973baa26",
+      "bytes": 2635
+    },
+    "index.html": {
+      "sha256": "53225423a5c3f2bfd247c74ea156ae6fa799a694dc668a54f2221a42096ef5a5",
+      "bytes": 3942
     },
     "originals/ustc-graduate-handbook.pdf": {
       "sha256": "beaf8fb2401b7f5ebdc014f9362f154f8a306726e508e8418a635b34f42e0e6b",
@@ -85,6 +93,22 @@
     "schools/ustc/2026-09-21/unfinished.md": {
       "sha256": "8927c7af4c8fac62be2c7726e7a4bc6a76ac6e699eff8f6834713673c4e63d5d",
       "bytes": 139802
+    },
+    "wiki/app.js": {
+      "sha256": "1798afc1ef012364275ae55aaf55ad36ccbf6450a770fb5a750662cbd440d905",
+      "bytes": 8159
+    },
+    "wiki/model.js": {
+      "sha256": "7d6f40eb51f693dcd754bc15321bfdb92651eab7eb3486ad805c15233e0bdc8d",
+      "bytes": 3064
+    },
+    "wiki/style.css": {
+      "sha256": "371108d41b96c80ab70c3906b1400f6524df29fd3999bb99e2a0547491073892",
+      "bytes": 7244
+    },
+    "wiki/test.mjs": {
+      "sha256": "0d056dea6a166049502454ce033371b35ebe4ac4f65fa0c6ea90ee0625cac655",
+      "bytes": 1920
     }
   },
   "publication_approved": true

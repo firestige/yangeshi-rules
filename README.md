@@ -1,5 +1,7 @@
 # 研格式 · 论文格式规则库
 
+[打开规则 Wiki →](https://firestige.github.io/yangeshi-rules/)
+
 学校原始材料 → 研格式解释 → 可执行规则。只包含中科大，非学校官方项目，不承诺全规范覆盖。
 
 - [逐条规范与解释](schools/ustc/2026-09-21/guide.md)
@@ -28,3 +30,9 @@ B编号按原DOCX正文直接子节点从1起计数（含表格），XPath和文
 学校原始规范、模板、手册及其他第三方内容（包括原文引文）不在上述许可范围内，相关权利归各自权利人所有。
 
 完整许可文本见 [LICENSE](LICENSE)，许可范围与署名示例见 [NOTICE.md](NOTICE.md)。
+
+## 规则 Wiki 的更新
+
+Wiki 直接读取本仓库的 `rules.json`、`source-map.json` 和 `release.json`，按分类生成查阅页面，不另存一份手工维护的规则正文。规则修订合并后，GitHub Pages 自动发布；页面读取新快照并校验规则与来源映射的哈希。
+
+本地预览：在仓库根目录执行 `python3 -m http.server 8000 --bind 127.0.0.1`，然后访问 `http://127.0.0.1:8000/`。

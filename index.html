@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; connect-src &#39;self&#39;; img-src &#39;self&#39;; object-src &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;none&#39;"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="研格式规则 Wiki：按分类查阅中科大学位论文格式规则，对照学校原文、执行边界并反馈修订。"
+    />
+    <title>中科大规则 Wiki · 研格式</title>
+    <link rel="stylesheet" href="./wiki/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="./">研格式 <span>规则 Wiki</span></a>
+      <nav>
+        <a href="#sources">原始资料</a
+        ><a href="https://github.com/firestige/yangeshi-rules">GitHub</a
+        ><a
+          href="https://github.com/firestige/yangeshi-rules/issues/new?template=source-update.yml"
+          >来源更新</a
+        >
+      </nav>
+    </header>
+    <div class="layout">
+      <aside>
+        <p class="eyebrow">学校规则库</p>
+        <h2>中国科学技术大学</h2>
+        <p class="muted">研究生学位论文</p>
+        <nav id="categories" aria-label="规则分类"></nav>
+        <div class="aside-note">
+          学校原文 → 整理解释 → 执行规则<br />共同审阅，持续修订。
+        </div>
+      </aside>
+      <main>
+        <section class="hero">
+          <p class="eyebrow">USTC / 2026</p>
+          <h1>每一条规则，<br />都有可核对的依据。</h1>
+          <p>
+            按章节查阅格式要求，对照学校原始材料，了解规则的检查与修复边界。
+          </p>
+          <div id="version" class="version">正在读取规则版本…</div>
+        </section>
+        <section class="toolbar" aria-label="查找规则">
+          <label for="search">查找规则</label>
+          <div class="search-row">
+            <input
+              id="search"
+              type="search"
+              placeholder="输入规则 ID、标题或原文关键词"
+              autocomplete="off"
+            /><button id="clear" type="button">清除筛选</button>
+          </div>
+          <p id="status" role="status" aria-live="polite">
+            正在校验规则与来源映射…
+          </p>
+        </section>
+        <section id="rules-section">
+          <div class="section-heading">
+            <h2 id="category-title">全部规则</h2>
+            <span id="count"></span>
+          </div>
+          <p class="scope">
+            学校要求、整理解释和工具能力分别展示。规则中的修复许可不代表算法全部实现；未检查不代表通过。
+          </p>
+          <div id="rules"></div>
+        </section>
+        <section id="sources" class="sources">
+          <p class="eyebrow">SOURCE MATERIALS</p>
+          <h2>学校原始资料</h2>
+          <p id="source-date"></p>
+          <div id="source-list"></div>
+        </section>
+        <footer>
+          由<a href="https://github.com/firestige/yangeshi-rules"
+            >研格式规则库及贡献者</a
+          >共同维护 ·
+          <a
+            href="https://github.com/firestige/yangeshi-rules/blob/main/NOTICE.md"
+            >CC BY-SA 4.0 与许可范围</a
+          ><br />非学校官方项目。学校原件与第三方引文不在本仓库 CC 许可范围内。
+        </footer>
+        <noscript
+          >请启用 JavaScript 查阅分类规则，或直接阅读<a
+            href="https://github.com/firestige/yangeshi-rules/blob/main/schools/ustc/2026-09-21/guide.md"
+            >完整规则说明</a
+          >。</noscript
+        >
+      </main>
+    </div>
+    <script type="module" src="./wiki/app.js"></script>
+  </body>
+</html>
