@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "tree_sha256": "d3aafaac52d9b0c37b34cd8124cbcf214703216818ed472874cce346a2a31a15",
+  "tree_sha256": "a50f6f3dc9f131663330386abd5aaf1228d4a836fd130f679912c719c2798349",
   "files": {
     ".github/ISSUE_TEMPLATE/config.yml": {
       "sha256": "1f103c6a9dd07cd13a9a6f17ace6b813f47747eb9cb7e00488cb2073caaf91bb",
@@ -15,12 +15,12 @@
       "bytes": 999
     },
     "CONTRIBUTING.md": {
-      "sha256": "99095fcda6cbae74d04f3f8464c98502946de00c1b06743310c1e97b1feebdf5",
-      "bytes": 928
+      "sha256": "0c09b6113866d9f685ba6f1dc22f54eec0072c76e51decedcc4f6837bd2ccb91",
+      "bytes": 917
     },
     "README.md": {
-      "sha256": "c63d6f53dbde129144680ff487c961e4b07238fb80c90947b07a844a4eee11c6",
-      "bytes": 1846
+      "sha256": "72418cb8a117c5881db3c3d998f6135913bc865ac46337a874f71cc1a268ea21",
+      "bytes": 1645
     },
     "originals/ustc-graduate-handbook.pdf": {
       "sha256": "beaf8fb2401b7f5ebdc014f9362f154f8a306726e508e8418a635b34f42e0e6b",
