@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "tree_sha256": "435031b5c117110a2dbca8b9d24d5d706baa5d018518a2e8572ee4ebe650f81f",
+  "tree_sha256": "ab67f6303773a2299fb1eae65b98a9c91e1306fd4ef023aeec4952abe371adec",
   "files": {
     ".github/ISSUE_TEMPLATE/config.yml": {
       "sha256": "1f103c6a9dd07cd13a9a6f17ace6b813f47747eb9cb7e00488cb2073caaf91bb",
@@ -31,8 +31,8 @@
       "bytes": 1522
     },
     "README.md": {
-      "sha256": "6a106979a39f043dfb19463eafa492b9d86739acdfef68a371f61186973baa26",
-      "bytes": 2635
+      "sha256": "a8c3857f84984e37f3fce2a157cf650a1dbedbcc9ca01bf05bd2b0d612219815",
+      "bytes": 2618
     },
     "index.html": {
       "sha256": "53225423a5c3f2bfd247c74ea156ae6fa799a694dc668a54f2221a42096ef5a5",
@@ -111,8 +111,8 @@
       "bytes": 1920
     },
     "CNAME": {
-      "sha256": "810888c1cd99ddacf6dac620c95c64c93ee34168d6a0310de12675136093b81c",
-      "bytes": 18
+      "sha256": "a72b2c9c5920ef3db13f13e53159be24794f14880326d7e7543b27dd6ec32d95",
+      "bytes": 17
     }
   },
   "publication_approved": true

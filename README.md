@@ -1,6 +1,6 @@
 # 研格式 · 论文格式规则库
 
-[打开规则 Wiki →](https://firestige.github.io/yangeshi-rules/)
+[打开规则 Wiki →](https://rules.yangeshi.cn/)
 
 学校原始材料 → 研格式解释 → 可执行规则。只包含中科大，非学校官方项目，不承诺全规范覆盖。
 
