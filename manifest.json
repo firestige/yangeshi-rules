@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "tree_sha256": "f60b3f87df94c6057365d66215b7d04f82ce2a2d992b4a7f97e43a0f74316fb2",
+  "tree_sha256": "435031b5c117110a2dbca8b9d24d5d706baa5d018518a2e8572ee4ebe650f81f",
   "files": {
     ".github/ISSUE_TEMPLATE/config.yml": {
       "sha256": "1f103c6a9dd07cd13a9a6f17ace6b813f47747eb9cb7e00488cb2073caaf91bb",
@@ -109,6 +109,10 @@
     "wiki/test.mjs": {
       "sha256": "0d056dea6a166049502454ce033371b35ebe4ac4f65fa0c6ea90ee0625cac655",
       "bytes": 1920
+    },
+    "CNAME": {
+      "sha256": "810888c1cd99ddacf6dac620c95c64c93ee34168d6a0310de12675136093b81c",
+      "bytes": 18
     }
   },
   "publication_approved": true
