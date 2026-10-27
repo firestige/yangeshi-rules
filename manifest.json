@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "tree_sha256": "d3aafaac52d9b0c37b34cd8124cbcf214703216818ed472874cce346a2a31a15",
+  "files": {
+    ".github/ISSUE_TEMPLATE/config.yml": {
+      "sha256": "1f103c6a9dd07cd13a9a6f17ace6b813f47747eb9cb7e00488cb2073caaf91bb",
+      "bytes": 28
+    },
+    ".github/ISSUE_TEMPLATE/rule-correction.yml": {
+      "sha256": "7cce4d0b82fe5c1f9cf01d5154cf7ba64e210b3073ad24db8dcaa4dd98caa83b",
+      "bytes": 990
+    },
+    ".github/ISSUE_TEMPLATE/source-update.yml": {
+      "sha256": "50b38972a77ac68070783e3c02cf18c285903115fee4caa559e8ab24eb6bf177",
+      "bytes": 999
+    },
+    "CONTRIBUTING.md": {
+      "sha256": "99095fcda6cbae74d04f3f8464c98502946de00c1b06743310c1e97b1feebdf5",
+      "bytes": 928
+    },
+    "README.md": {
+      "sha256": "c63d6f53dbde129144680ff487c961e4b07238fb80c90947b07a844a4eee11c6",
+      "bytes": 1846
+    },
+    "originals/ustc-graduate-handbook.pdf": {
+      "sha256": "beaf8fb2401b7f5ebdc014f9362f154f8a306726e508e8418a635b34f42e0e6b",
+      "bytes": 7745055
+    },
+    "originals/ustc-graduate-template-2026-09-21.docx": {
+      "sha256": "da4a5458dba262c744737335101b5e281af0543c345f763c89230e2a7c825f03",
+      "bytes": 214445
+    },
+    "publication.json": {
+      "sha256": "3b3e85b4cf945e1d0df4016a6f522ce3049f7167a3edf74e31c56d934fa026f8",
+      "bytes": 529
+    },
+    "schools/ustc/2026-09-21/contract.json": {
+      "sha256": "78e9008e0b199d3bc9c53968d31f5619006d6dec2ddede351c168a5673765768",
+      "bytes": 44819
+    },
+    "schools/ustc/2026-09-21/coverage.md": {
+      "sha256": "070af2915996b7facf568aaa3e5f1da1c96a48508b03ccd76dca4e719278dd93",
+      "bytes": 109942
+    },
+    "schools/ustc/2026-09-21/guide.md": {
+      "sha256": "f5eb54cf5e493e10752d8c4ce5e91ff9de6cb06731d6555a9d830e7f5f07e1d5",
+      "bytes": 294344
+    },
+    "schools/ustc/2026-09-21/release.json": {
+      "sha256": "e6965d502b821085823a919475f3ba63779711d8f39d9e66fe4854abcf992852",
+      "bytes": 3330
+    },
+    "schools/ustc/2026-09-21/rules.json": {
+      "sha256": "93947997baa5441cd362bba8b3375e328a7c8ff6f396d60c868dbc86ec0f0b1f",
+      "bytes": 352385
+    },
+    "schools/ustc/2026-09-21/rules.schema.json": {
+      "sha256": "97d378c85d762064a38889d5b7cabe36964053362f0c7469dd5f880ff095d4da",
+      "bytes": 28253
+    },
+    "schools/ustc/2026-09-21/runtime.json": {
+      "sha256": "c80a27fe7787c8b290c0254ca3239fcef6abab2be47bf35711a2bb4932424308",
+      "bytes": 64611
+    },
+    "schools/ustc/2026-09-21/source-evidence.json": {
+      "sha256": "3989c426e9fb361b0ceb876b7470b10e3b537a3205d6127b185e21388194bb72",
+      "bytes": 146057
+    },
+    "schools/ustc/2026-09-21/source-map.json": {
+      "sha256": "d373a6af88364c788880f66847a277b7e1f75c1815100e8403f98c5cc7fdac5d",
+      "bytes": 468797
+    },
+    "schools/ustc/2026-09-21/sources.json": {
+      "sha256": "0ba1002cc9a33fffe490eed048400132818484f3be825995307d2301dfbb8fc4",
+      "bytes": 1957
+    },
+    "schools/ustc/2026-09-21/unfinished.md": {
+      "sha256": "8927c7af4c8fac62be2c7726e7a4bc6a76ac6e699eff8f6834713673c4e63d5d",
+      "bytes": 139802
+    }
+  },
+  "publication_approved": true
+}

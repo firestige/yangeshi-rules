@@ -1,0 +1,3722 @@
+{
+  "source": {
+    "path": "originals/ustc-graduate-template-2026-09-21.docx",
+    "sha256": "da4a5458dba262c744737335101b5e281af0543c345f763c89230e2a7c825f03",
+    "version": "2026-09-21",
+    "index_definition": "B = 1-based direct body child, tables included; XPath authoritative",
+    "namespace": {
+      "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+    },
+    "source_registry": "schools/ustc/2026-09-21/sources.json"
+  },
+  "extraction_limits": [
+    "All text is raw, MC Choice/Fallback text may repeat; never use raw length for cover counting.",
+    "Sample effective properties cover ordinary runs only, not theme fonts, numbering, tables or rendered layout.",
+    "Paragraph-mark rPr is not inherited by existing visible runs; absent values remain absent, not inferred defaults."
+  ],
+  "sections": [
+    {
+      "id": "S01",
+      "properties": {
+        "headerReference": {
+          "type": "default",
+          "id": "rId10"
+        },
+        "footerReference": {
+          "type": "default",
+          "id": "rId11"
+        },
+        "pgSz": {
+          "w": "11906",
+          "h": "16838"
+        },
+        "pgMar": {
+          "top": "1440",
+          "right": "1797",
+          "bottom": "1440",
+          "left": "1797",
+          "header": "851",
+          "footer": "992",
+          "gutter": "0"
+        },
+        "pgNumType": {
+          "fmt": "upperRoman",
+          "start": "1"
+        },
+        "cols": {
+          "space": "720"
+        },
+        "docGrid": {
+          "linePitch": "312"
+        }
+      }
+    },
+    {
+      "id": "S02",
+      "properties": {
+        "pgSz": {
+          "w": "11906",
+          "h": "16838"
+        },
+        "pgMar": {
+          "top": "1440",
+          "right": "1797",
+          "bottom": "1440",
+          "left": "1797",
+          "header": "851",
+          "footer": "992",
+          "gutter": "0"
+        },
+        "pgNumType": {
+          "fmt": "upperRoman",
+          "start": "1"
+        },
+        "cols": {
+          "space": "720"
+        },
+        "docGrid": {
+          "linePitch": "312"
+        }
+      }
+    },
+    {
+      "id": "S03",
+      "properties": {
+        "pgSz": {
+          "w": "11906",
+          "h": "16838"
+        },
+        "pgMar": {
+          "top": "1440",
+          "right": "1797",
+          "bottom": "1440",
+          "left": "1797",
+          "header": "851",
+          "footer": "992",
+          "gutter": "0"
+        },
+        "pgNumType": {
+          "fmt": "upperRoman",
+          "start": "1"
+        },
+        "cols": {
+          "space": "720"
+        },
+        "docGrid": {
+          "linePitch": "312"
+        }
+      }
+    },
+    {
+      "id": "S04",
+      "properties": {
+        "pgSz": {
+          "w": "11906",
+          "h": "16838"
+        },
+        "pgMar": {
+          "top": "1440",
+          "right": "1797",
+          "bottom": "1440",
+          "left": "1797",
+          "header": "851",
+          "footer": "992",
+          "gutter": "0"
+        },
+        "pgNumType": {
+          "fmt": "upperRoman",
+          "start": "1"
+        },
+        "cols": {
+          "space": "720"
+        },
+        "docGrid": {
+          "linePitch": "312"
+        }
+      }
+    },
+    {
+      "id": "S05",
+      "properties": {
+        "headerReference": {
+          "type": "default",
+          "id": "rId12"
+        },
+        "footerReference": {
+          "type": "default",
+          "id": "rId13"
+        },
+        "pgSz": {
+          "w": "11906",
+          "h": "16838"
+        },
+        "pgMar": {
+          "top": "1440",
+          "right": "1797",
+          "bottom": "1440",
+          "left": "1797",
+          "header": "850",
+          "footer": "992",
+          "gutter": "0"
+        },
+        "pgNumType": {
+          "fmt": "upperRoman",
+          "start": "1"
+        },
+        "cols": {
+          "space": "720"
+        },
+        "docGrid": {
+          "linePitch": "312"
+        }
+      }
+    },
+    {
+      "id": "S06",
+      "properties": {
+        "headerReference": {
+          "type": "default",
+          "id": "rId14"
+        },
+        "footerReference": {
+          "type": "default",
+          "id": "rId15"
+        },
+        "pgSz": {
+          "w": "11906",
+          "h": "16838"
+        },
+        "pgMar": {
+          "top": "1440",
+          "right": "1797",
+          "bottom": "1440",
+          "left": "1797",
+          "header": "850",
+          "footer": "992",
+          "gutter": "0"
+        },
+        "pgNumType": {
+          "fmt": "upperRoman",
+          "start": "1"
+        },
+        "cols": {
+          "space": "720"
+        },
+        "docGrid": {
+          "linePitch": "312"
+        }
+      }
+    },
+    {
+      "id": "S07",
+      "properties": {
+        "headerReference": {
+          "type": "default",
+          "id": "rId16"
+        },
+        "pgSz": {
+          "w": "11906",
+          "h": "16838"
+        },
+        "pgMar": {
+          "top": "1440",
+          "right": "1797",
+          "bottom": "1440",
+          "left": "1797",
+          "header": "850",
+          "footer": "992",
+          "gutter": "0"
+        },
+        "pgNumType": {
+          "fmt": "upperRoman"
+        },
+        "cols": {
+          "space": "720"
+        },
+        "docGrid": {
+          "linePitch": "312"
+        }
+      }
+    },
+    {
+      "id": "S08",
+      "properties": {
+        "headerReference": {
+          "type": "first",
+          "id": "rId18"
+        },
+        "footnotePr": {
+          "val": "true"
+        },
+        "pgSz": {
+          "w": "11906",
+          "h": "16838"
+        },
+        "pgMar": {
+          "top": "1440",
+          "right": "1797",
+          "bottom": "1440",
+          "left": "1797",
+          "header": "850",
+          "footer": "992",
+          "gutter": "0"
+        },
+        "pgNumType": {
+          "fmt": "upperRoman"
+        },
+        "cols": {
+          "space": "720"
+        },
+        "docGrid": {
+          "linePitch": "312"
+        }
+      }
+    },
+    {
+      "id": "S09",
+      "properties": {
+        "headerReference": {
+          "type": "first",
+          "id": "rId20"
+        },
+        "footnotePr": {
+          "val": "true"
+        },
+        "pgSz": {
+          "w": "11906",
+          "h": "16838"
+        },
+        "pgMar": {
+          "top": "1440",
+          "right": "1797",
+          "bottom": "1440",
+          "left": "1797",
+          "header": "850",
+          "footer": "992",
+          "gutter": "0"
+        },
+        "pgNumType": {
+          "fmt": "upperRoman"
+        },
+        "cols": {
+          "space": "720"
+        },
+        "docGrid": {
+          "linePitch": "312"
+        }
+      }
+    },
+    {
+      "id": "S10",
+      "properties": {
+        "headerReference": {
+          "type": "first",
+          "id": "rId22"
+        },
+        "footerReference": {
+          "type": "first",
+          "id": "rId23"
+        },
+        "footnotePr": {
+          "val": "true"
+        },
+        "pgSz": {
+          "w": "11906",
+          "h": "16838"
+        },
+        "pgMar": {
+          "top": "1440",
+          "right": "1797",
+          "bottom": "1440",
+          "left": "1797",
+          "header": "850",
+          "footer": "992",
+          "gutter": "0"
+        },
+        "pgNumType": {
+          "fmt": "upperRoman"
+        },
+        "cols": {
+          "space": "720"
+        },
+        "docGrid": {
+          "linePitch": "312"
+        }
+      }
+    },
+    {
+      "id": "S11",
+      "properties": {
+        "headerReference": {
+          "type": "first",
+          "id": "rId29"
+        },
+        "footerReference": {
+          "type": "first",
+          "id": "rId30"
+        },
+        "footnotePr": {
+          "val": "true"
+        },
+        "pgSz": {
+          "w": "11906",
+          "h": "16838"
+        },
+        "pgMar": {
+          "top": "1440",
+          "right": "1797",
+          "bottom": "1440",
+          "left": "1797",
+          "header": "850",
+          "footer": "992",
+          "gutter": "0"
+        },
+        "pgNumType": {
+          "fmt": "upperRoman"
+        },
+        "cols": {
+          "space": "720"
+        },
+        "docGrid": {
+          "linePitch": "312"
+        }
+      }
+    },
+    {
+      "id": "S12",
+      "properties": {
+        "headerReference": {
+          "type": "first",
+          "id": "rId31"
+        },
+        "footerReference": {
+          "type": "first",
+          "id": "rId32"
+        },
+        "footnotePr": {
+          "val": "true"
+        },
+        "pgSz": {
+          "w": "11906",
+          "h": "16838"
+        },
+        "pgMar": {
+          "top": "1440",
+          "right": "1797",
+          "bottom": "1440",
+          "left": "1797",
+          "header": "1134",
+          "footer": "992",
+          "gutter": "0"
+        },
+        "pgNumType": {
+          "start": "1"
+        },
+        "cols": {
+          "space": "720"
+        },
+        "titlePg": {
+          "val": "true"
+        },
+        "docGrid": {
+          "linePitch": "312"
+        }
+      }
+    },
+    {
+      "id": "S13",
+      "properties": {
+        "headerReference": {
+          "type": "first",
+          "id": "rId34"
+        },
+        "footerReference": {
+          "type": "first",
+          "id": "rId35"
+        },
+        "footnotePr": {
+          "val": "true"
+        },
+        "pgSz": {
+          "w": "11906",
+          "h": "16838"
+        },
+        "pgMar": {
+          "top": "1440",
+          "right": "1797",
+          "bottom": "1440",
+          "left": "1797",
+          "header": "850",
+          "footer": "992",
+          "gutter": "0"
+        },
+        "pgNumType": {
+          "start": "1"
+        },
+        "cols": {
+          "space": "720"
+        },
+        "docGrid": {
+          "linePitch": "312"
+        }
+      }
+    },
+    {
+      "id": "S14",
+      "properties": {
+        "headerReference": {
+          "type": "first",
+          "id": "rId38"
+        },
+        "footerReference": {
+          "type": "first",
+          "id": "rId39"
+        },
+        "footnotePr": {
+          "val": "true"
+        },
+        "pgSz": {
+          "w": "11906",
+          "h": "16838"
+        },
+        "pgMar": {
+          "top": "1440",
+          "right": "1797",
+          "bottom": "1440",
+          "left": "1797",
+          "header": "850",
+          "footer": "992",
+          "gutter": "0"
+        },
+        "pgNumType": {
+          "start": "3"
+        },
+        "cols": {
+          "space": "720"
+        },
+        "titlePg": {
+          "val": "true"
+        },
+        "docGrid": {
+          "linePitch": "312"
+        }
+      }
+    },
+    {
+      "id": "S15",
+      "properties": {
+        "headerReference": {
+          "type": "first",
+          "id": "rId41"
+        },
+        "footerReference": {
+          "type": "first",
+          "id": "rId42"
+        },
+        "footnotePr": {
+          "val": "true"
+        },
+        "pgSz": {
+          "w": "11906",
+          "h": "16838"
+        },
+        "pgMar": {
+          "top": "1440",
+          "right": "1797",
+          "bottom": "1440",
+          "left": "1797",
+          "header": "850",
+          "footer": "992",
+          "gutter": "0"
+        },
+        "cols": {
+          "space": "720"
+        },
+        "docGrid": {
+          "linePitch": "312"
+        }
+      }
+    },
+    {
+      "id": "S16",
+      "properties": {
+        "headerReference": {
+          "type": "default",
+          "id": "rId43"
+        },
+        "footnotePr": {
+          "val": "true"
+        },
+        "pgSz": {
+          "w": "11906",
+          "h": "16838"
+        },
+        "pgMar": {
+          "top": "1440",
+          "right": "1797",
+          "bottom": "1440",
+          "left": "1797",
+          "header": "850",
+          "footer": "992",
+          "gutter": "0"
+        },
+        "cols": {
+          "space": "720"
+        },
+        "docGrid": {
+          "linePitch": "312"
+        }
+      }
+    },
+    {
+      "id": "S17",
+      "properties": {
+        "headerReference": {
+          "type": "default",
+          "id": "rId44"
+        },
+        "footnotePr": {
+          "val": "true"
+        },
+        "pgSz": {
+          "w": "11906",
+          "h": "16838"
+        },
+        "pgMar": {
+          "top": "1440",
+          "right": "1797",
+          "bottom": "1440",
+          "left": "1797",
+          "header": "850",
+          "footer": "992",
+          "gutter": "0"
+        },
+        "cols": {
+          "space": "720"
+        },
+        "docGrid": {
+          "linePitch": "312"
+        }
+      }
+    },
+    {
+      "id": "S18",
+      "properties": {
+        "headerReference": {
+          "type": "default",
+          "id": "rId45"
+        },
+        "pgSz": {
+          "w": "11906",
+          "h": "16838"
+        },
+        "pgMar": {
+          "top": "1440",
+          "right": "1797",
+          "bottom": "1440",
+          "left": "1797",
+          "header": "850",
+          "footer": "992",
+          "gutter": "0"
+        },
+        "cols": {
+          "space": "720"
+        },
+        "docGrid": {
+          "linePitch": "312"
+        }
+      }
+    },
+    {
+      "id": "S19",
+      "properties": {
+        "headerReference": {
+          "type": "first",
+          "id": "rId47"
+        },
+        "footerReference": {
+          "type": "first",
+          "id": "rId48"
+        },
+        "pgSz": {
+          "w": "11906",
+          "h": "16838"
+        },
+        "pgMar": {
+          "top": "1440",
+          "right": "1797",
+          "bottom": "1440",
+          "left": "1797",
+          "header": "850",
+          "footer": "992",
+          "gutter": "0"
+        },
+        "cols": {
+          "space": "720"
+        },
+        "docGrid": {
+          "linePitch": "312"
+        }
+      }
+    }
+  ],
+  "settings": {
+    "mirrorMargins": null,
+    "evenAndOddHeaders": null,
+    "gutterAtTop": null
+  },
+  "paragraphs": {
+    "B003": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[3]",
+      "index_base": 1,
+      "text": "博士/硕士学位论文",
+      "text_sha256": "385dc9e1b3f5d331f046c690b2b4c80c12d5becb2e5cd6ce21b80dc50d82e2c3"
+    },
+    "B004": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[4]",
+      "index_base": 1,
+      "text": "【注：博士/硕士，二选一】【注：博士/硕士，二选一】",
+      "text_sha256": "1fe6258c31941a437e282e7335fd9204ea214614343bca83b4fe35a3114d806b"
+    },
+    "B009": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[9]",
+      "index_base": 1,
+      "text": "论文题名：  ×××学生姓名：  ×××导    师：  ××× 教授  ××× 教授实践导师：  ×××××提交日期：  ××××年××月××日论文题名：  ×××学生姓名：  ×××导    师：  ××× 教授  ××× 教授实践导师：  ×××××提交日期：  ××××年××月××日",
+      "text_sha256": "118e230c1ad536a6fe08aace8e4867e65865636093aff0f974da79b7733a0b17"
+    },
+    "B012": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[12]",
+      "index_base": 1,
+      "text": "【注:导师信息须与学籍系统严格保持一致】【注:导师信息须与学籍系统严格保持一致】",
+      "text_sha256": "f09e3656c48cc708cfd463c3814ea4f87bd8306df7360a581976c9e2a668f59d"
+    },
+    "B013": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[13]",
+      "index_base": 1,
+      "text": "【注:实践导师，工程类硕博必填，专业硕博选填，若无，则需删去】【注:实践导师，工程类硕博必填，专业硕博选填，若无，则需删去】",
+      "text_sha256": "bf01119f2c385b3e8ae5111e09fd1f561c21203d255ecb74fe21e58b3bc1bb7e"
+    },
+    "B015": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[15]",
+      "index_base": 1,
+      "text": "【注:日期不应晚于学位授予日期】【注:日期不应晚于学位授予日期】",
+      "text_sha256": "11a048d6eec0578ce7294ed2adb58da6cb505ec93e16b186262b8963c5bc29c1"
+    },
+    "B018": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[18]",
+      "index_base": 1,
+      "text": "中图分类号：      学校代码： 10358UDC分类号：      密级：      ",
+      "text_sha256": "41255eaf292b202ea16af56e64d778cfcfa98a5e58f2225077cea8974ce3285b"
+    },
+    "B021": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[21]",
+      "index_base": 1,
+      "text": "【注：博士/硕士，二选一】【注：博士/硕士，二选一】博士/硕士学位论文",
+      "text_sha256": "4b5a82eb47cfde77c5f3da078136e730ca3447d91972966307a2aeafd7f77311"
+    },
+    "B022": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[22]",
+      "index_base": 1,
+      "text": "【注:学术/专业，二选一】【注:学术/专业，二选一】（学术/专业学位）",
+      "text_sha256": "932521943b33e97dd1ee8aed3d3deaf9c2d80e2fc00b1d20626233e8ba4f6261"
+    },
+    "B024": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[24]",
+      "index_base": 1,
+      "text": "【注:中英文题名都需要写，可根据题名长短来调整字体大小，确保整齐、美观】【注:中英文题名都需要写，可根据题名长短来调整字体大小，确保整齐、美观】论文题名（中文）",
+      "text_sha256": "7a3e43621336495a1e74f4c8232fda4fb082a7f4efda30a6dbb92c605859ef82"
+    },
+    "B025": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[25]",
+      "index_base": 1,
+      "text": "论文题名（英文）",
+      "text_sha256": "a38534e918b18700b6c6950a0e1fbb73190d5c4b59712af12236d1bc953a5f4f"
+    },
+    "B030": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[30]",
+      "index_base": 1,
+      "text": "【注:日期不应晚于学位授予日期】【注:日期不应晚于学位授予日期】【注:导师信息须与学籍系统严格保持一致】【注:导师信息须与学籍系统严格保持一致】【注:实践导师，工程类硕博必填，专业硕博选填，若无，则需删去】【注:实践导师，工程类硕博必填，专业硕博选填，若无，则需删去】学生姓名：×××学号：××××导师姓名：××× 教授   ××× 教授实践导师姓名：×××××院系：×××××学科专业：×××××研究方向：×××××论文提交日期：××××年××月××日学生姓名：×××学号：××××导师姓名：××× 教授   ××× 教授实践导师姓名：×××××院系：×××××学科专业：×××××研究方向：×××××论文提交日期：××××年××月××日",
+      "text_sha256": "4bf9cfa310902137b8d6510681b8713447a42f2dab6455ec676186a66c47e048"
+    },
+    "B033": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[33]",
+      "index_base": 1,
+      "text": "中国科学技术大学学位论文原创性声明",
+      "text_sha256": "1ee8e224eb7618072b9d1e10beace7d9d00abbc26e95429a772c4a02cf4f309b"
+    },
+    "B034": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[34]",
+      "index_base": 1,
+      "text": "本人声明所呈交的学位论文，是本人在导师指导下进行研究工作所取得的成果。除已特别加以标注和致谢的地方外，论文中不包含任何他人已经发表或撰写过的研究成果。与我一同工作的同志对本研究所做的贡献均已在论文中作了明确的说明。",
+      "text_sha256": "064b91dad37f07bca2aab22bfd994ba843bec51e28d2651c5e52600519b24b55"
+    },
+    "B036": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[36]",
+      "index_base": 1,
+      "text": "作者签名：________________签字日期：______________",
+      "text_sha256": "e92821de94ee5997a0e49e21f5bda01247a233bf4e30e8aedce533076b2c10a5"
+    },
+    "B040": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[40]",
+      "index_base": 1,
+      "text": "中国科学技术大学学位论文使用授权声明",
+      "text_sha256": "259afa3f846d53f42f8634992d3d647b6c125aa5fe3349c0305d3d67a5c27fe6"
+    },
+    "B041": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[41]",
+      "index_base": 1,
+      "text": "作为申请学位的条件之一，学位论文著作权拥有者授权中国科学技术大学拥有学位论文的部分使用权，即：学校有权按有关规定向国家有关部门或机构送交论文的复印件和电子版，允许论文被查阅和借阅，可以将学位论文编入《中国学位论文全文数据库》等有关数据库进行检索，可以采用影印、缩印或扫描等复制手段保存、汇编学位论文。本人提交的电子文档的内容和纸质论文的内容相一致，如因不符而引起的学术声誉损失由本人自负。",
+      "text_sha256": "3f100824a068e039bda26adcd509d8253758d959258077cc45eb8b0f7d151ca9"
+    },
+    "B042": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[42]",
+      "index_base": 1,
+      "text": "控阅的学位论文在解除控阅后也遵守此规定。",
+      "text_sha256": "d67c5120613ee6c4dfa61dc3c6b1ad83cb9f6629498ebdd53fcca8ca0747dc2b"
+    },
+    "B043": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[43]",
+      "index_base": 1,
+      "text": "□公开  □控阅（____年）",
+      "text_sha256": "ad7bbf3bcc0f08b9e1b18877e105bcfaa6c1bde618daf1a11064825138fbe85e"
+    },
+    "B044": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[44]",
+      "index_base": 1,
+      "text": "作者签名：_______________导师签名：_______________",
+      "text_sha256": "1eaaf50d7e060f07abfaea1aa22fb6621079f2eaa8da969bddd41e97d2f30e4f"
+    },
+    "B045": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[45]",
+      "index_base": 1,
+      "text": "签字日期：_______________签字日期：_______________",
+      "text_sha256": "a61c0840ebc8661ad92d8910b0954a07aa9a068ab6c2fbac1c9297be98fa9711"
+    },
+    "B048": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[48]",
+      "index_base": 1,
+      "text": "【说明：授权使用声明须仔细阅读后慎重选择公开或控阅（若选控阅，则控阅年份必填，一般1-3年）。提交学位论文纸质版和电子版时，须有学生和导师签名（手签或电子签，但不能出现签章平台的二维码），同时须有签字日期（不得晚于学位授予日期）。使用时，请删除此说明。】",
+      "text_sha256": "e04130edbdfbec15ec629cd50ceb323f5077aaeb3653fe52447d498424af34de"
+    },
+    "B049": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[49]",
+      "index_base": 1,
+      "text": "研究生学位论文（实践成果报告）使用人工智能工具声明",
+      "text_sha256": "38f0b0e4b2cdacac320d042c97063b05864932e21f8ac1bf0e0cfb970ee6daf3"
+    },
+    "B050": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[50]",
+      "index_base": 1,
+      "text": "本学位论文（实践成果报告）的研究与撰写过程，使用了生成式人工智能辅助工具。现按照要求披露如下：",
+      "text_sha256": "840b5dd50ee16784c5bbeaadd140a591c60a20c8615e15f8253678a917d74a93"
+    },
+    "B051": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[51]",
+      "index_base": 1,
+      "text": "1. 使用的人工智能工具的部分和用途",
+      "text_sha256": "db573e0748d22db0dd66370a287a85c300c0b8fec69eabb9a81b6d189a9d8545"
+    },
+    "B052": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[52]",
+      "index_base": 1,
+      "text": "具体用途：_______（例如：文献检索、语言润色、数据处理等）",
+      "text_sha256": "a44b74467ea6a7868c9e579c49c1e964109ac8d38ec187322b62fbbe7c879cc9"
+    },
+    "B053": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[53]",
+      "index_base": 1,
+      "text": "2. 使用边界与责任说明",
+      "text_sha256": "52a31ad99db6813ca1498400043fc3b273709c8c7c33f5e65d19eabaa8a049b6"
+    },
+    "B054": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[54]",
+      "index_base": 1,
+      "text": "本学位论文（实践成果报告）的核心观点、研究设计、实验方案、论证过程均由本人独立完成；人工智能生成内容均经过本人人工审核、修改与验证，并对其内容负责。本人对论文全部内容的原创性、真实性、学术规范性承担全部责任，不存在由人工智能代写、伪造等学术不端行为。",
+      "text_sha256": "5cb0695854fb5a1e3237e79fe76f25fc5473a0d067d3f4a0877161e445378df7"
+    },
+    "B055": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[55]",
+      "index_base": 1,
+      "text": "3. 承诺",
+      "text_sha256": "a23429324ff43e6872a3a56192c647b932a4c8a0279b8afc627ee07ac13056bc"
+    },
+    "B056": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[56]",
+      "index_base": 1,
+      "text": "本人承诺人工智能工具在学位论文（实践成果报告）中的使用符合国家相关法律法规及学校具体细则要求，不存在不当使用行为，愿意接受审查与监督，并独立承担相应责任和后果。",
+      "text_sha256": "d0151b27e9d8b7150e5cefed850b2a8c7798f3db9f115427c2ca96dbe7d199c4"
+    },
+    "B060": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[60]",
+      "index_base": 1,
+      "text": "作者签名：_____________",
+      "text_sha256": "99daca655394d337b2bb116f73bff52965ecb369694b0692b5f212224d0c03e5"
+    },
+    "B061": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[61]",
+      "index_base": 1,
+      "text": "日期：_____年___月___日",
+      "text_sha256": "f9a9d45e1eb640d353ab0f8833c115b8e4234c3ed74ed7315756d0c498401f57"
+    },
+    "B065": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[65]",
+      "index_base": 1,
+      "text": "【说明：提交学位论文纸质版和电子版时须有作者签名（手签或电子签，但不能出现签章平台的二维码）、日期（不得晚于学位授予日期）。作者须根据实际情况如实声明：若在研究或撰写过程中使用了人工智能工具，应保留“使用人工智能工具声明”页，并详细披露所使用的生成式人工智能工具名称及具体用途。若未使用人工智能工具，请选择保留“未使用人工智能工具声明”页。未选用的另一份声明页需在定稿中删除。使用时，请删除此说明。】",
+      "text_sha256": "61ce20758451a79905ce7356fafaeb0dc7c5f61259570cf716a0d146067c0776"
+    },
+    "B067": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[67]",
+      "index_base": 1,
+      "text": "研究生学位论文（实践成果报告）未使用人工智能工具声明",
+      "text_sha256": "012869707770c9b3af20b173bb6e13198aaf21eab54fa5d89607cd9f2a23b8dc"
+    },
+    "B068": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[68]",
+      "index_base": 1,
+      "text": "本学位论文（实践成果报告）的研究与撰写过程未使用任何生成式人工智能工具（指能够根据提示自动生成文本、代码、图表等内容的大模型及其衍生工具）。",
+      "text_sha256": "9496e87c78340ac764d82c7962c3e2d47777e627f62dab4a154723a0514903b0"
+    },
+    "B069": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[69]",
+      "index_base": 1,
+      "text": "所有内容均基于个人研究、文献阅读及实验数据完成，本人承诺符合学术诚信要求，论文中不存在任何人工智能辅助生成内容。违反本声明所产生的责任与后果，由本人独立承担。",
+      "text_sha256": "30389cb2fedf70ddbc3228e140140747e9def2b14ffb2e9833ca99d1a278f82a"
+    },
+    "B073": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[73]",
+      "index_base": 1,
+      "text": "作者签名：____________",
+      "text_sha256": "e8b153885a2370405a9a71d15ed8f37e71b29511b6481c227ccf77d00f498eec"
+    },
+    "B074": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[74]",
+      "index_base": 1,
+      "text": "日期：_____年___月___日",
+      "text_sha256": "f9a9d45e1eb640d353ab0f8833c115b8e4234c3ed74ed7315756d0c498401f57"
+    },
+    "B076": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[76]",
+      "index_base": 1,
+      "text": "创新性说明",
+      "text_sha256": "bcc8bbcda4e8c635f2a47b68d6c8153b581688c65c507fecab911db4e7b878b5"
+    },
+    "B077": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[77]",
+      "index_base": 1,
+      "text": "学术博士学位论文应当体现作者具有独立从事科学研究工作的能力，并在所学领域做出创造性的成果。故在此须说明本学位论文的创新性，确保符合学术博士学位论文的创新要求，字数要求在200至400字之间。",
+      "text_sha256": "9221df7d65ba206f4a85001dde6cc0f975dc380ab02ccc38998f7ce3737708fa"
+    },
+    "B078": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[78]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B084": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[84]",
+      "index_base": 1,
+      "text": "创新性及应用性说明",
+      "text_sha256": "f65838c4550a01ba40f0a0465dac19b342d1d26595ee35bf5ebade6605fcea95"
+    },
+    "B085": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[85]",
+      "index_base": 1,
+      "text": "工程/专业博士学位论文应主要聚焦工程/专业实践和应用研究，须体现创新性、实践性、应用性特征，体现作者在专业领域掌握坚实全面的基础理论和系统深入的专门知识，具有独立承担专业实践工作的能力，在专业实践领域做出创新性成果，对推动本专业领域知识和技术的发展作出重要贡献。",
+      "text_sha256": "b69221fb72d32abe8ce4d24443ba737ba632be78c06a3e9ec7e3a2038c69eff1"
+    },
+    "B086": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[86]",
+      "index_base": 1,
+      "text": "故在此须说明本学位论文的创新性及应用性，确保符合工程/专业博士学位论文要求，字数要求在200至400字之间。",
+      "text_sha256": "18da36b462c2ed4898140703264c5fe15d5660a61ac85ba450b674eb6ea95771"
+    },
+    "B087": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[87]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B091": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[91]",
+      "index_base": 1,
+      "text": "【说明：“创新性说明”为学术博士专用，“创新性及应用性说明”为工程博士和专业博士专用，使用时请删除此说明。硕士学位论文无需此说明，请删除本页。】",
+      "text_sha256": "32fdfc9867bf10a73f46a32bb77f80c222dd6092c1157bf7a7995f89c181890b"
+    },
+    "B098": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[98]",
+      "index_base": 1,
+      "text": "（注：此部分内容为我校博士学位论文模板要求）",
+      "text_sha256": "1563a0cf46751d894ce1cb7cd88d73db69cb73e214b5cc2ab9b06467ba51f9d8"
+    },
+    "B099": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[99]",
+      "index_base": 1,
+      "text": "摘要",
+      "text_sha256": "21c04b2eeeb431f7722c4c144f95567e3bae94de9c743472072c84745d24367a",
+      "sample_effective_pPr": {
+        "widowControl": {
+          "val": "0"
+        },
+        "jc": {
+          "val": "center"
+        },
+        "spacing": {
+          "before": "480",
+          "after": "360"
+        }
+      },
+      "sample_text_runs": [
+        {
+          "text": "摘要",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Times New Roman",
+              "eastAsia": "黑体",
+              "hAnsi": "Times New Roman",
+              "cs": "Times New Roman"
+            },
+            "lang": {
+              "val": "en-US",
+              "eastAsia": "zh-CN",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "32"
+            },
+            "szCs": {
+              "val": "32"
+            },
+            "bCs": {
+              "val": "true"
+            }
+          }
+        }
+      ]
+    },
+    "B100": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[100]",
+      "index_base": 1,
+      "text": "研究生学位论文是研究生在研究工作中所取得成果的集中反映，代表着研究生研究工作的水平，也是申请和授予相应学位的主要依据。",
+      "text_sha256": "1ac82b08f404268a747dcd115c534061e470611c0b80eef4c21a618b57c1c04d",
+      "sample_effective_pPr": {
+        "widowControl": {
+          "val": "0"
+        },
+        "jc": {
+          "val": "both"
+        },
+        "spacing": {
+          "line": "400",
+          "lineRule": "exact"
+        },
+        "ind": {
+          "firstLineChars": "200",
+          "firstLine": "480"
+        },
+        "pStyle": {
+          "val": "a4"
+        }
+      },
+      "sample_text_runs": [
+        {
+          "text": "研究生学位论文是",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Times New Roman",
+              "eastAsia": "宋体",
+              "hAnsi": "Times New Roman",
+              "cs": "Times New Roman"
+            },
+            "lang": {
+              "val": "x-none",
+              "eastAsia": "x-none",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "24"
+            },
+            "szCs": {
+              "val": "28"
+            }
+          }
+        },
+        {
+          "text": "研究生",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Times New Roman",
+              "eastAsia": "宋体",
+              "hAnsi": "Times New Roman",
+              "cs": "Times New Roman",
+              "hint": "eastAsia"
+            },
+            "lang": {
+              "val": "x-none",
+              "eastAsia": "x-none",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "24"
+            },
+            "szCs": {
+              "val": "28"
+            }
+          }
+        },
+        {
+          "text": "在研究工作中所取得成果的集中",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Times New Roman",
+              "eastAsia": "宋体",
+              "hAnsi": "Times New Roman",
+              "cs": "Times New Roman"
+            },
+            "lang": {
+              "val": "x-none",
+              "eastAsia": "x-none",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "24"
+            },
+            "szCs": {
+              "val": "28"
+            }
+          }
+        },
+        {
+          "text": "反映",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Times New Roman",
+              "eastAsia": "宋体",
+              "hAnsi": "Times New Roman",
+              "cs": "Times New Roman",
+              "hint": "eastAsia"
+            },
+            "lang": {
+              "val": "x-none",
+              "eastAsia": "x-none",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "24"
+            },
+            "szCs": {
+              "val": "28"
+            }
+          }
+        },
+        {
+          "text": "，代表着研究生研究工作的水平，也是申请和授予相应学位",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Times New Roman",
+              "eastAsia": "宋体",
+              "hAnsi": "Times New Roman",
+              "cs": "Times New Roman"
+            },
+            "lang": {
+              "val": "x-none",
+              "eastAsia": "x-none",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "24"
+            },
+            "szCs": {
+              "val": "28"
+            }
+          }
+        },
+        {
+          "text": "的",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Times New Roman",
+              "eastAsia": "宋体",
+              "hAnsi": "Times New Roman",
+              "cs": "Times New Roman",
+              "hint": "eastAsia"
+            },
+            "lang": {
+              "val": "x-none",
+              "eastAsia": "x-none",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "24"
+            },
+            "szCs": {
+              "val": "28"
+            }
+          }
+        },
+        {
+          "text": "主要依据",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Times New Roman",
+              "eastAsia": "宋体",
+              "hAnsi": "Times New Roman",
+              "cs": "Times New Roman"
+            },
+            "lang": {
+              "val": "x-none",
+              "eastAsia": "x-none",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "24"
+            },
+            "szCs": {
+              "val": "28"
+            }
+          }
+        },
+        {
+          "text": "。",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Times New Roman",
+              "eastAsia": "宋体",
+              "hAnsi": "Times New Roman",
+              "cs": "Times New Roman"
+            },
+            "lang": {
+              "val": "x-none",
+              "eastAsia": "x-none",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "24"
+            },
+            "szCs": {
+              "val": "28"
+            }
+          }
+        }
+      ]
+    },
+    "B101": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[101]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B103": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[103]",
+      "index_base": 1,
+      "text": "关键词：学位论文；……",
+      "text_sha256": "ca301d632c5b2c872f78b65098fa7f0bea3b33a08bed6e5eb431e1ce8ab3b395"
+    },
+    "B129": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[129]",
+      "index_base": 1,
+      "text": "ABSTRACT",
+      "text_sha256": "3d1626989d3e923485561f1e5bdeaa583842a399edaf8cb6df59dbc6f17848f8",
+      "sample_effective_pPr": {
+        "widowControl": {
+          "val": "0"
+        },
+        "jc": {
+          "val": "center"
+        },
+        "spacing": {
+          "before": "480",
+          "after": "360"
+        }
+      },
+      "sample_text_runs": [
+        {
+          "text": "ABSTRACT",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Arial",
+              "eastAsia": "宋体",
+              "hAnsi": "Arial",
+              "cs": "Arial"
+            },
+            "lang": {
+              "val": "en-US",
+              "eastAsia": "zh-CN",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "32"
+            },
+            "szCs": {
+              "val": "32"
+            },
+            "b": {
+              "val": "true"
+            },
+            "bCs": {
+              "val": "true"
+            }
+          }
+        }
+      ]
+    },
+    "B130": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[130]",
+      "index_base": 1,
+      "text": "Graduate dissertation is a graduate student in research results of concentrated reflection, represents the level of the graduate research work, is also the main basis of application and corresponding degree granted.",
+      "text_sha256": "2f30d245d4318fe39cb47806ceb41a5154f7a7b95c65ac0bd9a7d5de14bf64d5"
+    },
+    "B131": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[131]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B133": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[133]",
+      "index_base": 1,
+      "text": "KEYWORDS: Dissertation, ……",
+      "text_sha256": "95d394e8fceb1eaf87810c777b0329915573d074b6de930687631ce13327f6aa"
+    },
+    "B134": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[134]",
+      "index_base": 1,
+      "text": "目录",
+      "text_sha256": "52daa71ebc31058156b21dc21c01ed18eb4e9a723749259cacd1558afe32dfea"
+    },
+    "B135": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[135]",
+      "index_base": 1,
+      "text": "第1章  引言1",
+      "text_sha256": "6348f559aea37e2eab30df4ed121c2a499f4308caed9c362c8c42e5c52e84943"
+    },
+    "B136": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[136]",
+      "index_base": 1,
+      "text": "1.1  学位论文中的常见问题分析1",
+      "text_sha256": "f4b9be2faa7fea1ba71cd7af10397b4a1ce23a4b2c66f9e53c1dc4b734bcd462"
+    },
+    "B137": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[137]",
+      "index_base": 1,
+      "text": "1.1.1  常见内容问题1",
+      "text_sha256": "cda4b9c74fbfa0c05935a706028b5e6bd489bee1fce98d2b9bc38642cb463a5a"
+    },
+    "B138": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[138]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B139": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[139]",
+      "index_base": 1,
+      "text": "第2章  内容要素3",
+      "text_sha256": "beb10bcc59d87e29d518aad1d3235433ec2eb8bd378514060a07a99a1ecd8abb"
+    },
+    "B140": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[140]",
+      "index_base": 1,
+      "text": "2.1  封面3",
+      "text_sha256": "f1ad0a70a19b52a8b03b59d9358f7ce86573346f318a4d3df338cc2173a600f8"
+    },
+    "B141": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[141]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B142": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[142]",
+      "index_base": 1,
+      "text": "第3章  撰写要求8",
+      "text_sha256": "489983140e83ea939c7eb577b1f72dd722466fdeb4c96b4fbbc3eb0aacdff1e8"
+    },
+    "B143": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[143]",
+      "index_base": 1,
+      "text": "3.1  论文的基本要求8",
+      "text_sha256": "d58e6e268ffa14b455dab6506d5a85f3be5174654b8cbc04c943e37770f5cb39"
+    },
+    "B144": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[144]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B145": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[145]",
+      "index_base": 1,
+      "text": "参考文献13",
+      "text_sha256": "57cf8f9e197d2245a3efc6131a2bb2b4ed26c5571805f78c8d3312f954a85eef"
+    },
+    "B146": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[146]",
+      "index_base": 1,
+      "text": "附录A  学科门类名称中英文对照表14",
+      "text_sha256": "03ecafb44f89b99ae3a68ee687bf667176fca12fa4cbb521426af0f4f6e44759"
+    },
+    "B147": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[147]",
+      "index_base": 1,
+      "text": "致谢15",
+      "text_sha256": "db8111d1b05c00643eba6a1e6682a0472f37c85161cbbbd806f774743bc4411e"
+    },
+    "B148": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[148]",
+      "index_base": 1,
+      "text": "在读期间取得的科研成果16",
+      "text_sha256": "41796a6947e29a3e3ef9f0dcfe5a08e4275271cd39d3dcabdad41845ae05d842"
+    },
+    "B150": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[150]",
+      "index_base": 1,
+      "text": "插图清单",
+      "text_sha256": "4309bd552008153a54a624b4dea0d513104aa9f5c9817b7eac7f678d87698037"
+    },
+    "B151": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[151]",
+      "index_base": 1,
+      "text": "图1.1  2010年至2024年西藏地区年平均气温分布图5",
+      "text_sha256": "7f499be6813139cf00a78787c683ee4df877ed406167929c2b130e8ea20e7be3"
+    },
+    "B152": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[152]",
+      "index_base": 1,
+      "text": "图1.2  2010年至2024年青海地区年平均气温分布图10",
+      "text_sha256": "440ff5537a195870efd92f57d5016dcf2e945e0bbe592cf4d532d5d425012c6a"
+    },
+    "B153": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[153]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B154": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[154]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B155": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[155]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B156": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[156]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B157": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[157]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B158": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[158]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B159": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[159]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B160": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[160]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B161": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[161]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B162": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[162]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B163": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[163]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B164": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[164]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B165": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[165]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B166": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[166]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B167": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[167]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B168": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[168]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B169": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[169]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B170": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[170]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B171": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[171]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B172": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[172]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B173": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[173]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B174": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[174]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B175": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[175]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B176": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[176]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B177": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[177]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B178": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[178]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B179": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[179]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B180": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[180]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B181": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[181]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B182": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[182]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B183": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[183]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B184": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[184]",
+      "index_base": 1,
+      "text": "附表清单",
+      "text_sha256": "b3455e1c123f4d36992dc8968c43410fe30b38a741c1ab7bd8f466b7674b3cf6"
+    },
+    "B185": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[185]",
+      "index_base": 1,
+      "text": "表1.1  样本分布设计6",
+      "text_sha256": "42f350e9ae9e240423c842c8877f779c8975bc7f2889067f69408d1db28ab9c3"
+    },
+    "B186": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[186]",
+      "index_base": 1,
+      "text": "表1.2  实际样本的特征统计11",
+      "text_sha256": "0ec71f7833050d34d968febc9883171c03f9a8a52f395422d61632def5556068"
+    },
+    "B187": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[187]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B188": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[188]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B189": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[189]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B190": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[190]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B191": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[191]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B192": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[192]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B193": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[193]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B194": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[194]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B196": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[196]",
+      "index_base": 1,
+      "text": "符号和缩略语说明",
+      "text_sha256": "87795443082dc47c128861d1cceb1aaa2cbf69d6a05cfbdf40f3fd10be4a3181"
+    },
+    "B197": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[197]",
+      "index_base": 1,
+      "text": "a, c1, c2临时替换变量",
+      "text_sha256": "f1643394b015966fea718d13e68b9dc9d62e9921ed3e54298992b138f742b157"
+    },
+    "B198": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[198]",
+      "index_base": 1,
+      "text": "Dm 预混通道外径 (mm)",
+      "text_sha256": "204eb2c9424e004f1d982b16fdac33808cdfe6024ecbe01e82db592d6fd91e11"
+    },
+    "B199": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[199]",
+      "index_base": 1,
+      "text": "Ga空气质量流量 (kg/s)",
+      "text_sha256": "51dd16d4ed93e6ac402ef05c0e4dd1136363a864841486eb41b60acadc23e6db"
+    },
+    "B200": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[200]",
+      "index_base": 1,
+      "text": "Ma 进口空气马赫数，Ma= ",
+      "text_sha256": "23bea7c3bbc02b8735712ad5f7db5f7f3f9319a27028e1056937ffa7121c59b6"
+    },
+    "B201": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[201]",
+      "index_base": 1,
+      "text": "γ比热比=1.4",
+      "text_sha256": "4419e22fd3dcfceda53626178b16b67fa52053123fe1a239ea232a3806a9d244"
+    },
+    "B202": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[202]",
+      "index_base": 1,
+      "text": "δ总压损失系数，δ= (%)",
+      "text_sha256": "8063c623b57ee0e4af45c4a9f28af5410df1e17505a414084bfda3c70016dfe6"
+    },
+    "B203": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[203]",
+      "index_base": 1,
+      "text": "φLLO 贫燃着火极限 ",
+      "text_sha256": "f5b289ea799f9fde8eb24129cbf8753b7279f4b6c8e7d45d31d98eb3f02fd487"
+    },
+    "B204": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[204]",
+      "index_base": 1,
+      "text": "CFD计算流体力学 (Computational Fluid Dynamics)",
+      "text_sha256": "4c47198e3f4ef27043e7697d5fe5ddfd24f1e72f9443bbb08d56fafb7ab01821"
+    },
+    "B205": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[205]",
+      "index_base": 1,
+      "text": "DFT密度泛函理论 (Density Functional Theory)",
+      "text_sha256": "3796b04463769d3050389c232c1874ecfc0cd4c8c1f77e1616589fbee8aad180"
+    },
+    "B206": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[206]",
+      "index_base": 1,
+      "text": "LBO贫燃熄火极限 (Lean Blowout Value)",
+      "text_sha256": "32726f112ac3b44be0712b88b37bbaca8246114bf67db4fe0ba9268c9306b4b7"
+    },
+    "B207": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[207]",
+      "index_base": 1,
+      "text": "ONIOM分层算法 (Our own N-layered Integrated molecular Orbital and molecular Mechanics)",
+      "text_sha256": "9428a8b462eac518991770bdcd2e8c98046a4def8004db7cf5d3160d42235db7"
+    },
+    "B208": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[208]",
+      "index_base": 1,
+      "text": "PES势能面 (Potential Energy Surface)",
+      "text_sha256": "0954cc87de540192aa67fcd4a89c3c1e78d6d800ef3c8d08a1f7c4afe9b20651"
+    },
+    "B209": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[209]",
+      "index_base": 1,
+      "text": "PIV颗粒图像速度仪 (Particle Image Velocimetry)",
+      "text_sha256": "12bdf82079c9b5f7c4741b74086d02fa07e0365d49f66e73ace9ef0c3d6cbe93"
+    },
+    "B210": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[210]",
+      "index_base": 1,
+      "text": "SCF自洽场 (Self-Consistent Field)",
+      "text_sha256": "5c3ba75c5852b8c85bb5d4ad0de5cb1f9106f441344d796d46f2065a561afba9"
+    },
+    "B211": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[211]",
+      "index_base": 1,
+      "text": "SCRF自洽反应场 (Self-Consistent Reaction Field)",
+      "text_sha256": "563effb9745139a10f338792b55c7b26e8e82bbde268ecf29a64acd22b60e4fd"
+    },
+    "B212": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[212]",
+      "index_base": 1,
+      "text": "TS过渡态 (Transition State)",
+      "text_sha256": "fd4f83247ee2252bd751bef60230dacca2584ff78928b025304069eb1017b74e"
+    },
+    "B213": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[213]",
+      "index_base": 1,
+      "text": "TST过渡态理论 (Transition State Theory)",
+      "text_sha256": "26051d8c41814a3f971b89da86e8d94aa04ed29b6d4ae56d61cd2c13ab192266"
+    },
+    "B214": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[214]",
+      "index_base": 1,
+      "text": "ZPE零点振动能 (Zero Vibration Energy)",
+      "text_sha256": "16c0403c794188e6a1331c88a3683d34910b6786e60e00ea7ba5452ec1e9ed6e"
+    },
+    "B222": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[222]",
+      "index_base": 1,
+      "text": "【说明：正文第1章应以奇数页开始，若第1章之前的内容是奇数页结束，则需留空白页。此空白页不需加页眉（包括页眉线），但需有连续编的页码。除了第1章外，之后各部分均不要求奇数页起，故不用特地留空白页。使用时，请删除此说明。】",
+      "text_sha256": "0cc582ce82d96933ba3ea63cd805b01dc53ce92b0a3aa383f5f72c1ca4ab98c0"
+    },
+    "B224": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[224]",
+      "index_base": 1,
+      "text": "第1章  引言",
+      "text_sha256": "badc1a03796f76f169096a1cabbbe3ffa94427ff9e5c6373b24e16150d4c7fed",
+      "sample_effective_pPr": {
+        "widowControl": {
+          "val": "0"
+        },
+        "jc": {
+          "val": "center"
+        },
+        "spacing": {
+          "before": "480",
+          "after": "360"
+        }
+      },
+      "sample_text_runs": [
+        {
+          "text": "第",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Arial",
+              "eastAsia": "黑体",
+              "hAnsi": "Arial",
+              "cs": "Arial"
+            },
+            "lang": {
+              "val": "en-US",
+              "eastAsia": "zh-CN",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "32"
+            },
+            "szCs": {
+              "val": "32"
+            },
+            "color": {
+              "val": "000000"
+            }
+          }
+        },
+        {
+          "text": "1",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Arial",
+              "eastAsia": "黑体",
+              "hAnsi": "Arial",
+              "cs": "Arial"
+            },
+            "lang": {
+              "val": "en-US",
+              "eastAsia": "zh-CN",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "32"
+            },
+            "szCs": {
+              "val": "32"
+            },
+            "color": {
+              "val": "000000"
+            }
+          }
+        },
+        {
+          "text": "章",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Arial",
+              "eastAsia": "黑体",
+              "hAnsi": "Arial",
+              "cs": "Arial"
+            },
+            "lang": {
+              "val": "en-US",
+              "eastAsia": "zh-CN",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "32"
+            },
+            "szCs": {
+              "val": "32"
+            },
+            "color": {
+              "val": "000000"
+            }
+          }
+        },
+        {
+          "text": "  ",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Arial",
+              "eastAsia": "黑体",
+              "hAnsi": "Arial",
+              "cs": "Arial"
+            },
+            "lang": {
+              "val": "en-US",
+              "eastAsia": "zh-CN",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "32"
+            },
+            "szCs": {
+              "val": "32"
+            },
+            "color": {
+              "val": "000000"
+            }
+          }
+        },
+        {
+          "text": "引言",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Arial",
+              "eastAsia": "黑体",
+              "hAnsi": "Arial",
+              "cs": "Arial"
+            },
+            "lang": {
+              "val": "en-US",
+              "eastAsia": "zh-CN",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "32"
+            },
+            "szCs": {
+              "val": "32"
+            },
+            "color": {
+              "val": "000000"
+            }
+          }
+        }
+      ]
+    },
+    "B225": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[225]",
+      "index_base": 1,
+      "text": "研究生学位论文质量反映了研究生培养质量，是授予相应学位的主要依据。学位论文要能代表研究生研究工作的水平，也是申请和授予相应学位的主要依据。提高学位论文的质量和水平是研究生教育最重要的任务，需要学生和导师的共同努力。通常学位论文只能有一个主题，该主题应针对某学科领域中的一个具体问题展开深入、系统的研究，并得出有价值的研究结论。",
+      "text_sha256": "5c3c47d16911291b2623987886a2aeee70557d3db10aa31afeccec10a417a344",
+      "sample_effective_pPr": {
+        "widowControl": {
+          "val": "0"
+        },
+        "jc": {
+          "val": "both"
+        },
+        "spacing": {
+          "line": "400",
+          "lineRule": "exact"
+        },
+        "ind": {
+          "firstLineChars": "200",
+          "firstLine": "480"
+        }
+      },
+      "sample_text_runs": [
+        {
+          "text": "研究生学位论文质量反",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Times New Roman",
+              "eastAsia": "宋体",
+              "hAnsi": "Times New Roman",
+              "cs": "Times New Roman"
+            },
+            "lang": {
+              "val": "en-US",
+              "eastAsia": "zh-CN",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "24"
+            },
+            "szCs": {
+              "val": "24"
+            },
+            "color": {
+              "val": "000000"
+            }
+          }
+        },
+        {
+          "text": "映",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Times New Roman",
+              "eastAsia": "宋体",
+              "hAnsi": "Times New Roman",
+              "cs": "Times New Roman",
+              "hint": "eastAsia"
+            },
+            "lang": {
+              "val": "en-US",
+              "eastAsia": "zh-CN",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "24"
+            },
+            "szCs": {
+              "val": "24"
+            },
+            "color": {
+              "val": "000000"
+            }
+          }
+        },
+        {
+          "text": "了研究生培养质量，是授予相应学位的主要依据。",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Times New Roman",
+              "eastAsia": "宋体",
+              "hAnsi": "Times New Roman",
+              "cs": "Times New Roman"
+            },
+            "lang": {
+              "val": "en-US",
+              "eastAsia": "zh-CN",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "24"
+            },
+            "szCs": {
+              "val": "24"
+            },
+            "color": {
+              "val": "000000"
+            }
+          }
+        },
+        {
+          "text": "学位论文",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Times New Roman",
+              "eastAsia": "宋体",
+              "hAnsi": "Times New Roman",
+              "cs": "Times New Roman",
+              "hint": "eastAsia"
+            },
+            "lang": {
+              "val": "en-US",
+              "eastAsia": "zh-CN",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "24"
+            },
+            "szCs": {
+              "val": "24"
+            },
+            "color": {
+              "val": "000000"
+            }
+          }
+        },
+        {
+          "text": "要能代表研究生研究工作的水平，也是申请和授予相应学位的主要依据。提高学位论文的质量和水平是研究生教育最重要的任务，需要学生和导师的共同努力。",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Times New Roman",
+              "eastAsia": "宋体",
+              "hAnsi": "Times New Roman",
+              "cs": "Times New Roman"
+            },
+            "lang": {
+              "val": "en-US",
+              "eastAsia": "zh-CN",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "24"
+            },
+            "szCs": {
+              "val": "24"
+            },
+            "color": {
+              "val": "000000"
+            }
+          }
+        },
+        {
+          "text": "通常学位论文只能有一个主题，该主题应针对某学科领域中的一个具体问题展开深入、系统的研究，并得出有价值的研究结论。",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Times New Roman",
+              "eastAsia": "宋体",
+              "hAnsi": "Times New Roman",
+              "cs": "Times New Roman",
+              "hint": "eastAsia"
+            },
+            "lang": {
+              "val": "en-US",
+              "eastAsia": "zh-CN",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "24"
+            },
+            "szCs": {
+              "val": "24"
+            },
+            "color": {
+              "val": "000000"
+            }
+          }
+        }
+      ]
+    },
+    "B226": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[226]",
+      "index_base": 1,
+      "text": "1.1  学位论文中的常见问题分析",
+      "text_sha256": "7209a35be1275a1d27622b6ba421dd009b2246b73193cf457c97082d4f2debc7",
+      "sample_effective_pPr": {
+        "widowControl": {
+          "val": "0"
+        },
+        "jc": {
+          "val": "both"
+        },
+        "spacing": {
+          "before": "480",
+          "after": "120",
+          "line": "400",
+          "lineRule": "exact"
+        }
+      },
+      "sample_text_runs": [
+        {
+          "text": "1.1  ",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Arial",
+              "eastAsia": "宋体",
+              "hAnsi": "Arial",
+              "cs": "Arial"
+            },
+            "lang": {
+              "val": "en-US",
+              "eastAsia": "zh-CN",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "28"
+            },
+            "szCs": {
+              "val": "28"
+            },
+            "color": {
+              "val": "000000"
+            }
+          }
+        },
+        {
+          "text": "学位论文中的常见问题分析",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Arial",
+              "eastAsia": "黑体",
+              "hAnsi": "Arial",
+              "cs": "Arial"
+            },
+            "lang": {
+              "val": "en-US",
+              "eastAsia": "zh-CN",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "28"
+            },
+            "szCs": {
+              "val": "28"
+            },
+            "color": {
+              "val": "000000"
+            }
+          }
+        }
+      ]
+    },
+    "B227": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[227]",
+      "index_base": 1,
+      "text": "从问题的分类上来看主要存在内容上的问题和格式上的问题，很多时候这两方面的问题又是相互交叉和影响的。",
+      "text_sha256": "5cbbbe339ce0f9d0b1da24a629bebd497a080a71b4e8b8c4b8f0624cade7fe2d"
+    },
+    "B228": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[228]",
+      "index_base": 1,
+      "text": "1.1.1  常见内容问题",
+      "text_sha256": "e7d459c0a25f7889a820424f6f0517e337ff6e918f81aa47c09377329fca20f4",
+      "sample_effective_pPr": {
+        "widowControl": {
+          "val": "0"
+        },
+        "jc": {
+          "val": "both"
+        },
+        "spacing": {
+          "before": "240",
+          "after": "120",
+          "line": "400",
+          "lineRule": "exact"
+        }
+      },
+      "sample_text_runs": [
+        {
+          "text": "1.1.1  ",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Arial",
+              "eastAsia": "黑体",
+              "hAnsi": "Arial",
+              "cs": "Arial"
+            },
+            "lang": {
+              "val": "en-US",
+              "eastAsia": "zh-CN",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "26"
+            },
+            "szCs": {
+              "val": "26"
+            },
+            "color": {
+              "val": "000000"
+            }
+          }
+        },
+        {
+          "text": "常见内容问题",
+          "effective_rPr": {
+            "rFonts": {
+              "ascii": "Arial",
+              "eastAsia": "黑体",
+              "hAnsi": "Arial",
+              "cs": "Arial"
+            },
+            "lang": {
+              "val": "en-US",
+              "eastAsia": "zh-CN",
+              "bidi": "ar-SA"
+            },
+            "kern": {
+              "val": "2"
+            },
+            "sz": {
+              "val": "26"
+            },
+            "szCs": {
+              "val": "26"
+            },
+            "color": {
+              "val": "000000"
+            }
+          }
+        }
+      ]
+    },
+    "B229": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[229]",
+      "index_base": 1,
+      "text": "文章缺乏逻辑性，结构不合理。有些研究生甚至不知道学位论文应该如何写，如有的摘要与正文内容不一致，摘要中出现参考文献和非公知公认的符号、缩写，甚至出现摘要、引言、结论等部分内容一样的情况；有的方法与结果混乱，方法中提到的而在结果中没有出现，或在结果中出现的内容而方法中没有提及；有的结果并非客观描述，其中夹杂着大量的讨论，而在讨论部分又与结果有大段的重复等等。",
+      "text_sha256": "3780026f5569e37482741ae174b484b9b5e6de0733583ed5c9a71476eccac285"
+    },
+    "B230": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[230]",
+      "index_base": 1,
+      "text": "1.1.2  常见格式问题",
+      "text_sha256": "77dd7ef68cde2a3d7ea7ae2cc4ab9f460a36b696be191bdf3de2cc3135bd486e"
+    },
+    "B231": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[231]",
+      "index_base": 1,
+      "text": "标题的设置和格式全文不一致；数字、标点未按规范使用；量和单位使用不标准；图表不清晰，格式不规范；引用参考文献不规范等。",
+      "text_sha256": "1897975daada63bcf0c8560ebb30e34177d82193f28385c48033b5d5f01f1995"
+    },
+    "B232": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[232]",
+      "index_base": 1,
+      "text": "1.2  提高学位论文的规范性",
+      "text_sha256": "416dede8ca12de87c0971fa02ccb13ecd63f250e4d787ac55d221c0fad8f4d9b"
+    },
+    "B233": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[233]",
+      "index_base": 1,
+      "text": "论文题目要确切、适当，文题要准确，以最恰当、最简明的词语反映文章的主题；摘要是对论文内容的高度概括，须内容准确，文字简明；引言要简练，言简意赅，突出重点；结论要完整，要以问题的分析和讨论为前提，对所研究的对象或问题作出最后的总结，也是对论点和论据的提炼与概括，同时提出存在的问题和对今后解决问题的展望；引用参考文献要严谨规范，文献是作者确实阅读过的，是公开出版、便于查询的。",
+      "text_sha256": "92fefb94cc926937e7b3d21261fae764940543cd0620c3d7218e5d1c1c7bfac0"
+    },
+    "B234": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[234]",
+      "index_base": 1,
+      "text": "1.3  《撰写模板》的使用方法",
+      "text_sha256": "3c4cdbe00118f36f87cc3883f0a756f6cc5d88a5dbb8f6a50d99693b721c6241"
+    },
+    "B235": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[235]",
+      "index_base": 1,
+      "text": "本《撰写模版》具有工具书的性质，在使用的过程中需认真参考使用，其针对学位论文的写作提出如下使用建议：",
+      "text_sha256": "6902f266cf6c245892b4e72164db318f6c05a92c4407ebc2abcefeca3fb86a98"
+    },
+    "B236": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[236]",
+      "index_base": 1,
+      "text": "“第2章  内容要素”内容虽不多，但可以让读者掌握学位论文写作的基本构成和基本要求；",
+      "text_sha256": "225902c417cbd8525c9bde4d820617c6d72ede222f4fb4e75d48a39a900ce8ba"
+    },
+    "B237": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[237]",
+      "index_base": 1,
+      "text": "“第3章  撰写要求”要仔细参考，并按照格式要求，规范书写。",
+      "text_sha256": "c1758536987fadc24ef7597f4cd27bc3708b900db37d4664dd58a53487802667"
+    },
+    "B239": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[239]",
+      "index_base": 1,
+      "text": "第2章  内容要素",
+      "text_sha256": "5687421444f8e360c0ce20bd872c5ade05604f5e68f2a2601f76fa553ea5818c"
+    },
+    "B240": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[240]",
+      "index_base": 1,
+      "text": "2.1  封面",
+      "text_sha256": "e3dfdff950521323c1959bfc56338aeff33ac2d6c5131c288a151b21e199618b"
+    },
+    "B241": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[241]",
+      "index_base": 1,
+      "text": "封面采用研究生院统一规定的格式。论文应为中文封面，若使用其他语种撰写，须在中文封面后附上对应语种的封面。中文封面中的提交时间用中文数字填写（例如：二〇二六年六月）。",
+      "text_sha256": "ecd00f23305844beaf17a9893e23e12ba5f4ee2811caa45f855b2a22ce706dbf"
+    },
+    "B242": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[242]",
+      "index_base": 1,
+      "text": "2.2  题名页",
+      "text_sha256": "ceae88c4a17e1ed2fb8e494c4e633511ab74a744063053d80293ae8d92c97cba"
+    },
+    "B243": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[243]",
+      "index_base": 1,
+      "text": "题名页主要包括以下内容：",
+      "text_sha256": "16646014f30f9b08eed8f942d7af6bf2db711f2dcd1b5b50c1f14f5c6887e02f"
+    },
+    "B244": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[244]",
+      "index_base": 1,
+      "text": "A) 分类号：需同时标注中图分类号与UDC分类号两种。选择分类号时，应以论文内容主题所涉及的科学领域为依据，可同时参考自身专业。一般情况下选至二级或三级类目即可，也可选至更精确的类目号。若不确定具体分类，可咨询学校图书馆。",
+      "text_sha256": "3d16cc9ffdc6d2260cc4474aaf67677b682ad752c76f4024edc423ea6f5c71b3"
+    },
+    "B245": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[245]",
+      "index_base": 1,
+      "text": "a) 中图分类号：采用《中国图书馆分类法》最新版本标注，可参考：https://www.clcindex.com/category。字符总数对应类目的级数，例如：论文中涉及火星，专业为地球物理学，二级分类号为P1（天文学），三级分类号为P18（太阳系），或者更详细至P185.3（火星）。",
+      "text_sha256": "c80fe065ce61cc788670179f36fa3e89dc1443892a609a3c0cc0e5d6341ce142"
+    },
+    "B246": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[246]",
+      "index_base": 1,
+      "text": "b) UDC分类号：采用《国际十进分类法》（Universal Decimal Classification）最新版本标注。可参考：https://udcsummary.info/php/index.php?lang=chi。数字总数对应类目的级数，例如：论文中涉及行星地质学，专业为地球物理学，二级分类号为55（地球科学、地质学），三级分类号为550（地质学附属学科），四级分类号为550.3（地球物理学）。",
+      "text_sha256": "0366dfff35be3e01feedd2b7f2c86ebae2ff83836ae6260586e270a354a2416e"
+    },
+    "B247": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[247]",
+      "index_base": 1,
+      "text": "B) 学校代码：中国科学技术大学的学校代码为10358。",
+      "text_sha256": "bf5b4c0b9e0963fe0187ec85814208e1c7c3943a94fc8d26bf05d545aba954ab"
+    },
+    "B248": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[248]",
+      "index_base": 1,
+      "text": "C) 密级：按GB/T 7156的规定进行标注。涉密学位论文应在题名页做出国家秘密标志。非书面形式的涉密学位论文载体，要以能够明显识别的方式予以标注；学位论文电子文档中含有国家秘密内容的，应做出国家秘密标志，且标志与文档正文不可分离。标注方式如下：",
+      "text_sha256": "eede38ef731479a507ab4bd5287c46c0134a0b7acd191d51fedd801348987bc3"
+    },
+    "B249": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[249]",
+      "index_base": 1,
+      "text": "①公开级：可不标注，或标注为“公开”。",
+      "text_sha256": "d34e409f7711360906a6024863f0a31a27950295bc92e20dcc7f2b0dae7f25ac"
+    },
+    "B250": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[250]",
+      "index_base": 1,
+      "text": "②限制级：原则上不超过3年，如控阅2年，标注为“限制2年”。",
+      "text_sha256": "8dec0d86c0d7ce29bac763d81cf659e3b55803961ade31cc24fd5f1f0fbf5114"
+    },
+    "B251": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[251]",
+      "index_base": 1,
+      "text": "③国家保密级：分秘密级（不超过10年）、机密级（不超过20年）、绝密级（不超过30年）。若为秘密级、5年后解密，标注为“秘密5年”。若保密期限未作具体规定，可不标识保密期限，以最高年限来算，如“秘密”表示为秘密级文献，且保密期限为10年。",
+      "text_sha256": "f905956720d305f851ab3615092f28be55db163e80e4b33ea3bf135661953d2c"
+    },
+    "B252": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[252]",
+      "index_base": 1,
+      "text": "D) 题名：题名以简明的词语恰当、准确地反映论文最重要的特定内容，一般不宜超过25字，应中英文对照。",
+      "text_sha256": "a7603d12d644457897b383371e00a04d3b994f612e8fef82d9f723e4e7ddb736"
+    },
+    "B253": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[253]",
+      "index_base": 1,
+      "text": "E) 责任者：责任者包括学生姓名、学号，指导教师姓名、专业技术职务等。校外导师应一并列出。由论文指导委员会指导论文写作的，应列出全部指导教师。",
+      "text_sha256": "478fd70f0e2674adcbfce3c9027c3d3c831932948e6bab422e11238a682ae8b4"
+    },
+    "B254": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[254]",
+      "index_base": 1,
+      "text": "F) 学科专业：参照国务院教育行政部门颁布的最新《研究生教育学科专业目录》标注硕士和博士学位论文的学科和专业。",
+      "text_sha256": "81d235b930b7499dae51ca47026c707092ff906a8e97515629c273cc6d24c192"
+    },
+    "B255": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[255]",
+      "index_base": 1,
+      "text": "G) 研究方向：指本学科专业范畴下的细分研究领域。",
+      "text_sha256": "06ad2de59362f33bdb65a0156798de6a6502cbaca9dd86bf2ebf90330c2c9e4f"
+    },
+    "B256": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[256]",
+      "index_base": 1,
+      "text": "H) 论文提交日期：指论文上交日期（不得晚于学位授予日期）。",
+      "text_sha256": "075ceaf9125255b5cf0d2a106648f550e8b6651bddeb18d473cb7348f9ecea2e"
+    },
+    "B257": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[257]",
+      "index_base": 1,
+      "text": "2.3  中国科学技术大学学位论文原创性和使用授权声明",
+      "text_sha256": "ee5d92201ed262a33121393a299dfeb3fcf0ee8ec99c25a98288ac553fd5c68c"
+    },
+    "B258": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[258]",
+      "index_base": 1,
+      "text": "本部分内容使用统一的模板，具体内容见格式范例。授权使用声明须仔细阅读后慎重选择公开或控阅（控阅年份必填）。提交学位论文纸质版和电子版时，须有学生和导师签名（手签或电子签，但不能出现签章平台的二维码），同时须有签字日期（不得晚于学位授予日期）。",
+      "text_sha256": "3a561606ca8d6826ccd244cbd58e6c08095f1a0f382ffa0f7edd8af4b5f4216a"
+    },
+    "B259": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[259]",
+      "index_base": 1,
+      "text": "2.4  研究生学位论文（实践成果报告）使用（或未使用）人工智能工具声明",
+      "text_sha256": "1abd0de19444faec434a961cdfe54eaef861e918c9aef29447bf5176da47f51a"
+    },
+    "B260": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[260]",
+      "index_base": 1,
+      "text": "本部分内容使用统一的模板，具体内容见格式范例。提交学位论文纸质版和电子版时须有作者签名（手签或电子签，但不能出现签章平台的二维码）、日期（不得晚于学位授予日期）。",
+      "text_sha256": "faae6da2565769251635a442ccb60a02c6aed56e6b80bec847e4abf6738bb71c"
+    },
+    "B261": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[261]",
+      "index_base": 1,
+      "text": "作者须根据实际情况如实声明：若在研究或撰写过程中使用了人工智能工具，应保留“使用人工智能工具声明”页，并详细披露所使用的生成式人工智能工具名称及具体用途。若未使用人工智能工具，请选择保留“未使用人工智能工具声明”页（注：未选用的另一份声明页需在定稿中删除）。",
+      "text_sha256": "bc7862b82eb08b04ffe96ff5edc3def6ee0e809148477f892c15312071ab8398"
+    },
+    "B262": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[262]",
+      "index_base": 1,
+      "text": "2.5  摘要和关键词",
+      "text_sha256": "fb3679006c7008ced0a6b41f9a28dbf3c1b1d75e7206e1c1671ad0f19a7e3d68"
+    },
+    "B263": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[263]",
+      "index_base": 1,
+      "text": "摘要是论文内容的总结概括，应具有独立性和自明性，即不用阅读全文，就能获得论文必要的信息。摘要的内容应包含与论文等同量的主要信息，供读者确定有无必要阅读全文，也可供二次文献采用。摘要宜说明研究工作目的、方法、结果和结论等，重点是结果和结论。",
+      "text_sha256": "7d5426fc0b7369822a894e62b0f45eab4288f5074d86e613b461fc46f3798df7"
+    },
+    "B264": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[264]",
+      "index_base": 1,
+      "text": "摘要中不宜使用公式、图表、化学结构式、非公知公用的符号和术语，不引用文献。摘要分中文和英文两种，中文在前，英文在后，内容及段落须相互呼应。博士论文中文摘要一般800～1000个汉字，硕士论文中文摘要一般600个汉字。英文摘要的篇幅参照中文摘要。",
+      "text_sha256": "c30cb48c9c14775561d82e43540c30930ab70a22e0a7244ae32d32ca479be335"
+    },
+    "B265": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[265]",
+      "index_base": 1,
+      "text": "中文摘要部分的标题为“摘要”，用黑体三号字，居中书写，单倍行距，段前24磅，段后18磅。摘要内容用小四号宋体字书写，两端对齐，固定行距20磅，段前、段后0磅。论文的关键词，是为了文献标引工作从论文中选取出来用以表示全文主题内容信息的单词或术语，每篇论文应选取3～8个关键词。关键词与摘要内容同页间隔一行，用小四号宋体，行距同摘要内容，“关键词：”本身加粗，左对齐，悬挂缩进4个字符，建议关键词数量不超过8个，每个关键词之间用分号间隔。",
+      "text_sha256": "fa74729fc8059f3bf461306ab16ef74a4cd2116be55805bf460a65d80639510a"
+    },
+    "B266": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[266]",
+      "index_base": 1,
+      "text": "英文摘要部分的标题为“ABSTRACT”，用Arial三号字体加粗，居中书写，单倍行距，段前24磅，段后18磅。摘要内容用小四号Times New Roman字体书写，两端对齐，固定行距20磅，段前、段后0磅，使用英文标点符号。英文关键词与摘要内容同页间隔一行，字号、字体、行距同摘要内容，“KEYWORDS:”本身大写加粗，左对齐，悬挂缩进6.5个字符，每个关键词第一个字母大写，关键词之间用半角逗号加空一格间隔，英文关键词与中文关键词须相互呼应。",
+      "text_sha256": "e4aa82c4c8aeca0c637ff764c8382adca79ebef56f00e712b2430a6628c11696"
+    },
+    "B267": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[267]",
+      "index_base": 1,
+      "text": "以外文撰写的学位论文，应以同种语言撰写外文摘要。除外文摘要外，应有中文摘要，置于外文摘要页的后面，并标注中文关键词。为能完整描述学位论文的主要内容，中文摘要宜不少于5000字。",
+      "text_sha256": "c397a5342bc5d0b198e27015a8a9c0bb2145c8f80869dc793cba1dac84ebb373"
+    },
+    "B268": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[268]",
+      "index_base": 1,
+      "text": "2.6  目录",
+      "text_sha256": "3cfa45d9d8dbe75f0134d3720dc57588dd7dbba1dfedc17da8ff20a067adf81b"
+    },
+    "B269": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[269]",
+      "index_base": 1,
+      "text": "目录页由论文的章、节、附录等序号、名称和页码组成，一般从正文“第1章  引言”或“第1章  绪论”开始，目录之前的内容及目录本身不列入目录内。目录的标题用黑体三号字，居中书写，单倍行距，段前24磅，段后18磅。",
+      "text_sha256": "eb90d22ec762dd6865fb5770caba70578d2ab9c28d38bb8e42b42eaa59b273de"
+    },
+    "B270": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[270]",
+      "index_base": 1,
+      "text": "目录中的章标题行采用小四号字，中文采用黑体，英文和数字采用Arial体，固定行距20磅，段前6磅，段后0磅；其他内容采用宋体小四号字，英文和数字用Times New Roman体，行距20磅，段前、段后均为0磅。",
+      "text_sha256": "9dd12231911e7e77cee395708448660571ca12ec6b04ee65ceaebef04a757397"
+    },
+    "B271": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[271]",
+      "index_base": 1,
+      "text": "章标题行居左书写，一级节标题行缩进1个汉字符，二级节标题行缩进2个汉字符。带有序号的各级标题，其序号与题名之间均空一字符，行末右顶格。",
+      "text_sha256": "2e40f3ca4efb8ec38a095d3f291ef6c1d274d78668f784e52adcdd057b132972"
+    },
+    "B272": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[272]",
+      "index_base": 1,
+      "text": "2.7  插图和附表清单",
+      "text_sha256": "e71ac3806890b80b9139c5f0a45f0ec28100d473eed4c5e7052102d5a007d606"
+    },
+    "B273": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[273]",
+      "index_base": 1,
+      "text": "论文中插图和附表较多时，应分别列出“插图清单”和“附表清单”。插图清单在前，应列出图序、图题和页码。附表清单在后，应列出表序、表题和页码。",
+      "text_sha256": "eb940b00fa695d3cf22833589e1a9ee6496c6afc5fab7f0f739b38dad3795767"
+    },
+    "B274": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[274]",
+      "index_base": 1,
+      "text": "插图较多而附表较少、或者插图较少而附表较多、或者二者均较少时，可将插图和附表合在一起列出“插图和附表清单”，插图在前、附表在后。",
+      "text_sha256": "987fd8fb83b165b811b4b0fec1a2b1bc0375f2327c8bd0f68ac5e10dbe6583fe"
+    },
+    "B275": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[275]",
+      "index_base": 1,
+      "text": "插图和附表清单另起一面，置于目录之后。章标题“插图清单”“附表清单”或“插图和附表清单”使用黑体三号字，居中书写，单倍行距，段前24磅，段后18磅。内容部分采用宋体小四号字，固定行距20磅，段前、段后均为0磅。英文和数字用Times New Roman体。",
+      "text_sha256": "86c02aadff5881ed0d3d8a00d8e4a47cc931bf0b969ae9ffdee3987dab75638e"
+    },
+    "B276": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[276]",
+      "index_base": 1,
+      "text": "插图与附表清单宜在文档编辑软件中自动生成，并根据上述要求调整格式。",
+      "text_sha256": "2083cec6aeb92ad7c4faca11f890e6ee068598ea85e86f3c82e4128a21b1dc6b"
+    },
+    "B277": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[277]",
+      "index_base": 1,
+      "text": "2.8  符号和缩略语说明",
+      "text_sha256": "3c313ef1c3f83e5af2bf71f83c818e419401f348913e999ee10a73cc99193b2a"
+    },
+    "B278": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[278]",
+      "index_base": 1,
+      "text": "    如果论文中使用了大量的物理量符号、标志、缩略词、专门计量单位、自定义名词和术语等，应编写“符号和缩略语说明”，放在目录之后、正文之前。如果符号和缩略词使用数量不多，可以不设此部分，但必须在论文中首次出现时加以说明。建议按符号、希腊字母、缩略词等部分编制，每一部分按首字母顺序排序；符号若有单位需标明单位，无量纲参数可给出定义式；常数或系数可给出数值；缩略词需给出中英文全称。",
+      "text_sha256": "2e112d140f58875e91ed1e2dea2491750b03f05e2acbdfbdcfa53d9150fd9d47"
+    },
+    "B279": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[279]",
+      "index_base": 1,
+      "text": "标题“符号和缩略语说明”格式与章标题同。内容部分采用宋体小四号字，行距为固定值20磅，段前、段后均为0磅。英文和数字用Times New Roman体。",
+      "text_sha256": "fc01f401cbe99633916baf68791648c5839716c6ad9ac03d80638f8c28fd5733"
+    },
+    "B280": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[280]",
+      "index_base": 1,
+      "text": "2.9  正文",
+      "text_sha256": "072b566db9b5125b82c5b738e9a2a7dd3f2eeca65feb9e93da3d8bdc256d13af"
+    },
+    "B281": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[281]",
+      "index_base": 1,
+      "text": "正文部分应从另页右页开始，每一章应另起页。",
+      "text_sha256": "627bd7901405637f8792b3865c4949fb5e1dfa350c528f094d20bc05ed033f1a"
+    },
+    "B282": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[282]",
+      "index_base": 1,
+      "text": "正文部分通常包括引言（绪论）、主体和结论。",
+      "text_sha256": "f8fd63bf5dc268c1f118dfd3b54f812c8b196230da74139bca282eb2d9be25db"
+    },
+    "B283": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[283]",
+      "index_base": 1,
+      "text": "引言（绪论）应包括所研究领域的历史回顾和前人工作的综合述评，以及论文的研究目的、流程和方法等。",
+      "text_sha256": "b26c0841a1cab17f31376bcea46be9710b5f1abfa0c755c4d5048e580145d491"
+    },
+    "B284": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[284]",
+      "index_base": 1,
+      "text": "正文部分由于涉及的学科、选题、研究方法、结果表达方式等有很大的差异，不作统一的规定。但是，应实事求是、客观真切、准备完备、合乎逻辑、层次分明、简练可读。应严格遵循学术规范，充分尊重和借鉴已有的学术成果，注重调查研究，在全面掌握相关研究资料和学术信息的基础上，精心设计研究方案，讲究科学方法。应论证缜密、表达准确。",
+      "text_sha256": "6c6a2ac2301e7f0ce21ede871bc0c750651343db3322af5fab983299ee2d7f73"
+    },
+    "B285": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[285]",
+      "index_base": 1,
+      "text": "2.10  参考文献",
+      "text_sha256": "e477a48e5c769e3f3746eefa5e23562dae98775eaa3be7e15b3a5a0cd6728091"
+    },
+    "B286": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[286]",
+      "index_base": 1,
+      "text": "参考文献集中著录于正文之后，不得分章节著录。属于外文文献的，直接使用外文著录，不必译成中文。“参考文献”四个字与章标题格式相同。内容部分五号字体，中文用宋体，英文用Times New Roman体，固定行距20磅，段前0磅、段后0磅。",
+      "text_sha256": "3c390ea42fd6167925834ff5cd0cc527732af12a92cdbd147d2eba1f0cef4a02"
+    },
+    "B287": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[287]",
+      "index_base": 1,
+      "text": "参考文献的著录方法和文献的标注方式有关，可采用“顺序编码制”或“著者-出版年制”。“顺序编码制”是指正文中索引文献时，用顺序编号的方法标注文献，文献序号放“[ ]”内，以上标方式标注在索引位置。“著者-出版年制”是指索引文献处用文献著者和出版年度标注文献，一般著者和出版年度放“（ ）”内，以逗号分隔，标注在索引位置。",
+      "text_sha256": "2f8dd535da2c21ec58dfb53ab2b1ddd375b109c2d00fb0eb05f0085ca72e971c"
+    },
+    "B288": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[288]",
+      "index_base": 1,
+      "text": "以“顺序编码制”索引文献时，其参考文献应按索引对应编号顺序著录，文献序号放“[ ]”内，采用悬挂格式，将序号悬挂在外。以“著者-出版年制”索引文献时，参考文献应按文种分类著录，按著者字母顺序排序，中文文献放前方，每条文献不必加序号，悬挂缩进2个汉字符或4个字符。",
+      "text_sha256": "8e846b13354872713bbe5952aa7882c8c76aa5bb489a64bfdf043edc189d2c86"
+    },
+    "B289": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[289]",
+      "index_base": 1,
+      "text": "所有标点符号使用半角符号。参考文献著录格式参见国标GB/T 7714-2025。",
+      "text_sha256": "5f86e9232ff410c693176000c174532c56c6b91d7ef3e634842e026ad8f59a4d"
+    },
+    "B290": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[290]",
+      "index_base": 1,
+      "text": "2.11  附录",
+      "text_sha256": "770b52ab5e52177830a3501ce7761c6a980b5ef4b9526fb2ed5911d28f37df48"
+    },
+    "B291": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[291]",
+      "index_base": 1,
+      "text": "附录是与论文内容密切相关、但编入正文会影响整篇论文的条理性和逻辑性的一些资料，是论文主体的补充项目，并不是必须的。以下内容可置于附录之内：放在正文内过分冗长的公式推导；方便他人阅读所需要的辅助性教学工具或表格；重复性数据和图表；非常必要的程序说明和程序全文；关键调查问卷或方案等。",
+      "text_sha256": "8c58b474f5981d36c8b0ab589379659bb3367f6ba17d08848b80870e00032041"
+    },
+    "B292": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[292]",
+      "index_base": 1,
+      "text": "附录的格式与正文相同，并依顺序用大写字母编序号，如附录A、附录B。只有一个附录时也要编序号，即附录A。每个附录应有标题，格式要求与章标题同，附录序号与附录标题之间空一个汉字符。例如：“附录A  论文写作基本规则”。",
+      "text_sha256": "db51d4724aeb414abc29d96769654cfd1ed16d728491b4097862bd73df3a4ed7"
+    },
+    "B293": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[293]",
+      "index_base": 1,
+      "text": "附录中的图、表、数学表达式、参考文献等另行编序号，与正文分开，一律用阿拉伯数字编码，但在数码前冠以附录的序号，例如“图A.1”，“表B.2”，“式（C.3）”等。",
+      "text_sha256": "16f91a7fdcb7e2cf9dbe828ac9b832401b2904c7f40fa9aad56972cf882e1f39"
+    },
+    "B294": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[294]",
+      "index_base": 1,
+      "text": "2.12  致谢",
+      "text_sha256": "1a70aab7a9413c602284054175aff2e73fc41ca2dc69819ab8e436d89d33234a"
+    },
+    "B295": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[295]",
+      "index_base": 1,
+      "text": "学位论文正文和附录之后，一般应放置致谢（或后记），主要感谢导师和对论文工作有直接贡献和帮助的人士和单位。包括：",
+      "text_sha256": "e07e1a5ff41e483f5cd2033bb26bdfcc57d7da9079b18fa00ef00477ac203959"
+    },
+    "B296": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[296]",
+      "index_base": 1,
+      "text": "a) 国家科学基金，资助研究工作的奖学金基金，合同单位，资助或支持的企业、组织或个人；",
+      "text_sha256": "a2714529f73600003c6233d559773c5ab73d807425cead97b33fc31fc057292e"
+    },
+    "B297": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[297]",
+      "index_base": 1,
+      "text": "b) 协助完成研究工作和提供便利条件的组织或个人；",
+      "text_sha256": "28d5bf10552304e056637bd3baf3c3647a8b6ccc9c2608625b0b88f64805167f"
+    },
+    "B298": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[298]",
+      "index_base": 1,
+      "text": "c) 在研究工作中提出建议和提供帮助的人；",
+      "text_sha256": "a48101fb41cf9572826068707cd27c86a5066a0d406447f294eff705920ed004"
+    },
+    "B299": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[299]",
+      "index_base": 1,
+      "text": "d) 给予转载和引用权的资料、图片、文献、研究思想和设想的所有者；",
+      "text_sha256": "1964e0f78d732b91d910b25a2bfbe189b99261b1ba7fbacaffaa8d42a550a959"
+    },
+    "B300": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[300]",
+      "index_base": 1,
+      "text": "e) 其他应感谢的组织和个人。",
+      "text_sha256": "93b3c6b4cba123b62f1a5f1a2a96eb42e210e13bbd95731d3965ac81ea700015"
+    },
+    "B301": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[301]",
+      "index_base": 1,
+      "text": "致谢言语应谦虚诚恳，实事求是。字数不超过1000个汉字，格式要求与正文同，标题“致谢”的格式要求与章标题同。",
+      "text_sha256": "0768decef5b83e1f0d34cd892345b6a198741256d0a715cee3235360a77aa412"
+    },
+    "B303": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[303]",
+      "index_base": 1,
+      "text": "第3章  撰写要求",
+      "text_sha256": "3a0b5f2f7daa8ffd16490e6232457fdfb1db787669057fce9262106e564e8d1f"
+    },
+    "B304": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[304]",
+      "index_base": 1,
+      "text": "3.1  论文的基本要求",
+      "text_sha256": "ab4b06d97a959e79e9c71f4f5e35aef5d20793c42ee483409bb42713e999bb28"
+    },
+    "B306": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[306]",
+      "index_base": 1,
+      "text": "硕士学位论文正文要求一般不少于3万字，博士学位论文正文要求一般不少于5万字。留学生学位论文字数参照以上篇幅综合考虑。",
+      "text_sha256": "46d0c074782446e3709d8360664d46ee2b0a13b603983194c102c41d35396fbd"
+    },
+    "B307": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[307]",
+      "index_base": 1,
+      "text": "写作时要注意论文具有正确的政治、思想导向，一定的知识性、科学性以及原创性，论文的内容、体例与文字等符合现行规范。",
+      "text_sha256": "59e03367255486e50c99e506af839b13e16efd08f025bc467cc05f6465d0971f"
+    },
+    "B308": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[308]",
+      "index_base": 1,
+      "text": "其中，工程博士学位论文中必须至少有专门一章或一节介绍学位论文研究内容的工程应用现状和前景。",
+      "text_sha256": "7fdb4851492ca0d346dfd7dbea73fb4f116cdd4ee7b1fa689c3dff023f3df2f0"
+    },
+    "B309": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[309]",
+      "index_base": 1,
+      "text": "3.2  文字",
+      "text_sha256": "a26ff325e2005fa626fa3fea3fb8df1e9664e132f432c524d4445262fce1ae82"
+    },
+    "B310": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[310]",
+      "index_base": 1,
+      "text": "文字的表述应该符合我国通用语言的规范和标准，使用规范文字。文字规范一般包括以下十个方面的内容：①文字；②词语；③语法；④标点；⑤数字；⑥计量单位；⑦知识；⑧格式；⑨标题；⑩文风。",
+      "text_sha256": "6aef936c7099c1e671bb8700b07ed4fe7799d7d79742d74fcf89025e3f93e1f7"
+    },
+    "B311": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[311]",
+      "index_base": 1,
+      "text": "正文文字统一采用小四号（12pt）字，汉字用宋体，英文和阿拉伯数字用Times New Roman体，两端对齐书写，段落首行左缩进2个汉字符。固定行距20磅（段落中有不编序号的数学表达式时，可根据该表达式需要设置该段的行距），段前0磅，段后0磅。",
+      "text_sha256": "b28a49b9abbad6d91b00e5ca35a014092b8a0964c152f44eeb06f4959fbcd1af"
+    },
+    "B312": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[312]",
+      "index_base": 1,
+      "text": "3.3  标点符号",
+      "text_sha256": "c2f492096dadc07a774a008bbc27b5d278258b931bd738204fb6a8f12b369339"
+    },
+    "B313": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[313]",
+      "index_base": 1,
+      "text": "标点符号是辅助文字表达语言的符号，用来表示停顿、语气、词语以及符号的性质和作用等，是书面语的有机组成部分。论文写作时标点符号应符合GB/T 15834-2011标点符号用法。标号使用中应注意的问题：",
+      "text_sha256": "a4323592f69bfe7d5b95f96fb34c5957815d063602578d8bfaace3d3f2ff9673"
+    },
+    "B314": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[314]",
+      "index_base": 1,
+      "text": "（1）没有特殊含义的词语不要随便加引号。",
+      "text_sha256": "5ea511551eed67d59eecd9084db93a8642ab5bc945add84fccb61eee4d472ae6"
+    },
+    "B315": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[315]",
+      "index_base": 1,
+      "text": "（2）行文中用括号注释词语时，有句内括号和句外括号两种。句内括号总是紧跟在被注释词语之后。它的后面如果要加点号，点号要放在后括号之后，不能放在前括号前。句内括号里的语句末只能用问号和叹号，而不能用其他点号。注释整个句子的句外括号总是放在被注释句末的标点之后，括号里的话的末尾可以有句末点号。",
+      "text_sha256": "8f7420e30b57009a8f46e4ca54d72236c1f5eb9f39dd31b361f399fd3238069e"
+    },
+    "B316": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[316]",
+      "index_base": 1,
+      "text": "（3）不能随意扩大书名号的使用范围，诸如产品、奖品、单位、活动、课程、展览会、讨论会、交流会、研究项目等的名称不能使用书名号。",
+      "text_sha256": "de7f647074b13b1456f454274edb059a9443049b8b5d4c2b1bef68948664979c"
+    },
+    "B317": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[317]",
+      "index_base": 1,
+      "text": "（4）引号、括号、书名号这三种标号总是成对使用，行文中其前一半不可以出现在行末，后一半不可以出现在行首。",
+      "text_sha256": "89065ee71b9dd408fd2b68ac46b52de1628079094864f65ca7e936484642de4a"
+    },
+    "B318": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[318]",
+      "index_base": 1,
+      "text": "（5）破折号、中文省略号（6个点）占两个字符位置，中间不能断开，也不能断开转行。外文省略号3个点，占一个字符位置。",
+      "text_sha256": "91de333989d8da6418e27dccafdeb7660eb78e6059a81631d1c2fb4152def593"
+    },
+    "B319": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[319]",
+      "index_base": 1,
+      "text": "点号使用中应注意的问题：章标题、节标题、图题（包括分图题）、表题等均属于短语，其中间要慎用各类点号，带有序号的其末尾更不宜使用点号，特别是不能使用句号（英文为句点）。",
+      "text_sha256": "b7b1354b723fff46da7369bc0c8a8d45c0ba1fe58cf37edeec7b756c177c9be9"
+    },
+    "B320": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[320]",
+      "index_base": 1,
+      "text": "3.4  章、节标题",
+      "text_sha256": "e6729d31061f692aa126c0aa286a9ac6987851255f59561d74c21ad8a7cbf356"
+    },
+    "B321": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[321]",
+      "index_base": 1,
+      "text": "论文正文分章节撰写，每章应另起一面。各章标题字数一般应15字以内，用短语而非句子，末尾不加标点。标题中尽量不采用英文缩写词，对必须采用者，应使用本行业的通用缩写词。标题形式全文必须统一，层次设置要符合内容表述的要求，其格式如下：",
+      "text_sha256": "bbf588fb6421d3b738abfb6f89bc611c5b97e45c0702ac0c8dc1ae6cf8e3a2de"
+    },
+    "B322": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[322]",
+      "index_base": 1,
+      "text": "各章标题，例如：“第1章  引言”。",
+      "text_sha256": "8acf65034e1ac5a762273c348067a7d7b9dc91fa66f80bf8ab891004dcc4e9d6"
+    },
+    "B323": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[323]",
+      "index_base": 1,
+      "text": "章序号采用阿拉伯数字，章序号与标题之间空一个汉字符，采用三号字，中文采用黑体，英文和数字采用Arial体，居中书写，单倍行距，段前24磅，段后18磅。摘要、目录和列于目录中与章平级的其它部分的标题（如参考文献、附录、致谢等）也用这同一种格式。",
+      "text_sha256": "d9d1735d888eb3976355dcd25d69028d0dd742b787e1694a3547adef2cf91255"
+    },
+    "B324": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[324]",
+      "index_base": 1,
+      "text": "一级节标题，例如：“2.1  实验方法”。",
+      "text_sha256": "b46ec85fdd6d8f4ef6ee7e759f57d57017daea56bf8e6467027d5c33f009d409"
+    },
+    "B325": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[325]",
+      "index_base": 1,
+      "text": "节编号用阿拉伯数字表示，前边数字为上级章节的序号，后一数字为本节的顺序号。数字间用半角小数点“.”连接。节标题序号与标题名之间空一个汉字符（下同）。采用四号（14pt）字，中文采用黑体，英文和数字采用Arial体，居左书写，固定行距20磅，段前24磅，段后6磅。",
+      "text_sha256": "e90cfca8b607d05e229779a0cba4235cf3d1fc209f65a4c69b5cdca7610ff2b1"
+    },
+    "B326": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[326]",
+      "index_base": 1,
+      "text": "二级节标题，例如：“2.1.1  实验装置”。",
+      "text_sha256": "210601136fa23c2f7db008ddb4a916787c760d6303993ea13e775004eebfd50c"
+    },
+    "B327": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[327]",
+      "index_base": 1,
+      "text": "采用13pt字居左书写，中文采用黑体，英文和数字采用Arial体，固定行距20磅，段前12磅，段后6磅。",
+      "text_sha256": "1ec6836274b47dae0cff09f68470f1fed4322cac1edb8c07125998b4bd00635b"
+    },
+    "B328": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[328]",
+      "index_base": 1,
+      "text": "三级节标题，例如：“2.1.1.1  实验结果”。",
+      "text_sha256": "d411e3a8a68df4116bdd37ee109633fd943b3e826d289bff6aa348580bb9eb73"
+    },
+    "B329": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[329]",
+      "index_base": 1,
+      "text": "采用小四号（12pt）字，中文采用黑体，英文和数字采用Arial体，居左书写，固定行距20磅，段前12磅，段后6磅。一般不建议使用三级节标题，不得使用三级以下节标题。",
+      "text_sha256": "de4c77cbabc4dfda7ada1d493ff7bc4117f70aa3c041e8d16606d4c31af7070d"
+    },
+    "B330": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[330]",
+      "index_base": 1,
+      "text": "需要注意的是，要避免各级节标题及自设小标题与下面的文字段落之间跨页；各章级部分结束时，要尽量避免几个字或单行跨页；对带有序号的各级节标题、图题、表题等，要避免它们的标题、图名、表名等的首个数字易于与序号混淆的问题。",
+      "text_sha256": "105fa0c0fe2fa9e6feafc213af9d67ed984637d34f8ff5196de79d4465ffed8f"
+    },
+    "B331": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[331]",
+      "index_base": 1,
+      "text": "3.5  有关图、表和表达式",
+      "text_sha256": "dc2a27870a21e6c2f5e4158557709d0e3624c42d2a601b5ee7440624dce92011"
+    },
+    "B332": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[332]",
+      "index_base": 1,
+      "text": "图、表和表达式按章连续编号，用两个阿拉伯数字表示，前一数字为章的序号，后一数字为本章内图、表或表达式的顺序号。两数字间用半角小数点“.”连接。例如“图2.1”、“表5.6”、“式（1.2）”等等。各图、表不要出现在文中首次提及之前，又不要距之过远，更不应跨节。图、表的顺序应与文中论及的顺序相呼应，避免前后杂乱无章。",
+      "text_sha256": "89cfadb04b0b4b92deb31103d89488e680d29ce8b752bf7195614bbdf91919f4"
+    },
+    "B333": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[333]",
+      "index_base": 1,
+      "text": "3.5.1  插图",
+      "text_sha256": "69abc6e31aa3b2e3b8a18cbc126d050a62dfd9f4b0acd8b20b1a2fc0e9f3b3a4"
+    },
+    "B334": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[334]",
+      "index_base": 1,
+      "text": "插图一般由图、图题、图注构成。插图中的术语、符号、单位等应与正文表述所用一致。图序与图名合称图题，例如：“图2.1  2010年至2024年西藏地区年平均气温分布”。“图2.1”是图序，是“第二章第1个图”的序号，依次类推。",
+      "text_sha256": "9201a2f177d7816e5899789c6e48fcc66d5b7eebe4d29962c4b7c4ded68cd434"
+    },
+    "B335": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[335]",
+      "index_base": 1,
+      "text": "图中标注的文字采用9~10.5pt，以能够清晰阅读为标准。专用名词、代号、单位等可采用外文表示，坐标轴题名、词组、描述性的词语均须采用中文。",
+      "text_sha256": "1fde0c2ec828b3439bba7606ac5b7f7d6156a1b32b27c6ab977796a3c82e3049"
+    },
+    "B336": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[336]",
+      "index_base": 1,
+      "text": "图题置于图的下方。若有英文图题，另起一行置于中文图题下方。中文图题采用宋体（英文采用Times New Roman体）11pt，加粗，居中书写，单倍行距，段前6磅，段后0磅，图序与图名之间空一个汉字符，图名末尾不可加标点。",
+      "text_sha256": "3781c20cbe01a38485f7bf2911d01748b5fd3129123d7e13d8e82ccd773efaca"
+    },
+    "B337": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[337]",
+      "index_base": 1,
+      "text": "若有图注，图注置于图题下方。若有英文图题，则只需在英文图题下方给出英文图注。中文图注采用宋体（英文采用Times New Roman体）11pt，单倍行距，段前6磅，段后0磅。多个图注则须顺序编号，注序左缩进2个字符，与注文之间空1个字符。注文的字数较少且是短语时，末尾不可加标点，多个图注可以在同一行通过自由选取字符空格将各个图注间隔开来，下一行与首行序号左对齐；注文的字数较多或者甚至需要用句子说明时，该图注可以独立成行，续行悬挂缩进左对齐。",
+      "text_sha256": "deff412c034f1d6b6d5792b3acca28f56422d237c5f97bfc1a45945c1aba1296"
+    },
+    "B338": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[338]",
+      "index_base": 1,
+      "text": "如果插图中的图是由两个以上的分图组成时，则各分图要求分别以(a)、(b)、(c)……作为分图序，与分图名一起构成分图题。将分图题按图注处理，分图题的格式与图注同。",
+      "text_sha256": "73cf5ba6dd1aaf8590d4ac77bede31f54aec82a0911fa761491b3622e2ad1c90"
+    },
+    "B339": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[339]",
+      "index_base": 1,
+      "text": "不宜将多个插图连续排版，插图与文字论述段落应穿插排版，插图前后与文字段落之间须留有10磅空行。插图如果不得不与其它插图或表格连续排版，则它们之间须留有20磅空行。插图不允许跨页。",
+      "text_sha256": "6ce6aa5dbb1b12c78a2f45d38d9da4a5a004713aa06b535e56fefaca03a0f4b1"
+    },
+    "B340": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[340]",
+      "index_base": 1,
+      "text": "3.5.2  表格",
+      "text_sha256": "61bf8d635f34ac48119c3d876e96d78b8ac8d511b45f16b4786ee20f982100ca"
+    },
+    "B341": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[341]",
+      "index_base": 1,
+      "text": "表格一般由表、表题、表注构成。文字中文采用宋体，英文和阿拉伯数字采用Times New Roman体，字号11pt。",
+      "text_sha256": "85833fecdc19e6a8ec49555a00d8f0d89e63cecf7273bbffa93bb1550ebd0469"
+    },
+    "B342": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[342]",
+      "index_base": 1,
+      "text": "表单元格中的文字，单倍行距，段前3磅，段后3磅。表序与表名合称表题，表序与表名之间空一个汉字符，表名末尾不可加标点。例如：“表2.1  实验方式”，“表2.1”是表序，是“第二章第1个表”的序号，依次类推。表题置于表的上方，加粗，居中书写，单倍行距，段前6磅，段后0磅。若有英文表题，另起一行置于中文表题下方。",
+      "text_sha256": "8a35e2d08c46a0c2b3747ef3feb54244a5debbc70ef79b18d25864f45e60e71e"
+    },
+    "B343": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[343]",
+      "index_base": 1,
+      "text": "当表格较大而不能在一页内打印时，可以“续表”的形式另页打印，格式同前，只需在另页的表序前加“续”字即可，例如“续表2.1  实验方式”。续表均应重复给出横表头。",
+      "text_sha256": "040d32c56d1d87bf93477e70872eb12269e979da4f748aeaea768b3a6595b0ee"
+    },
+    "B344": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[344]",
+      "index_base": 1,
+      "text": "若表格有附注，则表注置于表的下方，单倍行距，段前6磅，段后0磅。多个表注则须顺序编号，注序左缩进2字，与注文之间空一字符，续行悬挂缩进左对齐，两端对齐。注文若是短语，末尾不可加标点。",
+      "text_sha256": "d1e320888c99beec841885176bb9c0badac3fda37b2beb0062287bb10b1907bf"
+    },
+    "B345": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[345]",
+      "index_base": 1,
+      "text": "不宜将多个表格连续排版，表格与文字论述段落应穿插排版，表格前后与文字段落之间须留有10磅空行。表格如果不得不与其它表格或插图连续排版，则它们之间须留有20磅空行。",
+      "text_sha256": "20b792b79ef3f024444f448a48434be1fe979993cfc24cbbd9210d53cdfd82d5"
+    },
+    "B346": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[346]",
+      "index_base": 1,
+      "text": "3.5.3  表达式",
+      "text_sha256": "8eb4afb0742bc61d9eef66d34d82e6920e25c0cf4acfc860f7726510bcc23d2b"
+    },
+    "B347": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[347]",
+      "index_base": 1,
+      "text": "表达式主要是指分章连续编有序号的数字表达式，例如数学公式，也包括文字表达式。表达式采用与正文相同的字号另起一段居中书写，或另起一段空两个汉字符书写，一旦采用了上述两种格式中的一种，全文都要使用同一种格式。较长的公式需要断开行时宜在=、≈、<、>、≠ 等关系符号或+、−、×、/ 等运算符号后断开换行。公式中分数线的横线其长度应等于或大于分子和分母中较长的一方。如正文中书写分数，宜将其高度降低为一行。如将分数线书写为“/”，将根号改为负指数。",
+      "text_sha256": "17efde2491af244481925d8791f2de39a52ae871d896e8a8d247be7279ba9035"
+    },
+    "B348": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[348]",
+      "index_base": 1,
+      "text": "例如：将写成或。",
+      "text_sha256": "2fcd9737c90a9551131a5617e31d6fc03af147b259b4ee2834d20df39ed8c00f"
+    },
+    "B349": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[349]",
+      "index_base": 1,
+      "text": "表达式的行距根据需要采用，段前6磅、段后6磅。",
+      "text_sha256": "a8fe3013bc51c69524ecb37e0b5712b062bc1f6913df4668d794130b44284aa8"
+    },
+    "B350": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[350]",
+      "index_base": 1,
+      "text": "表达式的序号用括号括起置于表达式右边行末，序号的字体、字号、行距与段落文字格式相同，序号与表达式之间不加任何连线。",
+      "text_sha256": "71fa75f37444ab31df2bf798bfe3db6273575f69362bbc7063f404fbf37d06c3"
+    },
+    "B351": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[351]",
+      "index_base": 1,
+      "text": "3.6  引用",
+      "text_sha256": "5a16ad7ca21f0c66ecf527382465e7ee7aa8c0ac921ab8cd4939a56d1893357c"
+    },
+    "B352": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[352]",
+      "index_base": 1,
+      "text": "引文是学术论著的重要组成部分，它标明文献之间的集成和发展关系。文中引文（包括观点、数据和材料等）须注明出处，可采用顺序编码制，也可采用著者-出版年制，但全文应统一，并在文末列出参考文献表。",
+      "text_sha256": "7a234826b60aaf1408d1b1c35a4cf8cc99892c06dc89d609ababc5c0a042cda5"
+    },
+    "B353": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[353]",
+      "index_base": 1,
+      "text": "引用本人发表及他人发表的论文均须规范，并保证无遗漏。否则，可能涉及科研诚信问题。",
+      "text_sha256": "bec05a44526ade14e6690512201a7d941227eb753eb1676fc903c786152b488a"
+    },
+    "B354": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[354]",
+      "index_base": 1,
+      "text": "3.7  注释",
+      "text_sha256": "05a4cdc59c462045c28507ff98c538d9a7c25a5ba5561d2ef99b875214bf01b9"
+    },
+    "B355": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[355]",
+      "index_base": 1,
+      "text": "当论文中的字、词或短语，需要进一步加以说明，而又没有具体的文献来源时，应用注释，注释的标注应符合CY/T 121的规定。",
+      "text_sha256": "5ef59ec1a2b5f38aa10de30904a9bbb6c3082d77c1726791a36267af72aa08db"
+    },
+    "B356": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[356]",
+      "index_base": 1,
+      "text": "应控制论文中的注释数量，不宜过多。",
+      "text_sha256": "7c834ad173696084dd13d4c1eae7bb5fd2ff16ce50bf8bb03776d3a6dc9b5210"
+    },
+    "B357": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[357]",
+      "index_base": 1,
+      "text": "由于学位论文篇幅较长，宜采用文中编号加脚注的方式，置于所注释正文所在页的底部。",
+      "text_sha256": "8f82ada043fb0c3eff6184ec0e0722b8ce0595c19866d16d5243bbeaeb366c18"
+    },
+    "B358": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[358]",
+      "index_base": 1,
+      "text": "3.8  页面设置",
+      "text_sha256": "4a176cfcbd59e9c5bc349d90a23004c5dd74c418cc4f151d2e13b8b41b53c91f"
+    },
+    "B359": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[359]",
+      "index_base": 1,
+      "text": "纸张大小：标准A4（21.0cm×29.7cm）尺寸。",
+      "text_sha256": "aac2760ba9b67b9221af239f2e40584c54c6c6d644574fa0db809b04a74d980b"
+    },
+    "B360": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[360]",
+      "index_base": 1,
+      "text": "页边距：上、下、左、右、装订线的页边距分别为：2.54cm，2.54cm，3.17cm，3.17cm，0cm。装订线位置：左。左右对称页边距。",
+      "text_sha256": "482c2b0dd4e5655e85a6ba0b7647930c2df8e6f52f6fe745d049d7f4ed5a827b"
+    },
+    "B361": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[361]",
+      "index_base": 1,
+      "text": "页眉：从“摘要”起到最后，每一页均须有页眉，页眉内容为章级标题。页眉距边界1.5cm，五号字体，中文宋体，英文Times New Roman体，单倍行距，居中。",
+      "text_sha256": "30844874a0532d175bcc85e7e8104dc4f05da7f583c2d53ae2e07d0a1f1f8593"
+    },
+    "B362": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[362]",
+      "index_base": 1,
+      "text": "页码：封面和原创声明不要页码，从“摘要”开始至“第1章”前结束，页码用罗马数字“Ⅰ、Ⅱ、Ⅲ……”表示；从“第1章”开始至论文结束，页码用阿拉伯数字“1、2、3……”表示。页码置于页脚中部，页脚距边界1.75cm，采用五号Times New Roman体，单倍行距，居中，数字两侧不加修饰线。",
+      "text_sha256": "7aa2c60c52ac6fd96dcc5e038a2bc9959ddd338fe5960576a30218f6d41e47c1"
+    },
+    "B363": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[363]",
+      "index_base": 1,
+      "text": "英文学位论文，格式要求同上，论文须用中文封面。（中国学生应用中文写作学位论文，如需使用英文写作等特殊情况须提前向学院申请，学院审核通过后，提交校学位委员会办公室备案。）",
+      "text_sha256": "b3dc1fb31c07f8d6ef2bfbeac92c070f66e886a79bee2ce7228a8125ae00fc99"
+    },
+    "B365": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[365]",
+      "index_base": 1,
+      "text": "参考文献",
+      "text_sha256": "edc3efb149a25b9613ce36ac49d50fa08fbda9e7b7120a27b83d2c9a69b24a3f"
+    },
+    "B366": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[366]",
+      "index_base": 1,
+      "text": "汪继祥. 科学出版社作者编辑手册[M]. 北京: 科学出版社, 2004. ",
+      "text_sha256": "7b9f2f57fc84d99e32a34e69178b4641f5ebb27ade8ce9144aa9aa1250d7a791"
+    },
+    "B367": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[367]",
+      "index_base": 1,
+      "text": "孙立广. 极地科学前沿与热点: 顶级期刊论文摘要汇编(1990-2010)[M]. 合肥: 中国科学技术大学出版社, 2016: 222.",
+      "text_sha256": "ffe60d3e02e2320eaa1a545c6d374db2cb735c67263fd362608e4b818ae4e5df"
+    },
+    "B368": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[368]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B369": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[369]",
+      "index_base": 1,
+      "text": "孔庆勇, 郭红建, 孔庆合. 我国科技期刊的金字塔分层模型及发展路径初探[J].中国科技期刊研究, 2015, 26(10): 1100-1103.",
+      "text_sha256": "cc03bac84273c245da5779ed25d5d8061ffa07835774fd3d8aae67509f6922b6"
+    },
+    "B370": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[370]",
+      "index_base": 1,
+      "text": "孙玉文. 汉语变调构词研究[D]. 北京: 北京大学，2000.",
+      "text_sha256": "b84bcf869acb9eadb4f0e8c907efea49f715d22600fd0dc6a1c48d79a1863ac2"
+    },
+    "B371": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[371]",
+      "index_base": 1,
+      "text": "姜锡洲. 一种温热外敷药制备方案: 88105607.3[P]. 1980-07-26.",
+      "text_sha256": "6d2f30b3daf15ba95c514e7918cc4cc87cab13dfff98b6ed301e4e42e253bbda"
+    },
+    "B372": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[372]",
+      "index_base": 1,
+      "text": "GB 3100—1993 国际单位制及其应用[S].",
+      "text_sha256": "59e60173d7969115b71447f1aca285543c5d537a79716568daae512332711346"
+    },
+    "B373": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[373]",
+      "index_base": 1,
+      "text": "傅刚, 赵承, 李佳路. 大风沙过后的思考[N/OL]. 北京青年报, 2000-04-12(14) [2002-03-06]. http://www.bjyouth.com.cn/Bqb/20000412/B/4216%5ED0412B1401. htm.",
+      "text_sha256": "cd0a6b9bc66df4ae42889c69313a333409126ac81fdd1697f9f22cac474e3740"
+    },
+    "B374": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[374]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B375": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[375]",
+      "index_base": 1,
+      "text": "Betts L R, Taylor CP, Sekuler AB. Aging reduces center-surround antagonism in visual motion processing[J]. Neuron, 2005, 45: 361-366.",
+      "text_sha256": "293724cb198bc534336415e75b2085e495d6a00134e37883fd61908538f60945"
+    },
+    "B376": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[376]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B377": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[377]",
+      "index_base": 1,
+      "text": "（使用顺序编码制）",
+      "text_sha256": "6c4c6b851fd8170266471b9c35cce715be7de3a8b21bcc6b80bc20291af612db"
+    },
+    "B379": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[379]",
+      "index_base": 1,
+      "text": "【说明：以上是“顺序编码制”索引文献时参考文献著录法，以下是“著者-出版年”制索引文献著录方法。全文参考文献索引方式只能选用“顺序编码制”或“著者—出版年制”其中之一，文献列表也应选择相对应的著录方法，此处作为示例列举了两种方式，实际撰写论文时不得混用。使用时，请删除此说明。】",
+      "text_sha256": "a0ceea856ba282521eb4efcd563d6eca50cbe3919b967e426ba12e2f3907d9ac"
+    },
+    "B381": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[381]",
+      "index_base": 1,
+      "text": "段凤魁, 贺克斌, 刘咸德, 等, 2007. 含碳气溶胶研究进展：有机碳和元素碳[J]. 环境工程学报(8): 1-8.",
+      "text_sha256": "f112ca604a73c31f2fd473ffa18fa1f331145e678b80025b5d7ced3b1f9aca77"
+    },
+    "B382": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[382]",
+      "index_base": 1,
+      "text": "Bond T C, Bergstrom R W, 2006. Light absorption by carbonaceous particles: an investigative review[J]. Aerosol Science and Technology, 40: 27-67.",
+      "text_sha256": "8582e72088ac16279585989daa4833a973a2e32da1817d727e13608595398cb4"
+    },
+    "B383": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[383]",
+      "index_base": 1,
+      "text": "Chiavari C, Rahmouni K, Takenouti H, et al., 2007. Composition and electrochemical properties of natural patinas of outdoor bronze monuments[J]. Electrochimica Acta, 52(27): 7760-7769.",
+      "text_sha256": "7c57c49f0a1fe564fd25df8ac5d2728ba3760aaf2daacda66a525a7be8b06099"
+    },
+    "B384": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[384]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B385": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[385]",
+      "index_base": 1,
+      "text": "附录A  学科门类名称中英文对照表",
+      "text_sha256": "d6a6c7633771b71e37af692f157a676f5e5f7c7d7135e361287b3385a0d8cd26"
+    },
+    "B387": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[387]",
+      "index_base": 1,
+      "text": "中文名称               英文名称 ",
+      "text_sha256": "fe3d9226814a9aedd178b38c9d1283bf98684c668c64ca103607d8903b764a1b"
+    },
+    "B388": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[388]",
+      "index_base": 1,
+      "text": "工学                   Engineering",
+      "text_sha256": "8cee979d73eac699b241708231ed997dab9042b004f1fb3e0ea83e28899cc804"
+    },
+    "B389": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[389]",
+      "index_base": 1,
+      "text": "理学                   Natural Science",
+      "text_sha256": "8535d286a4cfaabc95c269427abe51be2b385b33386e096b4f2e36859835b062"
+    },
+    "B390": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[390]",
+      "index_base": 1,
+      "text": "哲学                   Philosophy",
+      "text_sha256": "f7ca4ebcc49527c7772ab55c14e459dbc2169559b7497f1d00c81f9496dbf948"
+    },
+    "B391": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[391]",
+      "index_base": 1,
+      "text": "经济学                 Economics",
+      "text_sha256": "c6cfd1bbaaacf49e1cd0fe747ec90c6f7e0ea8a972d380e692c682b675a1a405"
+    },
+    "B392": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[392]",
+      "index_base": 1,
+      "text": "法学                   Law",
+      "text_sha256": "06a085ad51539c4f118348265857389bc349305b5351b25e27ebac4ca19dadcc"
+    },
+    "B393": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[393]",
+      "index_base": 1,
+      "text": "教育学                 Education",
+      "text_sha256": "fddcf579f83f0c6561bd7af9122685a9e304ab55ac5b5b08c79e471c478eb3a5"
+    },
+    "B394": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[394]",
+      "index_base": 1,
+      "text": "文学                   Literature",
+      "text_sha256": "ebd958db703e5826e83bc8c4657b10f2794489c9e4b3474c576ea60e17f4373f"
+    },
+    "B395": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[395]",
+      "index_base": 1,
+      "text": "历史学                 History",
+      "text_sha256": "5d196b8b36ea45fe7eaf83e8c261026added550d0388e6b0a2f9cda2cf64d4ad"
+    },
+    "B396": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[396]",
+      "index_base": 1,
+      "text": "管理学                 Management Science",
+      "text_sha256": "aaa57f0764da8249980f19a3aa6d1e906298de9f6be3d887aad1870f83eabca4"
+    },
+    "B397": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[397]",
+      "index_base": 1,
+      "text": "医学                   Medicine",
+      "text_sha256": "3425d1df90a7106de090968ec6104f926decaf27a8dbe99d8422a7d51f33c64a"
+    },
+    "B398": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[398]",
+      "index_base": 1,
+      "text": "艺术学                 Art",
+      "text_sha256": "c7966b424ab8d20bd8351ec110e586010d40a5a3dc568981e188ddaf2d1a9bb1"
+    },
+    "B399": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[399]",
+      "index_base": 1,
+      "text": "致谢",
+      "text_sha256": "0de1f1d0640647738ddf53eb2cd8e22eb6e41bfedbdde234e120f5ae14fb6c10"
+    },
+    "B400": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[400]",
+      "index_base": 1,
+      "text": "不知不觉在科大读研已七年，七年时间转瞬即逝，在这七年时间里也学会了很多，在此我要对指导过我的老师，帮助过我的同学，照顾过我的朋友说一声“谢谢”！",
+      "text_sha256": "edc1442b8af1d0141a2228f70d10bd4bd1f22445a5f85dd5a9a072b217f36333"
+    },
+    "B401": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[401]",
+      "index_base": 1,
+      "text": "首先感谢我的导师***，为我提供了读研的宝贵机会，使我能够继续深造并且很幸运地在科研的道路上前行。此论文是在导师的指导下完成的，他们在实验结果的讨论、论文的结构、撰写和修改等方面都提出了宝贵的意见，也提供了很多的帮助。导师深厚的学术功底，敏锐的科学洞察力，独到的见解使我受益良多，也会深刻影响我以后的工作和生活。在此，向他们致以最诚挚的感谢！",
+      "text_sha256": "9d45834f773799d515edea503d2df065983be5af66d5abf710c4ba8c690a59fd"
+    },
+    "B402": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[402]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B404": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[404]",
+      "index_base": 1,
+      "text": "                                             2026年6月",
+      "text_sha256": "34ade429487115ce1e3c7de95bcc2d605d1837e34310f0cfcb053468713d5efc"
+    },
+    "B405": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[405]",
+      "index_base": 1,
+      "text": "在读期间取得的科研成果",
+      "text_sha256": "5886881bbe35a5d260cade8856b715a6c6e28be3b4119cae6b44a2868b62579c"
+    },
+    "B406": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[406]",
+      "index_base": 1,
+      "text": "期刊论文：",
+      "text_sha256": "d17a9c0a2f76f1ec1db0b2d9543a01d52205883ff5e37b1b33ff3e08027a9be5"
+    },
+    "B407": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[407]",
+      "index_base": 1,
+      "text": "xx.中国科学技术大学研究生学位论文撰写规范.中国科学技术大学学报，2024,1.",
+      "text_sha256": "8940f6bbfd6ed917fdbea03b16ca8e2af61085274bf9e902fbb1b168c49e8d83"
+    },
+    "B408": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[408]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B410": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[410]",
+      "index_base": 1,
+      "text": "发明专利：",
+      "text_sha256": "e5665682dc238a5a3d72f3ed352118f63df2588c6f0f8bf4ca8daa388df42f60"
+    },
+    "B411": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[411]",
+      "index_base": 1,
+      "text": "xx.一种温热外敷药制备方案. 授权号：CN123456789B，2023-08-12.",
+      "text_sha256": "0fefe1f1c286e8db7f1371a9892443cce1ec5f767e760c413702427b988c3f66"
+    },
+    "B412": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[412]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B414": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[414]",
+      "index_base": 1,
+      "text": "会议论文：",
+      "text_sha256": "3955a6d90131abf69e3e0066ad40c389efcb30333a466fab03099ed81c043a8f"
+    },
+    "B415": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[415]",
+      "index_base": 1,
+      "text": "xx.关于人工智能在学位授予工作的应用，人工智能国际研讨会，2023,12.",
+      "text_sha256": "0ef54417009b471c88f43547e76fe086a12db8cc030f189b7b913b7ee453d10c"
+    },
+    "B416": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[416]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B418": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[418]",
+      "index_base": 1,
+      "text": "参与的科研项目：",
+      "text_sha256": "4829cdc8183862a45bff4d5b233862900eadf61df0385785a863e75126ee9a60"
+    },
+    "B419": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[419]",
+      "index_base": 1,
+      "text": "智能计算板卡与整机，科技委重点项目-课题，2018-2020.",
+      "text_sha256": "d3ac3af55bcbba4fe9613c0905d5df86f1b9bc98bd43469325795004fbfd7d91"
+    },
+    "B420": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[420]",
+      "index_base": 1,
+      "text": "……",
+      "text_sha256": "a7f878b8ced1a7957c560d573e30ddbbc1696e38c370513aacbbf4bff12e7f43"
+    },
+    "B424": {
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[424]",
+      "index_base": 1,
+      "text": "【说明：此部分内容文字宋体12磅（英文用Times New Roman 12磅），固定行距20磅，段前段后0磅；科研成果包括已发表论文，会议论文，获得的专利、软件著作权、重要科技成果奖，参与的科研项目，撰写的行业标准等，建议分类列出，并在每个分类里按照发表时间由近及远顺序列出。使用时，请删除此说明。】",
+      "text_sha256": "52c8c542fbb0dca924e5496a87bba920847c6eb05003b5b09d54df31f47c0588"
+    }
+  }
+}

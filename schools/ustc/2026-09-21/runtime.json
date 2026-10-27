@@ -1,0 +1,1016 @@
+{
+  "special_headings": {
+    "摘要": [
+      "abstract_zh_heading",
+      "abstract_zh_body"
+    ],
+    "abstract": [
+      "abstract_en_heading",
+      "abstract_en_body"
+    ],
+    "目录": [
+      "toc_heading",
+      "toc"
+    ],
+    "参考文献": [
+      "peer_heading",
+      "reference_entry"
+    ],
+    "致谢": [
+      "peer_heading",
+      "acknowledgements_body"
+    ],
+    "后记": [
+      "peer_heading",
+      "acknowledgements_body"
+    ],
+    "插图清单": [
+      "figure_list_heading",
+      "figure_list_entry"
+    ],
+    "附表清单": [
+      "table_list_heading",
+      "table_list_entry"
+    ],
+    "插图和附表清单": [
+      "combined_list_heading",
+      "figure_list_entry"
+    ],
+    "符号和缩略语说明": [
+      "peer_heading",
+      "symbol_entry"
+    ],
+    "创新性说明": [
+      "peer_heading",
+      "innovation_body"
+    ],
+    "创新性及应用性说明": [
+      "peer_heading",
+      "innovation_body"
+    ],
+    "在读期间取得的科研成果": [
+      "peer_heading",
+      "research_achievement_entry"
+    ]
+  },
+  "patterns": {
+    "degree": "(硕士|博士)(?:研究生)?(?:学位|毕业)论文",
+    "chapter_detect": "^第\\s*[一二三四五六七八九十百零〇0-9０-９]+\\s*章[\\s\\u3000]+\\S",
+    "toc_style": "\\bTOC\\s*\\d|目录\\s*\\d|[一二三四五六]级目录",
+    "heading_style": "heading|标题",
+    "keywords_zh": "^关键词\\s*[:：]",
+    "keywords_en": "^KEY\\s*WORDS\\s*[:：]",
+    "toc_level": "(?:\\bTOC|目录)\\s*([123])",
+    "toc_level_chinese": "([一二三])级目录",
+    "caption_detect": "^[图表]\\s*\\d+[.\\-－]\\d+(?:[\\s\\u3000]+|[:：])\\S",
+    "caption_style": "Caption|题注",
+    "school_identity": "中国科学技术大学|University of Science and Technology of China",
+    "chapter_parts": "^第\\s*([一二三四五六七八九十零〇\\d]+)\\s*章\\s*(.*)",
+    "caption_parts": "^([图表])\\s*([A-Z\\d]+)([.\\-－])(\\d+)(.*)",
+    "cover_date": "([二〇零一三四五六七八九十\\d]{4})年\\s*([一二三四五六七八九十\\d]{1,2})月",
+    "security_label": "(限制|控阅)\\s*([^\\n]*)",
+    "keyword_prefix": "^(?:关键词|KEY\\s*WORDS)\\s*[:：]\\s*",
+    "school_code": "学校\\s*代码\\s*[:：]?\\s*(\\d+)",
+    "innovation_heading": "创新性(?:及应用性)?说明",
+    "template_instructions": "【(?:注|说明)[：:][^】]*(?:二选一|请删除|学籍|必填|确保整齐)[^】]*】",
+    "thesis_title": "论文题目|论文题名|题目|题名",
+    "keyword_label": "^(?:关键词\\s*[:：]|KEY\\s*WORDS\\s*[:：])",
+    "title_page_signals": "中图分类号|UDC",
+    "introduction_fallback": "引言|绪论",
+    "conclusion_fallback": "结论|总结与展望",
+    "classification_placeholder": "UDC|学校|[xX×]{2,}|待填",
+    "protected_punctuation": "《[^》]*》|“[^”]*”|‘[^’]*’|\"[^\"]*\"|\\[[^\\]]*\\]|(?:https?://|doi:)\\S+",
+    "date_components": "\\s*[:：]?\\s*(\\d{4})年\\s*(\\d{1,2})月\\s*(\\d{1,2})日",
+    "section_detect": "^([1-9]\\d*(?:\\.[1-9]\\d*){1,5})[\\s\\u3000]+\\S",
+    "numeric_citation_detect": "\\[\\d+(?:\\s*[,，–—-]\\s*\\d+)*\\]",
+    "author_year_citation": "[（(][A-Za-z\\u4e00-\\u9fff][^()（）\\n]{0,60}[,，]\\s*(?:19|20)\\d{2}[a-z]?[）)]",
+    "display_equation_text": "\\s*(?:[._─—-]*[（(]?[A-Z\\d]+[.\\-]\\d+[）)]?)?\\s*",
+    "numeric_reference_detect": "^\\s*\\[\\d+\\]",
+    "toc_hyperlink": "HYPERLINK.*_Toc",
+    "achievement_heading": "^(?:攻读.*学位.*期间.*(?:成果|科研情况)|在读期间.*成果)$",
+    "appendix_heading": "附\\s*录(?:\\s*[A-ZＡ-Ｚ])?(?:[\\s\\u3000]+.*)?",
+    "degree_kind": "学位(?:类型|类别)\\s*[:：]\\s*(学术|专业|工程)",
+    "symbol_sort_key": "\\s*([A-Za-zΑ-Ωα-ω]+)",
+    "appendix_key": "附录[A-ZＡ-Ｚ].*",
+    "equation_number": "[A-Z\\d]+[.\\-]\\d+",
+    "note_sequence": "^注\\s*(\\d+)",
+    "chapter_in_appendix": "^第.*章",
+    "academic_degree_kind": "学位(?:类型|类别)\\s*[:：]\\s*学术",
+    "greek_symbols": "[α-ωΑ-Ω]",
+    "abbreviations": "[（(]([A-Z]{2,8})[）)]",
+    "title_delimiter": "[:：]",
+    "note_label": "^注\\s*(?:\\d+[.、)）]?\\s*|[:：])",
+    "note_style": "图注|表注|分图题",
+    "subfigure_label": "^\\([a-z]\\)\\s*\\S",
+    "terminal_punctuation": "[，。；：！？,.!?:;]$",
+    "security_duration": "[一二三四五六七八九十\\d]+\\s*年",
+    "ai_heading": "(?:使用|未使用)人工智能工具声明",
+    "chapter_prefix": "^第\\s*[一二三四五六七八九十零〇\\d]+\\s*章\\s*",
+    "equation_number_parentheses": "[（(][A-Z\\d]+[.\\-]\\d+[）)]",
+    "equation_connector": "[._─—-]{2,}",
+    "english_keyword_bad_separator": ",\\S|，",
+    "toc_excluded_heading": "^(?:摘\\s*要|ABSTRACT|目\\s*录|原创性声明|创新性说明|人工智能工具声明)(?:\\s|\\d|[.．]|$)",
+    "list_entry_number": "^[图表]?\\s*([A-Z\\d]+)[.\\-－](\\d+)",
+    "reference_number": "^\\s*\\[(\\d+)\\]",
+    "numeric_citation_parts": "\\[([\\d,，;；\\s–—\\-]+)\\]",
+    "reference_author": "^\\s*(?:\\[\\d+\\]\\s*)?([^,，.。]+)",
+    "section_parts": "^(\\d+(?:\\.\\d+)+)(\\s*)(.*)",
+    "heading_gap": "^(?:第\\s*[一二三四五六七八九十零〇\\d]+\\s*章|\\d+(?:\\.\\d+)+)(\\s*)\\S",
+    "achievement_date": "\\b((?:19|20)\\d{2})(?:[年./-](0?[1-9]|1[0-2]))?",
+    "latin_author": "[A-Za-z][A-Za-z\\s\\-\\']*",
+    "chinese_author": "[\\u4e00-\\u9fff、\\s]+",
+    "appendix_title": "^附\\s*录\\s*[A-ZＡ-Ｚ]\\s+\\S",
+    "numeric_citation_span": "\\[[\\d,，;；\\s–—\\-]+\\]",
+    "page_decoration": "[—–_─－]",
+    "section_depth": "^([1-9]\\d*(?:\\.[1-9]\\d*)+)\\s",
+    "reference_title": "[.。．]\\s*(.+?)\\[[A-Z]{1,3}(?:/[A-Z]{1,3})?\\]",
+    "embedded_chinese": "[\\u3400-\\u9fff][\\u3400-\\u9fff，。；：！？（）“”‘’、\\s]*",
+    "object_mention": "{kind}\\s*{prefix}[.\\-－]{number}(?!\\d)",
+    "appendix_parts": "^\\s*附\\s*录\\s*(?:([A-ZＡ-Ｚ])(?=\\s|$)\\s*)?(.*?)\\s*$",
+    "appendix_gap": "^附\\s*录\\s*[A-ZＡ-Ｚ]\\u3000\\S",
+    "number_parts": "([A-Z\\d]+)([.\\-－])(\\d+)",
+    "linked_number": "{label}\\s*[（(]?({number})(?![\\dA-Z])",
+    "bare_appendix_reference": "(?<=见)(附\\s*录)(?!\\s*[A-ZＡ-Ｚ])",
+    "named_appendix_reference": "(附\\s*录\\s*{letter})(?![A-ZＡ-Ｚ])"
+  },
+  "front_paragraph_limit": 60,
+  "language_sample_characters": 10000,
+  "english_ratio": 4,
+  "english_min_characters": 200,
+  "heading_max_characters": 100,
+  "caption_max_characters": 200,
+  "section_depth_limit": 3,
+  "early_list_headings": {
+    "插图": [
+      "figure_list_heading",
+      "figure_list_entry"
+    ],
+    "表格": [
+      "table_list_heading",
+      "table_list_entry"
+    ]
+  },
+  "chapter_titles": [
+    "绪论",
+    "引言",
+    "结论",
+    "总结与展望",
+    "结论与展望"
+  ],
+  "introduction_titles": [
+    "引言",
+    "绪论",
+    "绪言"
+  ],
+  "conclusion_titles": [
+    "结论",
+    "总结",
+    "结论与展望",
+    "总结与展望",
+    "总结与讨论"
+  ],
+  "acknowledgement_titles": [
+    "致谢",
+    "后记"
+  ],
+  "appendix_prefix": "附录",
+  "figure_label": "图",
+  "table_label": "表",
+  "toc_chinese_levels": "一二三",
+  "toc_role_levels": {
+    "1": "toc_chapter_entry",
+    "2": "toc_section1_entry",
+    "3": "toc_section2_entry"
+  },
+  "degree_values": {
+    "硕士": "master",
+    "博士": "doctor"
+  },
+  "date_labels": [
+    [
+      "提交日期",
+      "date.value"
+    ],
+    [
+      "学位授予日期",
+      "context.degree_award_date"
+    ]
+  ],
+  "classification_labels": {
+    "classification.clc_filled": "中图分类号",
+    "classification.udc_filled": "UDC(?:分类号)?"
+  },
+  "classification_value_pattern": "[ \\t\\u3000]*[:：]?[ \\t\\u3000]*([^\\n]*)",
+  "keyword_split": {
+    "zh": "[;；]",
+    "en": ",\\s*"
+  },
+  "keyword_separators": {
+    "zh": [
+      ";",
+      "；"
+    ],
+    "en": ", "
+  },
+  "symbol_count_observable_from": 7,
+  "object_count_observable_from": 7,
+  "reference_hanging_characters": [
+    2,
+    4
+  ],
+  "reference_language_first": "zh",
+  "reference_han_sample": 30,
+  "note_layout": {
+    "figure_note": {
+      "paragraph.left.char": 2
+    },
+    "table_note": {
+      "paragraph.left.char": 2,
+      "paragraph.align": "both"
+    }
+  },
+  "equation_layouts": {
+    "center": {
+      "paragraph.align": "center",
+      "paragraph.firstLine.char": 0
+    },
+    "indent": {
+      "paragraph.align": "left",
+      "paragraph.firstLine.char": 2
+    }
+  },
+  "transforms": {
+    "reference_indent": {
+      "paragraph.left.char": 2,
+      "paragraph.hanging.char": 2
+    },
+    "equation_line": {
+      "mode": "single"
+    }
+  },
+  "foreign_abstract_order": [
+    "en",
+    "zh"
+  ],
+  "innovation_application_marker": "应用",
+  "innovation_degree_required": "doctor",
+  "innovation_exempt_degree": "master",
+  "reference_titles": [
+    "参考文献"
+  ],
+  "messages": {
+    "page.is_landscape": "本节为横向页面。论文默认竖向，横向通常仅用于整页图表；请确认确有需要，系统保留当前方向。",
+    "structure.acknowledgements_present": "论文中未发现致谢或后记，建议补充致谢部分。",
+    "structure.introduction_present": "正文未发现引言或绪论章节标题，请补充相应章节。",
+    "structure.conclusion_present": "正文未发现结论或明确同义章节标题，请补充相应章节。"
+  },
+  "equation_layout_checks": {
+    "center": {
+      "paragraph.align": "center"
+    },
+    "indent": {
+      "paragraph.align": "left",
+      "paragraph.firstLine.char": 2
+    }
+  },
+  "section_separator": ".",
+  "note_indent_from_count": 2,
+  "guidance": {
+    "text.normalized": {
+      "problem": "所选USTC规范要求学校代码为{expected}，此处为{before}。",
+      "action": "先确认论文应采用哪所学校的规范；确属中科大时，再在题名页核对学校代码。原稿属于其他学校时，请换用适用规范，不要为消除提示直接改学校代码。",
+      "reason": "学校代码标识所属院校，不是普通排版属性；工具不能替作者改变学校归属。"
+    },
+    "label.text": {
+      "problem": "关键词标签当前写作“{before}”，本规范要求“{expected}”。",
+      "action": "只选中关键词标签及冒号，将其改为“{expected}”，保留后面的关键词文本；有域或链接时保留其结构。",
+      "reason": "当前版本未提供能保留标签中域、链接和文字片段边界的安全替换；因此只提示标签格式，不重建整段。"
+    },
+    "keywords.confirmed_count": {
+      "problem": "按当前分隔写法识别到{before}项关键词，本规范要求的条数为{expected}。",
+      "action": "先将不同关键词之间的分隔符整理为规范写法，再复查条数；不要把词组内的标点当分隔符。条数仍不符时由作者确认关键词列表。",
+      "reason": "分隔不清时，识别条数可能不等于实际词组数；工具不能决定如何拆词或增删关键词。"
+    },
+    "keywords.zh_separator": {
+      "problem": "这组中文关键词的分隔方式未符合半角或全角分号的要求。",
+      "action": "只在两个完整关键词之间改用“；”或“;”，不要替换术语内部的标点，然后重新检查关键词条数。",
+      "reason": "当前不能可靠确认每个词组的边界；整段替换逗号可能误拆术语，因此保留原文。"
+    },
+    "keywords.en_separator": {
+      "problem": "这组英文关键词未全部采用半角逗号加一个空格的分隔写法。",
+      "action": "确认每个完整关键词的边界，只将词组之间的分隔整理成“, ”，保留词组内部标点。",
+      "reason": "逗号可能属于术语、名称或嵌入的文字；工具未可靠确定这些边界，不执行整段替换。"
+    },
+    "keywords.en_initial_letters_uppercase": {
+      "problem": "部分英文关键词的首字母未符合大写形式。",
+      "action": "逐个核对关键词首字母；普通词组按规范大写，专名、公式或符号按其约定写法保留。",
+      "reason": "专名和符号的大小写可能有特定含义；工具不判断术语的正确拼写，因此不自动改字母。"
+    },
+    "lists.fields_present": {
+      "problem": "这份图表清单中未识别到可更新的自动清单域。",
+      "action": "在Word中先为对应图、表设置题注，再使用“引用→插入图表目录”生成清单；已有自动清单可右键更新整个目录。",
+      "reason": "自动清单必须与具体题注建立域关联；当前版本不重建手工清单，以免覆盖原有条目或链接。"
+    },
+    "lists.entries_complete": {
+      "problem": "按已识别的编号，图表清单与正文题注未完全对应。{details}",
+      "action": "先更新整个图表目录，再对照正文题注补查缺项、多项或旧编号；只调整清单的编号对应，不补写题名内容。",
+      "reason": "当前尚未建立每个清单条目、题注及页码的完整可靠链接；直接增删条目可能删错对象或写入错误页码。"
+    },
+    "lists.figure_before_table": {
+      "problem": "已有清单中，插图清单与附表清单的排列顺序不符合图在表前的要求。",
+      "action": "在目录后将插图清单放在附表清单之前，保留各自题注域并更新页码。",
+      "reason": "移动清单还会影响分节、分页与域范围；工具未验证实际版面，不直接搬动整块清单。"
+    },
+    "lists.after_toc_new_page": {
+      "problem": "图表清单的位置或起页方式未符合目录后另起一面的要求。",
+      "action": "把已有清单放在目录后，在清单前设置适用的分页或分节，再检查页码。",
+      "reason": "移动清单会连带改变分节和页码；没有经过Word分页核验，不能保证自动移动后的版面正确。"
+    },
+    "lists.figure_table_present": {
+      "problem": "当前已识别{figure_table_count}个图表，未发现图表清单。",
+      "action": "建议在目录后制作插图清单、附表清单或合并清单；在Word中使用题注生成图表目录。",
+      "reason": "这是达到推荐数量后的结构建议；生成清单需要核对题注与页码，工具不自动插入新的目录结构。"
+    },
+    "symbols.list_present": {
+      "problem": "当前已识别{symbol_count}项不同符号或缩略语，未发现专门说明表。",
+      "action": "建议在正文前设置符号和缩略语说明表，由作者填写已有符号的名称和释义。",
+      "reason": "数量达到推荐门槛后仅作结构提醒；工具不能从符号本身可靠推断其含义或代填释义。"
+    },
+    "symbols.initial_order_valid": {
+      "problem": "说明表条目的首字母顺序不一致。",
+      "action": "只按各条目首字母核对排列次序，移动时连同该条完整释义一起移动。",
+      "reason": "条目可能跨行或包含合并单元格；尚未可靠确定整条边界，自动排序可能拆散符号与释义。"
+    },
+    "symbols.position_valid": {
+      "problem": "符号说明的位置在已识别的正文之后。",
+      "action": "核对该部分是否确为符号说明；如是，将其放到目录后、正文前的相应位置。",
+      "reason": "移动整块说明会改变分节、页码和表格位置；工具未完成这些关联的版面验证。"
+    },
+    "numbering.digits": {
+      "problem": "这处章或节标题的编号形式为{before}，本规范要求{expected}。",
+      "action": "通过Word多级列表统一标题编号，设置本规范要求的数字形式；随后更新目录和交叉引用，勿只修改一个显示编号。",
+      "reason": "标题编号可能还被目录、域和正文引用；当前未建立所有关联，单改标题可能造成前后编号不一致。"
+    },
+    "numbering.separator": {
+      "problem": "这里编号内部的连接符为“{before}”，本规范要求“{expected}”。",
+      "action": "只整理编号内部的连接符，并同步检查正文中引用该编号的地方；不要全局替换正文或公式里的减号。",
+      "reason": "相同符号也可能出现在公式或普通文字中；当前没有可靠的全篇编号关联，不能安全地全局替换。"
+    },
+    "numbering.valid_hierarchy": {
+      "problem": "这处标题编号与已识别的上级编号或同级递增顺序不一致。",
+      "action": "在Word导航窗格核对所属层级，再使用多级列表续编编号；更新目录和相关交叉引用。",
+      "reason": "编号调整必须同时照顾层级、目录和引用；当前没有足够可靠的完整关联，不直接重编。"
+    },
+    "numbering.chapter_sequence_valid": {
+      "problem": "该题注编号与所在章或附录的编号范围、连续顺序不一致。",
+      "action": "对照本章或本附录的图、表、公式编号，按各自序列核对章号及递增顺序；同时更新文中的对应引用。",
+      "reason": "不能只改一个显示编号；未建立全部题注与文内引用的可靠关联，自动重编号可能指向另一个对象。"
+    },
+    "numbering.appendix_sequence_valid": {
+      "problem": "附录中的图、表或公式编号没有使用本附录字母及独立连续序号。",
+      "action": "核对本附录内各类对象的顺序，并同步更新引用它们的文字。",
+      "reason": "该对象的自动编号域、书签或引用关系不能完整对应，或原编号有歧义；请在Word中核对所指对象后修改编号并更新交叉引用，避免引用错位。"
+    },
+    "numbering.separate_from_body": {
+      "problem": "附录中的图、表或公式编号没有使用本附录字母及独立连续序号。",
+      "action": "核对本附录内各类对象的顺序，并同步更新引用它们的文字。",
+      "reason": "该对象的自动编号域、书签或引用关系不能完整对应，或原编号有歧义；请在Word中核对所指对象后修改编号并更新交叉引用，避免引用错位。"
+    },
+    "title.has_terminal_punctuation": {
+      "problem": "这处标题末尾检测到标点，与本规范要求的标题收尾形式不一致。",
+      "action": "检查末尾符号：若只是句末标点，删除；若属于公式、缩略词或专名的一部分，保留并按适用规范核对。",
+      "reason": "工具无法只凭末尾符号判断其是否属于专名或公式；自动删除可能改变原有表达，因此不改文字。"
+    },
+    "first_mention.precedes_object": {
+      "problem": "按已识别的编号，这个图表位于正文首次提及它的位置之前。",
+      "action": "对照对应编号检查前文引用；确认没有更早引用后，在Word中将图表连同题注移到首次提及之后的合适位置。",
+      "reason": "移动对象会影响锚点、题注和分页；后台未核验实际版面，不能保证自动搬动后仍正确关联。"
+    },
+    "first_mention.same_section": {
+      "problem": "这处图表与已识别的首次提及不在同一节。",
+      "action": "核对前文相同编号，确认首次引用所属节；在Word中协调图表、题注和该节的位置。",
+      "reason": "自动搬动可能改变对象锚点和章节版面；当前未验证这些关联，保留原位置。"
+    },
+    "mention_order.matches_object_order": {
+      "problem": "文中首次提及图表的顺序与图表排列顺序不一致。",
+      "action": "沿正文逐个核对图表编号与首次提及次序，再协调图表位置和引用顺序。",
+      "reason": "程序不能替作者选择应调整引用顺序还是对象位置，且移动可能影响分页；因此不自动重排。"
+    },
+    "caption.position": {
+      "problem": "匹配的题注位于对象的{before}方，本规范要求位于{expected}方。",
+      "action": "在Word中确认题注对应的图或表，只移动这段题注到规范位置，随后核对题注域、分页及引用。",
+      "reason": "题注位置涉及对象对应关系和实际分页；工具没有Word版面核验结果，不自动搬动段落。"
+    },
+    "citation.superscript": {
+      "problem": "该段存在尚未设为上标的文内引用编号。",
+      "action": "只选中需要上标的方括号及编号（例如[1]），在Word“开始→字体”中设置上标；不要把正文或文后参考文献条目的序号一起设为上标。",
+      "reason": "当前版本没有只调整每个引用标记且保留域及正文格式的安全写入方法；整段设为上标会误改正文，所以保留原格式。"
+    },
+    "citation.brackets": {
+      "problem": "这处文内引用的括号形式为{before}，本规范要求方括号。",
+      "action": "只核对文内引用标记，按规范使用方括号；保留编号并检查其文后对应条目。",
+      "reason": "括号可能与公式、域或其他文字相邻；当前没有可靠的受保护标记替换方法，不作全段替换。"
+    },
+    "references.order_matches_citation_number": {
+      "problem": "全文已识别的文内首次引用顺序与文后条目编号顺序不一致。这是全文关联提醒，不表示批注所在编号本身一定要改。",
+      "action": "先沿正文核对首次引用次序，再用原有文献管理器或Word交叉引用工具统一更新编号及文后条目；最后更新所有引用域。",
+      "reason": "目前未建立每一处文内引文与文后条目的完整可靠关联；直接改号或重排可能使引用指向其他文献，所以保留原编号。"
+    },
+    "references.number_hangs_outside": {
+      "problem": "文后条目的编号未形成悬挂在文字外侧的缩进关系。当前：{observed}。",
+      "action": "只选中这条参考文献，在Word“段落→特殊格式”中设置悬挂缩进，使续行与条目文字左侧对齐，编号留在外侧；不要更改文献内容。",
+      "reason": "此编号制度没有给出统一的悬挂字符数；不同编号宽度还会影响位置，工具不能任选一个数值套用。",
+      "observe": [
+        "paragraph.left.char",
+        "paragraph.hanging.char"
+      ]
+    },
+    "references.hanging_indent_valid": {
+      "problem": "文献条目的悬挂缩进未符合本规范。当前：{observed}。",
+      "action": "只调整这条文献的段落缩进，核对续行与文献文字的对齐；保持原有编号及引用关联。",
+      "reason": "条目含有自动编号、域或未可靠确认的边界时，不能直接覆盖缩进，以免编号或链接错位。",
+      "observe": [
+        "paragraph.left.char",
+        "paragraph.hanging.char"
+      ]
+    },
+    "references.language_groups_valid": {
+      "problem": "按已识别的文献语言分组，文种排列未符合本规范。",
+      "action": "核对条目分组后，连同每一条完整文献一起调整次序，保留文内引用对应关系。",
+      "reason": "带域、书签、批注或跨段条目的完整边界尚未可靠确认；移动可能拆开条目或破坏引用。"
+    },
+    "references.author_order_valid": {
+      "problem": "按已识别的著者排序键，文后条目次序不符合本规范。",
+      "action": "核对著者排序形式，再由原有文献管理工具对完整条目排序；不要逐个改正文引用。",
+      "reason": "当前仅能安全移动无域、无批注等关联的连续完整条目；这处未满足安全条件，因此保留原顺序。"
+    },
+    "references.citation_targets_exist": {
+      "problem": "部分已识别的文内引用编号没有找到对应文后条目。",
+      "action": "对照文内编号与文后编号，检查是否只是编号、域或条目排版导致未对应；由作者确认应保留的引用关联。",
+      "reason": "编号未对应不能说明文献内容应如何增删；工具不生成文献资料，也不猜测应指向哪一条。"
+    },
+    "references.entries_have_citations": {
+      "problem": "部分文后条目编号未找到对应的文内引用标记。",
+      "action": "核对文内引用是否漏标、编号不同或采用了另一种标注形式；不要仅凭这条提示删除参考文献。",
+      "reason": "未找到标记不等于文献无用或不真实；工具只核对可识别的编号关联，不决定资料是否应保留。"
+    },
+    "references.after_body": {
+      "problem": "参考文献后仍检测到正文段落，位置关系不符合本规范。",
+      "action": "在Word导航窗格确认正文结束处及参考文献标题；如果是标题样式导致误分区，先修正标题样式，再复查。",
+      "reason": "整块移动涉及真实结构边界和分页；工具不凭段落顺序猜测应移动哪些论述内容。"
+    },
+    "references.split_by_chapter": {
+      "problem": "检测到多处参考文献标题，可能形成分章列表。",
+      "action": "核对这些标题是否确属参考文献，按适用规范整理为集中或允许的分章形式，并保留引用关联。",
+      "reason": "合并列表需要处理重复编号和引用对应；工具未建立全部关联，不自动合并或删除条目。"
+    },
+    "appendix.letter_sequence_valid": {
+      "problem": "附录字母编号没有形成从A开始的连续顺序。",
+      "action": "将已有附录标题按“附录A”“附录B”等顺序排版；只有一份也标为“附录A”，并同步检查正文中的附录引用。",
+      "reason": "多个附录的字母与引用不能唯一对应，或标题包含无法安全处理的域；请按实际顺序编号并同步更新目录及引用。"
+    },
+    "appendix.has_title": {
+      "problem": "附录编号所在的标题段未识别到标题名称。",
+      "action": "请把附录题名与编号放在同一标题段，间隔一个汉字符；如果下一段已经是题名，可将它移到编号之后，不必重新拟写。",
+      "reason": "工具不能确认下一段是否就是题名，不自动移动段落或代写标题；请由作者确认。"
+    },
+    "structure.chapter_section_page_breaks": {
+      "problem": "部分相邻章级部分没有以开始新页的分节符分开。{details}",
+      "action": "在列出的后一个章级标题前，使用Word“布局→分隔符→分节符：下一页”；检查新增节的页眉链接和页码连续性，不要用反复回车代替。",
+      "reason": "插入分节符会影响页眉链接、页码和单双页位置；后台未验证实际分页，不能保证自动插入后这些设置仍正确。"
+    },
+    "structure.introduction_present": {
+      "problem": "未识别到引言或绪论的独立章节标题。",
+      "action": "若该部分已经存在，请将现有标题设为独立章级标题并确认其名称可识别；确实缺少时，按适用规范补齐结构后重新检查。",
+      "reason": "工具不能从其他段落推断这部分是否已经写好，不能替作者生成章节文字或擅自移动论述内容。"
+    },
+    "structure.conclusion_present": {
+      "problem": "未识别到结论的独立章节标题。",
+      "action": "若该部分已经存在，请将现有标题设为独立章级标题并确认其名称可识别；确实缺少时，按适用规范补齐结构后重新检查。",
+      "reason": "工具不能从其他段落推断这部分是否已经写好，不能替作者生成章节文字或擅自移动论述内容。"
+    },
+    "structure.acknowledgements_present": {
+      "problem": "未识别到致谢或后记的独立章节标题。",
+      "action": "若该部分已经存在，请将现有标题设为独立章级标题并确认其名称可识别；确实缺少时，按适用规范补齐结构后重新检查。",
+      "reason": "工具不能从其他段落推断这部分是否已经写好，不能替作者生成章节文字或擅自移动论述内容。"
+    },
+    "cover.fixed_form_matches": {
+      "problem": "封面的固定版式与所选学校模板不一致。",
+      "action": "对照官方封面样张，保留已填写内容，核对各固定栏目、排列和位置。",
+      "reason": "封面可能包含文本框、表格和徽标；自动重建可能覆盖作者已填写的信息。"
+    },
+    "cover.chinese_present": {
+      "problem": "未识别到所选规范要求的中文封面结构。",
+      "action": "先检查封面是否使用图片或特殊对象；已有封面时按官方固定栏目整理后复查。",
+      "reason": "工具不能凭不完整的版面对象确认或重建完整封面，也不能代填作者信息。"
+    },
+    "cover.foreign_condition_satisfied": {
+      "problem": "已识别的封面语言结构与该情形的格式要求不符。",
+      "action": "对照适用规范核对中外文封面的排列与栏目形式，只整理已有文字的位置和格式。",
+      "reason": "封面栏目及其翻译由作者确认；工具不翻译或补写信息。"
+    },
+    "cover.date_chinese_numerals": {
+      "problem": "已有提交日期中的数字形式未符合中文数字要求。",
+      "action": "只把已经填写的年、月等部分改成中文数字；原来只有年月就保留年月，不追加日期成分。",
+      "reason": "当前尚未提供保持原日期数值及精度不变的安全转换；不能擅自补日或推断缺失日期。"
+    },
+    "classification.clc_filled": {
+      "problem": "题名页的中图分类号栏目未识别到已填写的格式。",
+      "action": "核对该栏目是否已有值、是否被文本框或空白分隔；已有分类号只整理栏目形式，未填则由作者确认分类号。",
+      "reason": "分类号依赖论文所属分类，工具不能根据排版或姓名推断它。"
+    },
+    "classification.udc_filled": {
+      "problem": "题名页的UDC分类号栏目未识别到已填写的格式。",
+      "action": "核对该栏目是否已有值；只整理栏目排版，具体分类号由作者确认。",
+      "reason": "工具不能从格式信息确定正确的分类号，不自动填写分类内容。"
+    },
+    "security.required_label_present": {
+      "problem": "已填写的限制或控阅标志未符合期限标注形式。",
+      "action": "核对已有标志的排列和期限写法，只保留作者已确认的内容，不为公开论文新增密级或期限。",
+      "reason": "保密标志与期限须有实际依据；工具不决定密级，也不推断应限制多少年。"
+    },
+    "date.value": {
+      "problem": "已有日期字段的排列关系触发了原规则条件。",
+      "action": "这里只处理日期写法；请保留原日期，按作者已有资料核对字段位置。",
+      "reason": "日期先后属于事实内容，超出格式和结构审查范围，不据此更改日期。"
+    },
+    "ai_declaration.count": {
+      "problem": "所需声明页的数量或标题结构未符合所选模板形式。",
+      "action": "检查声明是否已有独立标题以及是否重复；对照适用模板整理已有声明页的结构。",
+      "reason": "工具不判断是否使用过人工智能，也不替作者填写声明结论或删除已签署内容。"
+    },
+    "ai_declaration.kind": {
+      "problem": "已声明的页面形式未与所选模板情形对应。",
+      "action": "只核对所使用的声明样式和页面标题；声明中的实际情况由作者确认。",
+      "reason": "工具不能判断实际使用情况，不更换作者的声明结论。"
+    },
+    "template.residual_count": {
+      "problem": "前置部分检测到模板中的填写说明文字。",
+      "action": "对照原模板确认是说明而非论文正文后，删除这些填写提示，保留作者填写的信息。",
+      "reason": "当前仅检测已知提示形式；尚未可靠确定整块说明及其与填写文字的边界，不能整段删除。"
+    },
+    "citations.confirmed_count": {
+      "problem": "该部分检测到文内引用标记，而本规范要求此部分不标引用。",
+      "action": "核对检测到的是否确为文献标记；确属引用时由作者按规范处理该部分的引用形式。",
+      "reason": "移除引用会改变论述与来源的联系，工具不决定是否应删去内容或来源。"
+    },
+    "abstract.language_order": {
+      "problem": "已识别摘要的语言顺序为{before}，适用要求为{expected}。",
+      "action": "核对中文摘要后英文摘要的要求及论文适用语言；摘要已存在时整理独立标题和排列，缺少时补齐相应结构。",
+      "reason": "调整摘要会影响分页与目录；缺失的摘要文字不能从格式信息生成，不能直接自动补页。"
+    },
+    "abstract.chinese_keywords_present": {
+      "problem": "该情形需要中文关键词，但未识别到对应标签或段落。",
+      "action": "已有中文关键词时使用规范标签并独立排版；确实未列时由作者填写关键词。",
+      "reason": "关键词由作者选定，工具不能从摘要推断应使用哪些词。"
+    },
+    "layout.same_page_as_abstract_end": {
+      "problem": "关键词与对应摘要末尾没有排在同一页。",
+      "action": "在Word中核对段前段后和分页设置，将关键词与摘要末尾协调在同页。",
+      "reason": "这需要实际分页结果；修改空白或分页符可能挤动其他内容，后台不能保证最终同页。"
+    },
+    "layout.blank_lines_after_abstract": {
+      "problem": "摘要末尾至关键词之间的空行高度不符合要求。",
+      "action": "在Word中只调整该处已有空白段的高度，并核对关键词仍与摘要同页。",
+      "reason": "新增或删除空白会影响分页；没有实际版面验证，不直接增删段落。"
+    },
+    "toc.includes_pre_toc_or_self": {
+      "problem": "目录中包含了不应收录的前置部分或目录自身。",
+      "action": "在Word自定义目录中核对收录级别，排除这些前置标题，再更新整个目录。",
+      "reason": "直接删除显示文字不会改变目录域的收录规则；工具不重建目录域及其级别映射。"
+    },
+    "toc.entries_match_headings_and_pages": {
+      "problem": "目录条目与标题或页码未完全对应。",
+      "action": "先核对标题样式，再在Word更新整个目录，并检查条目文字及页码。",
+      "reason": "页码需要Word实际排版，工具不能凭XML猜测更新后的页码。"
+    },
+    "toc.heading_targets_exist": {
+      "problem": "目录链接中存在未找到的标题目标。",
+      "action": "核对相应章节标题，重新设置标题样式后更新整个目录；检查失效的链接目标。",
+      "reason": "重建目标书签和目录域需要保留原有链接范围，当前未提供安全的整套重建。"
+    },
+    "number_title.gap.em": {
+      "problem": "编号与题名之间的间隔未符合要求，当前为{before}，要求{expected}。",
+      "action": "只调整编号与题名之间的空隙；普通手写文本可按要求使用汉字符宽度，自动编号则在列表缩进中调整。",
+      "reason": "空隙可能由制表位、自动编号或直接文字构成；无法统一用插入空格替代，以免错位。"
+    },
+    "page_number.right_aligned": {
+      "problem": "目录中的页码没有按要求右对齐。",
+      "action": "在Word目录设置中启用页码右对齐，再更新目录，检查引导符和制表位。",
+      "reason": "页码位置由目录域和制表位共同控制；直接改段落对齐会改变整条目录。"
+    },
+    "layout.chapter1_physical_odd_page": {
+      "problem": "第一章的实际起页不符合奇数页要求。",
+      "action": "在Word中查看实际页码和装订方向，按适用规范设置章前分节起页方式。",
+      "reason": "物理页的单双页需要实际排版；后台不能从页码字段可靠推断空白页位置。"
+    },
+    "layout.every_chapter_starts_new_page": {
+      "problem": "部分章标题没有另起一页。",
+      "action": "在Word导航窗格核对各章起始标题，再设置适用的章前分页或下一页分节符。",
+      "reason": "分页修改会改变页码及页眉关联；没有实际排版结果，不自动插入分隔。"
+    },
+    "header.visible": {
+      "problem": "该节缺少规范要求的可见页眉。",
+      "action": "打开Word页眉，核对“首页不同”“奇偶页不同”和链接到前一节设置，再整理已有页眉。",
+      "reason": "页眉可见性受分节与奇偶页设置影响；工具不能安全地为各页重建页眉内容及链接。"
+    },
+    "header.border.visible": {
+      "problem": "该节页眉的线条显示未符合要求。",
+      "action": "在Word页眉编辑状态检查段落边框和线条对象，按规范处理页眉线。",
+      "reason": "实际线条可能来自段落边框、绘图或相邻段落；没有版面确认，不能任意删除对象。"
+    },
+    "page_number.continuous": {
+      "problem": "该处页码续编关系不符合要求。",
+      "action": "在Word“设置页码格式”中核对起始编号与续前节，并检查前后的页码制度。",
+      "reason": "更改节的页码设置会影响后续页；当前未验证实际分页及全部继承关系。"
+    },
+    "heading.section_depth": {
+      "problem": "这处节标题的编号层级为{before}，超出适用要求{expected}。",
+      "action": "核对该标题是否采用了正确级别；只纠正样式误设，确需调整结构时由作者确定层级。",
+      "reason": "工具不能判断哪一层论述应合并或降级，也不能只删编号来改变章节结构。"
+    },
+    "layout.heading_separated_from_following": {
+      "problem": "该标题与后续文字分在不同页面。",
+      "action": "在Word选中标题，在段落设置中启用“与下段同页”，并检查是否有多余分页符。",
+      "reason": "是否能同页取决于后续对象和实际分页；后台不能保证调整后不产生新的空白页。"
+    },
+    "layout.chapter_end_orphan": {
+      "problem": "检测到章末页面内容过少的版面情况。",
+      "action": "在Word查看该章末页，核对段落分页、与下段同页及手工分页符，协调相邻段落。",
+      "reason": "章末剩余行数取决于实际排版；工具不通过删文字或挪动论述来凑页。"
+    },
+    "caption.bilingual_order_valid": {
+      "problem": "已有中英文题注的上下排列顺序不符合规范。",
+      "action": "确认两段题注对应同一对象，再将英文题注放在对应中文题注之后的规范位置。",
+      "reason": "自动移动可能把题注与别的对象配错，且会影响分页；因此不自动交换段落。"
+    },
+    "notes.position_and_language_valid": {
+      "problem": "图注的位置或中英文排列未符合要求。",
+      "action": "只核对已有图注与对应题注的先后位置，保持各语言内容原样并按规范排列。",
+      "reason": "工具不翻译图注，也不在缺少可靠关联时搬动文字段落。"
+    },
+    "layout.crosses_page": {
+      "problem": "该图表或对象出现了不符合要求的跨页。",
+      "action": "在Word查看该对象的实际分页，协调对象尺寸、行段分页及题注位置。",
+      "reason": "缩放或移动对象可能影响清晰度、公式和锚点；后台不掌握实际版面坐标。"
+    },
+    "layout.text_neighbor_blank.pt": {
+      "problem": "图表与相邻正文间的留白为{before}，要求{expected}。",
+      "action": "只调整紧邻的空白段或段距，再在Word确认分页和对象位置。",
+      "reason": "留白可能由段距、空段或对象环绕共同形成；缺少版面信息时不能把它当成单一段距覆盖。"
+    },
+    "layout.object_neighbor_blank.pt": {
+      "problem": "相邻图表之间的留白为{before}，要求{expected}。",
+      "action": "在Word核对两个对象之间的空白来源，只调整需要的段距或空白段。",
+      "reason": "环绕、锚点及空段都可能影响空白，工具不能仅凭设定值保证可见间距。"
+    },
+    "continuation.label_and_header_valid": {
+      "problem": "续表的续表标志或表头形式未符合要求。",
+      "action": "核对是否确为同一张跨页表，按规范设置续表标志及重复表头。",
+      "reason": "自动拆分、合并表格或补表头可能改变数据结构，当前不直接重建续表。"
+    },
+    "table_notes.position_valid": {
+      "problem": "表注没有位于匹配表格的下方。",
+      "action": "在Word确认表注属于该表，再将完整表注放到表格下方，保留注序。",
+      "reason": "移动段落可能使表注离开对应表或跨页，当前未核验实际版面。"
+    },
+    "equations.fraction_bar_valid": {
+      "problem": "公式中的分数线排版形式未符合要求。",
+      "action": "在Word公式编辑器中核对相应分数结构，只调整排版形式，保留数学符号及表达式。",
+      "reason": "分数结构重建可能改变公式含义；工具不解析和改写数学表达式。"
+    },
+    "equation_number.parenthesized": {
+      "problem": "公式编号的括号形式未符合要求。",
+      "action": "只检查公式编号，在不改公式内容的前提下使用规范括号。",
+      "reason": "编号可能与公式、域或制表位相连；未可靠定位到可安全替换的单独标记，不直接改写。"
+    },
+    "layout.equation_number_at_right_end": {
+      "problem": "公式编号没有排在要求的行末右侧。",
+      "action": "在Word核对该行的制表位、对齐方式或承载公式的表格，再将编号排至右端。",
+      "reason": "不同公式承载结构需要不同布局；整段右对齐会把公式一起移走，因此不能直接套用。"
+    },
+    "equation_number.matches_paragraph_text_format": {
+      "problem": "公式编号的文字格式与所在段落要求不一致。",
+      "action": "只选中编号文字调整字体字号，保留公式主体的上下标和分式。",
+      "reason": "当前未可靠分离编号与公式主体，统一改字号可能破坏公式层级。"
+    },
+    "equation_number.has_connector": {
+      "problem": "公式与编号之间检测到不符合规范的连接线。",
+      "action": "核对连接线是否只是排版引导线；确认后只移除引导线，保留公式的减号等符号。",
+      "reason": "相似符号可能是公式的一部分，自动删除会改变表达式。"
+    },
+    "notes.on_page_count": {
+      "problem": "这一页的注释数量超过当前建议阈值；检测值{before}，阈值{expected}。",
+      "action": "在Word按实际页核对注释数量；是否合并或调整注释位置由作者结合版面决定。",
+      "reason": "这是单页数量建议，不是全文上限；工具不为减少数量而删除注释或改写说明。"
+    },
+    "notes.same_page_footnotes": {
+      "problem": "部分注释未以同页脚注形式显示。",
+      "action": "核对是否使用Word原生脚注，在引用位置通过“引用→插入脚注”保持关联。",
+      "reason": "转换手工注释涉及每条说明与引用位置的一一对应，当前不能可靠自动建立关联。"
+    },
+    "citations.system": {
+      "problem": "已识别的引用标注形式与所选要求不一致。",
+      "action": "核对全文实际采用的编号制或著者年制，并通过原有文献管理工具统一格式。",
+      "reason": "转换引用制度需要调整全部引用与条目，当前没有完整可靠映射，不自动转换。"
+    },
+    "citations.system_consistent": {
+      "problem": "全文检测到不同的引用标注形式。",
+      "action": "对照适用规范选择统一形式，用原有文献管理工具整理已有引用。",
+      "reason": "不能仅用全局文本替换把两套引用制度统一，可能破坏正文与文献关联。"
+    },
+    "results.dates_descending": {
+      "problem": "已有成果列表中的日期次序不符合要求的倒序。",
+      "action": "只核对已经填写的日期，将完整成果条目按日期倒序排列，不改动成果事实。",
+      "reason": "成果条目可能跨段或包含域，当前不能可靠确定完整条目边界，避免拆散信息。"
+    },
+    "header.matches_current_chapter_title": {
+      "problem": "页眉与当前章标题的对应关系不一致。",
+      "action": "在Word核对该节页眉的链接和标题域，修正为对应章标题的引用。",
+      "reason": "直接写入静态文字可能使后续章节页眉全部相同；当前不重建页眉与章标题的域关联。"
+    },
+    "page_numbers.cover_and_originality_absent": {
+      "problem": "封面或声明部分出现了不应显示的页码。",
+      "action": "在Word核对前置节与“首页不同”设置，只隐藏不应显示的页码，检查后续页码仍连续。",
+      "reason": "删除共享页脚中的页码可能同时影响后续各页，必须先确认分节及继承关系。"
+    },
+    "page_numbers.abstract_to_body": {
+      "problem": "摘要到正文之间的页码形式或续编关系不符合要求。",
+      "action": "在Word逐节核对页码格式、起始页码和续前节设置。",
+      "reason": "前置与正文可能使用不同编号制度，当前没有完整分页核验，不统一覆盖所有节。"
+    },
+    "page_numbers.body_to_end": {
+      "problem": "正文到后置部分的页码续编关系不符合要求。",
+      "action": "在Word检查正文后各节的页码设置，确认需要续编的部分使用续前节。",
+      "reason": "页码依赖分节继承与实际页数，未核验这些关系前不能自动重设。"
+    },
+    "page_numbers.chapter1_start": {
+      "problem": "第一章的起始页码未符合要求。",
+      "action": "在Word第一章所在节的页码格式中核对起始编号，并检查与前置部分的分节。",
+      "reason": "起始编号会影响后续全部页码及目录，后台不能完成实际页码更新。"
+    },
+    "page_number.in_footer_center": {
+      "problem": "页码未显示在要求的页脚居中位置。",
+      "action": "只在对应页脚中选中页码段落设置居中；注意首页及奇偶页脚可能独立。",
+      "reason": "不同页脚可能共享链接或含其他对象，不能直接重建或统一移动所有页脚内容。"
+    },
+    "page_number.decorative_lines": {
+      "problem": "页码周围检测到不符合要求的装饰线。",
+      "action": "在Word页脚中区分页码文字、边框与绘图，仅处理多余装饰线。",
+      "reason": "线条可能来自独立对象或边框，未经版面确认不能删除整个页脚段落。"
+    },
+    "page.is_landscape": {
+      "problem": "这一节设置为横向页面；网站默认使用竖向。",
+      "action": "若用于整页图表且确有需要，保留横向；其余情形可在Word仅将该节设为竖向，再检查表格及图片是否超出版心。",
+      "reason": "横向可能是整页图表的合理排版；工具不能自动确定是否应旋转，因此只提示，不改变方向。"
+    },
+    "length.han_count": {
+      "problem": "该部分检测到{before}个汉字，本条建议条件为{expected}。",
+      "action": "核对所选规范及统计范围；这是篇幅提示，是否调整文字由作者决定。",
+      "reason": "工具只统计范围内字符，不评价内容质量，也不为了达到建议值增删文字。"
+    },
+    "length.reviewed_character_count": {
+      "problem": "该部分按当前统计口径得到{before}字，本条长度条件为{expected}。",
+      "action": "核对标题或相应部分的统计范围；建议类长度由作者决定是否调整。",
+      "reason": "字数只反映长度，不能说明应删除或补充哪句话，因此不自动改写文字。"
+    },
+    "equation.single_spacing": {
+      "problem": "独立公式行距未符合规范。当前：{observed}。",
+      "action": "只选中独立公式所在段，将行距设置为单倍，保留公式本身。",
+      "reason": "该行含自动编号或受保护结构时，直接覆盖段落属性可能影响编号；未满足安全条件时保留原格式。",
+      "observe": [
+        "paragraph.line"
+      ]
+    },
+    "figure_notes.indent_valid": {
+      "problem": "图注缩进未符合规范。当前：{observed}。",
+      "action": "只选中该图注，按规范调整段落左缩进，不改图注文字或注序。",
+      "reason": "该段使用自动编号或缩进来源尚不明确，直接覆盖缩进可能使注序错位。",
+      "observe": [
+        "paragraph.left.char"
+      ]
+    },
+    "table_notes.indent_valid": {
+      "problem": "表注缩进与对齐未符合规范。当前：{observed}。",
+      "action": "只选中该表注，按规范调整左缩进及对齐，不改表注文字和表格数据。",
+      "reason": "该段使用自动编号或缩进来源尚不明确，覆盖段落设置可能使编号及表注错位。",
+      "observe": [
+        "paragraph.left.char",
+        "paragraph.align"
+      ]
+    },
+    "equations.block_layout_valid": {
+      "problem": "编号公式排列未符合规范。当前：{observed}。",
+      "action": "先核对全文采用的合法排列方式，再只统一公式段落对齐和缩进，保留公式内容。",
+      "reason": "存在多种合法布局或编号关联，工具不能替作者任意选定布局；安全条件未满足时保留原排列。",
+      "observe": [
+        "paragraph.align",
+        "paragraph.firstLine.char"
+      ]
+    },
+    "punctuation.english_halfwidth_valid": {
+      "problem": "英文摘要标点宽度未符合规范。当前：{observed}。",
+      "action": "只将普通英文文字中的标点整理为半角；保留公式、名称引用、域及嵌入中文区域。",
+      "reason": "受保护区域或标点所属范围不明确时，替换可能改变名称、链接或表达式，故不改该区域。"
+    },
+    "punctuation.reference_halfwidth_valid": {
+      "problem": "文献著录标点宽度未符合规范。当前：{observed}。",
+      "action": "只整理文献著录分隔标点，保留题名、名称、域、链接和文献信息。",
+      "reason": "当前未可靠确定的著录边界属于保护范围；不通过全局替换改动题名或资料内容。"
+    },
+    "figure_notes.sequence_valid": {
+      "problem": "同一对象的图注编号没有按要求连续递增。",
+      "action": "核对完整注序，只整理编号和对应说明的排列，保留说明文字。",
+      "reason": "注序可能在文内另有引用，当前未建立完整对应关系，不直接替换编号。"
+    },
+    "table_notes.sequence_valid": {
+      "problem": "同一对象的表注编号没有按要求连续递增。",
+      "action": "核对完整注序，只整理编号和对应说明的排列，保留说明文字。",
+      "reason": "注序可能在文内另有引用，当前未建立完整对应关系，不直接替换编号。"
+    },
+    "subfigures.sequence_valid": {
+      "problem": "同一对象的分图题编号没有按要求连续递增。",
+      "action": "核对完整注序，只整理编号和对应说明的排列，保留说明文字。",
+      "reason": "注序可能在文内另有引用，当前未建立完整对应关系，不直接替换编号。"
+    },
+    "figure_notes.layout_valid": {
+      "problem": "图注的缩进、间距或续行对齐形式未符合要求。",
+      "action": "只调整该说明段的段落属性，核对注序与续行的对齐；保留说明文字。",
+      "reason": "段落可能使用自动编号或跨段排列，当前不拆分、合并或重建说明段落。"
+    },
+    "table_notes.layout_valid": {
+      "problem": "表注的缩进、间距或续行对齐形式未符合要求。",
+      "action": "只调整该说明段的段落属性，核对注序与续行的对齐；保留说明文字。",
+      "reason": "段落可能使用自动编号或跨段排列，当前不拆分、合并或重建说明段落。"
+    }
+  },
+  "property_guidance": {
+    "font.eastAsia": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "只选中该文字或标签，在Word“开始→字体”中设置为{expected}，不要连同公式上下标或域结果一起覆盖。",
+      "reason": "该文字包含受保护的域、修订或复杂文字片段，当前不能安全分离修改范围，避免连带改变其他文字。"
+    },
+    "font.latin": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "只选中该文字或标签，在Word“开始→字体”中设置为{expected}，不要连同公式上下标或域结果一起覆盖。",
+      "reason": "该文字包含受保护的域、修订或复杂文字片段，当前不能安全分离修改范围，避免连带改变其他文字。"
+    },
+    "size.pt": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "只选中该文字或标签，在Word“开始→字体”中设置为{expected}，不要连同公式上下标或域结果一起覆盖。",
+      "reason": "该文字包含受保护的域、修订或复杂文字片段，当前不能安全分离修改范围，避免连带改变其他文字。"
+    },
+    "font.bold": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "只选中该文字或标签，在Word“开始→字体”中设置为{expected}，不要连同公式上下标或域结果一起覆盖。",
+      "reason": "该文字包含受保护的域、修订或复杂文字片段，当前不能安全分离修改范围，避免连带改变其他文字。"
+    },
+    "label.bold": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "只选中该文字或标签，在Word“开始→字体”中设置为{expected}，不要连同公式上下标或域结果一起覆盖。",
+      "reason": "该文字包含受保护的域、修订或复杂文字片段，当前不能安全分离修改范围，避免连带改变其他文字。"
+    },
+    "paragraph.align": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "只选中这段文字，在Word“段落”设置中将{name}调整为{expected}，再检查相邻段落与分页。",
+      "reason": "段落包含受保护结构或编号关联，当前安全条件未满足；直接覆盖可能改变关联的排版。"
+    },
+    "paragraph.line": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "只选中这段文字，在Word“段落”设置中将{name}调整为{expected}，再检查相邻段落与分页。",
+      "reason": "段落包含受保护结构或编号关联，当前安全条件未满足；直接覆盖可能改变关联的排版。"
+    },
+    "paragraph.line.pt": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "只选中这段文字，在Word“段落”设置中将{name}调整为{expected}，再检查相邻段落与分页。",
+      "reason": "段落包含受保护结构或编号关联，当前安全条件未满足；直接覆盖可能改变关联的排版。"
+    },
+    "paragraph.before.pt": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "只选中这段文字，在Word“段落”设置中将{name}调整为{expected}，再检查相邻段落与分页。",
+      "reason": "段落包含受保护结构或编号关联，当前安全条件未满足；直接覆盖可能改变关联的排版。"
+    },
+    "paragraph.after.pt": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "只选中这段文字，在Word“段落”设置中将{name}调整为{expected}，再检查相邻段落与分页。",
+      "reason": "段落包含受保护结构或编号关联，当前安全条件未满足；直接覆盖可能改变关联的排版。"
+    },
+    "paragraph.left.char": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "只选中这段文字，在Word“段落→缩进”中设置{name}为{expected}；若使用自动编号，应在“调整列表缩进”中核对。",
+      "reason": "该段涉及自动编号或未可靠确认的缩进来源，直接改缩进可能导致编号与文字错位。"
+    },
+    "paragraph.firstLine.char": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "只选中这段文字，在Word“段落→缩进”中设置{name}为{expected}；若使用自动编号，应在“调整列表缩进”中核对。",
+      "reason": "该段涉及自动编号或未可靠确认的缩进来源，直接改缩进可能导致编号与文字错位。"
+    },
+    "paragraph.hanging.char": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "只选中这段文字，在Word“段落→缩进”中设置{name}为{expected}；若使用自动编号，应在“调整列表缩进”中核对。",
+      "reason": "该段涉及自动编号或未可靠确认的缩进来源，直接改缩进可能导致编号与文字错位。"
+    },
+    "page.short_edge.mm": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+      "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+    },
+    "page.long_edge.mm": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+      "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+    },
+    "page.margin.top.mm": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+      "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+    },
+    "page.margin.bottom.mm": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+      "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+    },
+    "page.margin.left.mm": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+      "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+    },
+    "page.margin.right.mm": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+      "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+    },
+    "page.gutter.mm": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+      "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+    },
+    "page.gutter_position": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+      "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+    },
+    "document.mirror_margins": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+      "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+    },
+    "page.header_distance.mm": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+      "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+    },
+    "page.footer_distance.mm": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+      "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+    },
+    "page.orientation": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+      "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+    },
+    "text.exact": {
+      "problem": "{name}当前为{before}，规范要求为{expected}。",
+      "action": "只整理此标题的标签形式为“{expected}”，保留作者正文及题目内容。",
+      "reason": "该位置不是已授权的纯标签大小写修复，或包含域与链接；自动替换可能改变作者文字或关联。"
+    },
+    "label.text": {
+      "problem": "关键词标签当前写作“{before}”，本规范要求“{expected}”。",
+      "action": "只选中关键词标签及冒号，将其改为“{expected}”，保留后面的关键词文本；有域或链接时保留其结构。",
+      "reason": "当前版本未提供能保留标签中域、链接和文字片段边界的安全替换；因此只提示标签格式，不重建整段。"
+    }
+  },
+  "guard_guidance": {
+    "protected": "文档含修订、保护或数字签名，当前保持其受保护状态；请先另存可编辑副本并在Word中核对修订，再重新处理。",
+    "numbering": "该段使用自动编号，直接写入缩进可能使编号与正文错位；请在Word的“调整列表缩进”中处理这一项。"
+  },
+  "comment_labels": {
+    "location": "位置",
+    "problem": "问题",
+    "action": "操作",
+    "reason": "未自动修改原因",
+    "fixed": "已修改格式【已解决】。",
+    "advice": "排版建议【可自行决定】。",
+    "review": "待处理【需要你操作】。"
+  },
+  "numbering_repairs": {
+    "letters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "title_gap": "　",
+    "separator": ".",
+    "sequence_prefix": "TFAppendix",
+    "object_roles": {
+      "figure_caption": "图",
+      "table_caption": "表",
+      "numbered_equation": "式"
+    },
+    "heading_facts": [
+      "appendix.letter_sequence_valid",
+      "number_title.gap.em"
+    ],
+    "object_facts": [
+      "numbering.appendix_sequence_valid",
+      "numbering.separate_from_body"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+name: 学校来源更新
+description: 中科大规则与来源反馈；不要提交论文或个人信息
+title: "[USTC] "
+body:
+  - type: markdown
+    attributes:
+      value: "请给出新的学校官方链接、版本及与旧版的差异。 请使用匿名合成例子，不上传论文、文件名或全文报告。"
+  - type: input
+    id: rule_id
+    attributes:
+      label: 规则ID
+      placeholder: USTC-BODY-01；来源更新可填不适用
+    validations:
+      required: true
+  - type: input
+    id: ruleset_version
+    attributes:
+      label: 规则包版本与SHA256
+    validations:
+      required: true
+  - type: input
+    id: engine_version
+    attributes:
+      label: 产品／引擎版本
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 官方来源、条款与依据
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 当前表现、预期解释与匿名合成例子
+    validations:
+      required: true

@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-10-20",
+  "documents": [
+    {
+      "id": "template",
+      "title": "官方撰写模板",
+      "kind": "DOCX",
+      "version": "2026-09-21",
+      "note": "当前规则的主要依据。",
+      "sha256": "da4a5458dba262c744737335101b5e281af0543c345f763c89230e2a7c825f03",
+      "source_url": "https://gradschool.ustc.edu.cn/static/upload/article/file/1789972356385/1789972356385-940711.docx",
+      "source_page": "https://gradschool.ustc.edu.cn/column/190",
+      "filename": "ustc-graduate-template-2026-09-21.docx",
+      "bytes": 214445,
+      "repository_path": "originals/ustc-graduate-template-2026-09-21.docx",
+      "download_url": "https://gradschool.ustc.edu.cn/static/upload/article/file/1789972356385/1789972356385-940711.docx",
+      "redistribution_review": "publication-approved-by-project-owner"
+    },
+    {
+      "id": "handbook",
+      "title": "研究生论文撰写手册",
+      "kind": "PDF",
+      "version": "2016年版",
+      "note": "历史参考；与2026版模板存在差异，不作为当前规则优先依据。",
+      "sha256": "beaf8fb2401b7f5ebdc014f9362f154f8a306726e508e8418a635b34f42e0e6b",
+      "source_url": "https://phys.ustc.edu.cn/_upload/article/files/ac/80/4b8fb6734a5c9046fb046de00c8d/61df6e6a-f758-40f6-9945-ab527bd32df4.pdf",
+      "source_page": "https://phys.ustc.edu.cn/2019/0508/c17594a380293/page.htm",
+      "filename": "ustc-graduate-handbook.pdf",
+      "bytes": 7745055,
+      "repository_path": "originals/ustc-graduate-handbook.pdf",
+      "download_url": "https://phys.ustc.edu.cn/_upload/article/files/ac/80/4b8fb6734a5c9046fb046de00c8d/61df6e6a-f758-40f6-9945-ab527bd32df4.pdf",
+      "redistribution_review": "publication-approved-by-project-owner"
+    }
+  ],
+  "note": "Official materials retained unchanged; project owner approved including them in the first public version. No additional third-party rights granted. Handbook is historical reference only."
+}

@@ -1,0 +1,1162 @@
+{
+  "version": "1.0",
+  "runtime_status": "partial_implementation",
+  "roles": [
+    "abstract_and_later_page",
+    "abstract_body",
+    "abstract_en_body",
+    "abstract_en_heading",
+    "abstract_group",
+    "abstract_zh_body",
+    "abstract_zh_heading",
+    "acknowledgements",
+    "acknowledgements_body",
+    "ai_declaration",
+    "appendix",
+    "appendix_body_paragraph",
+    "appendix_equation",
+    "appendix_figure",
+    "appendix_reference",
+    "appendix_table",
+    "author_year_citation",
+    "author_year_reference_entry",
+    "authorization_declaration",
+    "body_figure",
+    "body_numbered_equation",
+    "body_paragraph",
+    "body_table",
+    "chapter_end",
+    "chapter_heading",
+    "citation",
+    "combined_list_heading",
+    "cover",
+    "custom_heading",
+    "data_table_cell_paragraph",
+    "display_equation_paragraph",
+    "document",
+    "equation",
+    "equation_number",
+    "figure",
+    "figure_caption",
+    "figure_list",
+    "figure_list_entry",
+    "figure_list_heading",
+    "figure_note",
+    "figure_table_list",
+    "innovation_body",
+    "keyword_group",
+    "keywords_en",
+    "keywords_zh",
+    "landscape_section",
+    "main_body",
+    "note",
+    "note_page",
+    "numbered_equation",
+    "numeric_citation",
+    "numeric_reference_entry",
+    "ordinary_section",
+    "originality_declaration",
+    "page_number",
+    "peer_heading",
+    "pre_body_blank_page",
+    "prose",
+    "reference_entry",
+    "references",
+    "research_achievement_entry",
+    "research_achievements",
+    "running_header",
+    "school_code",
+    "section",
+    "section1_heading",
+    "section2_heading",
+    "section3_heading",
+    "section_heading",
+    "section_with_abstract_or_later",
+    "section_with_page_numbers",
+    "subfigure_caption",
+    "submission_date",
+    "symbol_entry",
+    "symbol_list",
+    "table",
+    "table_caption",
+    "table_list",
+    "table_list_entry",
+    "table_list_heading",
+    "table_note",
+    "template_instruction",
+    "thesis_title",
+    "title_page",
+    "toc",
+    "toc_chapter_entry",
+    "toc_entry",
+    "toc_heading",
+    "toc_other_entry",
+    "toc_section1_entry",
+    "toc_section2_entry"
+  ],
+  "capabilities": [
+    "author_attestation",
+    "author_confirmed_count_policy",
+    "bibliography_keys",
+    "citation_links",
+    "cross_references",
+    "editable_figure_source",
+    "effective_properties",
+    "external_bibliography",
+    "external_classification",
+    "external_metadata",
+    "external_security_decision",
+    "external_standard",
+    "field_links",
+    "han_count",
+    "header_footer_links",
+    "human_disambiguation",
+    "human_review",
+    "human_visual_review",
+    "keyword_items",
+    "layout_adapter",
+    "math_structure",
+    "numbering",
+    "protected_text_spans",
+    "semantic_roles",
+    "text"
+  ],
+  "properties": {
+    "text.exact": {
+      "type": "string",
+      "writable": false
+    },
+    "font.eastAsia": {
+      "type": "string",
+      "writable": true
+    },
+    "size.pt": {
+      "type": "number",
+      "writable": true
+    },
+    "paragraph.align": {
+      "type": "string",
+      "writable": true,
+      "enum": [
+        "left",
+        "center",
+        "both"
+      ]
+    },
+    "paragraph.line": {
+      "type": "line",
+      "writable": true
+    },
+    "paragraph.before.pt": {
+      "type": "number",
+      "writable": true
+    },
+    "paragraph.after.pt": {
+      "type": "number",
+      "writable": true
+    },
+    "font.latin": {
+      "type": "string",
+      "writable": true
+    },
+    "font.bold": {
+      "type": "boolean",
+      "writable": true
+    },
+    "paragraph.hanging.char": {
+      "type": "number",
+      "writable": true
+    },
+    "label.text": {
+      "type": "string",
+      "writable": false
+    },
+    "label.bold": {
+      "type": "boolean",
+      "writable": true
+    },
+    "paragraph.left.char": {
+      "type": "number",
+      "writable": true
+    },
+    "paragraph.line.pt": {
+      "type": "number",
+      "writable": true
+    },
+    "paragraph.firstLine.char": {
+      "type": "number",
+      "writable": true
+    },
+    "page.short_edge.mm": {
+      "type": "number",
+      "writable": true
+    },
+    "page.long_edge.mm": {
+      "type": "number",
+      "writable": true
+    },
+    "page.margin.top.mm": {
+      "type": "number",
+      "writable": true
+    },
+    "page.margin.bottom.mm": {
+      "type": "number",
+      "writable": true
+    },
+    "page.margin.left.mm": {
+      "type": "number",
+      "writable": true
+    },
+    "page.margin.right.mm": {
+      "type": "number",
+      "writable": true
+    },
+    "page.gutter.mm": {
+      "type": "number",
+      "writable": true
+    },
+    "page.gutter_position": {
+      "type": "string",
+      "writable": true,
+      "enum": [
+        "left"
+      ]
+    },
+    "document.mirror_margins": {
+      "type": "boolean",
+      "writable": true
+    },
+    "page.header_distance.mm": {
+      "type": "number",
+      "writable": true
+    },
+    "page.footer_distance.mm": {
+      "type": "number",
+      "writable": true
+    },
+    "page.orientation": {
+      "type": "string",
+      "writable": true,
+      "enum": [
+        "portrait",
+        "landscape"
+      ]
+    }
+  },
+  "facts": {
+    "abstract.chinese_keywords_present": {
+      "type": "boolean",
+      "meaning": "外文论文的中文摘要附有中文关键词",
+      "missing": "unknown"
+    },
+    "abstract.language_order": {
+      "type": "array",
+      "meaning": "已确认摘要的语言顺序列表，使用BCP47主语言；不是文中第一次语言出现顺序",
+      "missing": "unknown"
+    },
+    "ai_declaration.count": {
+      "type": "number",
+      "meaning": "定稿中完整、有效的使用/未使用声明页数，排除模板说明及MC重复分支",
+      "missing": "unknown"
+    },
+    "ai_declaration.kind": {
+      "type": "string",
+      "meaning": "唯一声明种类used或unused，无法确认或多份时unknown",
+      "missing": "unknown"
+    },
+    "appendix.has_title": {
+      "type": "boolean",
+      "meaning": "每个已识别附录有非空标题",
+      "missing": "unknown"
+    },
+    "appendix.letter_sequence_valid": {
+      "type": "boolean",
+      "meaning": "附录从A按大写字母连续编号，单个亦A",
+      "missing": "unknown"
+    },
+    "caption.bilingual_order_valid": {
+      "type": "boolean",
+      "meaning": "如有英文题，则中英文分行且中文先；没有英文题时该子项not_applicable",
+      "missing": "unknown"
+    },
+    "caption.position": {
+      "type": "string",
+      "meaning": "对应图表的实际题注在above或below，必须先确认关联",
+      "missing": "unknown"
+    },
+    "citation.brackets": {
+      "type": "string",
+      "meaning": "已确认数字引文的定界符类型square；普通方括号不是引文证据",
+      "missing": "unknown"
+    },
+    "citation.superscript": {
+      "type": "boolean",
+      "meaning": "已确认数字引文可见序号上标",
+      "missing": "unknown"
+    },
+    "citations.confirmed_count": {
+      "type": "number",
+      "meaning": "当前摘要范围内已确认的引用数",
+      "missing": "unknown"
+    },
+    "citations.system": {
+      "type": "string",
+      "meaning": "已确认全论文引用制numeric或author_year，不能猜测",
+      "missing": "unknown"
+    },
+    "citations.system_consistent": {
+      "type": "boolean",
+      "meaning": "所有引文与参考列表按同一已确认制度",
+      "missing": "unknown"
+    },
+    "classification.clc_filled": {
+      "type": "boolean",
+      "meaning": "题名页中图分类号字段非空且不是已知占位提示；不评判分类正确性",
+      "missing": "unknown"
+    },
+    "classification.udc_filled": {
+      "type": "boolean",
+      "meaning": "题名页UDC分类号字段非空且不是已知占位提示；不评判分类正确性",
+      "missing": "unknown"
+    },
+    "context.ai_usage": {
+      "type": "string",
+      "meaning": "作者声明的used或unused，不由软件推断",
+      "missing": "unknown"
+    },
+    "context.body_word_advice": {
+      "type": "number",
+      "meaning": "已确认硕士为30000、博士为50000，其他情形unknown",
+      "missing": "unknown"
+    },
+    "context.citation_system": {
+      "type": "string",
+      "meaning": "作者确认numeric或author_year",
+      "missing": "unknown"
+    },
+    "context.degree_award_date": {
+      "type": "date",
+      "meaning": "权威授予日期ISO YYYY-MM-DD，缺失unknown",
+      "missing": "unknown"
+    },
+    "context.degree_level": {
+      "type": "string",
+      "meaning": "已确认master或doctor",
+      "missing": "unknown"
+    },
+    "context.foreign_then_chinese": {
+      "type": "array",
+      "meaning": "已确认外文论文语言与zh组成的列表，例如[en,zh]",
+      "missing": "unknown"
+    },
+    "context.international_student": {
+      "type": "boolean",
+      "meaning": "作者确认留学生身份，未知不按false",
+      "missing": "unknown"
+    },
+    "context.required_innovation_kind": {
+      "type": "nullable_string",
+      "meaning": "学术博士innovation，工程或其他专业博士innovation_application，硕士明确为none",
+      "missing": "unknown"
+    },
+    "context.thesis_language": {
+      "type": "string",
+      "meaning": "作者确认主写作语言zh/en等；未知不等同外文",
+      "missing": "unknown"
+    },
+    "continuation.label_and_header_valid": {
+      "type": "boolean",
+      "meaning": "跨页且选用续表形式时，续表号前有续并重复横表头；非跨页或未选此形式为not_applicable",
+      "missing": "unknown"
+    },
+    "cover.chinese_present": {
+      "type": "boolean",
+      "meaning": "完整扫描封面区后确认中文封面存在；不是仅凭样式名未命中即认定缺失",
+      "missing": "unknown"
+    },
+    "cover.date_chinese_numerals": {
+      "type": "boolean",
+      "meaning": "仅转换已填写提交时间的数字书写形式；原有yyyy年mm月只转换年和月，不追加日、不要求日；原有年月日则只转换已有各部分，不改值、不增减日期精度、不核真实性。",
+      "missing": "unknown"
+    },
+    "cover.fixed_form_matches": {
+      "type": "boolean",
+      "meaning": "统一封面的固定字段、顺序及布局与官方统一封面相符；排除可变填写内容，不以模板正文样式推导通用规则",
+      "missing": "unknown"
+    },
+    "cover.foreign_condition_satisfied": {
+      "type": "boolean",
+      "meaning": "已知论文语种为中文时不要求外文封面；已知非中文时要求对应语种封面紧随中文封面；语种未知为unknown",
+      "missing": "unknown"
+    },
+    "date.value": {
+      "type": "date",
+      "meaning": "已确认论文提交日期ISO YYYY-MM-DD，不猜OCR歧义日期",
+      "missing": "unknown"
+    },
+    "equation.single_spacing": {
+      "type": "boolean",
+      "meaning": "当前已确认独立公式段的有效段落行距为单倍；不改写公式内容",
+      "missing": "unknown"
+    },
+    "equation_number.has_connector": {
+      "type": "boolean",
+      "meaning": "公式和公式序号之间是否有可见连线",
+      "missing": "unknown"
+    },
+    "equation_number.matches_paragraph_text_format": {
+      "type": "boolean",
+      "meaning": "序号字体字号行距与同段文字相符，数学字体不等同文字字体",
+      "missing": "unknown"
+    },
+    "equation_number.parenthesized": {
+      "type": "boolean",
+      "meaning": "公式序号用括号包围",
+      "missing": "unknown"
+    },
+    "equations.block_layout_valid": {
+      "type": "boolean",
+      "meaning": "已确认的编号表达式另段居中或另段空两个汉字符，全文采用同一合法形式；两种形式均合法，不把合法形式一律改为居中",
+      "missing": "unknown"
+    },
+    "equations.fraction_bar_valid": {
+      "type": "boolean",
+      "meaning": "可编辑公式或可可靠测量的分数线不短于分子分母中较长一方；无分数为not_applicable，图片内无法测量为unknown",
+      "missing": "unknown"
+    },
+    "figure_notes.layout_valid": {
+      "type": "boolean",
+      "meaning": "多图注注序左缩进2字符、序号与注文间空1字符；同行注下一行与首行序号左齐，独行长注续行悬挂左齐；只依据已存在布局形式，不判断短语/句子，不重排正文",
+      "missing": "unknown"
+    },
+    "figure_notes.sequence_valid": {
+      "type": "boolean",
+      "meaning": "同一图有多个图注时编号连续；单注为not_applicable",
+      "missing": "unknown"
+    },
+    "first_mention.precedes_object": {
+      "type": "boolean",
+      "meaning": "已解析图表首次提及在实际阅读顺序中早于图表",
+      "missing": "unknown"
+    },
+    "first_mention.same_section": {
+      "type": "boolean",
+      "meaning": "图表和首次提及属于同一个语义节，而非同一个OOXML分节",
+      "missing": "unknown"
+    },
+    "header.border.visible": {
+      "type": "boolean",
+      "meaning": "该物理页页眉区域有无可见页眉线，包含段落边框和绘图",
+      "missing": "unknown"
+    },
+    "header.matches_current_chapter_title": {
+      "type": "boolean",
+      "meaning": "实际页面页眉文本与当前章级标题一致，解析继承与奇偶/首页",
+      "missing": "unknown"
+    },
+    "header.visible": {
+      "type": "boolean",
+      "meaning": "该物理页有无可见页眉文字/图形",
+      "missing": "unknown"
+    },
+    "heading.section_depth": {
+      "type": "number",
+      "meaning": "一级节1.1为1，二级1.1.1为2，三级1.1.1.1为3",
+      "missing": "unknown"
+    },
+    "innovation.kind": {
+      "type": "nullable_string",
+      "meaning": "实际说明类型innovation/innovation_application/none，none只用于已确认不存在",
+      "missing": "unknown"
+    },
+    "keywords.confirmed_count": {
+      "type": "number",
+      "meaning": "由语义条目及作者确认得到的关键词数量，排除标签",
+      "missing": "unknown"
+    },
+    "keywords.en_initial_letters_uppercase": {
+      "type": "boolean",
+      "meaning": "每个英文关键词首个字母大写；符号专名歧义unknown",
+      "missing": "unknown"
+    },
+    "keywords.en_separator": {
+      "type": "string",
+      "meaning": "英文条目之间实际分隔符；条目内部逗号不参与",
+      "missing": "unknown"
+    },
+    "keywords.zh_separator": {
+      "type": "string",
+      "meaning": "中文条目之间实际分隔符",
+      "missing": "unknown"
+    },
+    "layout.blank_lines_after_abstract": {
+      "type": "number",
+      "meaning": "摘要结束至关键词的空白行数量，需渲染或明确行几何",
+      "missing": "unknown"
+    },
+    "layout.chapter1_physical_odd_page": {
+      "type": "boolean",
+      "meaning": "第一章起始物理纸面为奇数页/右页，不使用重启后的显示页码",
+      "missing": "unknown"
+    },
+    "layout.chapter_end_orphan": {
+      "type": "boolean",
+      "meaning": "真实渲染后，某章级部分最后物理页相对前页仅余一行或更少正文内容，且该部分确有前页内容；排除只有页眉页脚的空白页、正常短章、带表格/插图/独立公式的页面。按章级部分与分节边界归属，不按缓存分页标记推断。",
+      "missing": "unknown"
+    },
+    "layout.crosses_page": {
+      "type": "boolean",
+      "meaning": "完整单幅插图含其构件跨物理页",
+      "missing": "unknown"
+    },
+    "layout.dash_ellipsis_split": {
+      "type": "boolean",
+      "meaning": "一个破折号或省略号内部跨行/页",
+      "missing": "unknown"
+    },
+    "layout.equation_number_at_right_end": {
+      "type": "boolean",
+      "meaning": "公式序号在表达式右边行末",
+      "missing": "unknown"
+    },
+    "layout.every_chapter_starts_new_page": {
+      "type": "boolean",
+      "meaning": "每章标题开始于新页，不要求第二章以后为奇数页",
+      "missing": "unknown"
+    },
+    "layout.heading_separated_from_following": {
+      "type": "boolean",
+      "meaning": "节/自设小标题与其后首段分居不同页；图表题不作此子项对象",
+      "missing": "unknown"
+    },
+    "layout.object_neighbor_blank.pt": {
+      "type": "number",
+      "meaning": "图或表与相邻图/表间实际空白行高度；无此邻居为not_applicable",
+      "missing": "unknown"
+    },
+    "layout.prohibited_punctuation_break": {
+      "type": "boolean",
+      "meaning": "成对标号前半在行末或后半在行首",
+      "missing": "unknown"
+    },
+    "layout.same_page_as_abstract_end": {
+      "type": "boolean",
+      "meaning": "关键词与其对应摘要末段在同物理页",
+      "missing": "unknown"
+    },
+    "layout.text_neighbor_blank.pt": {
+      "type": "number",
+      "meaning": "图表与相邻正文段落间实际空白行高度；无文字邻居为not_applicable",
+      "missing": "unknown"
+    },
+    "length.han_count": {
+      "type": "number",
+      "meaning": "只数Unicode汉字标量（含扩展区），排除标签、域指令、删除修订、脚注及隐藏内容；存在未接受修订时unknown",
+      "missing": "unknown"
+    },
+    "length.reviewed_character_count": {
+      "type": "number",
+      "meaning": "一个汉字或英文字母各计一字，不按英文单词计；学校明确写汉字时只数汉字。由服务计算，不要求上传者确认口径或填表。LENGTH-01按正文范围应用：图片、图注、引用、注释不计；含被排除片段的段落，其余正文仍计入。建议只提示不自动修改。",
+      "missing": "unknown"
+    },
+    "lists.after_toc_new_page": {
+      "type": "boolean",
+      "meaning": "已存在图表清单位于目录后并另起一面，实际分页须可靠渲染",
+      "missing": "unknown"
+    },
+    "lists.entries_complete": {
+      "type": "boolean",
+      "meaning": "已存在图表清单条目具有序号、题名、页码；单项无法解析为unknown",
+      "missing": "unknown"
+    },
+    "lists.fields_present": {
+      "type": "boolean",
+      "meaning": "当前已存在图表清单含有效可更新清单域；普通超链接不等同自动清单域",
+      "missing": "unknown"
+    },
+    "lists.figure_before_table": {
+      "type": "boolean",
+      "meaning": "分列时插图清单在附表清单之前；合列时图条目在表条目前；只一种对象为not_applicable",
+      "missing": "unknown"
+    },
+    "lists.figure_table_present": {
+      "type": "boolean",
+      "meaning": "确认存在覆盖图表的分列或合列清单；未确认扫描完整不能以false代替unknown",
+      "missing": "unknown"
+    },
+    "mention_order.matches_object_order": {
+      "type": "boolean",
+      "meaning": "同类图或表出现次序与首次论及次序一致",
+      "missing": "unknown"
+    },
+    "notes.on_page_count": {
+      "type": "number",
+      "meaning": "可靠渲染后当前实际物理页的注释数量；不是全文数量。脚注及该页其他已确认注释去重统计，排除软件审阅批注、脚注分隔符、续注分隔符及引用标记；无真实分页为unknown",
+      "missing": "unknown"
+    },
+    "notes.position_and_language_valid": {
+      "type": "boolean",
+      "meaning": "有图注时在图题下；有英文图题时只在英文图题下给英文图注；无图注为not_applicable",
+      "missing": "unknown"
+    },
+    "notes.same_page_footnotes": {
+      "type": "boolean",
+      "meaning": "已确认采用文中编号加同页底部脚注；无注释为not_applicable，跨页定位不可靠为unknown",
+      "missing": "unknown"
+    },
+    "number_title.gap.em": {
+      "type": "number",
+      "meaning": "确认对象中序号到题名的视觉空白宽度，以当前汉字符advance为1；非空格字符个数",
+      "missing": "unknown"
+    },
+    "numbering.appendix_sequence_valid": {
+      "type": "boolean",
+      "meaning": "附录对象按类别独立连续编号，前冠本附录字母",
+      "missing": "unknown"
+    },
+    "numbering.chapter_sequence_valid": {
+      "type": "boolean",
+      "meaning": "正文图表公式分别在每章从1连续，前冠章号",
+      "missing": "unknown"
+    },
+    "numbering.digits": {
+      "type": "string",
+      "meaning": "章与节的已确认序号使用arabic，排除正文中数字",
+      "missing": "unknown"
+    },
+    "numbering.separate_from_body": {
+      "type": "boolean",
+      "meaning": "附录对象编号没有沿用正文对象的计数序列",
+      "missing": "unknown"
+    },
+    "numbering.separator": {
+      "type": "string",
+      "meaning": "节/图表公式的分级序号分隔符；单层章号该子项not_applicable",
+      "missing": "unknown"
+    },
+    "numbering.valid_hierarchy": {
+      "type": "boolean",
+      "meaning": "节编号父级存在且前缀一致、每层连续，章号序列合理",
+      "missing": "unknown"
+    },
+    "object.all_pages_ordinary": {
+      "type": "boolean",
+      "meaning": "作者或可靠布局分类确认该节所有页面为普通页，混合或未知不得为true",
+      "missing": "unknown"
+    },
+    "object.contains_unnumbered_math": {
+      "type": "boolean",
+      "meaning": "目标普通段落含不编序号数学表达式；可编辑公式及图片公式均需考虑，识别不明unknown",
+      "missing": "unknown"
+    },
+    "object.is_display_math_paragraph": {
+      "type": "boolean",
+      "meaning": "已确认独立公式段：仅数学表达式及其序号，无普通叙述文字；行内公式、图题和表题不适用",
+      "missing": "unknown"
+    },
+    "object.is_pre_body_padding_blank": {
+      "type": "boolean",
+      "meaning": "仅为第一章奇数页起所设、紧邻正文前的必要空白页",
+      "missing": "unknown"
+    },
+    "object.orientation_exception": {
+      "type": "boolean",
+      "meaning": "作者确认属于整页表格或特殊图表横向例外；未知不为false",
+      "missing": "unknown"
+    },
+    "objects.figure_table_count": {
+      "type": "number",
+      "meaning": "全文已确认的独立插图与数据表总数；同一对象去重，分图以其整体插图计，排除目录条目和排版表格；识别不完整为unknown",
+      "missing": "unknown"
+    },
+    "page.is_landscape": {
+      "type": "boolean",
+      "meaning": "已解析节的实际页面方向为横向；横向为true，仅用于产品提示，不声明学校违规",
+      "missing": "unknown"
+    },
+    "page_number.continuous": {
+      "type": "boolean",
+      "meaning": "第一章前必要空白页与前文页码连续，包含不可见域更新风险",
+      "missing": "unknown"
+    },
+    "page_number.decorative_lines": {
+      "type": "boolean",
+      "meaning": "页码数字左右是否有修饰线（非页眉线）",
+      "missing": "unknown"
+    },
+    "page_number.in_footer_center": {
+      "type": "boolean",
+      "meaning": "页码实际位于页脚区域中部",
+      "missing": "unknown"
+    },
+    "page_number.right_aligned": {
+      "type": "boolean",
+      "meaning": "目录行末页码右顶格，依据制表位/布局确认",
+      "missing": "unknown"
+    },
+    "page_numbers.abstract_to_body": {
+      "type": "string",
+      "meaning": "摘要至正文前显示数字格式upperRoman",
+      "missing": "unknown"
+    },
+    "page_numbers.body_to_end": {
+      "type": "string",
+      "meaning": "正文第一章到结尾显示数字格式decimal",
+      "missing": "unknown"
+    },
+    "page_numbers.chapter1_start": {
+      "type": "number",
+      "meaning": "第一章页码显示起点为1",
+      "missing": "unknown"
+    },
+    "page_numbers.cover_and_originality_absent": {
+      "type": "boolean",
+      "meaning": "封面及原创性声明没有可见页码，不推及其他前置声明页",
+      "missing": "unknown"
+    },
+    "punctuation.dash_ellipsis_form_valid": {
+      "type": "boolean",
+      "meaning": "语义确认的中文破折号/省略号或外文省略号形式和占位正确",
+      "missing": "unknown"
+    },
+    "punctuation.english_halfwidth_valid": {
+      "type": "boolean",
+      "meaning": "仅已确认普通英文摘要叙述范围内可替换的中文/全角标点是否全部为英文半角；公式、引用名称、专名、嵌入中文、代码、域指令、URL/DOI等保护区不检查不标记，边界未知为unknown",
+      "missing": "unknown"
+    },
+    "punctuation.pairs_balanced": {
+      "type": "boolean",
+      "meaning": "排除代码数学及语言例外后，引号括号书名号正确成对",
+      "missing": "unknown"
+    },
+    "punctuation.reference_halfwidth_valid": {
+      "type": "boolean",
+      "meaning": "参考条目内已确认著录标点为半角；保护URL、DOI、域代码、标识符及需原样保留的题名内部内容；不把所有非ASCII字符认作错误，不依赖整部GB7714即可检查",
+      "missing": "unknown"
+    },
+    "references.after_body": {
+      "type": "boolean",
+      "meaning": "参考文献集中列表位于正文之后",
+      "missing": "unknown"
+    },
+    "references.author_order_valid": {
+      "type": "boolean",
+      "meaning": "各文种组内按已解析著者字母排序，中文著者使用可靠拼音排序键；多音姓名、团体著者或解析歧义为unknown，仅跳过受影响比较，不阻断其他格式子项",
+      "missing": "unknown"
+    },
+    "references.author_year_syntax_valid": {
+      "type": "boolean",
+      "meaning": "已确认著者出版年制引文包含著者及年份，并采用括号、逗号等明确适用形式；一般性建议及例外不升级为硬错误",
+      "missing": "unknown"
+    },
+    "references.citation_targets_exist": {
+      "type": "boolean",
+      "meaning": "正文每个已确认引文都能关联文后条目；不能把正文数字或括号直接认作引文",
+      "missing": "unknown"
+    },
+    "references.entries_have_citations": {
+      "type": "boolean",
+      "meaning": "文后条目均有已确认正文引用；正文引用识别不完整时unknown，不把未识别当未引用",
+      "missing": "unknown"
+    },
+    "references.hanging_indent_valid": {
+      "type": "boolean",
+      "meaning": "著者出版年制条目有效悬挂缩进为2汉字符或4字符，两种均接受；不是要求同时满足，不按序号是否存在判错",
+      "missing": "unknown"
+    },
+    "references.language_groups_valid": {
+      "type": "boolean",
+      "meaning": "著者出版年制文献按已解析文种分组，中文在前；不要求其他文种额外固定顺序",
+      "missing": "unknown"
+    },
+    "references.number_hangs_outside": {
+      "type": "boolean",
+      "meaning": "顺序编码制列表序号在正文起始边界外悬挂",
+      "missing": "unknown"
+    },
+    "references.order_matches_citation_number": {
+      "type": "boolean",
+      "meaning": "数字制参考条目按对应索引号顺序",
+      "missing": "unknown"
+    },
+    "references.split_by_chapter": {
+      "type": "boolean",
+      "meaning": "正文参考文献是否分章著录；附录独立引用例外不算正文拆分",
+      "missing": "unknown"
+    },
+    "results.dates_descending": {
+      "type": "boolean",
+      "meaning": "已存在科研成果各现有类别内，已解析发表时间由近及远；相同日期接受，缺日期或区间无法比较的相邻关系unknown，不要求补成果或分类",
+      "missing": "unknown"
+    },
+    "security.required_label_present": {
+      "type": "boolean",
+      "meaning": "仅在作者已填写密级标识时检查其书写格式；未填写或空白按作者未标注处理，不提示缺失，不推定应涉密。公开允许空白；密级未知不提示。期限值属于内容，不判断或改动；学校允许省略期限时不提示补填。 此为历史事实键名，不代表需补充缺失密级；现行局部识别不等于完整格式支持。",
+      "missing": "unknown"
+    },
+    "structure.acknowledgements_present": {
+      "type": "boolean",
+      "meaning": "完整结构扫描确认存在致谢或后记；只在明确缺失时为false，不由样式名未命中推断",
+      "missing": "unknown"
+    },
+    "structure.chapter_section_page_breaks": {
+      "type": "boolean",
+      "meaning": "相邻章级部分之间有开始新页的分节符；普通分页符不等同分节符；第一部分不要求前置分节符，连续分节符不满足",
+      "missing": "unknown"
+    },
+    "structure.conclusion_present": {
+      "type": "boolean",
+      "meaning": "正文真实章节标题中有结论，或确认的结论与展望、总结与展望等同义标题；不匹配主体，不评判章节内容",
+      "missing": "unknown"
+    },
+    "structure.introduction_present": {
+      "type": "boolean",
+      "meaning": "正文真实章节标题中有引言或绪论；排除目录及正文提及，识别扫描不完整为unknown",
+      "missing": "unknown"
+    },
+    "subfigures.sequence_valid": {
+      "type": "boolean",
+      "meaning": "已确认多个分图的编号按(a)(b)(c)连续；无多个分图为not_applicable；不识别图片内部文字",
+      "missing": "unknown"
+    },
+    "symbols.distinct_count": {
+      "type": "number",
+      "meaning": "已确认的不同符号和缩略语总项数，重复出现只算一项，不按字符或出现次数统计；识别不完整为unknown",
+      "missing": "unknown"
+    },
+    "symbols.initial_order_valid": {
+      "type": "boolean",
+      "meaning": "在现有各分类内只按已解析条目首字母比较，忽略大小写，相同首字母任意次序均接受；不比较后续字母，不要求重分类；字母体系不可比较为unknown",
+      "missing": "unknown"
+    },
+    "symbols.list_present": {
+      "type": "boolean",
+      "meaning": "完整结构扫描确认存在符号和缩略语说明",
+      "missing": "unknown"
+    },
+    "symbols.position_valid": {
+      "type": "boolean",
+      "meaning": "已存在符号说明位于目录之后、正文之前",
+      "missing": "unknown"
+    },
+    "table_notes.layout_valid": {
+      "type": "boolean",
+      "meaning": "多个表注注序左缩进2字，序号与注文间空1字符，续行悬挂左齐且两端对齐；单注为not_applicable，不判断短语语义",
+      "missing": "unknown"
+    },
+    "table_notes.position_valid": {
+      "type": "boolean",
+      "meaning": "已存在表注位于对应表格下方",
+      "missing": "unknown"
+    },
+    "table_notes.sequence_valid": {
+      "type": "boolean",
+      "meaning": "同一表的多个表注连续编号；单注为not_applicable",
+      "missing": "unknown"
+    },
+    "template.residual_count": {
+      "type": "number",
+      "meaning": "文档中已确认的模板专用说明及占位文字残留数；排除正文对这些文字的正常引用，不判断替换内容真实性",
+      "missing": "unknown"
+    },
+    "text.normalized": {
+      "type": "string",
+      "meaning": "目标字段去除首尾空白后的完整文本，不截取其中任意子串",
+      "missing": "unknown"
+    },
+    "title.has_terminal_punctuation": {
+      "type": "boolean",
+      "meaning": "题名末尾为非内容组成部分的标点；公式或专名歧义unknown",
+      "missing": "unknown"
+    },
+    "title.leading_digit_ambiguous": {
+      "type": "boolean",
+      "meaning": "编号之后题名首个数字会与编号混淆；人工或可靠结构确认",
+      "missing": "unknown"
+    },
+    "toc.entries_match_headings_and_pages": {
+      "type": "boolean",
+      "meaning": "目录条目序号题名和页码与真实标题及布局一致",
+      "missing": "unknown"
+    },
+    "toc.includes_pre_toc_or_self": {
+      "type": "boolean",
+      "meaning": "目录是否错误包含目录本身或其前置内容",
+      "missing": "unknown"
+    },
+    "figure_notes.indent_valid": {
+      "type": "boolean",
+      "meaning": "多图注的注序左缩进为2汉字符；续行悬挂和间距另查",
+      "missing": "unknown"
+    },
+    "table_notes.indent_valid": {
+      "type": "boolean",
+      "meaning": "多表注的注序左缩进为2汉字符且两端对齐；续行悬挂和间距另查",
+      "missing": "unknown"
+    },
+    "toc.heading_targets_exist": {
+      "type": "boolean",
+      "meaning": "目录中已解析的PAGEREF与超链接书签目标均存在；不等价于页码及标题完整匹配",
+      "missing": "unknown"
+    }
+  },
+  "fact_state_contract": [
+    "known",
+    "unknown",
+    "not_applicable"
+  ],
+  "absence_policy": "先完整扫描确认存在性。缺失只运行对应文档级结构提醒，锚定相邻标题或正文起点；不生成不存在对象的字体、字号、行距等批注，不创建空章节。已存在结构按其硬性格式要求检查并安全修复；建议一律只批注。明确可选且不要求缺失提醒的附录、图注等不存在时不提示。识别不完整为unknown。",
+  "scope_policy": "each evaluates on each confirmed selected object; document_group aggregates selected roles per document. Per-fact applicability is independent: not_applicable subchecks are skipped rather than failed. Confirmed failures still produce their own comments when another subcheck is unknown. Document-level absence checks run even if the missing structure has no selected node.",
+  "standard_conversion": {
+    "三号": 16,
+    "四号": 14,
+    "小四": 12,
+    "五号": 10.5
+  },
+  "conversion_note": "Font-size names are encoded in pt for OOXML; normative authority is template text, never template formatting.",
+  "precision_policy": {
+    "length_tolerance_twip": 1,
+    "origin": "product_numeric_rounding",
+    "not_school_rule": true
+  },
+  "role_parents": {
+    "abstract_zh_body": [
+      "abstract_body"
+    ],
+    "abstract_en_body": [
+      "abstract_body"
+    ],
+    "section1_heading": [
+      "section_heading"
+    ],
+    "section2_heading": [
+      "section_heading"
+    ],
+    "section3_heading": [
+      "section_heading"
+    ],
+    "toc_section1_entry": [
+      "toc_other_entry"
+    ],
+    "toc_section2_entry": [
+      "toc_other_entry"
+    ],
+    "toc_chapter_entry": [
+      "toc_entry"
+    ],
+    "toc_other_entry": [
+      "toc_entry"
+    ],
+    "body_figure": [
+      "figure"
+    ],
+    "appendix_figure": [
+      "figure"
+    ],
+    "body_table": [
+      "table"
+    ],
+    "appendix_table": [
+      "table"
+    ],
+    "body_numbered_equation": [
+      "numbered_equation"
+    ],
+    "appendix_equation": [
+      "numbered_equation"
+    ],
+    "numbered_equation": [
+      "equation"
+    ],
+    "numeric_citation": [
+      "citation"
+    ],
+    "author_year_citation": [
+      "citation"
+    ],
+    "numeric_reference_entry": [
+      "reference_entry"
+    ],
+    "author_year_reference_entry": [
+      "reference_entry"
+    ],
+    "appendix_reference": [
+      "reference_entry"
+    ],
+    "figure_list": [
+      "figure_table_list"
+    ],
+    "table_list": [
+      "figure_table_list"
+    ]
+  },
+  "role_membership_policy": "A confirmed leaf role also matches its explicit transitive role_parents; generic selectors never require duplicate manual labels. Deduplicate by stable target ID. No other implicit inheritance. peer_heading includes reference, appendix, acknowledgements and symbol-list chapter-level headings, but excludes dedicated abstract/toc/list heading roles.",
+  "notification_policy": {
+    "checkable": "only_confirmed_failure_or_its_completed_fix",
+    "unsupported": "never",
+    "unknown": "silent_skip",
+    "missing_dependency": "silent_skip",
+    "unimplemented_check": "silent_skip",
+    "source_check_preserved": "check records source requirements; audit defines executable subset, not all source assertions",
+    "override_semantics": "audit.when adds conditions to rule.when; audit.roles replaces executable targets, including document-level missing-structure checks; audit.tests overrides check.tests for execution only, null uses original properties/assertions; audit.requires lists shared dependencies only. Other provider failures make only their own facts unknown, not all subchecks.",
+    "advisory": "comment_only_never_mutate",
+    "partial_result": "各子项分别判定；一项unknown不掩盖其他明确失败。结构缺失只出一条结构提示，不虚构格式问题。"
+  },
+  "product_policies": {
+    "lists_seven": {
+      "description": "全文已确认图表总数达到7个且没有图表清单时建议制作，少于7个不提示；7为用户指定推荐阈值。",
+      "threshold": 7
+    },
+    "symbols_seven": {
+      "description": "全文不同符号及缩略语达到7项且没有说明表时建议制作，少于7项不提示；7为用户指定推荐阈值。",
+      "threshold": 7
+    },
+    "math_single": {
+      "description": "已确认独立成段的公式采用单倍行距；这是用户指定的修复默认，学校文字仅允许按表达式需要调整行距。"
+    },
+    "notes_five_per_page": {
+      "description": "同一实际物理页的注释超过5条时建议精简，5条及以下不提示；只批注，不修改。无可靠分页结果时跳过，禁止以全文计数替代。",
+      "threshold": 5,
+      "scope": "physical_page"
+    },
+    "chapter_break": {
+      "description": "相邻章级部分采用开始新页的分节符；学校明确另起一页，分节符形式为本产品执行约定。"
+    },
+    "portrait_notice": {
+      "description": "默认竖向；检测到横向节只作提示，不自动旋转，也不自动拆分分节。"
+    }
+  },
+  "transforms": {
+    "english_punctuation_to_halfwidth": {
+      "rules": [
+        "USTC-ABSTRACT-13"
+      ],
+      "failure_facts": [
+        "punctuation.english_halfwidth_valid"
+      ],
+      "scope": "仅已确认普通英文叙述中的标点字符；公式、引用名称、专名、嵌入中文、域、URL/DOI及边界不明区域不检查、不修改、不批注。保持run格式与关系，不使用全文NFKC。"
+    },
+    "reference_punctuation_to_halfwidth": {
+      "rules": [
+        "USTC-REF-06"
+      ],
+      "failure_facts": [
+        "punctuation.reference_halfwidth_valid"
+      ],
+      "scope": "仅已确认参考文献著录标点；保护标识符、URL/DOI、域及需原样保留的题名内容；不改非标点字符，不使用全文NFKC。"
+    },
+    "math_single_spacing": {
+      "rules": [
+        "USTC-BODY-03"
+      ],
+      "failure_facts": [
+        "equation.single_spacing"
+      ],
+      "scope": "只将已确认独立公式段的paragraph.line设为single；行内公式及普通文字段不动。"
+    },
+    "figure_note_format": {
+      "rules": [
+        "USTC-FIGURE-05"
+      ],
+      "failure_facts": [
+        "figure_notes.layout_valid"
+      ],
+      "scope": "只修改已确定多图注、注序边界和既有排法下的缩进、1字符间隔及悬挂／续行属性；动态宽度须已知。无法确定安全属性时只提示，不拆合图注、不选择新排法、不改编号、不移动图片，相关重排不列修复欠账。"
+    },
+    "table_note_format": {
+      "rules": [
+        "USTC-TABLE-05"
+      ],
+      "failure_facts": [
+        "table_notes.layout_valid"
+      ],
+      "scope": "只修改已确定多表注、注序边界和既有排法下的2字缩进、1字符间隔、悬挂／对齐属性；动态宽度须已知。需要拆合／重排或猜表注边界时只提示，不改编号、位置、文字或句末标点，不列此类修复欠账。"
+    },
+    "equation_block_format": {
+      "rules": [
+        "USTC-EQUATION-02"
+      ],
+      "failure_facts": [
+        "equations.block_layout_valid"
+      ],
+      "scope": "只修改已确认公式的段落属性，且须有文档已明确采用的合法目标模式。两种合法模式混用而无明确选择时只提示，不依据首个公式任选模式，不重排容器、分数线或数学内容；此类动作不计自动修复欠账。"
+    },
+    "author_year_format": {
+      "rules": [
+        "USTC-REF-05"
+      ],
+      "failure_facts": [
+        "references.language_groups_valid",
+        "references.author_order_valid",
+        "references.hanging_indent_valid"
+      ],
+      "scope": "分别处理已确认失败且目标安全的子项。合法2汉字符或4字符悬挂不改，非法缩进采用既定2汉字符。排序仅限文种与键明确、连续完整无编号纯文本、无域／书签／批注锚点且引文关系不变的条目；同键保序。复杂域／编号／关系条目仅检查提示，不搬动，不列安全搬运未实现功能。"
+    },
+    "linked_numbering": {
+      "rules": [
+        "USTC-APPENDIX-02",
+        "USTC-APPENDIX-05"
+      ],
+      "failure_facts": [],
+      "scope": "仅对单个附录缺字母或字母不是A、明确间隔，以及归属确定且关系可唯一对应的附录图表公式编号进行联动修复。保留书签及REF域，更新目录标题缓存、明确的文中引用及编号缓存；章号STYLEREF域改为附录字母QUOTE域，SEQ使用独立附录序列并显式重置当前顺序号，防止刷新回正文编号。多个附录错序、重号导致的歧义、复杂或不完整域不自动修改。无附录不创建，缺标题不代写；不改公式内容、图表数据或页码。"
+    }
+  },
+  "punctuation_normalization": {
+    "map": {
+      "，": ",",
+      "。": ".",
+      "；": ";",
+      "：": ":",
+      "！": "!",
+      "？": "?",
+      "（": "(",
+      "）": ")",
+      "［": "[",
+      "］": "]",
+      "｛": "{",
+      "｝": "}",
+      "“": "\"",
+      "”": "\"",
+      "‘": "'",
+      "’": "'"
+    },
+    "policy": "仅在相应已确认检查范围内逐标点替换；不做全文兼容归一化，不改变公式运算符、单位、汉字或专名。弯引号可能是撇号等特殊用途，无法确认用途则保护该范围。"
+  },
+  "transform_policy": "白名单guarded_transform是引擎授权契约；当前只实现runtime_implementation列出的变换或子项，其余保持未知、静默跳过。只处理operation.failure_facts中已确认fail且定位及全部补丁前提已知的子项；其他通过、未知、不适用子项不变。修复后重查，未成功不能写已修改批注。 自动修复仅针对已确认错误且安全目标明确的限定格式属性或已授权等值变换；能查出错但不能确定安全改法的只提示，不计自动修复欠账；不做内容校对，不补内容或重排复杂对象；仅在linked_numbering授权范围内修复附录编号并同步明确关联。",
+  "context_policy": {
+    "user_input": "uploaded_docx_only",
+    "standard_source": "site_bound_rule_pack_currently_ustc",
+    "context_source": "confirmed_document_fields_and_structural_evidence_or_trusted_backend_configuration",
+    "extra_forms": false,
+    "context_file_required": false,
+    "confirmation_prompts": false,
+    "unknown": "skip_only_dependent_subchecks_continue_processing_no_prompt_no_comment",
+    "conflict": "unknown_never_guess_from_filename_or_single_keyword",
+    "legacy_attestation_dependencies": "内部可信事实要求，不要求用户填表或逐项确认；没有可靠文档证据或后台来源时保持unknown。"
+  },
+  "runtime_implementation": {
+    "module": "thesisflow.docx_rules",
+    "input": "docx_only",
+    "layout_adapter": false,
+    "contexts": "document_evidence_only_unknown_silent",
+    "implemented_transforms": [
+      "english_punctuation_to_halfwidth:plain_protected_regions",
+      "reference_punctuation_to_halfwidth:typed_entries_protected_title",
+      "math_single_spacing:recognized_OMML",
+      "author_year_format:indent_and_safe_latin_sort",
+      "figure_note_format:multiple_note_left_indent",
+      "table_note_format:multiple_note_left_indent_and_alignment",
+      "equation_block_format:recognized_paragraph_mode",
+      "linked_numbering:single_appendix_label_and_unambiguous_figure_table_equation_links"
+    ],
+    "not_implemented_transforms": [
+      "figure_note_format:gap_and_continuation_width",
+      "table_note_format:gap_and_continuation_width"
+    ],
+    "scope": "执行客观结构、可确认编号与引文关系、部分有效属性和白名单修复；规则及子项剩余边界见coverage.md。本轮不接入Word实际分页，不以某次触发或测试数量表示覆盖。",
+    "literal_label_repair": "仅已识别英文摘要标题，Abstract等大小写形式改为ABSTRACT，逐原文字片段转大写，不重建段落、不修改书签和域。"
+  },
+  "literal_label_repairs": {
+    "USTC-ABSTRACT-11": "ABSTRACT"
+  }
+}
