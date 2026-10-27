@@ -12,7 +12,7 @@ B编号按原DOCX正文直接子节点从1起计数（含表格），XPath和文
 
 首版版本为 `2026-10-27-preview.1`。`release.json` / `manifest.json` 锁定发布文件；产品应固定本仓 Git 提交与规则文件哈希，不从 main/latest 自动更新运行规则。
 
-本仓尚未指定额外的开源许可证；第三方学校原件保留其原有权利，不因本仓公开而获得额外授权。
+本仓库依据学校公开规范整理执行规则，欢迎共同审阅、纠错和修订。
 
 纠错请用Issue模板附规则ID、版本、原文出处、当前/预期解释及脱敏小例子。不要上传真实论文、全文报告或个人信息。提交Issue不会自动修改线上规则。
 
@@ -21,3 +21,10 @@ B编号按原DOCX正文直接子节点从1起计数（含表格），XPath和文
 - [规则纠错](https://github.com/firestige/yangeshi-rules/issues/new?template=rule-correction.yml)
 - [学校来源更新](https://github.com/firestige/yangeshi-rules/issues/new?template=source-update.yml)
 
+## 许可与署名
+
+本仓库可授权的结构化规则、来源映射及说明采用 **[CC BY-SA 4.0（署名—相同方式共享 4.0 国际版）](https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans)**，署名为 **“研格式规则库及贡献者”**。
+
+学校原始规范、模板、手册及其他第三方内容（包括原文引文）不在上述许可范围内，相关权利归各自权利人所有。
+
+完整许可文本见 [LICENSE](LICENSE)，许可范围与署名示例见 [NOTICE.md](NOTICE.md)。

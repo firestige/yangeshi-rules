@@ -3,8 +3,12 @@
   "repository_url": "https://github.com/firestige/yangeshi-rules",
   "repository_commit": null,
   "originals_review": "publication-approved-by-project-owner",
-  "license_review": "no-additional-license-selected",
+  "license_review": "CC-BY-SA-4.0-approved-by-project-owner",
   "note": "Project owner explicitly authorized public repository creation and upload of the first version on 2026-10-27. No additional rights to third-party originals are granted. Git commit is recorded externally to avoid self-reference.",
   "approved_at": "2026-10-27",
-  "published": true
+  "published": true,
+  "license": "CC-BY-SA-4.0",
+  "attribution": "研格式规则库及贡献者",
+  "license_scope": "可授权的结构化规则、来源映射及说明；学校原件和其他第三方内容不适用",
+  "license_approved_at": "2026-10-27"
 }
