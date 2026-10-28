@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "tree_sha256": "ab67f6303773a2299fb1eae65b98a9c91e1306fd4ef023aeec4952abe371adec",
+  "tree_sha256": "d9ea908408167f9c12b23b7a1016c8a16de878ef79f143587fdb3d6636f6207a",
   "files": {
     ".github/ISSUE_TEMPLATE/config.yml": {
       "sha256": "1f103c6a9dd07cd13a9a6f17ace6b813f47747eb9cb7e00488cb2073caaf91bb",
@@ -71,8 +71,8 @@
       "bytes": 352385
     },
     "schools/ustc/2026-09-21/rules.schema.json": {
-      "sha256": "97d378c85d762064a38889d5b7cabe36964053362f0c7469dd5f880ff095d4da",
-      "bytes": 28253
+      "sha256": "5b7b3d5a7f0b35f954ca039e1fbf791d71201bb2720533e1e53cea1d0b3dd99b",
+      "bytes": 28272
     },
     "schools/ustc/2026-09-21/runtime.json": {
       "sha256": "c80a27fe7787c8b290c0254ca3239fcef6abab2be47bf35711a2bb4932424308",
