@@ -1,8 +1,8 @@
 # 研格式 · 论文格式规则库
 
-[打开规则 Wiki →](https://rules.yangeshi.cn/)
+[打开规则库 →](https://yangeshi.cn/rules)
 
-学校原始材料 → 研格式解释 → 可执行规则。只包含中科大，非学校官方项目，不承诺全规范覆盖。
+学校原始材料 → 研格式解释 → 可执行规则。当前收录中科大规则，后续按学校与版本扩展。非学校官方项目，不承诺全规范覆盖。
 
 - [逐条规范与解释](schools/ustc/2026-09-21/guide.md)
 - [实际执行规则](schools/ustc/2026-09-21/rules.json)
@@ -31,8 +31,10 @@ B编号按原DOCX正文直接子节点从1起计数（含表格），XPath和文
 
 完整许可文本见 [LICENSE](LICENSE)，许可范围与署名示例见 [NOTICE.md](NOTICE.md)。
 
-## 规则 Wiki 的更新
+## 规则库页面与发布
 
-Wiki 直接读取本仓库的 `rules.json`、`source-map.json` 和 `release.json`，按分类生成查阅页面，不另存一份手工维护的规则正文。规则修订合并后，GitHub Pages 自动发布；页面读取新快照并校验规则与来源映射的哈希。
+本仓库维护规则数据与页面源码，不再独立部署站点。规则库统一在主站 `/rules` 展示，GitHub、Issue 和贡献入口仍指向本仓库。
+
+主站按固定 Git 提交拉取 `rules.json`、`source-map.json`、`release.json` 和对应页面源码，完成哈希、兼容性与集成验证后，随主站发布。学校原文、整理解释和规则展示只有一套来源，不另存一份手工维护的规则正文；规则仓 main 更新不会直接替换已上线版本。
 
 本地预览：在仓库根目录执行 `python3 -m http.server 8000 --bind 127.0.0.1`，然后访问 `http://127.0.0.1:8000/`。
