@@ -1099,6 +1099,20 @@
       ],
       "failure_facts": [],
       "scope": "仅对单个附录缺字母或字母不是A、明确间隔，以及归属确定且关系可唯一对应的附录图表公式编号进行联动修复。保留书签及REF域，更新目录标题缓存、明确的文中引用及编号缓存；章号STYLEREF域改为附录字母QUOTE域，SEQ使用独立附录序列并显式重置当前顺序号，防止刷新回正文编号。多个附录错序、重号导致的歧义、复杂或不完整域不自动修改。无附录不创建，缺标题不代写；不改公式内容、图表数据或页码。"
+    },
+    "keyword_separators": {
+      "rules": [
+        "USTC-KEYWORD-04"
+      ],
+      "failure_facts": [],
+      "scope": "只替换已确认词项边界处的分隔符及紧随空白；中文统一全角分号，英文半角逗号加一个空格。保护术语内部标点，局部未知保留并提示；不改词项内容及首字母，不处理域、超链接或受保护文字。"
+    },
+    "linked_object_separator": {
+      "rules": [
+        "USTC-OBJECT-01"
+      ],
+      "failure_facts": [],
+      "scope": "仅对已确认的正文图题、表题，将编号内部连接符改为半角点，保留章号和顺序号；同步明确的正文引用、连续列举引用、图表清单及书签REF缓存。保留STYLEREF/SEQ代码；仅改明确QUOTE编号。续图等相同编号可作相同连接符转换，既有重复或顺序问题不重编、不消除；残缺或不支持的域保持原文并提示。不全局替换减号。"
     }
   },
   "punctuation_normalization": {
@@ -1147,7 +1161,9 @@
       "figure_note_format:multiple_note_left_indent",
       "table_note_format:multiple_note_left_indent_and_alignment",
       "equation_block_format:recognized_paragraph_mode",
-      "linked_numbering:single_appendix_label_and_unambiguous_figure_table_equation_links"
+      "linked_numbering:single_appendix_label_and_unambiguous_figure_table_equation_links",
+      "keyword_separators:confirmed_boundaries_only",
+      "linked_object_separator:confirmed_figure_table_number_and_links"
     ],
     "not_implemented_transforms": [
       "figure_note_format:gap_and_continuation_width",

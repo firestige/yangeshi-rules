@@ -6,7 +6,7 @@
     "institution": "中国科学技术大学",
     "version": "2026-09-21",
     "checked_at": "2026-10-20",
-    "profile_sha256": "93947997baa5441cd362bba8b3375e328a7c8ff6f396d60c868dbc86ec0f0b1f",
+    "profile_sha256": "a393518084dcc76da6b169a072e87ca87527d2a7a65401984ca33814897a9062",
     "documents": [
       {
         "id": "template",
@@ -42,27 +42,27 @@
         "id": "rules",
         "title": "研格式执行规则（非学校原文）",
         "kind": "JSON",
-        "version": "2026-10-27-preview.1",
+        "version": "2026-10-30-preview.1",
         "filename": "rules.json",
-        "bytes": 352385,
-        "sha256": "93947997baa5441cd362bba8b3375e328a7c8ff6f396d60c868dbc86ec0f0b1f",
+        "bytes": 354090,
+        "sha256": "a393518084dcc76da6b169a072e87ca87527d2a7a65401984ca33814897a9062",
         "download_url": "./rules/ustc2026.json"
       }
     ]
   },
   "ruleset": {
     "id": "ustc-2026-text-authority-v1",
-    "version": "2026-10-27-preview.1",
+    "version": "2026-10-30-preview.1",
     "status": "public-preview",
     "repository_url": "https://github.com/firestige/yangeshi-rules",
     "repository_commit": null,
     "published": true,
-    "rules_sha256": "93947997baa5441cd362bba8b3375e328a7c8ff6f396d60c868dbc86ec0f0b1f",
+    "rules_sha256": "a393518084dcc76da6b169a072e87ca87527d2a7a65401984ca33814897a9062",
     "schema": "1.0",
-    "engine_contract_sha256": "5abef434f0e31e1cd94185ca2a69dcf643075036c148321f24aaba468655d6eb",
-    "runtime_digest": "eb40112bbb919b30d80112a6853c98742b0dbaab43ea7515baba214f16ec0701",
+    "engine_contract_sha256": "ad1d6c6da0315058d06e36d2e5852f25b33bfc1597b163df3650ce87d1b90296",
+    "runtime_digest": "52c7cfd1e3715d7e3addc11a2089026b6e75b33817b7f2aab852446af33784ae",
     "details_path": "./rules.html",
-    "source_map_sha256": "d373a6af88364c788880f66847a277b7e1f75c1815100e8403f98c5cc7fdac5d",
+    "source_map_sha256": "df1c3e9f8ece381bf424c2325ef9c25e06c61e145896e6509726d18b8ab45df5",
     "checked_at": "2026-10-20"
   },
   "counts": {

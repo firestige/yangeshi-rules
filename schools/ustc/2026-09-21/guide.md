@@ -666,14 +666,14 @@
 
 中文关键词之间用分号；英文关键词之间用半角逗号加空格，每个英文关键词第一个字母大写。对专名、符号开头等歧义保留人工审查。
 
-来源：官方模板§2.5 摘要和关键词。性质：校方要求。对象：`keyword_group`。按服务分类决定是否检查与批注，不自动代改。
+来源：官方模板§2.5 摘要和关键词。性质：校方要求。对象：`keyword_group`。词项边界确认的分隔符自动修复；不确定边界仅提示，不改写词项。
 
 处理边界：仅词项边界明确的分隔符／空格列为安全格式目标；首字母及专名改写只提示，不计自动改写欠账。
 
 <details><summary>结构化规则及批注契约</summary>
 
 ```ustc-rule
-{"id":"USTC-KEYWORD-04","title":"关键词分隔和首字母","authority":"required","sources":["B265","B266"],"selector":{"roles":["keyword_group"],"confidence":"confirmed","mode":"document_group"},"when":[],"check":{"kind":"assertions","tests":[{"fact":"keywords.zh_separator","op":"in","value":["；",";"]},{"fact":"keywords.en_separator","op":"eq","value":", "},{"fact":"keywords.en_initial_letters_uppercase","op":"eq","value":true}]},"requires":["keyword_items","semantic_roles"],"fix":{"permission":"none","target":{},"preconditions":[]},"comments":{"fixed":null,"action":"请核对并按实际情况处理：中文关键词之间用分号；英文关键词之间用半角逗号加空格，每个英文关键词第一个字母大写。对专名、符号开头等歧义保留人工审查。","risk":"自动改文字、序号或关联关系可能误改真实内容并破坏交叉引用。","reason":"仅词项边界明确的分隔符／空格列为安全格式目标；首字母及专名改写只提示，不计自动改写欠账。"},"audit":{"status":"checkable","notification":"on_confirmed_failure","roles":["keyword_group"],"when":[],"tests":null,"reason":"按明确属性或客观结构条件检查；仅已确认不符合时批注，未知、未实现、缺依赖和不适用均静默跳过。 修复边界：仅词项边界明确的分隔符／空格列为安全格式目标；首字母及专名改写只提示，不计自动改写欠账。","requires":["keyword_items","semantic_roles"],"policy_refs":[]}}
+{"id":"USTC-KEYWORD-04","title":"关键词分隔和首字母","authority":"required","sources":["B265","B266"],"selector":{"roles":["keyword_group"],"confidence":"confirmed","mode":"document_group"},"when":[],"check":{"kind":"assertions","tests":[{"fact":"keywords.zh_separator","op":"in","value":["；",";"]},{"fact":"keywords.en_separator","op":"eq","value":", "},{"fact":"keywords.en_initial_letters_uppercase","op":"eq","value":true}]},"requires":["keyword_items","semantic_roles"],"fix":{"permission":"guarded_transform","target":{"operation":"keyword_separators"},"preconditions":["no_unresolved_revision","no_protected_content","no_ambiguous_role","all_required_facts_known"]},"comments":{"fixed":"已调整{changes_zh}。","action":"请核对并按实际情况处理：中文关键词之间用分号；英文关键词之间用半角逗号加空格，每个英文关键词第一个字母大写。对专名、符号开头等歧义保留人工审查。","risk":"自动改文字、序号或关联关系可能误改真实内容并破坏交叉引用。","reason":"仅词项边界明确的分隔符／空格列为安全格式目标；首字母及专名改写只提示，不计自动改写欠账。"},"audit":{"status":"checkable","notification":"on_confirmed_failure","roles":["keyword_group"],"when":[],"tests":null,"reason":"按明确属性或客观结构条件检查；仅已确认不符合时批注，未知、未实现、缺依赖和不适用均静默跳过。 修复边界：仅词项边界明确的分隔符／空格列为安全格式目标；首字母及专名改写只提示，不计自动改写欠账。","requires":["keyword_items","semantic_roles"],"policy_refs":[]}}
 ```
 
 </details>
@@ -1416,12 +1416,12 @@
 
 图、表、编号表达式按章连续，用章号与章内顺序号两个阿拉伯数字，以半角点连接，如图2.1、表5.6、式（1.2）。附录按附录字母另编号，适用附录规则。
 
-来源：官方模板§3.5 有关图、表和表达式。性质：校方要求。对象：`body_figure, body_table, body_numbered_equation`。按服务分类决定是否检查与批注，不自动代改。
+来源：官方模板§3.5 有关图、表和表达式。性质：校方要求。对象：`body_figure, body_table, body_numbered_equation`。图表题注编号身份及关联确认后，自动统一连接符并更新明确引用；未知关联仅提示。
 
 <details><summary>结构化规则及批注契约</summary>
 
 ```ustc-rule
-{"id":"USTC-OBJECT-01","title":"图表公式分章编号","authority":"required","sources":["B332"],"selector":{"roles":["body_figure","body_table","body_numbered_equation"],"confidence":"confirmed","mode":"document_group"},"when":[],"check":{"kind":"assertions","tests":[{"fact":"numbering.chapter_sequence_valid","op":"eq","value":true},{"fact":"numbering.separator","op":"eq","value":"."}]},"requires":["semantic_roles","numbering"],"fix":{"permission":"none","target":{},"preconditions":[]},"comments":{"fixed":null,"action":"请核对并按实际情况处理：图、表、编号表达式按章连续，用章号与章内顺序号两个阿拉伯数字，以半角点连接，如图2.1、表5.6、式（1.2）。附录按附录字母另编号，适用附录规则。","risk":"自动改文字、序号或关联关系可能误改真实内容并破坏交叉引用。","reason":"本规则只授权检查；发现差异后需确认对象及关联，再由作者修改相关内容。"},"audit":{"status":"checkable","notification":"on_confirmed_failure","roles":["body_figure","body_table","body_numbered_equation"],"when":[],"tests":null,"reason":"按明确属性或客观结构条件检查；仅已确认不符合时批注，未知、未实现、缺依赖和不适用均静默跳过。","requires":["semantic_roles","numbering"],"policy_refs":[]}}
+{"id":"USTC-OBJECT-01","title":"图表公式分章编号","authority":"required","sources":["B332"],"selector":{"roles":["body_figure","body_table","body_numbered_equation"],"confidence":"confirmed","mode":"document_group"},"when":[],"check":{"kind":"assertions","tests":[{"fact":"numbering.chapter_sequence_valid","op":"eq","value":true},{"fact":"numbering.separator","op":"eq","value":"."}]},"requires":["semantic_roles","numbering"],"fix":{"permission":"guarded_transform","target":{"operation":"linked_object_separator"},"preconditions":["no_unresolved_revision","no_protected_content","no_ambiguous_role","all_required_facts_known"]},"comments":{"fixed":"已调整{changes_zh}。","action":"请核对并按实际情况处理：图、表、编号表达式按章连续，用章号与章内顺序号两个阿拉伯数字，以半角点连接，如图2.1、表5.6、式（1.2）。附录按附录字母另编号，适用附录规则。","risk":"自动改文字、序号或关联关系可能误改真实内容并破坏交叉引用。","reason":"已确认的图表题注编号连接符及可确定对应的引用安全联动修复；编号数值不变。重复编号仅作等值连接符转换，不重编或消除既有编号问题；未知关联及不支持的域保留人工核对。"},"audit":{"status":"checkable","notification":"on_confirmed_failure","roles":["body_figure","body_table","body_numbered_equation"],"when":[],"tests":null,"reason":"按明确属性或客观结构条件检查；仅已确认不符合时批注，未知、未实现、缺依赖和不适用均静默跳过。","requires":["semantic_roles","numbering"],"policy_refs":[]}}
 ```
 
 </details>

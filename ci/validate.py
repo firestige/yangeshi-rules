@@ -17,6 +17,8 @@ for file in releases:
     schema=json.loads((folder/'rules.schema.json').read_text());jsonschema.Draft202012Validator.check_schema(schema);jsonschema.validate(pack,schema)
     assert digest(folder/'rules.json')==release['ruleset']['rules_sha256']==release['standard']['profile_sha256']
     assert digest(folder/'source-map.json')==release['ruleset']['source_map_sha256']
+    rule_document=next(d for d in release['standard']['documents'] if d['id']=='rules')
+    assert rule_document['sha256']==digest(folder/'rules.json') and rule_document['bytes']==(folder/'rules.json').stat().st_size and rule_document['version']==release['ruleset']['version']
     assert pack['pack_id']==release['ruleset']['id']
     assert pack['contract_digest']==release['ruleset']['engine_contract_sha256']
     assert pack['runtime_digest']==release['ruleset']['runtime_digest']
@@ -25,6 +27,7 @@ for file in releases:
     assert len({row['rule_id'] for row in mapping})==len(mapping)
     for row in mapping:
         assert row['rule_id'] in by_id
+        assert row['interpretation']=={key:by_id[row['rule_id']][key] for key in row['interpretation']}
         assert by_id[row['rule_id']]['sources']==[s['source_id'] for s in row['sources']]
         for source in row['sources']:
             assert hashlib.sha256(source['text'].encode()).hexdigest()==source['text_sha256']
