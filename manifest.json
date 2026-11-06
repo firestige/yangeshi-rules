@@ -1,5 +1,5 @@
 {
-  "tree_sha256": "769988100c46af8a6298b65b4a5fa6296b0590672041b566b2d548c9e11df10a",
+  "tree_sha256": "de9e11930490d66f4910ddfa8d1b5973b816d9dc061703e0980960cecb399dda",
   "files": {
     ".github/CODEOWNERS": {
       "sha256": "86f3e2af7b32656ee7ebf5f03f6dcdc87276d4dc5459e509d1505b25584d796a",
@@ -10,12 +10,12 @@
       "bytes": 28
     },
     ".github/ISSUE_TEMPLATE/rule-correction.yml": {
-      "sha256": "7cce4d0b82fe5c1f9cf01d5154cf7ba64e210b3073ad24db8dcaa4dd98caa83b",
-      "bytes": 990
+      "sha256": "b6d9ffd8dc43025f163b17ec551a20f1ed1a8ad19f42fe9479b1b2ba5220c677",
+      "bytes": 989
     },
     ".github/ISSUE_TEMPLATE/source-update.yml": {
-      "sha256": "50b38972a77ac68070783e3c02cf18c285903115fee4caa559e8ab24eb6bf177",
-      "bytes": 999
+      "sha256": "6e383ed6149fb21e243558b2eaf4791392efbd45257cd6329554d7fa0e79ed8b",
+      "bytes": 998
     },
     ".github/workflows/rules-ci.yml": {
       "sha256": "ddd7afe3ffefe95a68a9ea0acab0d5c257a3a863f06d4dbc504c8777869cba6d",
@@ -254,8 +254,8 @@
       "bytes": 1380
     },
     "schools/nju-mba/guide.md": {
-      "bytes": 43634,
-      "sha256": "ffe0dd1603627cbf9358ca68765e80a84cc038896cae49df801f346790630bef"
+      "sha256": "ffe0dd1603627cbf9358ca68765e80a84cc038896cae49df801f346790630bef",
+      "bytes": 43634
     },
     "schools/nju-mba/release.json": {
       "sha256": "808508faad4eb3f17b2bb39749f199ba49b8bafb2e7e0eaab953290f510903c2",
@@ -278,8 +278,8 @@
       "bytes": 458
     },
     "schools/nju/guide.md": {
-      "bytes": 48013,
-      "sha256": "52eaaa4c42f5b3b81372a05aced8889cfb6e592686d1c5ced532ab275a850e91"
+      "sha256": "52eaaa4c42f5b3b81372a05aced8889cfb6e592686d1c5ced532ab275a850e91",
+      "bytes": 48013
     },
     "schools/nju/release.json": {
       "sha256": "e4c9019853cb771cd4af9f0d116fd10da66870e56e55959f0b27bdbdc6069332",
@@ -414,12 +414,12 @@
       "bytes": 139778
     },
     "schools/ustc/2026-10-29/coverage.md": {
-      "sha256": "9fff44d5ee3592bd106817a295de227a17f38d6e40b19dc973dad0f3e41a8776",
-      "bytes": 109170
+      "sha256": "b81e77a184e7204fd38af91a2598c2debdf1fca05e6645b9c82c7cff07530c89",
+      "bytes": 109173
     },
     "schools/ustc/2026-10-29/guide.md": {
-      "sha256": "89322203d63ea2bd0fd09cc5cf8919f4711e75f317fbface81e775395b66bc33",
-      "bytes": 296293
+      "sha256": "07a9dbb8d78fa5914ae49e6e33212617eff5a8e4c944c9bb14a7a47cd8d09660",
+      "bytes": 296217
     },
     "schools/ustc/2026-10-29/release.json": {
       "sha256": "f24999feba3d2c30c19dff13ddb24c5ae9e8efa10eb1db5370cfb971d755b2b2",
@@ -438,8 +438,8 @@
       "bytes": 473711
     },
     "schools/ustc/2026-10-29/unfinished.md": {
-      "sha256": "b4607bda369eea6ace8112d204275c0992b3572075392e8576ca3b2327a37096",
-      "bytes": 139878
+      "sha256": "fe8fea94a0612f742e2b705a0d0ec9f937a7fcfa0dbe672c852563963e7aa812",
+      "bytes": 139623
     },
     "schools/xjtu/coverage.md": {
       "sha256": "d2dea3f866bb6c746c323dd2cdc4d91e931396ee91279194089decd0e812d02c",
@@ -502,8 +502,8 @@
       "bytes": 4038
     },
     "wiki/app.js": {
-      "sha256": "f525ecb56b44c196edc915a0e75960c98ff562b29ca81c6da25d3423f3cc1374",
-      "bytes": 8400
+      "sha256": "f0a55f7a2e7e1d25a44976ae71d5b2a02fc8c3b68a6a1606347930c48abe9591",
+      "bytes": 8502
     },
     "wiki/model.js": {
       "sha256": "22d176c814899a544bbac78f897ba84af8f8787768d0c84b9a98097c66775382",

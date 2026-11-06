@@ -1,6 +1,6 @@
 name: 规则纠错
-description: 中科大规则与来源反馈；不要提交论文或个人信息
-title: "[USTC] "
+description: 各校规则与来源反馈；不要提交论文或个人信息
+title: "[规则] "
 body:
   - type: markdown
     attributes:

@@ -75,7 +75,11 @@ function showRule(row, parent) {
     element("summary", "查看精确定位", precision);
     element(
       "pre",
-      `${source.source_id} · ${source.part}\n${source.xpath}\n原文SHA256 ${source.text_sha256}`,
+      `${[
+        source.source_id,
+        source.part,
+        source.xpath || source.locator || source.display_reference,
+      ].filter(Boolean).join(" · ")}\n原文SHA256 ${source.text_sha256}`,
       precision,
     );
   }
