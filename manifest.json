@@ -1,5 +1,5 @@
 {
-  "tree_sha256": "de9e11930490d66f4910ddfa8d1b5973b816d9dc061703e0980960cecb399dda",
+  "tree_sha256": "e4864a1de3e2643039168b0d46fbb328dd80a36e7c9960105b0da75aaff8385e",
   "files": {
     ".github/CODEOWNERS": {
       "sha256": "86f3e2af7b32656ee7ebf5f03f6dcdc87276d4dc5459e509d1505b25584d796a",
@@ -38,8 +38,8 @@
       "bytes": 1522
     },
     "README.md": {
-      "sha256": "74a305fbe7c2f40d49debdf71aa4514bea1371f89352e910e518ecebf8e21935",
-      "bytes": 4839
+      "sha256": "aa7fa2e4fbfe28d4fe6a1e1f7d1b85574fcc9e86efa2fc9803987b43541eba44",
+      "bytes": 5004
     },
     "ci/requirements.txt": {
       "sha256": "756cc9e506ae4ee1a6f6c0507088b5cfc0dc8ba350fb2d2d46f1ffa72033adb6",
@@ -345,6 +345,30 @@
       "sha256": "6bcdff93899e0128b38e34ff5bc949c5b8ed9a2f8a0884ac5118f5ead307e83e",
       "bytes": 1786
     },
+    "schools/technical-report/coverage.md": {
+      "sha256": "2f10f836ddc0485ba9a346f1947ee79ec9860e3a89a1f35f486b856c7488a52c",
+      "bytes": 239
+    },
+    "schools/technical-report/guide.md": {
+      "sha256": "a324c8ac8933a84ba457c39425c9583ed00867bee8a462c5b48c80ecb407108a",
+      "bytes": 229
+    },
+    "schools/technical-report/release.json": {
+      "sha256": "054b6ef2298c0cd2c44835cf479bb1d142d46de141fc1160e1c22c9632137a31",
+      "bytes": 1463
+    },
+    "schools/technical-report/rules.json": {
+      "sha256": "737b97e2964e71dadf293420826e204680d12ae6cf184cb4d486c827383fb534",
+      "bytes": 55198
+    },
+    "schools/technical-report/source-map.json": {
+      "sha256": "8e658ceffe34bda2660a15f32bf092af23b8032ebe343137acb44fde986c5629",
+      "bytes": 29064
+    },
+    "schools/technical-report/unfinished.md": {
+      "sha256": "a698bbb594e44252ebf8cd11d02d1c98f8d9d4adeab0802f07bb1063f7837151",
+      "bytes": 338
+    },
     "schools/tsinghua/coverage.md": {
       "sha256": "25c1e78a297e236312354b6c98c44b4a8df86b6ca757b8ed53264160abd01bcc",
       "bytes": 2577
@@ -493,6 +517,10 @@
       "sha256": "5d9ab7bcfb93f263f6a9a94db5269b56d17411744a1dee6b3e79fbe9e20a1e88",
       "bytes": 4022
     },
+    "technical-report.html": {
+      "sha256": "1991e80b1fa431f429e28c4bbf11396228d5ff27d3b5ab0fa31844b88e6fb673",
+      "bytes": 4014
+    },
     "tsinghua.html": {
       "sha256": "2a7a1d8a3fef879d70152b2ce95094c409b483e20beba037094effe3f98519a4",
       "bytes": 3992
@@ -502,8 +530,8 @@
       "bytes": 4038
     },
     "wiki/app.js": {
-      "sha256": "f0a55f7a2e7e1d25a44976ae71d5b2a02fc8c3b68a6a1606347930c48abe9591",
-      "bytes": 8502
+      "sha256": "1841820a82792512e0ee51cc29b0064199de06119c0ade43572161110f3493a2",
+      "bytes": 8844
     },
     "wiki/model.js": {
       "sha256": "22d176c814899a544bbac78f897ba84af8f8787768d0c84b9a98097c66775382",

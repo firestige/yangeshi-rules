@@ -57,3 +57,7 @@ B编号按原DOCX正文直接子节点从1起计数（含表格），XPath和文
 - [中国科学技术大学 · 2026-10-29](schools/ustc/2026-10-29/guide.md) · [规则版本](schools/ustc/2026-10-29/release.json)
 - [西安交通大学 · 2018](schools/xjtu/guide.md) · [规则版本](schools/xjtu/release.json)
 - [浙江大学 · 2008](schools/zju/guide.md) · [规则版本](schools/zju/release.json)
+
+## 通用科技报告
+
+- [规则页](technical-report.html) · [版本](schools/technical-report/release.json) · [适用范围](schools/technical-report/guide.md)

@@ -1,0 +1,1530 @@
+{
+  "schema_version": "1.0",
+  "pack_id": "technical-report",
+  "unknown_policy": "silent_skip_no_comment",
+  "contract": {
+    "version": "1.0",
+    "roles": [
+      "abstract_and_later_page",
+      "abstract_body",
+      "abstract_en_body",
+      "abstract_en_heading",
+      "abstract_group",
+      "abstract_zh_body",
+      "abstract_zh_heading",
+      "acknowledgements",
+      "acknowledgements_body",
+      "ai_declaration",
+      "appendix",
+      "appendix_body_paragraph",
+      "appendix_equation",
+      "appendix_figure",
+      "appendix_reference",
+      "appendix_table",
+      "author_year_citation",
+      "author_year_reference_entry",
+      "authorization_declaration",
+      "body_figure",
+      "body_numbered_equation",
+      "body_paragraph",
+      "body_table",
+      "chapter_end",
+      "chapter_heading",
+      "citation",
+      "combined_list_heading",
+      "cover",
+      "custom_heading",
+      "data_table_cell_paragraph",
+      "display_equation_paragraph",
+      "document",
+      "equation",
+      "equation_number",
+      "figure",
+      "figure_caption",
+      "figure_list",
+      "figure_list_entry",
+      "figure_list_heading",
+      "figure_note",
+      "figure_table_list",
+      "innovation_body",
+      "keyword_group",
+      "keywords_en",
+      "keywords_zh",
+      "landscape_section",
+      "main_body",
+      "note",
+      "note_page",
+      "numbered_equation",
+      "numeric_citation",
+      "numeric_reference_entry",
+      "ordinary_section",
+      "originality_declaration",
+      "page_number",
+      "peer_heading",
+      "pre_body_blank_page",
+      "prose",
+      "reference_entry",
+      "references",
+      "research_achievement_entry",
+      "research_achievements",
+      "running_header",
+      "school_code",
+      "section",
+      "section1_heading",
+      "section2_heading",
+      "section3_heading",
+      "section_heading",
+      "section_with_abstract_or_later",
+      "section_with_page_numbers",
+      "subfigure_caption",
+      "submission_date",
+      "symbol_entry",
+      "symbol_list",
+      "table",
+      "table_caption",
+      "table_list",
+      "table_list_entry",
+      "table_list_heading",
+      "table_note",
+      "template_instruction",
+      "thesis_title",
+      "title_page",
+      "toc",
+      "toc_chapter_entry",
+      "toc_entry",
+      "toc_heading",
+      "toc_other_entry",
+      "toc_section1_entry",
+      "toc_section2_entry",
+      "body_numbered_section",
+      "cover_title_zh"
+    ],
+    "role_parents": {
+      "abstract_zh_body": [
+        "abstract_body"
+      ],
+      "abstract_en_body": [
+        "abstract_body"
+      ],
+      "section1_heading": [
+        "section_heading"
+      ],
+      "section2_heading": [
+        "section_heading"
+      ],
+      "section3_heading": [
+        "section_heading"
+      ],
+      "toc_section1_entry": [
+        "toc_other_entry"
+      ],
+      "toc_section2_entry": [
+        "toc_other_entry"
+      ],
+      "toc_chapter_entry": [
+        "toc_entry"
+      ],
+      "toc_other_entry": [
+        "toc_entry"
+      ],
+      "body_figure": [
+        "figure"
+      ],
+      "appendix_figure": [
+        "figure"
+      ],
+      "body_table": [
+        "table"
+      ],
+      "appendix_table": [
+        "table"
+      ],
+      "body_numbered_equation": [
+        "numbered_equation"
+      ],
+      "appendix_equation": [
+        "numbered_equation"
+      ],
+      "numbered_equation": [
+        "equation"
+      ],
+      "numeric_citation": [
+        "citation"
+      ],
+      "author_year_citation": [
+        "citation"
+      ],
+      "numeric_reference_entry": [
+        "reference_entry"
+      ],
+      "author_year_reference_entry": [
+        "reference_entry"
+      ],
+      "appendix_reference": [
+        "reference_entry"
+      ],
+      "figure_list": [
+        "figure_table_list"
+      ],
+      "table_list": [
+        "figure_table_list"
+      ]
+    },
+    "fact_state_contract": [
+      "known",
+      "unknown",
+      "not_applicable"
+    ],
+    "absence_policy": "完整扫描确认缺失后才可运行有来源依据的结构提醒；本草案结构条目均unsupported，缺对象不检查字体。可选附录、图表清单、致谢等不产生缺失批注。未知、缺依赖及未实现静默。",
+    "scope_policy": "each evaluates on each confirmed selected object; document_group aggregates selected roles per document. Per-fact applicability is independent: not_applicable subchecks are skipped rather than failed. Confirmed failures still produce their own comments when another subcheck is unknown. Document-level absence checks run even if the missing structure has no selected node.",
+    "role_membership_policy": "A confirmed leaf role also matches its explicit transitive role_parents; generic selectors never require duplicate manual labels. Deduplicate by stable target ID. No other implicit inheritance. peer_heading includes reference, appendix, acknowledgements and symbol-list chapter-level headings, but excludes dedicated abstract/toc/list heading roles.",
+    "standard_conversion": {
+      "三号": 16,
+      "四号": 14,
+      "小四": 12,
+      "五号": 10.5
+    },
+    "precision_policy": {
+      "length_tolerance_twip": 1,
+      "origin": "product_numeric_rounding",
+      "not_school_rule": true
+    },
+    "notification_policy": {
+      "checkable": "only_confirmed_failure_or_its_completed_fix",
+      "unsupported": "never",
+      "unknown": "silent_skip",
+      "missing_dependency": "silent_skip",
+      "unimplemented_check": "silent_skip",
+      "source_check_preserved": "check records source requirements; audit defines executable subset, not all source assertions",
+      "override_semantics": "audit.when adds conditions to rule.when; audit.roles replaces executable targets, including document-level missing-structure checks; audit.tests overrides check.tests for execution only, null uses original properties/assertions; audit.requires lists shared dependencies only. Other provider failures make only their own facts unknown, not all subchecks.",
+      "advisory": "comment_only_never_mutate",
+      "partial_result": "各子项分别判定；一项unknown不掩盖其他明确失败。结构缺失只出一条结构提示，不虚构格式问题。"
+    },
+    "runtime_status": "partial_implementation",
+    "facts": {
+      "page.margin.top.mm": {
+        "type": "number",
+        "meaning": "当前节的有效页边距，单位毫米；不推断缺失值。",
+        "missing": "unknown"
+      },
+      "page.margin.left.mm": {
+        "type": "number",
+        "meaning": "当前节的有效页边距，单位毫米；不推断缺失值。",
+        "missing": "unknown"
+      },
+      "page.margin.bottom.mm": {
+        "type": "number",
+        "meaning": "当前节的有效页边距，单位毫米；不推断缺失值。",
+        "missing": "unknown"
+      },
+      "page.margin.right.mm": {
+        "type": "number",
+        "meaning": "当前节的有效页边距，单位毫米；不推断缺失值。",
+        "missing": "unknown"
+      },
+      "heading.format_consistent": {
+        "type": "any",
+        "meaning": "复核后的实际DOCX对象事实；缺少可靠证据返回unknown。",
+        "missing": "unknown"
+      },
+      "length.han_count": {
+        "type": "any",
+        "meaning": "复核后的实际DOCX对象事实；缺少可靠证据返回unknown。",
+        "missing": "unknown"
+      },
+      "keywords.confirmed_count": {
+        "type": "any",
+        "meaning": "复核后的实际DOCX对象事实；缺少可靠证据返回unknown。",
+        "missing": "unknown"
+      },
+      "abstract.has_object": {
+        "type": "any",
+        "meaning": "复核后的实际DOCX对象事实；缺少可靠证据返回unknown。",
+        "missing": "unknown"
+      },
+      "numbering.digits": {
+        "type": "any",
+        "meaning": "复核后的实际DOCX对象事实；缺少可靠证据返回unknown。",
+        "missing": "unknown"
+      },
+      "caption.position": {
+        "type": "any",
+        "meaning": "复核后的实际DOCX对象事实；缺少可靠证据返回unknown。",
+        "missing": "unknown"
+      },
+      "table.uses_ditto": {
+        "type": "any",
+        "meaning": "复核后的实际DOCX对象事实；缺少可靠证据返回unknown。",
+        "missing": "unknown"
+      }
+    },
+    "properties": {
+      "font.eastAsia": {
+        "type": "string",
+        "writable": true
+      },
+      "size.pt": {
+        "type": "number",
+        "writable": true
+      },
+      "paragraph.line": {
+        "type": "line",
+        "writable": true
+      }
+    },
+    "capabilities": [
+      "semantic_roles",
+      "effective_properties",
+      "text",
+      "human_review"
+    ],
+    "context_policy": {
+      "user_input": "uploaded_docx_only",
+      "standard_source": "explicitly_bound_nju_pack",
+      "context_source": "confirmed_document_evidence_or_trusted_backend_binding",
+      "extra_forms": false,
+      "confirmation_prompts": false,
+      "unknown": "silent_skip_no_comment",
+      "conflict": "unknown_never_infer_from_filename"
+    },
+    "conversion_note": "仅将官方明示磅值或中文字号换算为OOXML数值；20磅未指定行距模式，仅读已明确固定模式的数值，不修复行距。",
+    "scope_note": "通用科技报告。依本规则包要求检查并安全修复明确的 Word 排版属性。"
+  },
+  "runtime": {
+    "special_headings": {
+      "摘要": [
+        "abstract_zh_heading",
+        "abstract_zh_body"
+      ],
+      "abstract": [
+        "abstract_en_heading",
+        "abstract_en_body"
+      ],
+      "目录": [
+        "toc_heading",
+        "toc"
+      ],
+      "参考文献": [
+        "peer_heading",
+        "reference_entry"
+      ],
+      "致谢": [
+        "peer_heading",
+        "acknowledgements_body"
+      ],
+      "后记": [
+        "peer_heading",
+        "acknowledgements_body"
+      ],
+      "插图清单": [
+        "figure_list_heading",
+        "figure_list_entry"
+      ],
+      "附表清单": [
+        "table_list_heading",
+        "table_list_entry"
+      ],
+      "插图和附表清单": [
+        "combined_list_heading",
+        "figure_list_entry"
+      ],
+      "符号和缩略语说明": [
+        "peer_heading",
+        "symbol_entry"
+      ]
+    },
+    "patterns": {
+      "degree": "(硕士|博士)(?:研究生)?(?:学位|毕业)论文",
+      "chapter_detect": "^(?:第\\s*[一二三四五六七八九十0-9]+\\s*章\\s*|[1-9][0-9]*\\s+)\\S",
+      "toc_style": "\\bTOC\\s*\\d|目录\\s*\\d|[一二三四五六]级目录",
+      "heading_style": "heading|标题",
+      "keywords_zh": "^关键词\\s*[:：]",
+      "keywords_en": "^KEY\\s*WORDS\\s*[:：]",
+      "toc_level": "(?:\\bTOC|目录)\\s*([123])",
+      "toc_level_chinese": "([一二三])级目录",
+      "caption_detect": "^[图表]\\s*\\d+[.\\-－]\\d+(?:[\\s\\u3000]+|[:：])\\S",
+      "caption_style": "Caption|题注",
+      "school_identity": "(?!)",
+      "chapter_parts": "^第\\s*([一二三四五六七八九十零〇\\d]+)\\s*章\\s*(.*)",
+      "caption_parts": "^([图表])\\s*([A-Z\\d]+)([.\\-－])(\\d+)(.*)",
+      "cover_date": "([二〇零一三四五六七八九十\\d]{4})年\\s*([一二三四五六七八九十\\d]{1,2})月",
+      "security_label": "(密级|保密级别)\\s*[:：]?\\s*(.+)",
+      "keyword_prefix": "^(?:关键词|KEY\\s*WORDS)\\s*[:：]\\s*",
+      "school_code": "学校\\s*代码\\s*[:：]?\\s*(\\d+)",
+      "innovation_heading": "(?!)",
+      "template_instructions": "^(?:此处插入|报告正文按引言|参考文献插在此处|附录是正文的辅助材料|X{8,})",
+      "thesis_title": "论文题目|论文题名|题目|题名",
+      "keyword_label": "^(?:关键词\\s*[:：]|KEY\\s*WORDS\\s*[:：])",
+      "title_page_signals": "中图分类号|UDC",
+      "introduction_fallback": "^引言$",
+      "conclusion_fallback": "^(?:[0-9]+\\s+)?结论$",
+      "classification_placeholder": "UDC|学校|[xX×]{2,}|待填",
+      "protected_punctuation": "《[^》]*》|“[^”]*”|‘[^’]*’|\"[^\"]*\"|\\[[^\\]]*\\]|(?:https?://|doi:)\\S+",
+      "date_components": "\\s*[:：]?\\s*(\\d{4})年\\s*(\\d{1,2})月\\s*(\\d{1,2})日",
+      "section_detect": "^([1-9]\\d*(?:\\.[1-9]\\d*){1,5})[\\s\\u3000]+\\S",
+      "numeric_citation_detect": "\\[\\d+(?:\\s*[,，–—-]\\s*\\d+)*\\]",
+      "author_year_citation": "[（(][A-Za-z\\u4e00-\\u9fff][^()（）\\n]{0,60}[,，]\\s*(?:19|20)\\d{2}[a-z]?[）)]",
+      "display_equation_text": "\\s*(?:[._─—-]*[（(]?[A-Z\\d]+[.\\-]\\d+[）)]?)?\\s*",
+      "numeric_reference_detect": "^\\s*\\[\\d+\\]",
+      "toc_hyperlink": "HYPERLINK.*_Toc",
+      "achievement_heading": "(?!)",
+      "appendix_heading": "附\\s*录(?:\\s*[A-ZＡ-Ｚ])?(?:[\\s\\u3000]+.*)?",
+      "degree_kind": "(?!)",
+      "symbol_sort_key": "\\s*([A-Za-zΑ-Ωα-ω]+)",
+      "appendix_key": "附录[A-ZＡ-Ｚ].*",
+      "equation_number": "[A-Z\\d]+[.\\-]\\d+",
+      "note_sequence": "^注\\s*(\\d+)",
+      "chapter_in_appendix": "^第.*章",
+      "academic_degree_kind": "(?!)",
+      "greek_symbols": "[α-ωΑ-Ω]",
+      "abbreviations": "[（(]([A-Z]{2,8})[）)]",
+      "title_delimiter": "[:：]",
+      "note_label": "^注\\s*(?:\\d+[.、)）]?\\s*|[:：])",
+      "note_style": "图注|表注|分图题",
+      "subfigure_label": "^\\([a-z]\\)\\s*\\S",
+      "terminal_punctuation": "[，。；：！？,.!?:;]$",
+      "security_duration": "[一二三四五六七八九十\\d]+\\s*年",
+      "ai_heading": "(?!)",
+      "chapter_prefix": "^第\\s*[一二三四五六七八九十零〇\\d]+\\s*章\\s*",
+      "equation_number_parentheses": "[（(][A-Z\\d]+[.\\-]\\d+[）)]",
+      "equation_connector": "[._─—-]{2,}",
+      "english_keyword_bad_separator": ",\\S|，",
+      "toc_excluded_heading": "^(?:摘\\s*要|ABSTRACT|目\\s*录|原创性声明)(?:\\s|\\d|[.．]|$)",
+      "list_entry_number": "^[图表]?\\s*([A-Z\\d]+)[.\\-－](\\d+)",
+      "reference_number": "^\\s*\\[(\\d+)\\]",
+      "numeric_citation_parts": "\\[([\\d,，;；\\s–—\\-]+)\\]",
+      "reference_author": "^\\s*(?:\\[\\d+\\]\\s*)?([^,，.。]+)",
+      "section_parts": "^(\\d+(?:\\.\\d+)+)(\\s*)(.*)",
+      "heading_gap": "^(?:第\\s*[一二三四五六七八九十零〇\\d]+\\s*章|\\d+(?:\\.\\d+)+)(\\s*)\\S",
+      "achievement_date": "\\b((?:19|20)\\d{2})(?:[年./-](0?[1-9]|1[0-2]))?",
+      "latin_author": "[A-Za-z][A-Za-z\\s\\-\\']*",
+      "chinese_author": "[\\u4e00-\\u9fff、\\s]+",
+      "appendix_title": "^附\\s*录\\s*[A-ZＡ-Ｚ]\\s+\\S",
+      "numeric_citation_span": "\\[[\\d,，;；\\s–—\\-]+\\]",
+      "page_decoration": "[—–_─－]",
+      "section_depth": "^([1-9]\\d*(?:\\.[1-9]\\d*)+)\\s",
+      "reference_title": "[.。．]\\s*(.+?)\\[[A-Z]{1,3}(?:/[A-Z]{1,3})?\\]",
+      "embedded_chinese": "[\\u3400-\\u9fff][\\u3400-\\u9fff，。；：！？（）“”‘’、\\s]*",
+      "object_mention": "{kind}\\s*{prefix}[.\\-－]{number}(?!\\d)",
+      "appendix_parts": "^\\s*附\\s*录\\s*(?:([A-ZＡ-Ｚ])(?=\\s|$)\\s*)?(.*?)\\s*$",
+      "appendix_gap": "^附\\s*录\\s*[A-ZＡ-Ｚ]\\u3000\\S",
+      "number_parts": "([A-Z\\d]+)([.\\-－])(\\d+)",
+      "linked_number": "{label}\\s*[（(]?({number})(?![\\dA-Z])",
+      "bare_appendix_reference": "(?!)",
+      "named_appendix_reference": "(?!)"
+    },
+    "front_paragraph_limit": 60,
+    "language_sample_characters": 10000,
+    "english_ratio": 4,
+    "english_min_characters": 200,
+    "heading_max_characters": 100,
+    "caption_max_characters": 200,
+    "section_depth_limit": 5,
+    "early_list_headings": {
+      "插图": [
+        "figure_list_heading",
+        "figure_list_entry"
+      ],
+      "表格": [
+        "table_list_heading",
+        "table_list_entry"
+      ]
+    },
+    "chapter_titles": [
+      "引言",
+      "结论"
+    ],
+    "introduction_titles": [
+      "引言"
+    ],
+    "conclusion_titles": [
+      "结论"
+    ],
+    "acknowledgement_titles": [
+      "致谢",
+      "后记"
+    ],
+    "appendix_prefix": "附录",
+    "figure_label": "图",
+    "table_label": "表",
+    "toc_chinese_levels": "一二三",
+    "toc_role_levels": {
+      "1": "toc_chapter_entry",
+      "2": "toc_section1_entry",
+      "3": "toc_section2_entry"
+    },
+    "degree_values": {
+      "硕士": "master",
+      "博士": "doctor"
+    },
+    "date_labels": [
+      [
+        "论文提交日期",
+        "date.value"
+      ]
+    ],
+    "classification_labels": {
+      "classification.clc_filled": "中图分类号",
+      "classification.udc_filled": "UDC(?:分类号)?"
+    },
+    "classification_value_pattern": "[ \\t\\u3000]*[:：]?[ \\t\\u3000]*([^\\n]*)",
+    "keyword_split": {
+      "zh": "(?!)",
+      "en": "(?!)"
+    },
+    "keyword_separators": {
+      "zh": [],
+      "en": "__unspecified__"
+    },
+    "symbol_count_observable_from": 0,
+    "object_count_observable_from": 0,
+    "reference_hanging_characters": [],
+    "reference_language_first": "__unspecified__",
+    "reference_han_sample": 30,
+    "note_layout": {},
+    "equation_layouts": {},
+    "foreign_abstract_order": [],
+    "innovation_application_marker": "__disabled__",
+    "innovation_degree_required": "__disabled__",
+    "innovation_exempt_degree": "__disabled__",
+    "reference_titles": [
+      "参考文献"
+    ],
+    "messages": {},
+    "equation_layout_checks": {},
+    "section_separator": ".",
+    "note_indent_from_count": 0,
+    "property_guidance": {
+      "font.eastAsia": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "只选中该文字或标签，在Word“开始→字体”中设置为{expected}，不要连同公式上下标或域结果一起覆盖。",
+        "reason": "该文字包含受保护的域、修订或复杂文字片段，当前不能安全分离修改范围，避免连带改变其他文字。"
+      },
+      "font.latin": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "只选中该文字或标签，在Word“开始→字体”中设置为{expected}，不要连同公式上下标或域结果一起覆盖。",
+        "reason": "该文字包含受保护的域、修订或复杂文字片段，当前不能安全分离修改范围，避免连带改变其他文字。"
+      },
+      "size.pt": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "只选中该文字或标签，在Word“开始→字体”中设置为{expected}，不要连同公式上下标或域结果一起覆盖。",
+        "reason": "该文字包含受保护的域、修订或复杂文字片段，当前不能安全分离修改范围，避免连带改变其他文字。"
+      },
+      "font.bold": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "只选中该文字或标签，在Word“开始→字体”中设置为{expected}，不要连同公式上下标或域结果一起覆盖。",
+        "reason": "该文字包含受保护的域、修订或复杂文字片段，当前不能安全分离修改范围，避免连带改变其他文字。"
+      },
+      "label.bold": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "只选中该文字或标签，在Word“开始→字体”中设置为{expected}，不要连同公式上下标或域结果一起覆盖。",
+        "reason": "该文字包含受保护的域、修订或复杂文字片段，当前不能安全分离修改范围，避免连带改变其他文字。"
+      },
+      "paragraph.align": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "只选中这段文字，在Word“段落”设置中将{name}调整为{expected}，再检查相邻段落与分页。",
+        "reason": "段落包含受保护结构或编号关联，当前安全条件未满足；直接覆盖可能改变关联的排版。"
+      },
+      "paragraph.line": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "只选中这段文字，在Word“段落”设置中将{name}调整为{expected}，再检查相邻段落与分页。",
+        "reason": "段落包含受保护结构或编号关联，当前安全条件未满足；直接覆盖可能改变关联的排版。"
+      },
+      "paragraph.line.pt": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "只选中这段文字，在Word“段落”设置中将{name}调整为{expected}，再检查相邻段落与分页。",
+        "reason": "段落包含受保护结构或编号关联，当前安全条件未满足；直接覆盖可能改变关联的排版。"
+      },
+      "paragraph.before.pt": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "只选中这段文字，在Word“段落”设置中将{name}调整为{expected}，再检查相邻段落与分页。",
+        "reason": "段落包含受保护结构或编号关联，当前安全条件未满足；直接覆盖可能改变关联的排版。"
+      },
+      "paragraph.after.pt": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "只选中这段文字，在Word“段落”设置中将{name}调整为{expected}，再检查相邻段落与分页。",
+        "reason": "段落包含受保护结构或编号关联，当前安全条件未满足；直接覆盖可能改变关联的排版。"
+      },
+      "paragraph.left.char": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "只选中这段文字，在Word“段落→缩进”中设置{name}为{expected}；若使用自动编号，应在“调整列表缩进”中核对。",
+        "reason": "该段涉及自动编号或未可靠确认的缩进来源，直接改缩进可能导致编号与文字错位。"
+      },
+      "paragraph.firstLine.char": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "只选中这段文字，在Word“段落→缩进”中设置{name}为{expected}；若使用自动编号，应在“调整列表缩进”中核对。",
+        "reason": "该段涉及自动编号或未可靠确认的缩进来源，直接改缩进可能导致编号与文字错位。"
+      },
+      "paragraph.hanging.char": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "只选中这段文字，在Word“段落→缩进”中设置{name}为{expected}；若使用自动编号，应在“调整列表缩进”中核对。",
+        "reason": "该段涉及自动编号或未可靠确认的缩进来源，直接改缩进可能导致编号与文字错位。"
+      },
+      "page.short_edge.mm": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+        "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+      },
+      "page.long_edge.mm": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+        "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+      },
+      "page.margin.top.mm": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+        "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+      },
+      "page.margin.bottom.mm": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+        "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+      },
+      "page.margin.left.mm": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+        "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+      },
+      "page.margin.right.mm": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+        "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+      },
+      "page.gutter.mm": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+        "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+      },
+      "page.gutter_position": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+        "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+      },
+      "document.mirror_margins": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+        "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+      },
+      "page.header_distance.mm": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+        "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+      },
+      "page.footer_distance.mm": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+        "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+      },
+      "page.orientation": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "在Word“布局→页面设置”中只对本节调整{name}为{expected}；核对后续节和整页图表的排版。",
+        "reason": "该节存在受保护设置或当前无法安全写入的页面结构，覆盖可能影响分节、页眉页脚及对象位置。"
+      },
+      "text.exact": {
+        "problem": "{name}当前为{before}，规范要求为{expected}。",
+        "action": "只整理此标题的标签形式为“{expected}”，保留作者正文及题目内容。",
+        "reason": "该位置不是已授权的纯标签大小写修复，或包含域与链接；自动替换可能改变作者文字或关联。"
+      },
+      "label.text": {
+        "problem": "关键词标签当前写作“{before}”，本规范要求“{expected}”。",
+        "action": "只选中关键词标签及冒号，将其改为“{expected}”，保留后面的关键词文本；有域或链接时保留其结构。",
+        "reason": "当前版本未提供能保留标签中域、链接和文字片段边界的安全替换；因此只提示标签格式，不重建整段。"
+      }
+    },
+    "guard_guidance": {
+      "protected": "文档含修订、保护或数字签名，当前保持其受保护状态；请先另存可编辑副本并在Word中核对修订，再重新处理。",
+      "numbering": "该段使用自动编号，直接写入缩进可能使编号与正文错位；请在Word的“调整列表缩进”中处理这一项。"
+    },
+    "comment_labels": {
+      "location": "位置",
+      "problem": "问题",
+      "action": "操作",
+      "reason": "未自动修改原因",
+      "fixed": "已修改格式【已解决】。",
+      "advice": "排版建议【可自行决定】。",
+      "review": "待处理【需要你操作】。"
+    }
+  },
+  "contract_digest": "16a57c163c7d55d3e334c54da3a6750e8b840c2b068052ffeb19ddf3b25cb856",
+  "runtime_digest": "06f2cbf7c71a28a5266b0b4f7b61e1bac6ad8691114d682b1513ac282018cc5b",
+  "source_index": {
+    "P2": {
+      "source_id": "P2",
+      "document_id": "template",
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[2]",
+      "display_reference": "用户提供的正文模板 · 第 2 个段落",
+      "text": "自动目录最多列三级，包含章节编号、标题和页码。目录排版建议采用宋体、小四号、1.5 倍行距。",
+      "text_sha256": "e6b738122a0b2755aa6540644c6b628cdd9487a87ea18e69f81c24f3128f423c",
+      "text_kind": "summary"
+    },
+    "P23": {
+      "source_id": "P23",
+      "document_id": "template",
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[23]",
+      "display_reference": "用户提供的正文模板 · 第 23 个段落",
+      "text": "图较多时编制自动插图清单，列图号、图题、页码。图号可连续或分章编排。清单建议采用宋体、小四号、1.5 倍行距。",
+      "text_sha256": "3cf98b1932cb99c1570ed1a031c8f2773d60844181608f754624f5ef99684a1d",
+      "text_kind": "summary"
+    },
+    "P46": {
+      "source_id": "P46",
+      "document_id": "template",
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[46]",
+      "display_reference": "用户提供的正文模板 · 第 46 个段落",
+      "text": "表较多时编制自动附表清单，列序号、表题、页码。表号可连续或分章编排。清单建议采用宋体、小四号、1.5 倍行距。",
+      "text_sha256": "3d19a6585bbe98097d55ba08158e81474adf4561e400d8ab51a38b0afa74716d",
+      "text_kind": "summary"
+    },
+    "P58": {
+      "source_id": "P58",
+      "document_id": "template",
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[58]",
+      "display_reference": "用户提供的正文模板 · 第 58 个段落",
+      "text": "正文按引言、主体和结论组织。正文建议采用宋体、小四号、1.5 倍行距，章节标题可适当放大加粗。",
+      "text_sha256": "20b236a04998c741b31f05a321bcd0c77541b36686b9e8fb56946b16cfb2543e",
+      "text_kind": "summary"
+    },
+    "P102": {
+      "source_id": "P102",
+      "document_id": "template",
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[102]",
+      "display_reference": "用户提供的正文模板 · 第 102 个段落",
+      "text": "参考文献著录参照模板列出的 GB/T 7714—2005，条目建议采用宋体、小四号、1.5 倍行距。",
+      "text_sha256": "a21be939aa7b7879f95428b765fb727a7fbb4611f60fa0a57852297d969fd7a9",
+      "text_kind": "summary"
+    },
+    "P110": {
+      "source_id": "P110",
+      "document_id": "template",
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[110]",
+      "display_reference": "用户提供的正文模板 · 第 110 个段落",
+      "text": "按需要设置附录，编号使用连续的大写拉丁字母。附录正文建议采用宋体、小四号、1.5 倍行距。",
+      "text_sha256": "1c673cb82d1672a11685d92197a798fd1700a571140c4d84f3abfee745369ef2",
+      "text_kind": "summary"
+    },
+    "P60": {
+      "source_id": "P60",
+      "document_id": "template",
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[60]",
+      "display_reference": "用户提供的正文模板 · 第 60 个段落",
+      "text": "引言单独成章，标题不加章号。",
+      "text_sha256": "c93127ac24235b8b92a760d55b71b0900c5b5909be32034c109e9cb9c950d3b2",
+      "text_kind": "summary"
+    },
+    "P62": {
+      "source_id": "P62",
+      "document_id": "template",
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[62]",
+      "display_reference": "用户提供的正文模板 · 第 62 个段落",
+      "text": "主体按项目内容分成多个章节，各章自行命名。",
+      "text_sha256": "9dccce85920b493a3053a013d4aaf21109892436e5420fffe49a51b4e721e5ed",
+      "text_kind": "summary"
+    },
+    "P65": {
+      "source_id": "P65",
+      "document_id": "template",
+      "part": "word/document.xml",
+      "xpath": "/w:document/w:body/*[65]",
+      "display_reference": "用户提供的正文模板 · 第 65 个段落",
+      "text": "结论单独成章，章标题为结论。",
+      "text_sha256": "c9ce633832c3883c9df2a30738611a5a437a6191b49dd68fbd1cdc1a24f7f0e7",
+      "text_kind": "summary"
+    }
+  },
+  "rules": [
+    {
+      "id": "TECH-TOC-01",
+      "title": "目录条目排版",
+      "authority": "required",
+      "sources": [
+        "P2"
+      ],
+      "selector": {
+        "roles": [
+          "toc_entry"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ],
+      "comments": {
+        "action": "请采用宋体、小四号、1.5 倍行距。",
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "fixed": "已调整报告段落格式：{changes_zh}。"
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "toc_entry"
+        ],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "policy_refs": []
+      }
+    },
+    {
+      "id": "TECH-FIGURE-01",
+      "title": "插图清单条目排版",
+      "authority": "required",
+      "sources": [
+        "P23"
+      ],
+      "selector": {
+        "roles": [
+          "figure_list_entry"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ],
+      "comments": {
+        "action": "请采用宋体、小四号、1.5 倍行距。",
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "fixed": "已调整报告段落格式：{changes_zh}。"
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "figure_list_entry"
+        ],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "policy_refs": []
+      }
+    },
+    {
+      "id": "TECH-TABLE-01",
+      "title": "附表清单条目排版",
+      "authority": "required",
+      "sources": [
+        "P46"
+      ],
+      "selector": {
+        "roles": [
+          "table_list_entry"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ],
+      "comments": {
+        "action": "请采用宋体、小四号、1.5 倍行距。",
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "fixed": "已调整报告段落格式：{changes_zh}。"
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "table_list_entry"
+        ],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "policy_refs": []
+      }
+    },
+    {
+      "id": "TECH-BODY-01",
+      "title": "正文普通段落排版",
+      "authority": "required",
+      "sources": [
+        "P58"
+      ],
+      "selector": {
+        "roles": [
+          "body_paragraph"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ],
+      "comments": {
+        "action": "请采用宋体、小四号、1.5 倍行距。",
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "fixed": "已调整报告段落格式：{changes_zh}。"
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "body_paragraph"
+        ],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "policy_refs": []
+      }
+    },
+    {
+      "id": "TECH-REF-01",
+      "title": "参考文献条目排版",
+      "authority": "required",
+      "sources": [
+        "P102"
+      ],
+      "selector": {
+        "roles": [
+          "reference_entry"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ],
+      "comments": {
+        "action": "请采用宋体、小四号、1.5 倍行距。",
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "fixed": "已调整报告段落格式：{changes_zh}。"
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "reference_entry"
+        ],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "policy_refs": []
+      }
+    },
+    {
+      "id": "TECH-APPENDIX-01",
+      "title": "附录正文段落排版",
+      "authority": "required",
+      "sources": [
+        "P110"
+      ],
+      "selector": {
+        "roles": [
+          "appendix_body_paragraph"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ],
+      "comments": {
+        "action": "请采用宋体、小四号、1.5 倍行距。",
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "fixed": "已调整报告段落格式：{changes_zh}。"
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "appendix_body_paragraph"
+        ],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "policy_refs": []
+      }
+    },
+    {
+      "id": "TECH-TOC-11",
+      "title": "目录结构与域",
+      "authority": "required",
+      "sources": [
+        "P2"
+      ],
+      "selector": {
+        "roles": [],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "requires": [
+        "human_review"
+      ],
+      "comments": {
+        "action": "核对自动目录最多三级，包含阿拉伯数字章节编号、标题和更新后的页码。",
+        "reason": "核对自动目录最多三级，包含阿拉伯数字章节编号、标题和更新后的页码。"
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "human_review"
+        ],
+        "reason": "核对自动目录最多三级，包含阿拉伯数字章节编号、标题和更新后的页码。",
+        "policy_refs": [],
+        "self_check": "核对自动目录最多三级，包含阿拉伯数字章节编号、标题和更新后的页码。"
+      }
+    },
+    {
+      "id": "TECH-FIGURE-12",
+      "title": "插图清单生成与编号",
+      "authority": "required",
+      "sources": [
+        "P23"
+      ],
+      "selector": {
+        "roles": [],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "requires": [
+        "human_review"
+      ],
+      "comments": {
+        "action": "结合报告规模决定是否需编制清单，核对自动生成的序号、图题及更新后的页码。连续编号和分章编号均可。",
+        "reason": "结合报告规模决定是否需编制清单，核对自动生成的序号、图题及更新后的页码。连续编号和分章编号均可。"
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "human_review"
+        ],
+        "reason": "结合报告规模决定是否需编制清单，核对自动生成的序号、图题及更新后的页码。连续编号和分章编号均可。",
+        "policy_refs": [],
+        "self_check": "结合报告规模决定是否需编制清单，核对自动生成的序号、图题及更新后的页码。连续编号和分章编号均可。"
+      }
+    },
+    {
+      "id": "TECH-TABLE-13",
+      "title": "附表清单生成与编号",
+      "authority": "required",
+      "sources": [
+        "P46"
+      ],
+      "selector": {
+        "roles": [],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "requires": [
+        "human_review"
+      ],
+      "comments": {
+        "action": "结合报告规模决定是否需编制清单，核对自动生成的序号、表题及更新后的页码。连续编号和分章编号均可。",
+        "reason": "结合报告规模决定是否需编制清单，核对自动生成的序号、表题及更新后的页码。连续编号和分章编号均可。"
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "human_review"
+        ],
+        "reason": "结合报告规模决定是否需编制清单，核对自动生成的序号、表题及更新后的页码。连续编号和分章编号均可。",
+        "policy_refs": [],
+        "self_check": "结合报告规模决定是否需编制清单，核对自动生成的序号、表题及更新后的页码。连续编号和分章编号均可。"
+      }
+    },
+    {
+      "id": "TECH-BODY-14",
+      "title": "章节标题的相对字号",
+      "authority": "advisory",
+      "sources": [
+        "P58"
+      ],
+      "selector": {
+        "roles": [],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "requires": [
+        "human_review"
+      ],
+      "comments": {
+        "action": "核对章节标题相对正文适当放大并加粗。模板未指定固定字号。",
+        "reason": "核对章节标题相对正文适当放大并加粗。模板未指定固定字号。"
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "human_review"
+        ],
+        "reason": "核对章节标题相对正文适当放大并加粗。模板未指定固定字号。",
+        "policy_refs": [],
+        "self_check": "核对章节标题相对正文适当放大并加粗。模板未指定固定字号。"
+      }
+    },
+    {
+      "id": "TECH-CHAPTER-15",
+      "title": "引言章节",
+      "authority": "required",
+      "sources": [
+        "P60"
+      ],
+      "selector": {
+        "roles": [],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "requires": [
+        "human_review"
+      ],
+      "comments": {
+        "action": "核对引言独立成章、章名为引言，且无章节编号。",
+        "reason": "核对引言独立成章、章名为引言，且无章节编号。"
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "human_review"
+        ],
+        "reason": "核对引言独立成章、章名为引言，且无章节编号。",
+        "policy_refs": [],
+        "self_check": "核对引言独立成章、章名为引言，且无章节编号。"
+      }
+    },
+    {
+      "id": "TECH-CHAPTER-16",
+      "title": "主体章节安排",
+      "authority": "required",
+      "sources": [
+        "P62"
+      ],
+      "selector": {
+        "roles": [],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "requires": [
+        "human_review"
+      ],
+      "comments": {
+        "action": "核对主体按项目内容分章，避免使用“主体”作为章标题。研究内容由作者确认。",
+        "reason": "核对主体按项目内容分章，避免使用“主体”作为章标题。研究内容由作者确认。"
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "human_review"
+        ],
+        "reason": "核对主体按项目内容分章，避免使用“主体”作为章标题。研究内容由作者确认。",
+        "policy_refs": [],
+        "self_check": "核对主体按项目内容分章，避免使用“主体”作为章标题。研究内容由作者确认。"
+      }
+    },
+    {
+      "id": "TECH-CHAPTER-17",
+      "title": "结论章节",
+      "authority": "required",
+      "sources": [
+        "P65"
+      ],
+      "selector": {
+        "roles": [],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "requires": [
+        "human_review"
+      ],
+      "comments": {
+        "action": "核对结论独立成章且章名为结论，结合报告阶段核对内容。",
+        "reason": "核对结论独立成章且章名为结论，结合报告阶段核对内容。"
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "human_review"
+        ],
+        "reason": "核对结论独立成章且章名为结论，结合报告阶段核对内容。",
+        "policy_refs": [],
+        "self_check": "核对结论独立成章且章名为结论，结合报告阶段核对内容。"
+      }
+    },
+    {
+      "id": "TECH-REF-18",
+      "title": "参考文献著录",
+      "authority": "advisory",
+      "sources": [
+        "P102"
+      ],
+      "selector": {
+        "roles": [],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "requires": [
+        "human_review"
+      ],
+      "comments": {
+        "action": "模板写明 GB/T 7714—2005。请向提交方确认适用版次，再核对著录。",
+        "reason": "模板写明 GB/T 7714—2005。请向提交方确认适用版次，再核对著录。"
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "human_review"
+        ],
+        "reason": "模板写明 GB/T 7714—2005。请向提交方确认适用版次，再核对著录。",
+        "policy_refs": [],
+        "self_check": "模板写明 GB/T 7714—2005。请向提交方确认适用版次，再核对著录。"
+      }
+    },
+    {
+      "id": "TECH-APPENDIX-19",
+      "title": "附录适用与编号",
+      "authority": "required",
+      "sources": [
+        "P110"
+      ],
+      "selector": {
+        "roles": [],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "requires": [
+        "human_review"
+      ],
+      "comments": {
+        "action": "核对适用的附录是否以大写拉丁字母连续编号。附录按需要设置。",
+        "reason": "核对适用的附录是否以大写拉丁字母连续编号。附录按需要设置。"
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "human_review"
+        ],
+        "reason": "核对适用的附录是否以大写拉丁字母连续编号。附录按需要设置。",
+        "policy_refs": [],
+        "self_check": "核对适用的附录是否以大写拉丁字母连续编号。附录按需要设置。"
+      }
+    }
+  ]
+}
