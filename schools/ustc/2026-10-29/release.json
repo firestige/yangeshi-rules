@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "standard": {
+    "id": "ustc-graduate-2026-10-29",
+    "name": "研究生学位论文",
+    "institution": "中国科学技术大学",
+    "version": "2026-10-29",
+    "checked_at": "2026-11-05",
+    "profile_sha256": "31be76adffad86e74e33cdfa04035100a641155e9cb84b82e6b212b4f8fc704c",
+    "documents": [
+      {
+        "id": "template",
+        "title": "官方撰写模板",
+        "version": "2026-10-29",
+        "sha256": "5668d611404555c8b4b890c224590af824c6122d0a3cddb0e0c4bbc9d5139049",
+        "bytes": 222894,
+        "source_url": "https://gradschool.ustc.edu.cn/static/upload/article/file/1793238605229/1793238605229-908483.docx",
+        "source_page": "https://gradschool.ustc.edu.cn/column/190",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "handbook",
+        "title": "研究生论文撰写手册",
+        "version": "2016年版",
+        "sha256": "beaf8fb2401b7f5ebdc014f9362f154f8a306726e508e8418a635b34f42e0e6b",
+        "bytes": 7745055,
+        "source_url": "https://phys.ustc.edu.cn/_upload/article/files/ac/80/4b8fb6734a5c9046fb046de00c8d/61df6e6a-f758-40f6-9945-ab527bd32df4.pdf",
+        "source_page": "https://phys.ustc.edu.cn/2019/0508/c17594a380293/page.htm",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "rules",
+        "title": "研格式执行规则（非学校原文）",
+        "version": "2026-11-06-preview.1",
+        "bytes": 356305,
+        "sha256": "31be76adffad86e74e33cdfa04035100a641155e9cb84b82e6b212b4f8fc704c"
+      }
+    ]
+  },
+  "ruleset": {
+    "id": "ustc-2026-text-authority-v1",
+    "version": "2026-11-06-preview.1",
+    "status": "public-preview",
+    "repository_url": "https://github.com/firestige/yangeshi-rules",
+    "repository_commit": null,
+    "published": true,
+    "rules_sha256": "31be76adffad86e74e33cdfa04035100a641155e9cb84b82e6b212b4f8fc704c",
+    "schema": "1.0",
+    "engine_contract_sha256": "0af08a381d7e300ad23fb2e63672aa9a0de735e712a6cf82015e6a0f2f1c2052",
+    "runtime_digest": "5bad612461f9bca39ac958a4576be7247f80eda90462d808b54e7fdcf23b3ca0",
+    "details_path": "./rules.html",
+    "source_map_sha256": "58d4fff61fa67443528f6fbeed47c4e69cfadc8ea604ad08a40850ea53fde2e5",
+    "checked_at": "2026-11-05"
+  },
+  "counts": {
+    "unsupported": 31,
+    "checkable": 98
+  },
+  "rules_path": "./rules/ustc2026.json",
+  "map_path": "./rulebook/source-map.json",
+  "wiki_page": "ustc2026.html",
+  "catalog_id": "ustc2026"
+}

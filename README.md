@@ -38,3 +38,22 @@ B编号按原DOCX正文直接子节点从1起计数（含表格），XPath和文
 主站按固定 Git 提交拉取 `rules.json`、`source-map.json`、`release.json` 和对应页面源码，完成哈希、兼容性与集成验证后，随主站发布。学校原文、整理解释和规则展示只有一套来源，不另存一份手工维护的规则正文；规则仓 main 更新不会直接替换已上线版本。
 
 本地预览：在仓库根目录执行 `python3 -m http.server 8000 --bind 127.0.0.1`，然后访问 `http://127.0.0.1:8000/`。
+
+## 九校规则包（2026-11-06）
+
+九校 14 个规则包。各包保留执行条件、来源映射与需人工核对的边界。新增资料仅提供校方入口与必要引文。
+
+- [复旦大学 · 2026-06](schools/fudan/guide.md) · [规则版本](schools/fudan/release.json)
+- [复旦大学 · 2026-06 · 生命科学学院](schools/fudan-life/guide.md) · [规则版本](schools/fudan-life/release.json)
+- [哈尔滨工业大学 · 2025-03·理工](schools/hit/guide.md) · [规则版本](schools/hit/release.json)
+- [哈尔滨工业大学 · 2025-03·人文社科](schools/hit-humanities/guide.md) · [规则版本](schools/hit-humanities/release.json)
+- [哈尔滨工业大学 · 2025-03·专业实践理工](schools/hit-practice-engineering/guide.md) · [规则版本](schools/hit-practice-engineering/release.json)
+- [哈尔滨工业大学 · 2025-03·专业实践人文社科](schools/hit-practice-humanities/guide.md) · [规则版本](schools/hit-practice-humanities/release.json)
+- [南京大学 · 校级试行 · 2026-07-07 官网发布（含 2026-11-03 补充）](schools/nju/guide.md) · [规则版本](schools/nju/release.json)
+- [南京大学 · MBA · 2026-10-10 官网发布](schools/nju-mba/guide.md) · [规则版本](schools/nju-mba/release.json)
+- [北京大学 · 2014 V2.0](schools/pku/guide.md) · [规则版本](schools/pku/release.json)
+- [上海交通大学 · 2025-11-24 官网发布](schools/sjtu/guide.md) · [规则版本](schools/sjtu/release.json)
+- [清华大学 · 2025-03](schools/tsinghua/guide.md) · [规则版本](schools/tsinghua/release.json)
+- [中国科学技术大学 · 2026-10-29](schools/ustc/2026-10-29/guide.md) · [规则版本](schools/ustc/2026-10-29/release.json)
+- [西安交通大学 · 2018](schools/xjtu/guide.md) · [规则版本](schools/xjtu/release.json)
+- [浙江大学 · 2008](schools/zju/guide.md) · [规则版本](schools/zju/release.json)

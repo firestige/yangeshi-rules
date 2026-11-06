@@ -1,0 +1,68 @@
+{
+  "standard": {
+    "id": "fudan-graduate-2026-06-draft",
+    "institution": "复旦大学",
+    "name": "2026-06论文规范",
+    "version": "2026-06",
+    "checked_at": "2026-11-05",
+    "profile_sha256": "4d8443ab6a81e7d105e8e2765df45f1e0e8a8c9ef6ded996a70830ce74a264fb",
+    "documents": [
+      {
+        "id": "doc-1",
+        "title": "复旦大学博士、硕士学位论文规范（2026.06修订版）",
+        "version": "2026.06修订版",
+        "sha256": "d13f6aa615fe0ffff9661e4f36c66e632169618f5f01224a2f7a0e4d405415f6",
+        "bytes": 67072,
+        "source_url": "https://life.fudan.edu.cn/_upload/article/files/e0/94/c5d9b41c42cf8f03fefbbf3b1d6c/86944664-7619-4009-bdd1-c23920daf008.doc",
+        "source_page": "https://life.fudan.edu.cn/13/be/c31020a398270/page.psp/1000/main.psp",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "doc-2",
+        "title": "盲审论文封面规范样本（2026.06修订版）",
+        "version": "2026.06修订版",
+        "sha256": "32fa017cf0b3230663e65599a6025735ce778ef494a75f5341d09fff2e96e8aa",
+        "bytes": 23635,
+        "source_url": "https://life.fudan.edu.cn/_upload/article/files/e0/94/c5d9b41c42cf8f03fefbbf3b1d6c/c7947edb-0393-4165-8ecc-4c2caf37af7e.docx",
+        "source_page": "https://life.fudan.edu.cn/13/be/c31020a398270/page.psp/1000/main.psp",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "doc-3",
+        "title": "研究生毕业论文写作规范自查清单",
+        "version": "生科院自查清单V3.0（院级参考）",
+        "sha256": "3676c15eabca6e2bb1972f9758e2a2204e134f0355faf1386de0cbd74407ee0c",
+        "bytes": 186760,
+        "source_url": "https://life.fudan.edu.cn/_upload/article/files/e0/94/c5d9b41c42cf8f03fefbbf3b1d6c/f1e86691-4738-4661-be90-453a894201e0.pdf",
+        "source_page": "https://life.fudan.edu.cn/13/be/c31020a398270/page.psp/1000/main.psp",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "rules",
+        "title": "研格式执行规则（非学校原文）",
+        "version": "2026-11-06-preview.1",
+        "bytes": 148882,
+        "sha256": "4d8443ab6a81e7d105e8e2765df45f1e0e8a8c9ef6ded996a70830ce74a264fb"
+      }
+    ]
+  },
+  "ruleset": {
+    "id": "fudan-graduate-2026-06-draft",
+    "schema": "1.0",
+    "version": "2026-11-06-preview.1",
+    "status": "public-preview",
+    "published": true,
+    "rules_sha256": "4d8443ab6a81e7d105e8e2765df45f1e0e8a8c9ef6ded996a70830ce74a264fb",
+    "source_map_sha256": "2eaa61dda2c1808fcf076a288e38ecb1511d66e48b4b7a4bc325805f7d1f2955",
+    "engine_contract_sha256": "e27a27332595ca66d17bc0245f5b0ae85be4bda59b758d4959f92547c73cd262",
+    "runtime_digest": "0453f28f6d02af7a7cdef637e26ae3add2dd63cc9d5a911bc614a7d261d6f5e1",
+    "repository_url": "https://github.com/firestige/yangeshi-rules"
+  },
+  "schema_version": 1,
+  "catalog_id": "fudan",
+  "wiki_page": "fudan.html",
+  "counts": {
+    "unsupported": 70,
+    "checkable": 10
+  }
+}

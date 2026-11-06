@@ -1,0 +1,41 @@
+# 需人工核对与执行限制
+
+- `SJTU-STRUCT-01` 组成部分及顺序
+- `SJTU-COVER-01` 统一封面
+- `SJTU-TITLE-01` 题名页
+- `SJTU-DECL-01` 原创性声明及授权书
+- `SJTU-ABSTRACT-01` 中英文摘要
+- `SJTU-KEYWORD-02` 关键词在摘要页下方
+- `SJTU-TOC-01` 目录列出各部分标题并依序排列
+- `SJTU-TOC-02` 目录注明页码
+- `SJTU-SYMBOL-01` 符号说明可选
+- `SJTU-BODY-01` 正文一般结构
+- `SJTU-NUMBER-01` 图编号允许连续或分章
+- `SJTU-NUMBER-02` 表编号允许连续或分章
+- `SJTU-NUMBER-03` 附注编号允许连续或分章
+- `SJTU-NUMBER-04` 参考文献编号允许连续或分章
+- `SJTU-NUMBER-05` 公式编号允许连续或分章
+- `SJTU-EQUATION-02` 公式编号在右边行末
+- `SJTU-EQUATION-03` 公式与编号间不加虚线
+- `SJTU-REFERENCE-01` 引用成果列在文末
+- `SJTU-REFERENCE-02` 建议GB/T 7714—2015
+- `SJTU-NOTES-01` 注释可选，避免文中注释
+- `SJTU-APPENDIX-01` 附录可选
+- `SJTU-ACK-01` 致谢组成部分
+- `SJTU-ACHIEVEMENTS-01` 学术论文和科研成果目录
+- `SJTU-PRINT-01` 双面打印，长边翻页
+- `SJTU-BIND-01` 归档纸质统一封面并成册
+- `SJTU-TEMPLATE-01` 各部分从新页开始
+- `SJTU-TEMPLATE-02` 模板纸质装订右侧
+- `SJTU-TEMPLATE-07` 黑体中文夹杂英数加粗
+- `SJTU-TEMPLATE-08` 字数由学科和学院自定
+- `SJTU-CONTENT-01` 一般中文撰写
+- `SJTU-CONTENT-02` 原创性和学术质量
+- `SJTU-CONTENT-03` 硕士学术贡献
+- `SJTU-CONTENT-04` 博士学术贡献
+- `SJTU-CONTENT-05` 语言术语符号及计量规范
+- `SJTU-CONTENT-06` 摘要概括与双语内容一致
+- `SJTU-CONTENT-07` 绪论内容
+- `SJTU-CONTENT-08` 各章内容与学科规范
+- `SJTU-CONTENT-09` 结论内容
+- `SJTU-CONTENT-10` 成果目录内容

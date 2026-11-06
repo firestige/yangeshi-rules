@@ -1,18 +1,25 @@
 {
-  "schema_version": 1,
-  "tree_sha256": "e900149ae13a0e570cd55965fc2c4e7738871383e80de260ef5db15c5e79162a",
+  "tree_sha256": "de9e11930490d66f4910ddfa8d1b5973b816d9dc061703e0980960cecb399dda",
   "files": {
+    ".github/CODEOWNERS": {
+      "sha256": "86f3e2af7b32656ee7ebf5f03f6dcdc87276d4dc5459e509d1505b25584d796a",
+      "bytes": 13
+    },
     ".github/ISSUE_TEMPLATE/config.yml": {
       "sha256": "1f103c6a9dd07cd13a9a6f17ace6b813f47747eb9cb7e00488cb2073caaf91bb",
       "bytes": 28
     },
     ".github/ISSUE_TEMPLATE/rule-correction.yml": {
-      "sha256": "7cce4d0b82fe5c1f9cf01d5154cf7ba64e210b3073ad24db8dcaa4dd98caa83b",
-      "bytes": 990
+      "sha256": "b6d9ffd8dc43025f163b17ec551a20f1ed1a8ad19f42fe9479b1b2ba5220c677",
+      "bytes": 989
     },
     ".github/ISSUE_TEMPLATE/source-update.yml": {
-      "sha256": "50b38972a77ac68070783e3c02cf18c285903115fee4caa559e8ab24eb6bf177",
-      "bytes": 999
+      "sha256": "6e383ed6149fb21e243558b2eaf4791392efbd45257cd6329554d7fa0e79ed8b",
+      "bytes": 998
+    },
+    ".github/workflows/rules-ci.yml": {
+      "sha256": "ddd7afe3ffefe95a68a9ea0acab0d5c257a3a863f06d4dbc504c8777869cba6d",
+      "bytes": 674
     },
     ".nojekyll": {
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -31,12 +38,56 @@
       "bytes": 1522
     },
     "README.md": {
-      "sha256": "aefdf46311f465533a580fec65527ac8ff3ea2d4f206361d2a67da7ffb9845aa",
-      "bytes": 2924
+      "sha256": "74a305fbe7c2f40d49debdf71aa4514bea1371f89352e910e518ecebf8e21935",
+      "bytes": 4839
+    },
+    "ci/requirements.txt": {
+      "sha256": "756cc9e506ae4ee1a6f6c0507088b5cfc0dc8ba350fb2d2d46f1ffa72033adb6",
+      "bytes": 19
+    },
+    "ci/rule-pack.schema.json": {
+      "sha256": "3ef223d1dc46cb688f10ebb5cb458244467871fce547891f13cd99104b31e8c9",
+      "bytes": 2258
+    },
+    "ci/validate.py": {
+      "sha256": "a76dbe875975d8b4b7f87e9fb002e17846d8aba4120fc2b32e59685ef5a158bf",
+      "bytes": 3677
+    },
+    "fudan-life.html": {
+      "sha256": "924b3dc5143388102e49a9aec7bfda30a462465e122f6213c8a0f0c21c112a9d",
+      "bytes": 4016
+    },
+    "fudan.html": {
+      "sha256": "435cf7dac746a0963019e303feba068f36c7c66fac50c600ab9036296b334da7",
+      "bytes": 3989
+    },
+    "hit-humanities.html": {
+      "sha256": "a3265e9cdc9bafb82932c1b5a4654b8798f1299c0717860a58bcb913b311a181",
+      "bytes": 4039
+    },
+    "hit-practice-engineering.html": {
+      "sha256": "4ec50a66644d6cc5f3b7c657b9cadcdc86363e8ce4719cf377bf89111d2d9f6c",
+      "bytes": 4055
+    },
+    "hit-practice-humanities.html": {
+      "sha256": "aa7a29f69f435d384f80fcf431e43697fba4b9033014a848c49dba7590b8e956",
+      "bytes": 4060
+    },
+    "hit.html": {
+      "sha256": "95ca4c7c97c84ffe1869a947e79db601746111ea5f5f99711a265a935da34961",
+      "bytes": 4022
     },
     "index.html": {
       "sha256": "53225423a5c3f2bfd247c74ea156ae6fa799a694dc668a54f2221a42096ef5a5",
       "bytes": 3942
+    },
+    "nju-mba.html": {
+      "sha256": "11da93b042b55ae07c75db036bb2623b2ba91d2d475cb25c70c6b4f189a4b16b",
+      "bytes": 4014
+    },
+    "nju.html": {
+      "sha256": "39639f893b00e74f16b26567bbb694283e15fc188019ccd6e83021996681f804",
+      "bytes": 4046
     },
     "originals/ustc-graduate-handbook.pdf": {
       "sha256": "beaf8fb2401b7f5ebdc014f9362f154f8a306726e508e8418a635b34f42e0e6b",
@@ -46,9 +97,277 @@
       "sha256": "da4a5458dba262c744737335101b5e281af0543c345f763c89230e2a7c825f03",
       "bytes": 214445
     },
+    "pku.html": {
+      "sha256": "ec942728e7ba4c0c8ec7dc92ae3b9739589304f56d03ac47b15b5143dba2ced2",
+      "bytes": 3989
+    },
     "publication.json": {
       "sha256": "51ff313ab5e11bf36644b9cdf3d3471b742ef8088fb776c8fe986b4ba993d2a7",
       "bytes": 778
+    },
+    "schools/fudan-life/coverage.md": {
+      "sha256": "625adb9059723de6d76d1c1e6690ed5a1429d3bd1c93a2a09d9b191f6e81d2be",
+      "bytes": 861
+    },
+    "schools/fudan-life/guide.md": {
+      "sha256": "859369cc28e5381387d155f74524e790e4acae3c257bb395f191600013f58bd7",
+      "bytes": 2815
+    },
+    "schools/fudan-life/release.json": {
+      "sha256": "d098046f1dd9340b4de5503fbdde790d8c4228f05731c3bba3880980b56a0a9a",
+      "bytes": 3092
+    },
+    "schools/fudan-life/rules.json": {
+      "sha256": "fdbd564e464fe493b5cd40e44ddfd3476af7ccdfec0603205f1b69a5c402db37",
+      "bytes": 150631
+    },
+    "schools/fudan-life/source-map.json": {
+      "sha256": "f76ae31ccd073f3063a2b6752ba38bc678076639c9803d0c2c7247aad45b1329",
+      "bytes": 181745
+    },
+    "schools/fudan-life/unfinished.md": {
+      "sha256": "fc64359889a6f52554154d9b04f4ab9767ea95db41a961ae672c63f736e1a550",
+      "bytes": 2775
+    },
+    "schools/fudan/coverage.md": {
+      "sha256": "3bfb6f04c7e0eafbf1bce16f76ee129ea97341befaaf35022c81ac7a6222fada",
+      "bytes": 411
+    },
+    "schools/fudan/guide.md": {
+      "sha256": "e4dce299c1876bfadf58fffb60f2c08dd179470b722126487146cab0eb1ad945",
+      "bytes": 61678
+    },
+    "schools/fudan/release.json": {
+      "sha256": "6e59d228984296b4f87ae082179cbe8f05a6b4081e8c39611c3f2f38c714995d",
+      "bytes": 3028
+    },
+    "schools/fudan/rules.json": {
+      "sha256": "4d8443ab6a81e7d105e8e2765df45f1e0e8a8c9ef6ded996a70830ce74a264fb",
+      "bytes": 148882
+    },
+    "schools/fudan/source-map.json": {
+      "sha256": "2eaa61dda2c1808fcf076a288e38ecb1511d66e48b4b7a4bc325805f7d1f2955",
+      "bytes": 186303
+    },
+    "schools/fudan/unfinished.md": {
+      "sha256": "81cd184b76ec1b31fd43c85bf95189c192c2d9e21ee9ac800884bc67136a6452",
+      "bytes": 3225
+    },
+    "schools/hit-humanities/coverage.md": {
+      "sha256": "62e52f5fa55ae66d1756803c80c076b72d3d493fa57e3fc8c9e184fd7485a8e8",
+      "bytes": 1432
+    },
+    "schools/hit-humanities/guide.md": {
+      "sha256": "d9dde0360c238f5a8e442bae97361315810f66fe404b1ff3de785ea618ef9e05",
+      "bytes": 3257
+    },
+    "schools/hit-humanities/release.json": {
+      "sha256": "c47afb8e37b79151be61d8290eaa52b697d307e33ec9af600f03ad754ee32637",
+      "bytes": 5872
+    },
+    "schools/hit-humanities/rules.json": {
+      "sha256": "526e9cc572aded3812c65a31d05efe2ccfd59859e564b4e710cce0c1b64cad3f",
+      "bytes": 331018
+    },
+    "schools/hit-humanities/source-map.json": {
+      "sha256": "37da565ffaa489527fcf458a0bd201a01fc3a5b2ad5578d4ab0cb67337c3efbf",
+      "bytes": 342631
+    },
+    "schools/hit-humanities/unfinished.md": {
+      "sha256": "ed3cb52561a375f7fbe6472c1e1c0b663cf053895ef358b2e259fd3147dc85b4",
+      "bytes": 1813
+    },
+    "schools/hit-practice-engineering/coverage.md": {
+      "sha256": "8f3a603b93a12d2190753754560be49f9885bc6235d9e5d51e490ac517f84252",
+      "bytes": 1426
+    },
+    "schools/hit-practice-engineering/guide.md": {
+      "sha256": "ecd21da06347d4f81d886e68fad22e7d5eada1008156e56872f773a32b6f2a9a",
+      "bytes": 2881
+    },
+    "schools/hit-practice-engineering/release.json": {
+      "sha256": "7ab2ae2825cd1f4bc08942c8cf79168d50cc36996c99c0473855e1e934c681f2",
+      "bytes": 5924
+    },
+    "schools/hit-practice-engineering/rules.json": {
+      "sha256": "668dabfc44e808b2f20b44aadf5024e0bd815e79fb0b40173fd87944d755e4fa",
+      "bytes": 323455
+    },
+    "schools/hit-practice-engineering/source-map.json": {
+      "sha256": "ab7fe2135e11352a625c2d382dd19608fda7aae733c518853234e84930d1e5b2",
+      "bytes": 336461
+    },
+    "schools/hit-practice-engineering/unfinished.md": {
+      "sha256": "6347ba2908d6e4f6e01c85cc887d03e6f1f03cc7817cf4903ef3b8c49dae0bd2",
+      "bytes": 1898
+    },
+    "schools/hit-practice-humanities/coverage.md": {
+      "sha256": "ab13dde6cfdd164dbb8b5b548f9580db4e4c6eee062df7d121bdacd939f517e4",
+      "bytes": 1466
+    },
+    "schools/hit-practice-humanities/guide.md": {
+      "sha256": "a918192f5719c03bed9ea0bde903caa4b4d74704a2879026edaa33686b392c5f",
+      "bytes": 3294
+    },
+    "schools/hit-practice-humanities/release.json": {
+      "sha256": "3c87871141a9bd8bd95fb895c000eb6967a0b63bcdd110e834165572adc9c0aa",
+      "bytes": 5932
+    },
+    "schools/hit-practice-humanities/rules.json": {
+      "sha256": "dd5920da4c1c4b71cf3c4bc35cb8ec446be38cfba359ad674b55ad1e983d4b52",
+      "bytes": 330749
+    },
+    "schools/hit-practice-humanities/source-map.json": {
+      "sha256": "978c73ca40f2fda538c3255ce26335ea7ff60bfbd6617ce2234516417214f396",
+      "bytes": 342228
+    },
+    "schools/hit-practice-humanities/unfinished.md": {
+      "sha256": "50b97be7cd8a1bfa8c368ead0a344824de412e6935b8e1877c453a25fe1df12e",
+      "bytes": 1857
+    },
+    "schools/hit/coverage.md": {
+      "sha256": "c1a1dd62a340dd24ab860c11d67a7aae4ca549e3d7363c15d9da150181e2756a",
+      "bytes": 1393
+    },
+    "schools/hit/guide.md": {
+      "sha256": "e9c9aa65ec8ec564213797853165e86cdd1e82781b74014e5f7bb59230c2a3e5",
+      "bytes": 195535
+    },
+    "schools/hit/release.json": {
+      "sha256": "d3e288e32ec900183edfcb04c1bfb55b9aa25e52cb27a504d2bda7f300e9a3d5",
+      "bytes": 5840
+    },
+    "schools/hit/rules.json": {
+      "sha256": "e92ae328f143f2e38f8f3489a167bca81d0b63a67196a80dee8dd5c5d6db9caa",
+      "bytes": 322835
+    },
+    "schools/hit/source-map.json": {
+      "sha256": "99014ecf1eae4d0ecfc274037f12518b2044f2d37a64b63e2a07eccaae8a6f44",
+      "bytes": 335922
+    },
+    "schools/hit/unfinished.md": {
+      "sha256": "5ebed30aab97fe450012cded6518af8688e530eb8e45f5941985dc633c270630",
+      "bytes": 1853
+    },
+    "schools/nju-mba/coverage.md": {
+      "sha256": "ade4d05dceef081333df5c3a89094c754fcf83e0e2a707d2dd0dbe2d92bbdd7f",
+      "bytes": 1380
+    },
+    "schools/nju-mba/guide.md": {
+      "sha256": "ffe0dd1603627cbf9358ca68765e80a84cc038896cae49df801f346790630bef",
+      "bytes": 43634
+    },
+    "schools/nju-mba/release.json": {
+      "sha256": "808508faad4eb3f17b2bb39749f199ba49b8bafb2e7e0eaab953290f510903c2",
+      "bytes": 2341
+    },
+    "schools/nju-mba/rules.json": {
+      "sha256": "d634ea510b03256ecbc3b03b63006520ba465a5f7fdd79a3117065ac152ee8f5",
+      "bytes": 126528
+    },
+    "schools/nju-mba/source-map.json": {
+      "sha256": "c0ffe5c241109bcc13251609fa0e58e313f99a685f67f2d493e0f9c1f25b8b62",
+      "bytes": 132844
+    },
+    "schools/nju-mba/unfinished.md": {
+      "sha256": "a3921a5d9b7d8e3d1421fc95c1dcecc01025098dec3c008c101abd1edd1c3962",
+      "bytes": 972
+    },
+    "schools/nju/coverage.md": {
+      "sha256": "e57ee36859303e70c4d2ba910417088e2cc3daa151a49d06248ca0e1025c40d6",
+      "bytes": 458
+    },
+    "schools/nju/guide.md": {
+      "sha256": "52eaaa4c42f5b3b81372a05aced8889cfb6e592686d1c5ced532ab275a850e91",
+      "bytes": 48013
+    },
+    "schools/nju/release.json": {
+      "sha256": "e4c9019853cb771cd4af9f0d116fd10da66870e56e55959f0b27bdbdc6069332",
+      "bytes": 7564
+    },
+    "schools/nju/rules.json": {
+      "sha256": "8f8c313716bb4dd369b9e1b837c81c0b3d7bf0db4e06388b0606912092e7e410",
+      "bytes": 119341
+    },
+    "schools/nju/source-map.json": {
+      "sha256": "19762ad2ef88f4992a0915fa29c3345b1e52c4aad4de5d18fc01938a9e6d95d7",
+      "bytes": 130209
+    },
+    "schools/nju/unfinished.md": {
+      "sha256": "7b2ef21827c83522d599400759d0996c1105cb494725a11a60590cc642e6a8b7",
+      "bytes": 1935
+    },
+    "schools/pku/coverage.md": {
+      "sha256": "d197e2f59d555e49bb295cbc7bdc4526ed3076b0a285204eb47f2c7da13a5e05",
+      "bytes": 2481
+    },
+    "schools/pku/guide.md": {
+      "sha256": "0960aea77d24d33673a89f94d581994caeb7de7a4835b0501d32109db00b450b",
+      "bytes": 97022
+    },
+    "schools/pku/release.json": {
+      "sha256": "83eb85fbbf8a7035cd5b90237e8fb082eaa75958e58118f59751c872d1d243df",
+      "bytes": 2362
+    },
+    "schools/pku/rules.json": {
+      "sha256": "52dd3c10013ddc997020013cc9ab96b994157559200f07aa713471a24fca1cf9",
+      "bytes": 219700
+    },
+    "schools/pku/source-map.json": {
+      "sha256": "ae5488598ff6ebeb96392fa80966f93122e42f81491769e7c11b26932b554667",
+      "bytes": 353379
+    },
+    "schools/pku/unfinished.md": {
+      "sha256": "2b3eb80924be219dfbf922dc0116d1288dfa985c531ce18e3ddb7eaae25ee746",
+      "bytes": 1528
+    },
+    "schools/sjtu/coverage.md": {
+      "sha256": "5ec801c5f28c3e31f5e1f5ce4c1d11be7afa1ed976fdf787f94bad9f252150e5",
+      "bytes": 739
+    },
+    "schools/sjtu/guide.md": {
+      "sha256": "585304e4ecbd1cf6cf4d519821ee5b6227ea3b51499719d1f1631050542127e6",
+      "bytes": 42339
+    },
+    "schools/sjtu/release.json": {
+      "sha256": "e123fc297a6061e3ecc8324a5f28d514913ba99e95a7600c6e4d15536c0263b4",
+      "bytes": 4254
+    },
+    "schools/sjtu/rules.json": {
+      "sha256": "f01d130092ee0bc4e30bb6ffb4786c77406871fe64d4be8518338d66bcd2720a",
+      "bytes": 107048
+    },
+    "schools/sjtu/source-map.json": {
+      "sha256": "485c62ec0296c195b6934b11af36547a894d4f6ec99036749f0aa795818c6e1d",
+      "bytes": 123875
+    },
+    "schools/sjtu/unfinished.md": {
+      "sha256": "6bcdff93899e0128b38e34ff5bc949c5b8ed9a2f8a0884ac5118f5ead307e83e",
+      "bytes": 1786
+    },
+    "schools/tsinghua/coverage.md": {
+      "sha256": "25c1e78a297e236312354b6c98c44b4a8df86b6ca757b8ed53264160abd01bcc",
+      "bytes": 2577
+    },
+    "schools/tsinghua/guide.md": {
+      "sha256": "53d1b2b2045d014aa80f77d86f5c65bc872dfeba1d654611a1742a97178057b8",
+      "bytes": 111072
+    },
+    "schools/tsinghua/release.json": {
+      "sha256": "d601448fc9d011b585a876b4e8329d437748f17f7c0e391056942f102d04948e",
+      "bytes": 1850
+    },
+    "schools/tsinghua/rules.json": {
+      "sha256": "7be085b478facf2cf80ae914631d0efc2018b851b48a7513ba3337895b2f7eb2",
+      "bytes": 216411
+    },
+    "schools/tsinghua/source-map.json": {
+      "sha256": "6eb65a137be641ec2020a6e01809bd35ab356c7350b80728a6dae043b324261e",
+      "bytes": 348236
+    },
+    "schools/tsinghua/unfinished.md": {
+      "sha256": "d021978a144b3977ff149f217ffa59ade503bff25501f20857055072d2e1c391",
+      "bytes": 1807
     },
     "schools/ustc/2026-09-21/contract.json": {
       "sha256": "1126d902581b4561e6a1ce1a2d79f9d10950bd0c4b078416119c3c280d87c38f",
@@ -94,22 +413,117 @@
       "sha256": "9cbcdd6c0644552135c503bb29a57f0d5dbb5c6a53f36a15985c088abe880b95",
       "bytes": 139778
     },
+    "schools/ustc/2026-10-29/coverage.md": {
+      "sha256": "b81e77a184e7204fd38af91a2598c2debdf1fca05e6645b9c82c7cff07530c89",
+      "bytes": 109173
+    },
+    "schools/ustc/2026-10-29/guide.md": {
+      "sha256": "07a9dbb8d78fa5914ae49e6e33212617eff5a8e4c944c9bb14a7a47cd8d09660",
+      "bytes": 296217
+    },
+    "schools/ustc/2026-10-29/release.json": {
+      "sha256": "f24999feba3d2c30c19dff13ddb24c5ae9e8efa10eb1db5370cfb971d755b2b2",
+      "bytes": 2508
+    },
+    "schools/ustc/2026-10-29/rules.json": {
+      "sha256": "31be76adffad86e74e33cdfa04035100a641155e9cb84b82e6b212b4f8fc704c",
+      "bytes": 356305
+    },
+    "schools/ustc/2026-10-29/rules.schema.json": {
+      "sha256": "4bdd16c4d4d3a584a09b8efa7f448a40835ea066dc145cd2cd37c140d7b50973",
+      "bytes": 28457
+    },
+    "schools/ustc/2026-10-29/source-map.json": {
+      "sha256": "58d4fff61fa67443528f6fbeed47c4e69cfadc8ea604ad08a40850ea53fde2e5",
+      "bytes": 473711
+    },
+    "schools/ustc/2026-10-29/unfinished.md": {
+      "sha256": "fe8fea94a0612f742e2b705a0d0ec9f937a7fcfa0dbe672c852563963e7aa812",
+      "bytes": 139623
+    },
+    "schools/xjtu/coverage.md": {
+      "sha256": "d2dea3f866bb6c746c323dd2cdc4d91e931396ee91279194089decd0e812d02c",
+      "bytes": 1439
+    },
+    "schools/xjtu/guide.md": {
+      "sha256": "4c8610ab99147fdbf9a8e489c68da1c6a0b2081e223c52fd1764ac2710144785",
+      "bytes": 100062
+    },
+    "schools/xjtu/release.json": {
+      "sha256": "63c1dc063e21987b24ad76199dcd7f426e29a9db5c9abe5e678b10d82bb69f90",
+      "bytes": 2371
+    },
+    "schools/xjtu/rules.json": {
+      "sha256": "46654d91265456714cee694e9992cb0efe2d7fd0cd64525b0cbf52825d2a7817",
+      "bytes": 243949
+    },
+    "schools/xjtu/source-map.json": {
+      "sha256": "b569c59281e4b5c3b8a344bc5e368650161e7f8ebc9e502e777d1bc0367e6eed",
+      "bytes": 274822
+    },
+    "schools/xjtu/unfinished.md": {
+      "sha256": "e87e28c83ce14d0527428d41a4aa6b1bfd105fac1b592de9394d64a8be73205b",
+      "bytes": 3268
+    },
+    "schools/zju/coverage.md": {
+      "sha256": "5f454894686ddd39ce82d05aa6199bd387d4644e21d9d523f43ec9252cccc949",
+      "bytes": 599
+    },
+    "schools/zju/guide.md": {
+      "sha256": "e4f507a85b27aa678fc0d21ba9eb2488202673468b652bf83cecbbf6c1c9c49e",
+      "bytes": 50141
+    },
+    "schools/zju/release.json": {
+      "sha256": "a955b850875c26bd0d1a3b0f16670cd075b66e62e58acbc141020e2f9d50eeba",
+      "bytes": 1835
+    },
+    "schools/zju/rules.json": {
+      "sha256": "c04fe3194d03a6664b28a609fa23fec976c6566c9214fc89f855a0157d1491e5",
+      "bytes": 161647
+    },
+    "schools/zju/source-map.json": {
+      "sha256": "cef001827bd7cb759b7fc970af2d1028b7b8624a7a7403b162bb5c99d4fd2df4",
+      "bytes": 183945
+    },
+    "schools/zju/unfinished.md": {
+      "sha256": "cea6df62460da545e723a54f51f936775feebfcd1acc47b3dd862b4996886564",
+      "bytes": 2430
+    },
+    "sjtu.html": {
+      "sha256": "5d9ab7bcfb93f263f6a9a94db5269b56d17411744a1dee6b3e79fbe9e20a1e88",
+      "bytes": 4022
+    },
+    "tsinghua.html": {
+      "sha256": "2a7a1d8a3fef879d70152b2ce95094c409b483e20beba037094effe3f98519a4",
+      "bytes": 3992
+    },
+    "ustc2026.html": {
+      "sha256": "7226abed82e66f77547b4205a047f62f89c661eb62d8b39264049bb123eb5103",
+      "bytes": 4038
+    },
     "wiki/app.js": {
-      "sha256": "1798afc1ef012364275ae55aaf55ad36ccbf6450a770fb5a750662cbd440d905",
-      "bytes": 8159
+      "sha256": "f0a55f7a2e7e1d25a44976ae71d5b2a02fc8c3b68a6a1606347930c48abe9591",
+      "bytes": 8502
     },
     "wiki/model.js": {
-      "sha256": "7d6f40eb51f693dcd754bc15321bfdb92651eab7eb3486ad805c15233e0bdc8d",
-      "bytes": 3064
+      "sha256": "22d176c814899a544bbac78f897ba84af8f8787768d0c84b9a98097c66775382",
+      "bytes": 3537
     },
     "wiki/style.css": {
       "sha256": "371108d41b96c80ab70c3906b1400f6524df29fd3999bb99e2a0547491073892",
       "bytes": 7244
     },
     "wiki/test.mjs": {
-      "sha256": "0d056dea6a166049502454ce033371b35ebe4ac4f65fa0c6ea90ee0625cac655",
-      "bytes": 1920
+      "sha256": "0f4309d10451dc02b3a8927ada0a39f5920238f8cb9d364d127cc53aa1447124",
+      "bytes": 2407
+    },
+    "xjtu.html": {
+      "sha256": "fa80385ff155d76fc15789795cbccdbf26f2df176634036f56c5682239b93710",
+      "bytes": 4003
+    },
+    "zju.html": {
+      "sha256": "a4d06364a95ff2f41a7d9c88ffeab77ecad316d8a1bd3de14b20a2ebcda01915",
+      "bytes": 3984
     }
-  },
-  "publication_approved": true
+  }
 }

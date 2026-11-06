@@ -1,0 +1,48 @@
+{
+  "standard": {
+    "id": "zju-graduate-2008-draft-v1",
+    "institution": "浙江大学",
+    "name": "2008论文规范",
+    "version": "2008",
+    "checked_at": "2026-11-05",
+    "profile_sha256": "c04fe3194d03a6664b28a609fa23fec976c6566c9214fc89f855a0157d1491e5",
+    "documents": [
+      {
+        "id": "zju-guide-2008",
+        "title": "浙江大学研究生学位论文编写规则",
+        "version": "2008",
+        "sha256": "9d62cc91d9ed0f002f7d1aeb7ca930d1122c9a74246c0a2824123049ea56e80e",
+        "bytes": 264673,
+        "source_url": "https://pi.zju.edu.cn/_upload/article/files/e8/d9/3fbf53294ef087d8bb8b479ba6bc/1d17c363-bf25-4e48-98d0-4be2f01e94fe.pdf",
+        "source_page": "https://pi.zju.edu.cn/2022/0603/c66998a2586932/page.htm",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "rules",
+        "title": "研格式执行规则（非学校原文）",
+        "version": "2026-11-06-preview.1",
+        "bytes": 161647,
+        "sha256": "c04fe3194d03a6664b28a609fa23fec976c6566c9214fc89f855a0157d1491e5"
+      }
+    ]
+  },
+  "ruleset": {
+    "id": "zju-graduate-2008-draft-v1",
+    "schema": "1.0",
+    "version": "2026-11-06-preview.1",
+    "status": "public-preview",
+    "published": true,
+    "rules_sha256": "c04fe3194d03a6664b28a609fa23fec976c6566c9214fc89f855a0157d1491e5",
+    "source_map_sha256": "cef001827bd7cb759b7fc970af2d1028b7b8624a7a7403b162bb5c99d4fd2df4",
+    "engine_contract_sha256": "772a5142766c59521069e1c9bf50dee285cca7b7dd372b443714f1580ae5462f",
+    "runtime_digest": "c9d412b458ad96b044d3d406304e96676f2a1f119596c165456233e769dc662f",
+    "repository_url": "https://github.com/firestige/yangeshi-rules"
+  },
+  "schema_version": 1,
+  "catalog_id": "zju",
+  "wiki_page": "zju.html",
+  "counts": {
+    "unsupported": 55,
+    "checkable": 13
+  }
+}

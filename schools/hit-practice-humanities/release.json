@@ -1,0 +1,118 @@
+{
+  "standard": {
+    "id": "hit-practice-humanities-2025-03-draft-v1",
+    "institution": "哈尔滨工业大学",
+    "name": "2025-03·专业实践人文社科论文规范",
+    "version": "2025-03·专业实践人文社科",
+    "checked_at": "2026-11-05",
+    "profile_sha256": "dd5920da4c1c4b71cf3c4bc35cb8ec446be38cfba359ad674b55ad1e983d4b52",
+    "documents": [
+      {
+        "id": "doc-1",
+        "title": "研究生学位论文写作指南-理工类",
+        "version": "理工类2021版本",
+        "sha256": "c45ef75ec258aa5f7f45917fe6246294b407dfe3da78b0e191a99b110be3febb",
+        "bytes": 1435491,
+        "source_url": "https://iac.hit.edu.cn/_upload/article/files/6f/7e/af9689084cb1bc8544f21b60ee59/7a1727a1-3cab-45ed-994b-cf113386e0ed.pdf",
+        "source_page": "https://iac.hit.edu.cn/2022/0425/c4144a272343/page.htm",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "doc-2",
+        "title": "研究生学位论文书写范例-理工类",
+        "version": "理工类2021版本",
+        "sha256": "1ac049f5fcdba59343f62cd9c00b96a70b06e8a4bff2357c6614d2067bce3350",
+        "bytes": 597185,
+        "source_url": "https://iac.hit.edu.cn/_upload/article/files/6f/7e/af9689084cb1bc8544f21b60ee59/1eb1ec48-6504-40dd-b792-5549508a9bb9.pdf",
+        "source_page": "https://iac.hit.edu.cn/2022/0425/c4144a272343/page.htm",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "doc-3",
+        "title": "研究生学位论文写作指南（理工类）",
+        "version": "2025年3月版",
+        "sha256": "98c79a995d93328af6d961fbe71202073e49a4d71a77d85ee43f7ad7c0f70333",
+        "bytes": 1629831,
+        "source_url": "https://zri.hit.edu.cn/_upload/article/files/15/d1/73063a6141f8a03d0ec9358c2b0c/af1a965d-9425-4595-b5f0-98f7720327ef.pdf",
+        "source_page": "https://zri.hit.edu.cn/2025/0407/c13993a366034/page.htm",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "doc-4",
+        "title": "附件1  哈尔滨工业大学研究生学位论文写作指南（理工类）",
+        "version": "2025-03-31发布",
+        "sha256": "7701c89d36531437b778709f48266ffb1559125b3432975ffea7342d16876e27",
+        "bytes": 7073792,
+        "source_url": "https://hitgs.hit.edu.cn/_upload/article/files/9d/52/c937ab6d47bd85bb5cdb44910f27/b3fa1757-140b-412c-b315-3ea9cbb7d779.doc",
+        "source_page": "https://hitgs.hit.edu.cn/2025/0331/c17373a365618/page.htm",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "doc-5",
+        "title": "附件2  哈尔滨工业大学研究生实践成果写作指南（理工类）",
+        "version": "2025-03-31发布",
+        "sha256": "7c5746bca2d738cbb0932ef5a76f9c220f596099053df863fa543bb989cdb95d",
+        "bytes": 581120,
+        "source_url": "https://hitgs.hit.edu.cn/_upload/article/files/9d/52/c937ab6d47bd85bb5cdb44910f27/36dd9b7f-a107-4cf8-8aa2-5c7e284b4e25.doc",
+        "source_page": "https://hitgs.hit.edu.cn/2025/0331/c17373a365618/page.htm",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "doc-6",
+        "title": "附件3 哈尔滨工业大学研究生学位论文写作指南（人文社科类）",
+        "version": "2025-03-31发布",
+        "sha256": "d808bd299c1339c1c195a3433c561caf0c21a9051db17c302969e68e341b40af",
+        "bytes": 6947328,
+        "source_url": "https://hitgs.hit.edu.cn/_upload/article/files/9d/52/c937ab6d47bd85bb5cdb44910f27/093b64f4-9eeb-4b1d-b060-227d175f9b18.doc",
+        "source_page": "https://hitgs.hit.edu.cn/2025/0331/c17373a365618/page.htm",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "doc-7",
+        "title": "附件4 哈尔滨工业大学研究生实践成果写作指南（人文社科类）",
+        "version": "2025-03-31发布",
+        "sha256": "0849f8fcf7147553e94152877bfdaa6ae2d97637074c85f44deaa4cb7b4d3200",
+        "bytes": 454656,
+        "source_url": "https://hitgs.hit.edu.cn/_upload/article/files/9d/52/c937ab6d47bd85bb5cdb44910f27/df853e78-7feb-4b5f-9d28-01af7be43f74.doc",
+        "source_page": "https://hitgs.hit.edu.cn/2025/0331/c17373a365618/page.htm",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "doc-8",
+        "title": "附件5 专业学位学位论文或者实践成果写作指南选用情况表.xlsx",
+        "version": "2025-03-31发布",
+        "sha256": "6a1c74ee5dd23f1bf14e04d5534667b070637ec01435d996de908b8dbb2c030b",
+        "bytes": 11571,
+        "source_url": "https://hitgs.hit.edu.cn/_upload/article/files/9d/52/c937ab6d47bd85bb5cdb44910f27/7f432b5f-470f-4deb-8344-6caf80124d61.xlsx",
+        "source_page": "https://hitgs.hit.edu.cn/2025/0331/c17373a365618/page.htm",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "rules",
+        "title": "研格式执行规则（非学校原文）",
+        "version": "2026-11-06-preview.1",
+        "bytes": 330749,
+        "sha256": "dd5920da4c1c4b71cf3c4bc35cb8ec446be38cfba359ad674b55ad1e983d4b52"
+      }
+    ]
+  },
+  "ruleset": {
+    "id": "hit-practice-humanities-2025-03-draft-v1",
+    "schema": "1.0",
+    "version": "2026-11-06-preview.1",
+    "status": "public-preview",
+    "published": true,
+    "rules_sha256": "dd5920da4c1c4b71cf3c4bc35cb8ec446be38cfba359ad674b55ad1e983d4b52",
+    "source_map_sha256": "978c73ca40f2fda538c3255ce26335ea7ff60bfbd6617ce2234516417214f396",
+    "engine_contract_sha256": "b4270d7cfc847e0971513c22f5c1cbc3eb6d0fb7b401402e3ffc5b2dd9366f4a",
+    "runtime_digest": "9c26d936fc2c9a28ecdbdf0f240dfe8d4215bc006b9cb21386a04c9e685c1c3c",
+    "repository_url": "https://github.com/firestige/yangeshi-rules"
+  },
+  "schema_version": 1,
+  "catalog_id": "hit-practice-humanities",
+  "wiki_page": "hit-practice-humanities.html",
+  "counts": {
+    "unsupported": 44,
+    "checkable": 34
+  }
+}

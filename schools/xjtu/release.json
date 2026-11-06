@@ -1,0 +1,58 @@
+{
+  "standard": {
+    "id": "xjtu-graduate-2018-text-authority-draft",
+    "institution": "西安交通大学",
+    "name": "2018论文规范",
+    "version": "2018",
+    "checked_at": "2026-11-05",
+    "profile_sha256": "46654d91265456714cee694e9992cb0efe2d7fd0cd64525b0cbf52825d2a7817",
+    "documents": [
+      {
+        "id": "xjtu-2018",
+        "title": "西安交通大学硕士、博士学位论文规范",
+        "version": "西交研〔2018〕6号",
+        "sha256": "733b8983d0898f00f091d1c4066c95d2eecc221531c6ab370d360a9ff157e22e",
+        "bytes": 625797,
+        "source_url": "https://chem.xjtu.edu.cn/__local/7/4D/25/3C53260DE164143BC4752A74612_12C4159F_98C85.pdf",
+        "source_page": "https://chem.xjtu.edu.cn/__local/7/4D/25/3C53260DE164143BC4752A74612_12C4159F_98C85.pdf",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "xjtu-2013-history",
+        "title": "西安交通大学硕士、博士学位论文规范（历史版）",
+        "version": "西交研〔2013〕85号",
+        "sha256": "37257cee20a1ce66ace2bbf9277f0844c12e301d452dfa4eee644b7ecee6511d",
+        "bytes": 158402,
+        "source_url": "https://sfs.xjtu.edu.cn/lunwenguifan.pdf",
+        "source_page": "https://sfs.xjtu.edu.cn/lunwenguifan.pdf",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "rules",
+        "title": "研格式执行规则（非学校原文）",
+        "version": "2026-11-06-preview.1",
+        "bytes": 243949,
+        "sha256": "46654d91265456714cee694e9992cb0efe2d7fd0cd64525b0cbf52825d2a7817"
+      }
+    ]
+  },
+  "ruleset": {
+    "id": "xjtu-graduate-2018-text-authority-draft",
+    "schema": "1.0",
+    "version": "2026-11-06-preview.1",
+    "status": "public-preview",
+    "published": true,
+    "rules_sha256": "46654d91265456714cee694e9992cb0efe2d7fd0cd64525b0cbf52825d2a7817",
+    "source_map_sha256": "b569c59281e4b5c3b8a344bc5e368650161e7f8ebc9e502e777d1bc0367e6eed",
+    "engine_contract_sha256": "856e62ee9c5e0f72f0de75410c53de6f19349fdc7ade6d2caec95f3fce98a555",
+    "runtime_digest": "b345b661086cb269ea48782b8bc1d07b3f6b87f1ef88c75b17d6a637b4611217",
+    "repository_url": "https://github.com/firestige/yangeshi-rules"
+  },
+  "schema_version": 1,
+  "catalog_id": "xjtu",
+  "wiki_page": "xjtu.html",
+  "counts": {
+    "unsupported": 79,
+    "checkable": 36
+  }
+}

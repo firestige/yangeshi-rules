@@ -1,0 +1,36 @@
+# 自动检查范围
+
+- `HIT-HUM-COVER-02` 封面明文字体字号
+- `HIT-HUM-TITLEPAGE-01` 内封字段格式
+- `HIT-HUM-ABS-05` 摘要题头格式
+- `HIT-HUM-ABS-06` 摘要间距及题头空格
+- `HIT-HUM-KEY-01` 关键词数量
+- `HIT-HUM-KEY-02` 关键词分隔与对应
+- `HIT-HUM-KEY-04` 关键词换行尾标点
+- `HIT-HUM-ABS-07` 摘要引用标注
+- `HIT-HUM-TOC-02` 目录章标题格式
+- `HIT-HUM-TOC-03` 目录其他条目格式
+- `HIT-HUM-TOC-04` 英文目录
+- `HIT-HUM-BODY-01` 正文中文与西文字体
+- `HIT-HUM-BODY-02` 正文字号
+- `HIT-HUM-HEAD-01` 章标题字体字号
+- `HIT-HUM-HEAD-02` 节标题字体字号
+- `HIT-HUM-HEAD-03` 条标题字体字号
+- `HIT-HUM-HEAD-04` 款、项标题字体字号
+- `HIT-HUM-SPACE-01` 正文和标题段落建议
+- `HIT-HUM-HEAD-06` 标题字数建议
+- `HIT-HUM-HEAD-08` 层次编号建议
+- `HIT-HUM-CITE-02` 标题禁引文和重复引文页码
+- `HIT-HUM-EQ-01` 公式另行居中
+- `HIT-HUM-TABLE-01` 表格边框与三线表
+- `HIT-HUM-TABLE-02` 表内字样与字号建议
+- `HIT-HUM-TABLE-03` 表题格式
+- `HIT-HUM-TABLE-05` 表格空格与重复值
+- `HIT-HUM-FIG-01` 图题与图注
+- `HIT-HUM-FIG-04` 图中文字
+- `HIT-HUM-PAGE-01` 纸型
+- `HIT-HUM-PAGE-04` 页码分段与位置
+- `HIT-HUM-HEADER-01` 页眉文字格式
+- `HIT-HUM-HEADER-02` 页眉线与适用页
+- `HIT-HUM-NOTE-01` 页下脚注序号
+- `HIT-HUM-COVER-04` 英文封面题名大写

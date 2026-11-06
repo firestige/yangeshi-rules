@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "研格式规则包传输结构",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "pack_id",
+    "contract_digest",
+    "runtime_digest",
+    "rules",
+    "source_index"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "pack_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "contract_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "runtime_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "source_index": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object"
+      }
+    },
+    "rules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "authority",
+          "sources",
+          "selector",
+          "when",
+          "check",
+          "fix",
+          "audit",
+          "comments",
+          "requires"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Z0-9]+(?:-[A-Z0-9]+)+$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "authority": {
+            "enum": [
+              "required",
+              "advisory",
+              "example",
+              "default"
+            ]
+          },
+          "sources": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "selector": {
+            "type": "object"
+          },
+          "check": {
+            "type": "object"
+          },
+          "fix": {
+            "type": "object"
+          },
+          "audit": {
+            "type": "object"
+          },
+          "comments": {
+            "type": "object"
+          },
+          "when": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "requires": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

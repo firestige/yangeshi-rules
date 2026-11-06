@@ -1,0 +1,3950 @@
+[
+  {
+    "rule_id": "NJU-MBA-COVER-01",
+    "title": "硕士标准封面及声明",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[9:9]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.1—1.2，PDF p.1；提取文本L9—L9",
+        "text_sha256": "4472548cf0c66133db12c2862292208fb057f315f610e8ebc5c68ddbdea37d9c",
+        "rules": [
+          "NJU-MBA-COVER-01"
+        ],
+        "source_id": "MBA-001",
+        "document_id": "nju-mba-pdf",
+        "text": "采用南京大学硕士论文标准封面"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "cover"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review",
+        "items": [
+          "MBA采用硕士标准封面和原创性声明标准模板；源PDF未含完整模板，不据校级博士国图版重建。"
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [
+          "cover"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。",
+        "requires": [
+          "semantic_roles",
+          "human_review"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "位置：已确认的硕士标准封面及声明。MBA采用硕士标准封面和原创性声明标准模板；源PDF未含完整模板，不据校级博士国图版重建。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.1—1.2，PDF p.1。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。"
+      },
+      "requires": [
+        "semantic_roles",
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-ABSTRACT-01",
+    "title": "中文摘要标题",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[14:14]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.3(1)，PDF p.1；提取文本L14—L14",
+        "text_sha256": "47dee8a4b05605749382f75ab93973c7170ef85abf3f86bd1a0b82c19678cc86",
+        "rules": [
+          "NJU-MBA-ABSTRACT-01"
+        ],
+        "source_id": "MBA-002",
+        "document_id": "nju-mba-pdf",
+        "text": "两字间空两格，黑体16 磅加粗居中"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "abstract_zh_heading"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "黑体",
+          "size.pt": 16,
+          "font.bold": true,
+          "paragraph.align": "center",
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.before.pt": 24,
+          "paragraph.after.pt": 18
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "黑体",
+          "size.pt": 16,
+          "font.bold": true,
+          "paragraph.align": "center",
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.before.pt": 24,
+          "paragraph.after.pt": 18
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "abstract_zh_heading"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "仅按已确认有效属性逐项判断，未知或缺依赖静默；未进行论文验证。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": "位置：中文摘要标题。已调整格式：{changes_zh}。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.3(1)，PDF p.1。",
+        "action": "位置：已确认的中文摘要标题。已有中文摘要标题黑体16磅加粗居中、单倍、段前24磅段后18磅；标题两字间空两格另条保留。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.3(1)，PDF p.1。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "未自动修改的部分：定位、有效属性或保护前提不明确，不能保证只修改目标格式。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-ABSTRACT-02",
+    "title": "中文摘要正文",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[16:16]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.3(2)，PDF p.1；提取文本L16—L16",
+        "text_sha256": "4cec8ef8c963575a9325c2fdca4d4d62f48997cf56c8614346d5ef6b9d5978b7",
+        "rules": [
+          "NJU-MBA-ABSTRACT-02"
+        ],
+        "source_id": "MBA-003",
+        "document_id": "nju-mba-pdf",
+        "text": "宋体 12 磅（小四）"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "abstract_zh_body"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.before.pt": 0,
+          "paragraph.after.pt": 0
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.before.pt": 0,
+          "paragraph.after.pt": 0
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "abstract_zh_body"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "仅按已确认有效属性逐项判断，未知或缺依赖静默；未进行论文验证。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": "位置：中文摘要正文。已调整格式：{changes_zh}。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.3(2)，PDF p.1。",
+        "action": "位置：已确认的中文摘要正文。中文摘要正文宋体12磅（小四）、段前后0磅；不把正文首行缩进要求自行推给摘要。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.3(2)，PDF p.1。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "未自动修改的部分：定位、有效属性或保护前提不明确，不能保证只修改目标格式。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-ABSTRACT-03",
+    "title": "摘要20磅行距数值",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[16:16]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.3(2)、§1.4(2)，PDF p.1；提取文本L16—L16",
+        "text_sha256": "3d3875c4ff2f34a1ea5f711e8183459cef2145c5cf857db85f804678ef685a79",
+        "rules": [
+          "NJU-MBA-ABSTRACT-03"
+        ],
+        "source_id": "MBA-004",
+        "document_id": "nju-mba-pdf",
+        "text": "行距20 磅"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "abstract_body"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "paragraph.line.pt": 20
+        }
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "abstract_body"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "仅按已确认有效属性逐项判断，未知或缺依赖静默；未进行论文验证。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "位置：已确认的摘要20磅行距数值。中英文摘要已有明确固定行距时只比较20磅；原文未写固定或最小值，其他模式未知，不自动选择模式。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.3(2)、§1.4(2)，PDF p.1。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "仅按已确认有效属性逐项判断，未知或缺依赖静默；未进行论文验证。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-ABSTRACT-04",
+    "title": "中文摘要不少于800字",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[16:16]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.3(2)，PDF p.1；提取文本L16—L16",
+        "text_sha256": "42cb594c7251b5878dfbd7908625ccce3cb7bc2149651aa8546d12e51432128f",
+        "rules": [
+          "NJU-MBA-ABSTRACT-04"
+        ],
+        "source_id": "MBA-005",
+        "document_id": "nju-mba-pdf",
+        "text": "不少于 800 字"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "abstract_zh_body"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review",
+        "items": [
+          "中文摘要不少于800字；中文混排字数口径未明确，不以仅汉字计数假装全文字数。"
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [
+          "abstract_zh_body"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。",
+        "requires": [
+          "semantic_roles",
+          "human_review"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "位置：已确认的中文摘要不少于800字。中文摘要不少于800字；中文混排字数口径未明确，不以仅汉字计数假装全文字数。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.3(2)，PDF p.1。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。"
+      },
+      "requires": [
+        "semantic_roles",
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-ABSTRACT-05",
+    "title": "英文摘要标题",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[20:20]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.4(1)，PDF p.1；提取文本L20—L20",
+        "text_sha256": "13153c9129934f0ee613bbafaa5e5c0d0c28b776e0cfacefbe1982b1cd4b46eb",
+        "rules": [
+          "NJU-MBA-ABSTRACT-05"
+        ],
+        "source_id": "MBA-006",
+        "document_id": "nju-mba-pdf",
+        "text": "Arial 16 磅加粗居中"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "abstract_en_heading"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "size.pt": 16,
+          "font.bold": true,
+          "paragraph.align": "center",
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.before.pt": 24,
+          "paragraph.after.pt": 18,
+          "font.latin": "Arial"
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "size.pt": 16,
+          "font.bold": true,
+          "paragraph.align": "center",
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.before.pt": 24,
+          "paragraph.after.pt": 18,
+          "font.latin": "Arial"
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "abstract_en_heading"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "仅按已确认有效属性逐项判断，未知或缺依赖静默；未进行论文验证。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": "位置：英文摘要标题。已调整格式：{changes_zh}。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.4(1)，PDF p.1。",
+        "action": "位置：已确认的英文摘要标题。已有Abstract标题Arial16磅加粗居中，单倍，段前24磅后18磅；不强制改为全大写ABSTRACT。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.4(1)，PDF p.1。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "未自动修改的部分：定位、有效属性或保护前提不明确，不能保证只修改目标格式。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-ABSTRACT-06",
+    "title": "英文摘要正文",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[21:21]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.4(2)，PDF p.1；提取文本L21—L21",
+        "text_sha256": "20f2e6f307db22be8a9026712fdc139d852d638085c05aadc27b9d2f097bf2b8",
+        "rules": [
+          "NJU-MBA-ABSTRACT-06"
+        ],
+        "source_id": "MBA-007",
+        "document_id": "nju-mba-pdf",
+        "text": "Times New Roman 12 磅"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "abstract_en_body"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.latin": "Times New Roman",
+          "size.pt": 12,
+          "paragraph.before.pt": 0,
+          "paragraph.after.pt": 0
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.latin": "Times New Roman",
+          "size.pt": 12,
+          "paragraph.before.pt": 0,
+          "paragraph.after.pt": 0
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "abstract_en_body"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "仅按已确认有效属性逐项判断，未知或缺依赖静默；未进行论文验证。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": "位置：英文摘要正文。已调整格式：{changes_zh}。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.4(2)，PDF p.1。",
+        "action": "位置：已确认的英文摘要正文。英文摘要Times New Roman12磅，段前后0磅。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.4(2)，PDF p.1。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "未自动修改的部分：定位、有效属性或保护前提不明确，不能保证只修改目标格式。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-KEYWORD-01",
+    "title": "关键词数量与标签",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[17:17]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.3(3)、§1.4(3)，PDF p.1；提取文本L17—L17",
+        "text_sha256": "b37af5a9a2d9912647c8ae386d476c8bc5ec8afb8647bbdb0975553d01b3374c",
+        "rules": [
+          "NJU-MBA-KEYWORD-01"
+        ],
+        "source_id": "MBA-008",
+        "document_id": "nju-mba-pdf",
+        "text": "关键词：3-5 个"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "keyword_group"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "assertions",
+        "tests": [
+          {
+            "fact": "keywords.confirmed_count",
+            "op": "between",
+            "value": [
+              3,
+              5
+            ]
+          }
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "keyword_group"
+        ],
+        "when": [],
+        "tests": [
+          {
+            "fact": "keywords.confirmed_count",
+            "op": "between",
+            "value": [
+              3,
+              5
+            ]
+          }
+        ],
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。只使用边界全部确认的关键词组；不把标点计数当作词数。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "请核对本条已确认的Word对象及报告中列明的属性；只使用边界全部确认的关键词组；不把标点计数当作词数。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。只使用边界全部确认的关键词组；不把标点计数当作词数。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-TITLE-SPACE-01",
+    "title": "摘要目录致谢标题字距",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[14:14]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.3、§1.5、§1.9，PDF pp.1,4；提取文本L14—L14",
+        "text_sha256": "921f7cccb5265492f81bd9666126a08f0aa9e02a2b7b9705aa8fc3acf8daea4a",
+        "rules": [
+          "NJU-MBA-TITLE-SPACE-01"
+        ],
+        "source_id": "MBA-009",
+        "document_id": "nju-mba-pdf",
+        "text": "两字间空两格"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "peer_heading"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review",
+        "items": [
+          "摘要、目录、致谢的两个字之间空两格；格的字符类型/宽度未明，不把两个ASCII空格强制等同两汉字符。"
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [
+          "peer_heading"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。",
+        "requires": [
+          "semantic_roles",
+          "human_review"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "位置：已确认的摘要目录致谢标题字距。摘要、目录、致谢的两个字之间空两格；格的字符类型/宽度未明，不把两个ASCII空格强制等同两汉字符。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.3、§1.5、§1.9，PDF pp.1,4。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。"
+      },
+      "requires": [
+        "semantic_roles",
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-TOC-01",
+    "title": "目录标题",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[14:14]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.5(1)，PDF p.1；提取文本L14—L14",
+        "text_sha256": "702e8fa1a42827ef41012af94a108536fb4a98b66f8aa6d0489d8844514072ac",
+        "rules": [
+          "NJU-MBA-TOC-01"
+        ],
+        "source_id": "MBA-010",
+        "document_id": "nju-mba-pdf",
+        "text": "黑体16 磅加粗居中，单倍行距"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "toc_heading"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "黑体",
+          "size.pt": 16,
+          "font.bold": true,
+          "paragraph.align": "center",
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.before.pt": 24,
+          "paragraph.after.pt": 18
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "黑体",
+          "size.pt": 16,
+          "font.bold": true,
+          "paragraph.align": "center",
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.before.pt": 24,
+          "paragraph.after.pt": 18
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "toc_heading"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "仅按已确认有效属性逐项判断，未知或缺依赖静默；未进行论文验证。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": "位置：目录标题。已调整格式：{changes_zh}。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.5(1)，PDF p.1。",
+        "action": "位置：已确认的目录标题。已有目录标题黑体16磅加粗居中、单倍，段前24后18磅。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.5(1)，PDF p.1。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "未自动修改的部分：定位、有效属性或保护前提不明确，不能保证只修改目标格式。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-TOC-02",
+    "title": "目录从绪论及页码",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[27:27]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.5(2)，PDF p.1；提取文本L27—L27",
+        "text_sha256": "ff731ba807c4f530ee98d3334d03c851a1790466008581f8f0876ce0a30394ce",
+        "rules": [
+          "NJU-MBA-TOC-02"
+        ],
+        "source_id": "MBA-011",
+        "document_id": "nju-mba-pdf",
+        "text": "从绪论开始列出论文中章节的名称与对应的页码"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "toc"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review",
+        "items": [
+          "目录从绪论开始，列章节名及对应页码；不把前置摘要强制列入目录。"
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [
+          "toc"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。",
+        "requires": [
+          "semantic_roles",
+          "human_review"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "位置：已确认的目录从绪论及页码。目录从绪论开始，列章节名及对应页码；不把前置摘要强制列入目录。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.5(2)，PDF p.1。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。"
+      },
+      "requires": [
+        "semantic_roles",
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-TOC-03",
+    "title": "章目录格式",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[28:28]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.5(3)，PDF p.1；提取文本L28—L28",
+        "text_sha256": "866d34de143f1ebf7c95634a932c440a7cb692c47720db59fa6440eea44a318e",
+        "rules": [
+          "NJU-MBA-TOC-03"
+        ],
+        "source_id": "MBA-012",
+        "document_id": "nju-mba-pdf",
+        "text": "宋体12 磅加粗，单倍行距"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "toc_chapter_entry"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "font.bold": true,
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.before.pt": 6,
+          "paragraph.after.pt": 6,
+          "paragraph.align": "both"
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "font.bold": true,
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.before.pt": 6,
+          "paragraph.after.pt": 6,
+          "paragraph.align": "both"
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "toc_chapter_entry"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "仅按已确认有效属性逐项判断，未知或缺依赖静默；未进行论文验证。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": "位置：章目录格式。已调整格式：{changes_zh}。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.5(3)，PDF p.1。",
+        "action": "位置：已确认的章目录格式。章目录宋体12磅加粗、单倍、段前后6磅、两端对齐；页码右对齐及序号后空两格另行不执行。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.5(3)，PDF p.1。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "未自动修改的部分：定位、有效属性或保护前提不明确，不能保证只修改目标格式。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-TOC-04",
+    "title": "一级节目录格式",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[30:31]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.5(4)，PDF p.1；提取文本L30—L31",
+        "text_sha256": "f64fe03e718d70f0d452fddfe3c301f5e7732dd55253a786cde42ce9beed1ed7",
+        "rules": [
+          "NJU-MBA-TOC-04"
+        ],
+        "source_id": "MBA-013",
+        "document_id": "nju-mba-pdf",
+        "text": "左缩进 1\n个汉字"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "toc_section1_entry"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.left.char": 1,
+          "paragraph.before.pt": 0,
+          "paragraph.after.pt": 0,
+          "paragraph.align": "both"
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.left.char": 1,
+          "paragraph.before.pt": 0,
+          "paragraph.after.pt": 0,
+          "paragraph.align": "both"
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "toc_section1_entry"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "仅按已确认有效属性逐项判断，未知或缺依赖静默；未进行论文验证。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": "位置：一级节目录格式。已调整格式：{changes_zh}。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.5(4)，PDF p.1。",
+        "action": "位置：已确认的一级节目录格式。一级节目录宋体12磅、单倍、左缩进1汉字、段前后0磅、两端对齐。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.5(4)，PDF p.1。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "未自动修改的部分：定位、有效属性或保护前提不明确，不能保证只修改目标格式。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-TOC-05",
+    "title": "二级节目录格式",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[32:32]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.5(5)，PDF pp.1—2；提取文本L32—L32",
+        "text_sha256": "c44458a05b432456e8d2d17f06454ca4139b8cbfe13e122e0d6e1e41b3fa7991",
+        "rules": [
+          "NJU-MBA-TOC-05"
+        ],
+        "source_id": "MBA-014",
+        "document_id": "nju-mba-pdf",
+        "text": "仿宋体10.5 磅"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "toc_section2_entry"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "仿宋体",
+          "size.pt": 10.5,
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.left.char": 2,
+          "paragraph.before.pt": 0,
+          "paragraph.after.pt": 0,
+          "paragraph.align": "both"
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "仿宋体",
+          "size.pt": 10.5,
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.left.char": 2,
+          "paragraph.before.pt": 0,
+          "paragraph.after.pt": 0,
+          "paragraph.align": "both"
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "toc_section2_entry"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "仅按已确认有效属性逐项判断，未知或缺依赖静默；未进行论文验证。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": "位置：二级节目录格式。已调整格式：{changes_zh}。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.5(5)，PDF pp.1—2。",
+        "action": "位置：已确认的二级节目录格式。二级节目录仿宋体10.5磅、单倍、左缩进2汉字、段前后0磅、两端对齐。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.5(5)，PDF pp.1—2。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "未自动修改的部分：定位、有效属性或保护前提不明确，不能保证只修改目标格式。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-TOC-06",
+    "title": "目录页码与间隔",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[29:29]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.5(3)—(6)，PDF pp.1—2；提取文本L29—L29",
+        "text_sha256": "40ee9b3854868ce9633da0325b000bde608102e9f3d34f2372ceb64b707281f5",
+        "rules": [
+          "NJU-MBA-TOC-06"
+        ],
+        "source_id": "MBA-015",
+        "document_id": "nju-mba-pdf",
+        "text": "页码右对齐"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "toc_entry"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review",
+        "items": [
+          "所有目录项页码右对齐，序号题名间空两格；参考文献/附录/后记目录格式同章目录。"
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [
+          "toc_entry"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。",
+        "requires": [
+          "semantic_roles",
+          "human_review"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "位置：已确认的目录页码与间隔。所有目录项页码右对齐，序号题名间空两格；参考文献/附录/后记目录格式同章目录。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.5(3)—(6)，PDF pp.1—2。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。"
+      },
+      "requires": [
+        "semantic_roles",
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-HEADING-01",
+    "title": "章标题样式",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[14:14]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.6(1)，PDF p.2；提取文本L14—L14",
+        "text_sha256": "702e8fa1a42827ef41012af94a108536fb4a98b66f8aa6d0489d8844514072ac",
+        "rules": [
+          "NJU-MBA-HEADING-01"
+        ],
+        "source_id": "MBA-016",
+        "document_id": "nju-mba-pdf",
+        "text": "黑体16 磅加粗居中，单倍行距"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "chapter_heading"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "黑体",
+          "size.pt": 16,
+          "font.bold": true,
+          "paragraph.align": "center",
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.before.pt": 24,
+          "paragraph.after.pt": 18
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "黑体",
+          "size.pt": 16,
+          "font.bold": true,
+          "paragraph.align": "center",
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.before.pt": 24,
+          "paragraph.after.pt": 18
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "chapter_heading"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "仅按已确认有效属性逐项判断，未知或缺依赖静默；未进行论文验证。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": "位置：章标题样式。已调整格式：{changes_zh}。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.6(1)，PDF p.2。",
+        "action": "位置：已确认的章标题样式。章标题黑体16磅加粗居中、单倍，段前24后18磅。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.6(1)，PDF p.2。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "未自动修改的部分：定位、有效属性或保护前提不明确，不能保证只修改目标格式。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-HEADING-02",
+    "title": "一级节标题样式",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[44:44]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.6(2)，PDF p.2；提取文本L44—L44",
+        "text_sha256": "b41cbb744e7a061b7fbff1be3402dc02adde6679445fc8cd4156f13e2bf579a6",
+        "rules": [
+          "NJU-MBA-HEADING-02"
+        ],
+        "source_id": "MBA-017",
+        "document_id": "nju-mba-pdf",
+        "text": "黑体 14 磅顶左"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "section1_heading"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "黑体",
+          "size.pt": 14,
+          "paragraph.align": "left",
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.before.pt": 24,
+          "paragraph.after.pt": 6
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "黑体",
+          "size.pt": 14,
+          "paragraph.align": "left",
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.before.pt": 24,
+          "paragraph.after.pt": 6
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "section1_heading"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "仅按已确认有效属性逐项判断，未知或缺依赖静默；未进行论文验证。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": "位置：一级节标题样式。已调整格式：{changes_zh}。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.6(2)，PDF p.2。",
+        "action": "位置：已确认的一级节标题样式。一级节标题黑体14磅左对齐、单倍，段前24后6磅；原文未说加粗，不自加粗。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.6(2)，PDF p.2。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "未自动修改的部分：定位、有效属性或保护前提不明确，不能保证只修改目标格式。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-HEADING-03",
+    "title": "二级节标题样式",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[46:46]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.6(3)，PDF p.2；提取文本L46—L46",
+        "text_sha256": "882d5c3e2797743c8873b9c5cb8747ad12b5a085fe86915f1522e5da51f53f07",
+        "rules": [
+          "NJU-MBA-HEADING-03"
+        ],
+        "source_id": "MBA-018",
+        "document_id": "nju-mba-pdf",
+        "text": "黑体 13 磅，左缩进两字"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "section2_heading"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "黑体",
+          "size.pt": 13,
+          "paragraph.left.char": 2,
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.before.pt": 12,
+          "paragraph.after.pt": 6
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "黑体",
+          "size.pt": 13,
+          "paragraph.left.char": 2,
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.before.pt": 12,
+          "paragraph.after.pt": 6
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "section2_heading"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "仅按已确认有效属性逐项判断，未知或缺依赖静默；未进行论文验证。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": "位置：二级节标题样式。已调整格式：{changes_zh}。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.6(3)，PDF p.2。",
+        "action": "位置：已确认的二级节标题样式。二级节标题黑体13磅、左缩进2汉字、单倍，段前12后6磅；不按常用中文字号把13磅改为小三等。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.6(3)，PDF p.2。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "未自动修改的部分：定位、有效属性或保护前提不明确，不能保证只修改目标格式。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-HEADING-04",
+    "title": "三级节标题与正文同段",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[48:48]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.6(4)，PDF p.2；提取文本L48—L48",
+        "text_sha256": "d285e388b718361c7230bda278ec81e899288084e18b0c31299a0b1f25d6177e",
+        "rules": [
+          "NJU-MBA-HEADING-04"
+        ],
+        "source_id": "MBA-019",
+        "document_id": "nju-mba-pdf",
+        "text": "宋体 12 磅，左缩进两字，单倍行距，与正文同段"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "section3_heading"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review",
+        "items": [
+          "三级节标题采用（1）形式，宋体12磅左缩进2字、单倍，与正文同段；不将整段改成独立标题段。"
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [
+          "section3_heading"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。",
+        "requires": [
+          "semantic_roles",
+          "human_review"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "位置：已确认的三级节标题与正文同段。三级节标题采用（1）形式，宋体12磅左缩进2字、单倍，与正文同段；不将整段改成独立标题段。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.6(4)，PDF p.2。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。"
+      },
+      "requires": [
+        "semantic_roles",
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-HEADING-05",
+    "title": "章分页与编号间隔",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[43:43]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.6(1)—(3)，PDF p.2；提取文本L43—L43",
+        "text_sha256": "2d65000b85a8fe8db3a5098e71df2609ab29e5ff5b3e00afe5ed3710dd894b3e",
+        "rules": [
+          "NJU-MBA-HEADING-05"
+        ],
+        "source_id": "MBA-020",
+        "document_id": "nju-mba-pdf",
+        "text": "每章另起一页"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "chapter_heading"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review",
+        "items": [
+          "每章另起一页；章与节序号题名之间空两格；需要实际分页及明确格宽，不强制分节符。"
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [
+          "chapter_heading"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。",
+        "requires": [
+          "semantic_roles",
+          "human_review"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "位置：已确认的章分页与编号间隔。每章另起一页；章与节序号题名之间空两格；需要实际分页及明确格宽，不强制分节符。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.6(1)—(3)，PDF p.2。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。"
+      },
+      "requires": [
+        "semantic_roles",
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-BODY-01",
+    "title": "正文属性",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[49:50]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.6(5)，PDF p.2；提取文本L49—L50",
+        "text_sha256": "04e079b41dd22a81c414094532792301cf9a8cffcbf217709d66ed5e4108d088",
+        "rules": [
+          "NJU-MBA-BODY-01"
+        ],
+        "source_id": "MBA-021",
+        "document_id": "nju-mba-pdf",
+        "text": "段落首行左\n缩进 2 个汉字符"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "body_paragraph"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "font.latin": "Times New Roman",
+          "size.pt": 12,
+          "paragraph.align": "both",
+          "paragraph.firstLine.char": 2,
+          "paragraph.before.pt": 0,
+          "paragraph.after.pt": 0
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "宋体",
+          "font.latin": "Times New Roman",
+          "size.pt": 12,
+          "paragraph.align": "both",
+          "paragraph.firstLine.char": 2,
+          "paragraph.before.pt": 0,
+          "paragraph.after.pt": 0
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "body_paragraph"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "仅按已确认有效属性逐项判断，未知或缺依赖静默；未进行论文验证。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": "位置：正文属性。已调整格式：{changes_zh}。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.6(5)，PDF p.2。",
+        "action": "位置：已确认的正文属性。正文宋体12磅，英文Times New Roman12磅，两端对齐、首行2汉字符、段前后0磅。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.6(5)，PDF p.2。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "未自动修改的部分：定位、有效属性或保护前提不明确，不能保证只修改目标格式。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-BODY-02",
+    "title": "正文20磅行距数值",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[16:16]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.6(5)，PDF p.2；提取文本L16—L16",
+        "text_sha256": "3d3875c4ff2f34a1ea5f711e8183459cef2145c5cf857db85f804678ef685a79",
+        "rules": [
+          "NJU-MBA-BODY-02"
+        ],
+        "source_id": "MBA-022",
+        "document_id": "nju-mba-pdf",
+        "text": "行距20 磅"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "body_paragraph"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "paragraph.line.pt": 20
+        }
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "body_paragraph"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "仅按已确认有效属性逐项判断，未知或缺依赖静默；未进行论文验证。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "位置：已确认的正文20磅行距数值。只比较已有明确固定行距的20磅数值，其他模式未知；不把未写“固定”的要求强制写成固定。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.6(5)，PDF p.2。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "仅按已确认有效属性逐项判断，未知或缺依赖静默；未进行论文验证。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-FIGURE-01",
+    "title": "图题字体间距",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[51:52]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.6(6)，PDF p.2；提取文本L51—L52",
+        "text_sha256": "80258355f856d91981f914f113325f1b68170d52af416d1445d13da585dd7204",
+        "rules": [
+          "NJU-MBA-FIGURE-01"
+        ],
+        "source_id": "MBA-023",
+        "document_id": "nju-mba-pdf",
+        "text": "段前6 磅， 段后\n12 磅"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "figure_caption"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "size.pt": 10.5,
+          "font.bold": true,
+          "paragraph.align": "center",
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.before.pt": 6,
+          "paragraph.after.pt": 12
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "宋体",
+          "size.pt": 10.5,
+          "font.bold": true,
+          "paragraph.align": "center",
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.before.pt": 6,
+          "paragraph.after.pt": 12
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "figure_caption"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "仅按已确认有效属性逐项判断，未知或缺依赖静默；未进行论文验证。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": "位置：图题字体间距。已调整格式：{changes_zh}。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.6(6)，PDF p.2。",
+        "action": "位置：已确认的图题字体间距。已有图题宋体10.5磅加粗居中、单倍、段前6后12磅。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.6(6)，PDF p.2。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "未自动修改的部分：定位、有效属性或保护前提不明确，不能保证只修改目标格式。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-FIGURE-02",
+    "title": "图题位置与编号间隔",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[51:51]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.6(6)，PDF p.2；提取文本L51—L51",
+        "text_sha256": "d1258037876190e43d11769c0d02b2ed20fcf2d3005d44ec07943d9b275c30d2",
+        "rules": [
+          "NJU-MBA-FIGURE-02"
+        ],
+        "source_id": "MBA-024",
+        "document_id": "nju-mba-pdf",
+        "text": "置于图下方"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "figure_caption"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "assertions",
+        "tests": [
+          {
+            "fact": "caption.position",
+            "op": "eq",
+            "value": "below"
+          }
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "figure_caption"
+        ],
+        "when": [],
+        "tests": [
+          {
+            "fact": "caption.position",
+            "op": "eq",
+            "value": "below"
+          }
+        ],
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。只检查可靠关联的图表与题注位置；不移动浮动对象。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "请核对本条已确认的Word对象及报告中列明的属性；只检查可靠关联的图表与题注位置；不移动浮动对象。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。只检查可靠关联的图表与题注位置；不移动浮动对象。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-FIGURE-03",
+    "title": "图注缩进与续行",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[52:53]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.6(6)，PDF p.2；提取文本L52—L53",
+        "text_sha256": "4a52321d3101869e939c3998c2fcd75e3980a57d8a4b6711a8641074d0d6a228",
+        "rules": [
+          "NJU-MBA-FIGURE-03"
+        ],
+        "source_id": "MBA-025",
+        "document_id": "nju-mba-pdf",
+        "text": "续\n行悬挂缩进左对齐"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "figure_note"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "paragraph.left.char": 2,
+          "paragraph.align": "both"
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "paragraph.left.char": 2,
+          "paragraph.align": "both"
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "figure_note"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。明确左缩进与对齐；未规定的续行悬挂量不补造。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": "已调整本条明确且可安全写入的格式属性：{changes_zh}。",
+        "action": "请核对本条已确认的Word对象及报告中列明的属性；明确左缩进与对齐；未规定的续行悬挂量不补造。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。明确左缩进与对齐；未规定的续行悬挂量不补造。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-FIGURE-04",
+    "title": "图中文字",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[53:53]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.6(6)，PDF p.2；提取文本L53—L53",
+        "text_sha256": "a56b97cf4ffa97c1b91a7372e2f230c5de3af83070ee5c873289fd13d79d7dc5",
+        "rules": [
+          "NJU-MBA-FIGURE-04"
+        ],
+        "source_id": "MBA-026",
+        "document_id": "nju-mba-pdf",
+        "text": "图中文字， 宋体10.5 磅"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "drawing_text"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "font.latin": "Times New Roman",
+          "size.pt": 10.5,
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.before.pt": 0,
+          "paragraph.after.pt": 0
+        }
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "drawing_text"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。可编辑图内文字；不声称能读取位图文字。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "请核对本条已确认的Word对象及报告中列明的属性；可编辑图内文字；不声称能读取位图文字。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。可编辑图内文字；不声称能读取位图文字。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-TABLE-01",
+    "title": "表题字体间距",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[28:29]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.6(7)，PDF p.2；提取文本L28—L29",
+        "text_sha256": "6c590671a6bb250bc0bd990854e27ee3c7a1b0ff026a7008168396b038153cfd",
+        "rules": [
+          "NJU-MBA-TABLE-01"
+        ],
+        "source_id": "MBA-027",
+        "document_id": "nju-mba-pdf",
+        "text": "段前 6 磅，段后\n6 磅"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "table_caption"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "size.pt": 10.5,
+          "font.bold": true,
+          "paragraph.align": "center",
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.before.pt": 6,
+          "paragraph.after.pt": 6
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "宋体",
+          "size.pt": 10.5,
+          "font.bold": true,
+          "paragraph.align": "center",
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.before.pt": 6,
+          "paragraph.after.pt": 6
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "table_caption"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "仅按已确认有效属性逐项判断，未知或缺依赖静默；未进行论文验证。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": "位置：表题字体间距。已调整格式：{changes_zh}。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.6(7)，PDF p.2。",
+        "action": "位置：已确认的表题字体间距。已有表题宋体10.5磅加粗居中、单倍、段前后6磅。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.6(7)，PDF p.2。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "未自动修改的部分：定位、有效属性或保护前提不明确，不能保证只修改目标格式。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-TABLE-02",
+    "title": "表题表注位置",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[55:55]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.6(7)，PDF p.2；提取文本L55—L55",
+        "text_sha256": "c1203fd78e203eafe8fc09537460a788034a5e1f6ed9d5f73617d67288b7ab91",
+        "rules": [
+          "NJU-MBA-TABLE-02"
+        ],
+        "source_id": "MBA-028",
+        "document_id": "nju-mba-pdf",
+        "text": "置于表的上方"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "table_caption"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "assertions",
+        "tests": [
+          {
+            "fact": "caption.position",
+            "op": "eq",
+            "value": "above"
+          }
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "table_caption"
+        ],
+        "when": [],
+        "tests": [
+          {
+            "fact": "caption.position",
+            "op": "eq",
+            "value": "above"
+          }
+        ],
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。只检查可靠关联的图表与题注位置；不移动浮动对象。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "请核对本条已确认的Word对象及报告中列明的属性；只检查可靠关联的图表与题注位置；不移动浮动对象。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。只检查可靠关联的图表与题注位置；不移动浮动对象。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-TABLE-03",
+    "title": "表注缩进与续行",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[56:56]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.6(7)，PDF p.2；提取文本L56—L56",
+        "text_sha256": "6663a2f26a4e6442c6463f7568a0266c550ce8ac674bd80eb6da2ea54a2916bf",
+        "rules": [
+          "NJU-MBA-TABLE-03"
+        ],
+        "source_id": "MBA-029",
+        "document_id": "nju-mba-pdf",
+        "text": "表注位于表下方"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "table_note"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "paragraph.left.char": 2,
+          "paragraph.align": "both"
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "paragraph.left.char": 2,
+          "paragraph.align": "both"
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "table_note"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": "已调整本条明确且可安全写入的格式属性：{changes_zh}。",
+        "action": "请核对本条已确认的Word对象及报告中列明的属性；",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-TABLE-04",
+    "title": "表中文字",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[57:57]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.6(7)，PDF p.2；提取文本L57—L57",
+        "text_sha256": "be592d057dd6834398f332ec4cd41d852001e7be5decc2f9973a97907beb0c1e",
+        "rules": [
+          "NJU-MBA-TABLE-04"
+        ],
+        "source_id": "MBA-030",
+        "document_id": "nju-mba-pdf",
+        "text": "表中文字，宋体 10.5 磅"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "data_table_cell_paragraph"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "font.latin": "Times New Roman",
+          "size.pt": 10.5,
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.before.pt": 0,
+          "paragraph.after.pt": 0
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "宋体",
+          "font.latin": "Times New Roman",
+          "size.pt": 10.5,
+          "paragraph.line": {
+            "mode": "single"
+          },
+          "paragraph.before.pt": 0,
+          "paragraph.after.pt": 0
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "data_table_cell_paragraph"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "仅按已确认有效属性逐项判断，未知或缺依赖静默；未进行论文验证。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": "位置：表中文字。已调整格式：{changes_zh}。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.6(7)，PDF p.2。",
+        "action": "位置：已确认的表中文字。已确认数据表单元格文字宋体10.5磅、英文Times New Roman10.5磅、单倍、段前后0磅。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.6(7)，PDF p.2。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "未自动修改的部分：定位、有效属性或保护前提不明确，不能保证只修改目标格式。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-TABLE-05",
+    "title": "三线表",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[59:59]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.6(8)，PDF p.2；提取文本L59—L59",
+        "text_sha256": "7183f515f6d35cedce4d404a0c316fcf43daa0a4a24a0195ff3d9fb926a3218d",
+        "rules": [
+          "NJU-MBA-TABLE-05"
+        ],
+        "source_id": "MBA-031",
+        "document_id": "nju-mba-pdf",
+        "text": "表格均采用三线表"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "data_table_cell_paragraph"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "table.border.left": {
+            "one_of": [
+              "none",
+              "nil"
+            ]
+          },
+          "table.border.right": {
+            "one_of": [
+              "none",
+              "nil"
+            ]
+          },
+          "table.three_line_basic": true
+        }
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "data_table_cell_paragraph"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。检查明确的左右无边框子项；三线表完整有效边框另核对，不删除数据。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "请核对本条已确认的Word对象及报告中列明的属性；检查明确的左右无边框子项；三线表完整有效边框另核对，不删除数据。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。检查明确的左右无边框子项；三线表完整有效边框另核对，不删除数据。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-NUMBER-01",
+    "title": "图表公式分章连续编码",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[59:60]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.6(8)，PDF p.2；提取文本L59—L60",
+        "text_sha256": "56af32ef95112a40d5dc5ace9a7e733e12ab05ab9a30c106255b4e25670fd319",
+        "rules": [
+          "NJU-MBA-NUMBER-01"
+        ],
+        "source_id": "MBA-032",
+        "document_id": "nju-mba-pdf",
+        "text": "一律用阿拉伯数字分章依序\n连续编码"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "document"
+        ],
+        "confidence": "confirmed",
+        "mode": "document_group"
+      },
+      "when": [],
+      "check": {
+        "kind": "review",
+        "items": [
+          "图表公式算式分章各自连续阿拉伯编号；不直接修改序号及交叉引用。"
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [
+          "document"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。",
+        "requires": [
+          "semantic_roles",
+          "human_review"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "位置：已确认的图表公式分章连续编码。图表公式算式分章各自连续阿拉伯编号；不直接修改序号及交叉引用。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.6(8)，PDF p.2。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。"
+      },
+      "requires": [
+        "semantic_roles",
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-NOTE-01",
+    "title": "页下注及连续圈号",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[62:62]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.6(9)，PDF p.2；提取文本L62—L62",
+        "text_sha256": "71da0b548d29bca5b8ebc4e2ab5a70a2c7c1ecc65a25f89c0bef7403ebf5cdbb",
+        "rules": [
+          "NJU-MBA-NOTE-01"
+        ],
+        "source_id": "MBA-033",
+        "document_id": "nju-mba-pdf",
+        "text": "所有注释采用页下注形式"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "note_text"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "assertions",
+        "tests": [
+          {
+            "fact": "note.is_footnote",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "note_text"
+        ],
+        "when": [],
+        "tests": [
+          {
+            "fact": "note.is_footnote",
+            "op": "eq",
+            "value": true
+          }
+        ],
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。检查已存在注释是否页下注；圈号格式与连续性另核对，不推定实际页码。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "请核对本条已确认的Word对象及报告中列明的属性；检查已存在注释是否页下注；圈号格式与连续性另核对，不推定实际页码。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。检查已存在注释是否页下注；圈号格式与连续性另核对，不推定实际页码。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-REF-01",
+    "title": "引用与参考条目对应",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[65:65]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.7，PDF pp.2—3；提取文本L65—L65",
+        "text_sha256": "2fcbe518083645979b07efdc275fb9a850bce8751b8e6fe017571ff10b36f8ba",
+        "rules": [
+          "NJU-MBA-REF-01"
+        ],
+        "source_id": "MBA-034",
+        "document_id": "nju-mba-pdf",
+        "text": "确保正文和文后参考文献的一一对应"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "references"
+        ],
+        "confidence": "confirmed",
+        "mode": "document_group"
+      },
+      "when": [],
+      "check": {
+        "kind": "review",
+        "items": [
+          "核对正文或脚注引用与文后条目双向对应；文献真实性不判断。"
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [
+          "references"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。",
+        "requires": [
+          "semantic_roles",
+          "human_review"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "位置：已确认的引用与参考条目对应。核对正文或脚注引用与文后条目双向对应；文献真实性不判断。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.7，PDF pp.2—3。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。"
+      },
+      "requires": [
+        "semantic_roles",
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-REF-02",
+    "title": "文种分组与字母排序",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[65:66]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.7，PDF pp.2—3；提取文本L65—L66",
+        "text_sha256": "0db299343d9be80cf9be17a8bbe5b9f6c6d65b81db49597fd17bebbc8136a999",
+        "rules": [
+          "NJU-MBA-REF-02"
+        ],
+        "source_id": "MBA-035",
+        "document_id": "nju-mba-pdf",
+        "text": "中\n文在前，英文在后"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "references"
+        ],
+        "confidence": "confirmed",
+        "mode": "document_group"
+      },
+      "when": [],
+      "check": {
+        "kind": "review",
+        "items": [
+          "文后中文在前英文在后，两组分别按26字母排序；中文采用何种转写排序键不明，不按Unicode排序。"
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [
+          "references"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。",
+        "requires": [
+          "semantic_roles",
+          "human_review"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "位置：已确认的文种分组与字母排序。文后中文在前英文在后，两组分别按26字母排序；中文采用何种转写排序键不明，不按Unicode排序。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.7，PDF pp.2—3。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。"
+      },
+      "requires": [
+        "semantic_roles",
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-REF-03",
+    "title": "中文参考文献全角标点",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[66:66]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.7，PDF p.2；提取文本L66—L66",
+        "text_sha256": "a2d6053eb3bd2c837f3e8885038ff3d9098f372411178652e8b8a2c5dd28d137",
+        "rules": [
+          "NJU-MBA-REF-03"
+        ],
+        "source_id": "MBA-036",
+        "document_id": "nju-mba-pdf",
+        "text": "中文参考文献中的标点符号都用全角"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "reference_entry"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review",
+        "items": [
+          "仅中文著录标点全角，保护URL/DOI和原样题名，不做全文NFKC。"
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [
+          "reference_entry"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。",
+        "requires": [
+          "semantic_roles",
+          "human_review"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "位置：已确认的中文参考文献全角标点。仅中文著录标点全角，保护URL/DOI和原样题名，不做全文NFKC。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.7，PDF p.2。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。"
+      },
+      "requires": [
+        "semantic_roles",
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-REF-04",
+    "title": "参考文献字体字号",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[69:69]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.7，PDF p.3；提取文本L69—L69",
+        "text_sha256": "849195f764b841029622d9067e383fac46e14de6b0b86174218837c9574e1a86",
+        "rules": [
+          "NJU-MBA-REF-04"
+        ],
+        "source_id": "MBA-037",
+        "document_id": "nju-mba-pdf",
+        "text": "参考文献字体用宋体，小四号"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "reference_entry"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "font.latin": "Times New Roman",
+          "size.pt": 12
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "宋体",
+          "font.latin": "Times New Roman",
+          "size.pt": 12
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "reference_entry"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": "已调整本条明确且可安全写入的格式属性：{changes_zh}。",
+        "action": "请核对本条已确认的Word对象及报告中列明的属性；",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-REF-05",
+    "title": "正文著者年引用",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[70:70]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.7.1，PDF p.3；提取文本L70—L70",
+        "text_sha256": "b0e13fe87ec3cd3371cfb003860621dda886fe0b44b69f8a1438437447a5e399",
+        "rules": [
+          "NJU-MBA-REF-05"
+        ],
+        "source_id": "MBA-038",
+        "document_id": "nju-mba-pdf",
+        "text": "不能是上标加序号的形式"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "citation"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review",
+        "items": [
+          "正文采用著者年，按1/2/≥3作者及多文献形式；不能用上标加序号；不自动转换引用制度。"
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [
+          "citation"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。",
+        "requires": [
+          "semantic_roles",
+          "human_review"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "位置：已确认的正文著者年引用。正文采用著者年，按1/2/≥3作者及多文献形式；不能用上标加序号；不自动转换引用制度。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.7.1，PDF p.3。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。"
+      },
+      "requires": [
+        "semantic_roles",
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-REF-06",
+    "title": "文后字段与同年a/b",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[81:82]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.7.2，PDF pp.3—4；提取文本L81—L82",
+        "text_sha256": "7f37549e1b7dd379783d2ac0229991e169107f423a453bcf5aae34f8034081dc",
+        "rules": [
+          "NJU-MBA-REF-06"
+        ],
+        "source_id": "MBA-039",
+        "document_id": "nju-mba-pdf",
+        "text": "请在年份后区分\na，b"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "reference_entry"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review",
+        "items": [
+          "同作者同年多篇年份区分a/b；按原文中英文各类型条目结构，英文作者姓前名缩写、杂志/书名斜体；全文编号采用中括号序号。"
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [
+          "reference_entry"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。",
+        "requires": [
+          "semantic_roles",
+          "human_review"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "位置：已确认的文后字段与同年a/b。同作者同年多篇年份区分a/b；按原文中英文各类型条目结构，英文作者姓前名缩写、杂志/书名斜体；全文编号采用中括号序号。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.7.2，PDF pp.3—4。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。"
+      },
+      "requires": [
+        "semantic_roles",
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-APPENDIX-01",
+    "title": "附录编号例外",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[132:132]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.8，PDF p.4；提取文本L132—L132",
+        "text_sha256": "ae42fb8e495f4b74b3b3f1e02a8a3925b8b687ce951d6c1e6e33467af725437f",
+        "rules": [
+          "NJU-MBA-APPENDIX-01"
+        ],
+        "source_id": "MBA-040",
+        "document_id": "nju-mba-pdf",
+        "text": "只有一个附录时不必编序号"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "appendix"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review",
+        "items": [
+          "已有多个附录按A/B/C；单个不必编号，可名附录；禁止套用中科大单附录强制A修复。"
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [
+          "appendix"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。",
+        "requires": [
+          "semantic_roles",
+          "human_review"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "位置：已确认的附录编号例外。已有多个附录按A/B/C；单个不必编号，可名附录；禁止套用中科大单附录强制A修复。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.8，PDF p.4。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。"
+      },
+      "requires": [
+        "semantic_roles",
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-APPENDIX-02",
+    "title": "附录对象独立编号",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[133:133]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.8，PDF p.4；提取文本L133—L133",
+        "text_sha256": "777f270b73db398f2a44cea8fff6ae9ff3dbf5988e300553f34618da4b9f2988",
+        "rules": [
+          "NJU-MBA-APPENDIX-02"
+        ],
+        "source_id": "MBA-041",
+        "document_id": "nju-mba-pdf",
+        "text": "与正文分开"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "appendix"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review",
+        "items": [
+          "附录图表公式参考文献独立阿拉伯编号，示例图A.1、表B.2；单附录未编号情形对象前缀口径待确认。"
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [
+          "appendix"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。",
+        "requires": [
+          "semantic_roles",
+          "human_review"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "位置：已确认的附录对象独立编号。附录图表公式参考文献独立阿拉伯编号，示例图A.1、表B.2；单附录未编号情形对象前缀口径待确认。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.8，PDF p.4。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。"
+      },
+      "requires": [
+        "semantic_roles",
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-APPENDIX-03",
+    "title": "附录与致谢样式",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[131:131]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.8—1.9，PDF p.4；提取文本L131—L131",
+        "text_sha256": "ab91a086d7c4c81071439b58891116dcf937a199f954d5d3d531d4906e7fbada",
+        "rules": [
+          "NJU-MBA-APPENDIX-03"
+        ],
+        "source_id": "MBA-042",
+        "document_id": "nju-mba-pdf",
+        "text": "标题格式同各章标题"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "acknowledgements_body",
+          "appendix_body_paragraph"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "font.latin": "Times New Roman",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "exact",
+            "pt": 20
+          },
+          "paragraph.before.pt": 0,
+          "paragraph.after.pt": 0,
+          "paragraph.firstLine.char": 2
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "宋体",
+          "font.latin": "Times New Roman",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "exact",
+            "pt": 20
+          },
+          "paragraph.before.pt": 0,
+          "paragraph.after.pt": 0,
+          "paragraph.firstLine.char": 2
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "acknowledgements_body",
+          "appendix_body_paragraph"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。已有致谢及附录正文；标题另按章标题规则，缺失不补造。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": "已调整本条明确且可安全写入的格式属性：{changes_zh}。",
+        "action": "请核对本条已确认的Word对象及报告中列明的属性；已有致谢及附录正文；标题另按章标题规则，缺失不补造。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。已有致谢及附录正文；标题另按章标题规则，缺失不补造。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-PAGE-01",
+    "title": "A4纸张",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[140:140]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §2，PDF p.5；提取文本L140—L140",
+        "text_sha256": "2e5291dcbded3c6976446b8bf91fb7017cf82696ce8529610320cd8dd77799ee",
+        "rules": [
+          "NJU-MBA-PAGE-01"
+        ],
+        "source_id": "MBA-043",
+        "document_id": "nju-mba-pdf",
+        "text": "A4 纸（210mm×297mm）"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "section"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "page.short_edge.mm": 210,
+          "page.long_edge.mm": 297
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "page.short_edge.mm": 210,
+          "page.long_edge.mm": 297
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "section"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "仅按已确认有效属性逐项判断，未知或缺依赖静默；未进行论文验证。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": "位置：A4纸张。已调整格式：{changes_zh}。\n依据：南京大学商学院MBA学位论文写作要求与规范 §2，PDF p.5。",
+        "action": "位置：已确认的A4纸张。逐节纸张短边210毫米长边297毫米。\n依据：南京大学商学院MBA学位论文写作要求与规范 §2，PDF p.5。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "未自动修改的部分：定位、有效属性或保护前提不明确，不能保证只修改目标格式。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-PAGE-02",
+    "title": "白纸与双面印制",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[140:140]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §2，PDF p.5；提取文本L140—L140",
+        "text_sha256": "646cb19d008d2a5b2959c09b41ef7731a4626729f16b6ac579d82f89dc7a156b",
+        "rules": [
+          "NJU-MBA-PAGE-02",
+          "NJU-MBA-PAGE-05"
+        ],
+        "source_id": "MBA-044",
+        "document_id": "nju-mba-pdf",
+        "text": "幅面白色，纵向编排"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "section"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review",
+        "items": [
+          "白纸双面打印为实物要求；纵向编排另由NJU-MBA-PAGE-05检查。"
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [
+          "section"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。",
+        "requires": [
+          "semantic_roles",
+          "human_review"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "白纸与双面打印需核对实际打印结果；页面方向见NJU-MBA-PAGE-05。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。"
+      },
+      "requires": [
+        "semantic_roles",
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-PAGE-05",
+    "title": "页面纵向编排",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[140:140]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §2，PDF p.5；提取文本L140—L140",
+        "text_sha256": "646cb19d008d2a5b2959c09b41ef7731a4626729f16b6ac579d82f89dc7a156b",
+        "rules": [
+          "NJU-MBA-PAGE-02",
+          "NJU-MBA-PAGE-05"
+        ],
+        "source_id": "MBA-044",
+        "document_id": "nju-mba-pdf",
+        "text": "幅面白色，纵向编排"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "section"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "assertions",
+        "tests": [
+          {
+            "fact": "page.is_landscape",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "section"
+        ],
+        "when": [],
+        "tests": [
+          {
+            "fact": "page.is_landscape",
+            "op": "eq",
+            "value": false
+          }
+        ],
+        "reason": "逐节按已知纸张宽高及方向属性检查纵向；缺失尺寸静默跳过。含图表页面不自动旋转，仅提醒核对。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "请在Word“布局→纸张方向”核对本节为纵向；保留图表并检查分页。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "逐节按已知纸张宽高及方向属性检查纵向；缺失尺寸静默跳过。含图表页面不自动旋转，仅提醒核对。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-PAGE-03",
+    "title": "页边距疑误原文",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[141:141]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §2，PDF p.5；提取文本L141—L141",
+        "text_sha256": "7d1b89e4852b085e11315764b3578fd6b60b0b184c02614fdc7d4d40a410f5c2",
+        "rules": [
+          "NJU-MBA-PAGE-03"
+        ],
+        "source_id": "MBA-045",
+        "document_id": "nju-mba-pdf",
+        "text": "上方、 下方254mm， 左侧、 右侧318mm"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "section"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review",
+        "items": [
+          "保留原文254mm/318mm，超过A4可用幅面；不擅自改为25.4/31.8毫米，不执行。"
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [
+          "section"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "需院方正式勘误或另一版明确文字；不能借Word默认值推定修订。",
+        "requires": [
+          "semantic_roles",
+          "human_review"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "位置：已确认的页边距疑误原文。保留原文254mm/318mm，超过A4可用幅面；不擅自改为25.4/31.8毫米，不执行。\n依据：南京大学商学院MBA学位论文写作要求与规范 §2，PDF p.5。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "需院方正式勘误或另一版明确文字；不能借Word默认值推定修订。"
+      },
+      "requires": [
+        "semantic_roles",
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-PAGE-04",
+    "title": "页眉页脚距边界",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[141:141]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §2，PDF p.5；提取文本L141—L141",
+        "text_sha256": "dee7b643b09bbfb499fa8051266a9d2221b7dfd6d4c6d07c1065266ca8d980e8",
+        "rules": [
+          "NJU-MBA-PAGE-04"
+        ],
+        "source_id": "MBA-046",
+        "document_id": "nju-mba-pdf",
+        "text": "页眉1.5cm、 页脚1.75cm"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "section"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "page.header_distance.mm": 15,
+          "page.footer_distance.mm": 17.5
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "page.header_distance.mm": 15,
+          "page.footer_distance.mm": 17.5
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "section"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "仅按已确认有效属性逐项判断，未知或缺依赖静默；未进行论文验证。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": "位置：页眉页脚距边界。已调整格式：{changes_zh}。\n依据：南京大学商学院MBA学位论文写作要求与规范 §2，PDF p.5。",
+        "action": "位置：已确认的页眉页脚距边界。逐节页眉距边界15毫米、页脚距边界17.5毫米。\n依据：南京大学商学院MBA学位论文写作要求与规范 §2，PDF p.5。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "未自动修改的部分：定位、有效属性或保护前提不明确，不能保证只修改目标格式。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-HEADER-01",
+    "title": "页眉字体字号",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[143:143]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §2，PDF p.5；提取文本L143—L143",
+        "text_sha256": "b97d792b673a1e857a5e9306424a38eabe7bd5867be383d8f64b82c1c9a0e337",
+        "rules": [
+          "NJU-MBA-HEADER-01"
+        ],
+        "source_id": "MBA-047",
+        "document_id": "nju-mba-pdf",
+        "text": "宋体 10.5 磅（五号）居中"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "running_header"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "font.latin": "Times New Roman",
+          "size.pt": 10.5,
+          "paragraph.align": "center"
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "宋体",
+          "font.latin": "Times New Roman",
+          "size.pt": 10.5,
+          "paragraph.align": "center"
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "running_header"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": "已调整本条明确且可安全写入的格式属性：{changes_zh}。",
+        "action": "请核对本条已确认的Word对象及报告中列明的属性；",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-HEADER-02",
+    "title": "页眉内容及范围",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[143:144]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §2，PDF p.5；提取文本L143—L144",
+        "text_sha256": "1136660035cb48e8224e26dd056ca974ee1779bbddb88ef904e61a7f86b20ece",
+        "rules": [
+          "NJU-MBA-HEADER-02"
+        ],
+        "source_id": "MBA-048",
+        "document_id": "nju-mba-pdf",
+        "text": "页眉内容与该部\n分内容的一级标题相同"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "running_header"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review",
+        "items": [
+          "从摘要至最后每页页眉等于当前部分一级标题；不把“一级标题”误套为小节1.1标题。"
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [
+          "running_header"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。",
+        "requires": [
+          "semantic_roles",
+          "human_review"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "位置：已确认的页眉内容及范围。从摘要至最后每页页眉等于当前部分一级标题；不把“一级标题”误套为小节1.1标题。\n依据：南京大学商学院MBA学位论文写作要求与规范 §2，PDF p.5。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "尚无可靠定位、适用性、客观事实或版面提供器；保留学校文字，不执行、不修复、不批注。"
+      },
+      "requires": [
+        "semantic_roles",
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-PAGENO-01",
+    "title": "页码字体位置",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[145:145]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §2，PDF p.5；提取文本L145—L145",
+        "text_sha256": "4bef558322e3dd7c5a42fabb2f67ed08e7f3997072f50ce3cad44d6fddc4055c",
+        "rules": [
+          "NJU-MBA-PAGENO-01"
+        ],
+        "source_id": "MBA-049",
+        "document_id": "nju-mba-pdf",
+        "text": "宋体10.5 磅、 页面下方居中"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "page_number"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "size.pt": 10.5,
+          "paragraph.align": "center"
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "宋体",
+          "size.pt": 10.5,
+          "paragraph.align": "center"
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "page_number"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": "已调整本条明确且可安全写入的格式属性：{changes_zh}。",
+        "action": "请核对本条已确认的Word对象及报告中列明的属性；",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-PAGENO-02",
+    "title": "前置罗马正文阿拉伯",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[145:145]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §2，PDF p.5；提取文本L145—L145",
+        "text_sha256": "465375cb1242705365cb3f480facce4aed1e3d1a5eccd0a69e419f2dc99f88c8",
+        "rules": [
+          "NJU-MBA-PAGENO-02"
+        ],
+        "source_id": "MBA-050",
+        "document_id": "nju-mba-pdf",
+        "text": "从 “中文摘要” 开始用罗马数字编页"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "front_numbered_section",
+          "body_numbered_section"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {},
+        "role_expected": {
+          "front_numbered_section": {
+            "page.number_format": {
+              "one_of": [
+                "upperRoman",
+                "lowerRoman"
+              ]
+            }
+          },
+          "body_numbered_section": {
+            "page.number_format": "decimal"
+          }
+        }
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "front_numbered_section",
+          "body_numbered_section"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。只核对已分开且范围明确的前置/正文节的页码格式；真实连续性、首值和无页码例外另核对，不重排页码。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "请核对本条已确认的Word对象及报告中列明的属性；只核对已分开且范围明确的前置/正文节的页码格式；真实连续性、首值和无页码例外另核对，不重排页码。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。只核对已分开且范围明确的前置/正文节的页码格式；真实连续性、首值和无页码例外另核对，不重排页码。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-CONTENT-01",
+    "title": "正文章节与篇幅",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[39:39]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.6，PDF p.2；提取文本L39—L39",
+        "text_sha256": "59094f5a74982d97ec7a06dfac634d357fd3024a2680e071a14a3e493c982e76",
+        "rules": [
+          "NJU-MBA-CONTENT-01"
+        ],
+        "source_id": "MBA-051",
+        "document_id": "nju-mba-pdf",
+        "text": "正文字数不少于 3.5 万字"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "document"
+        ],
+        "confidence": "confirmed",
+        "mode": "document_group"
+      },
+      "when": [],
+      "check": {
+        "kind": "review",
+        "items": [
+          "正文≥3.5万字，绪论到结论；通常除两者外≥3章、每章≥2节、每节≥1页和2点、每点≥5行；属篇章内容要求不执行，不计格式覆盖。"
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [
+          "document"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "内容或实物要求，不属可自动判断的文档格式；保留原文，不执行、不批注、不计格式覆盖。",
+        "requires": [
+          "semantic_roles",
+          "human_review"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "位置：已确认的正文章节与篇幅。正文≥3.5万字，绪论到结论；通常除两者外≥3章、每章≥2节、每节≥1页和2点、每点≥5行；属篇章内容要求不执行，不计格式覆盖。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.6，PDF p.2。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "内容或实物要求，不属可自动判断的文档格式；保留原文，不执行、不批注、不计格式覆盖。"
+      },
+      "requires": [
+        "semantic_roles",
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "NJU-MBA-CONTENT-02",
+    "title": "致谢及学术规范",
+    "authority": "required",
+    "sources": [
+      {
+        "part": "source-text/nju-mba-guide.pdf.txt",
+        "xpath": "lines[149:149]",
+        "display_reference": "南京大学商学院MBA学位论文写作要求与规范 §1.9、§3，PDF pp.4—5；提取文本L149—L149",
+        "text_sha256": "0b878a7992d850e35fdaa3e9b54c829f1d0bb850b408a25848e8a32fbd7f9648",
+        "rules": [
+          "NJU-MBA-CONTENT-02"
+        ],
+        "source_id": "MBA-052",
+        "document_id": "nju-mba-pdf",
+        "text": "论文所有内容都应是在导师指导下独立进行研究所取得的成果"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "document"
+        ],
+        "confidence": "confirmed",
+        "mode": "document_group"
+      },
+      "when": [],
+      "check": {
+        "kind": "review",
+        "items": [
+          "致谢回顾总结瞻望，成果独立及引用标明等由作者判断；不评学术真实性。"
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [
+          "document"
+        ],
+        "when": [],
+        "tests": null,
+        "reason": "内容或实物要求，不属可自动判断的文档格式；保留原文，不执行、不批注、不计格式覆盖。",
+        "requires": [
+          "semantic_roles",
+          "human_review"
+        ],
+        "policy_refs": []
+      },
+      "comments": {
+        "fixed": null,
+        "action": "位置：已确认的致谢及学术规范。致谢回顾总结瞻望，成果独立及引用标明等由作者判断；不评学术真实性。\n依据：南京大学商学院MBA学位论文写作要求与规范 §1.9、§3，PDF pp.4—5。",
+        "risk": "只改变已确认且可安全分离的格式属性，保留文字、公式、编号、域和引用关系。",
+        "reason": "内容或实物要求，不属可自动判断的文档格式；保留原文，不执行、不批注、不计格式覆盖。"
+      },
+      "requires": [
+        "semantic_roles",
+        "human_review"
+      ]
+    }
+  }
+]

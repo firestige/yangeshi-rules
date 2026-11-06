@@ -1,0 +1,36 @@
+# 自动检查范围
+
+- `HIT-PHUM-COVER-02` 封面明文字体字号
+- `HIT-PHUM-TITLEPAGE-01` 内封字段格式
+- `HIT-PHUM-ABS-05` 摘要题头格式
+- `HIT-PHUM-ABS-06` 摘要间距及题头空格
+- `HIT-PHUM-KEY-01` 关键词数量
+- `HIT-PHUM-KEY-02` 关键词分隔与对应
+- `HIT-PHUM-KEY-04` 关键词换行尾标点
+- `HIT-PHUM-ABS-07` 摘要引用标注
+- `HIT-PHUM-TOC-02` 目录章标题格式
+- `HIT-PHUM-TOC-03` 目录其他条目格式
+- `HIT-PHUM-TOC-04` 英文目录
+- `HIT-PHUM-BODY-01` 正文中文与西文字体
+- `HIT-PHUM-BODY-02` 正文字号
+- `HIT-PHUM-HEAD-01` 章标题字体字号
+- `HIT-PHUM-HEAD-02` 节标题字体字号
+- `HIT-PHUM-HEAD-03` 条标题字体字号
+- `HIT-PHUM-HEAD-04` 款、项标题字体字号
+- `HIT-PHUM-SPACE-01` 正文和标题段落建议
+- `HIT-PHUM-HEAD-06` 标题字数建议
+- `HIT-PHUM-HEAD-08` 层次编号建议
+- `HIT-PHUM-CITE-02` 标题禁引文和重复引文页码
+- `HIT-PHUM-EQ-01` 公式另行居中
+- `HIT-PHUM-TABLE-01` 表格边框与三线表
+- `HIT-PHUM-TABLE-02` 表内字样与字号建议
+- `HIT-PHUM-TABLE-03` 表题格式
+- `HIT-PHUM-TABLE-05` 表格空格与重复值
+- `HIT-PHUM-FIG-01` 图题与图注
+- `HIT-PHUM-FIG-04` 图中文字
+- `HIT-PHUM-PAGE-01` 纸型
+- `HIT-PHUM-PAGE-04` 页码分段与位置
+- `HIT-PHUM-HEADER-01` 页眉文字格式
+- `HIT-PHUM-HEADER-02` 页眉线与适用页
+- `HIT-PHUM-NOTE-01` 页下脚注序号
+- `HIT-PHUM-COVER-04` 英文封面题名大写
