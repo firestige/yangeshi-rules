@@ -1,0 +1,953 @@
+[
+  {
+    "rule_id": "TECH-TOC-01",
+    "title": "目录条目排版",
+    "authority": "required",
+    "sources": [
+      {
+        "source_id": "P2",
+        "document_id": "template",
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/*[2]",
+        "display_reference": "用户提供的正文模板 · 第 2 个段落",
+        "text": "自动目录最多列三级，包含章节编号、标题和页码。目录排版建议采用宋体、小四号、1.5 倍行距。",
+        "text_sha256": "e6b738122a0b2755aa6540644c6b628cdd9487a87ea18e69f81c24f3128f423c",
+        "text_kind": "summary"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "toc_entry"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "toc_entry"
+        ],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "policy_refs": []
+      },
+      "comments": {
+        "action": "请采用宋体、小四号、1.5 倍行距。",
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "fixed": "已调整报告段落格式：{changes_zh}。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "TECH-FIGURE-01",
+    "title": "插图清单条目排版",
+    "authority": "required",
+    "sources": [
+      {
+        "source_id": "P23",
+        "document_id": "template",
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/*[23]",
+        "display_reference": "用户提供的正文模板 · 第 23 个段落",
+        "text": "图较多时编制自动插图清单，列图号、图题、页码。图号可连续或分章编排。清单建议采用宋体、小四号、1.5 倍行距。",
+        "text_sha256": "3cf98b1932cb99c1570ed1a031c8f2773d60844181608f754624f5ef99684a1d",
+        "text_kind": "summary"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "figure_list_entry"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "figure_list_entry"
+        ],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "policy_refs": []
+      },
+      "comments": {
+        "action": "请采用宋体、小四号、1.5 倍行距。",
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "fixed": "已调整报告段落格式：{changes_zh}。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "TECH-TABLE-01",
+    "title": "附表清单条目排版",
+    "authority": "required",
+    "sources": [
+      {
+        "source_id": "P46",
+        "document_id": "template",
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/*[46]",
+        "display_reference": "用户提供的正文模板 · 第 46 个段落",
+        "text": "表较多时编制自动附表清单，列序号、表题、页码。表号可连续或分章编排。清单建议采用宋体、小四号、1.5 倍行距。",
+        "text_sha256": "3d19a6585bbe98097d55ba08158e81474adf4561e400d8ab51a38b0afa74716d",
+        "text_kind": "summary"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "table_list_entry"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "table_list_entry"
+        ],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "policy_refs": []
+      },
+      "comments": {
+        "action": "请采用宋体、小四号、1.5 倍行距。",
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "fixed": "已调整报告段落格式：{changes_zh}。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "TECH-BODY-01",
+    "title": "正文普通段落排版",
+    "authority": "required",
+    "sources": [
+      {
+        "source_id": "P58",
+        "document_id": "template",
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/*[58]",
+        "display_reference": "用户提供的正文模板 · 第 58 个段落",
+        "text": "正文按引言、主体和结论组织。正文建议采用宋体、小四号、1.5 倍行距，章节标题可适当放大加粗。",
+        "text_sha256": "20b236a04998c741b31f05a321bcd0c77541b36686b9e8fb56946b16cfb2543e",
+        "text_kind": "summary"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "body_paragraph"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "body_paragraph"
+        ],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "policy_refs": []
+      },
+      "comments": {
+        "action": "请采用宋体、小四号、1.5 倍行距。",
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "fixed": "已调整报告段落格式：{changes_zh}。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "TECH-REF-01",
+    "title": "参考文献条目排版",
+    "authority": "required",
+    "sources": [
+      {
+        "source_id": "P102",
+        "document_id": "template",
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/*[102]",
+        "display_reference": "用户提供的正文模板 · 第 102 个段落",
+        "text": "参考文献著录参照模板列出的 GB/T 7714—2005，条目建议采用宋体、小四号、1.5 倍行距。",
+        "text_sha256": "a21be939aa7b7879f95428b765fb727a7fbb4611f60fa0a57852297d969fd7a9",
+        "text_kind": "summary"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "reference_entry"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "reference_entry"
+        ],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "policy_refs": []
+      },
+      "comments": {
+        "action": "请采用宋体、小四号、1.5 倍行距。",
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "fixed": "已调整报告段落格式：{changes_zh}。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "TECH-APPENDIX-01",
+    "title": "附录正文段落排版",
+    "authority": "required",
+    "sources": [
+      {
+        "source_id": "P110",
+        "document_id": "template",
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/*[110]",
+        "display_reference": "用户提供的正文模板 · 第 110 个段落",
+        "text": "按需要设置附录，编号使用连续的大写拉丁字母。附录正文建议采用宋体、小四号、1.5 倍行距。",
+        "text_sha256": "1c673cb82d1672a11685d92197a798fd1700a571140c4d84f3abfee745369ef2",
+        "text_kind": "summary"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "appendix_body_paragraph"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        }
+      },
+      "fix": {
+        "permission": "properties_only",
+        "target": {
+          "font.eastAsia": "宋体",
+          "size.pt": 12,
+          "paragraph.line": {
+            "mode": "auto",
+            "value": 360
+          }
+        },
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ]
+      },
+      "audit": {
+        "status": "checkable",
+        "notification": "on_confirmed_failure",
+        "roles": [
+          "appendix_body_paragraph"
+        ],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "policy_refs": []
+      },
+      "comments": {
+        "action": "请采用宋体、小四号、1.5 倍行距。",
+        "reason": "请采用宋体、小四号、1.5 倍行距。",
+        "fixed": "已调整报告段落格式：{changes_zh}。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "TECH-TOC-11",
+    "title": "目录结构与域",
+    "authority": "required",
+    "sources": [
+      {
+        "source_id": "P2",
+        "document_id": "template",
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/*[2]",
+        "display_reference": "用户提供的正文模板 · 第 2 个段落",
+        "text": "自动目录最多列三级，包含章节编号、标题和页码。目录排版建议采用宋体、小四号、1.5 倍行距。",
+        "text_sha256": "e6b738122a0b2755aa6540644c6b628cdd9487a87ea18e69f81c24f3128f423c",
+        "text_kind": "summary"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "human_review"
+        ],
+        "reason": "核对自动目录最多三级，包含阿拉伯数字章节编号、标题和更新后的页码。",
+        "policy_refs": [],
+        "self_check": "核对自动目录最多三级，包含阿拉伯数字章节编号、标题和更新后的页码。"
+      },
+      "comments": {
+        "action": "核对自动目录最多三级，包含阿拉伯数字章节编号、标题和更新后的页码。",
+        "reason": "核对自动目录最多三级，包含阿拉伯数字章节编号、标题和更新后的页码。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "TECH-FIGURE-12",
+    "title": "插图清单生成与编号",
+    "authority": "required",
+    "sources": [
+      {
+        "source_id": "P23",
+        "document_id": "template",
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/*[23]",
+        "display_reference": "用户提供的正文模板 · 第 23 个段落",
+        "text": "图较多时编制自动插图清单，列图号、图题、页码。图号可连续或分章编排。清单建议采用宋体、小四号、1.5 倍行距。",
+        "text_sha256": "3cf98b1932cb99c1570ed1a031c8f2773d60844181608f754624f5ef99684a1d",
+        "text_kind": "summary"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "human_review"
+        ],
+        "reason": "结合报告规模决定是否需编制清单，核对自动生成的序号、图题及更新后的页码。连续编号和分章编号均可。",
+        "policy_refs": [],
+        "self_check": "结合报告规模决定是否需编制清单，核对自动生成的序号、图题及更新后的页码。连续编号和分章编号均可。"
+      },
+      "comments": {
+        "action": "结合报告规模决定是否需编制清单，核对自动生成的序号、图题及更新后的页码。连续编号和分章编号均可。",
+        "reason": "结合报告规模决定是否需编制清单，核对自动生成的序号、图题及更新后的页码。连续编号和分章编号均可。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "TECH-TABLE-13",
+    "title": "附表清单生成与编号",
+    "authority": "required",
+    "sources": [
+      {
+        "source_id": "P46",
+        "document_id": "template",
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/*[46]",
+        "display_reference": "用户提供的正文模板 · 第 46 个段落",
+        "text": "表较多时编制自动附表清单，列序号、表题、页码。表号可连续或分章编排。清单建议采用宋体、小四号、1.5 倍行距。",
+        "text_sha256": "3d19a6585bbe98097d55ba08158e81474adf4561e400d8ab51a38b0afa74716d",
+        "text_kind": "summary"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "human_review"
+        ],
+        "reason": "结合报告规模决定是否需编制清单，核对自动生成的序号、表题及更新后的页码。连续编号和分章编号均可。",
+        "policy_refs": [],
+        "self_check": "结合报告规模决定是否需编制清单，核对自动生成的序号、表题及更新后的页码。连续编号和分章编号均可。"
+      },
+      "comments": {
+        "action": "结合报告规模决定是否需编制清单，核对自动生成的序号、表题及更新后的页码。连续编号和分章编号均可。",
+        "reason": "结合报告规模决定是否需编制清单，核对自动生成的序号、表题及更新后的页码。连续编号和分章编号均可。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "TECH-BODY-14",
+    "title": "章节标题的相对字号",
+    "authority": "advisory",
+    "sources": [
+      {
+        "source_id": "P58",
+        "document_id": "template",
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/*[58]",
+        "display_reference": "用户提供的正文模板 · 第 58 个段落",
+        "text": "正文按引言、主体和结论组织。正文建议采用宋体、小四号、1.5 倍行距，章节标题可适当放大加粗。",
+        "text_sha256": "20b236a04998c741b31f05a321bcd0c77541b36686b9e8fb56946b16cfb2543e",
+        "text_kind": "summary"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "human_review"
+        ],
+        "reason": "核对章节标题相对正文适当放大并加粗。模板未指定固定字号。",
+        "policy_refs": [],
+        "self_check": "核对章节标题相对正文适当放大并加粗。模板未指定固定字号。"
+      },
+      "comments": {
+        "action": "核对章节标题相对正文适当放大并加粗。模板未指定固定字号。",
+        "reason": "核对章节标题相对正文适当放大并加粗。模板未指定固定字号。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "TECH-CHAPTER-15",
+    "title": "引言章节",
+    "authority": "required",
+    "sources": [
+      {
+        "source_id": "P60",
+        "document_id": "template",
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/*[60]",
+        "display_reference": "用户提供的正文模板 · 第 60 个段落",
+        "text": "引言单独成章，标题不加章号。",
+        "text_sha256": "c93127ac24235b8b92a760d55b71b0900c5b5909be32034c109e9cb9c950d3b2",
+        "text_kind": "summary"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "human_review"
+        ],
+        "reason": "核对引言独立成章、章名为引言，且无章节编号。",
+        "policy_refs": [],
+        "self_check": "核对引言独立成章、章名为引言，且无章节编号。"
+      },
+      "comments": {
+        "action": "核对引言独立成章、章名为引言，且无章节编号。",
+        "reason": "核对引言独立成章、章名为引言，且无章节编号。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "TECH-CHAPTER-16",
+    "title": "主体章节安排",
+    "authority": "required",
+    "sources": [
+      {
+        "source_id": "P62",
+        "document_id": "template",
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/*[62]",
+        "display_reference": "用户提供的正文模板 · 第 62 个段落",
+        "text": "主体按项目内容分成多个章节，各章自行命名。",
+        "text_sha256": "9dccce85920b493a3053a013d4aaf21109892436e5420fffe49a51b4e721e5ed",
+        "text_kind": "summary"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "human_review"
+        ],
+        "reason": "核对主体按项目内容分章，避免使用“主体”作为章标题。研究内容由作者确认。",
+        "policy_refs": [],
+        "self_check": "核对主体按项目内容分章，避免使用“主体”作为章标题。研究内容由作者确认。"
+      },
+      "comments": {
+        "action": "核对主体按项目内容分章，避免使用“主体”作为章标题。研究内容由作者确认。",
+        "reason": "核对主体按项目内容分章，避免使用“主体”作为章标题。研究内容由作者确认。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "TECH-CHAPTER-17",
+    "title": "结论章节",
+    "authority": "required",
+    "sources": [
+      {
+        "source_id": "P65",
+        "document_id": "template",
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/*[65]",
+        "display_reference": "用户提供的正文模板 · 第 65 个段落",
+        "text": "结论单独成章，章标题为结论。",
+        "text_sha256": "c9ce633832c3883c9df2a30738611a5a437a6191b49dd68fbd1cdc1a24f7f0e7",
+        "text_kind": "summary"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "human_review"
+        ],
+        "reason": "核对结论独立成章且章名为结论，结合报告阶段核对内容。",
+        "policy_refs": [],
+        "self_check": "核对结论独立成章且章名为结论，结合报告阶段核对内容。"
+      },
+      "comments": {
+        "action": "核对结论独立成章且章名为结论，结合报告阶段核对内容。",
+        "reason": "核对结论独立成章且章名为结论，结合报告阶段核对内容。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "TECH-REF-18",
+    "title": "参考文献著录",
+    "authority": "advisory",
+    "sources": [
+      {
+        "source_id": "P102",
+        "document_id": "template",
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/*[102]",
+        "display_reference": "用户提供的正文模板 · 第 102 个段落",
+        "text": "参考文献著录参照模板列出的 GB/T 7714—2005，条目建议采用宋体、小四号、1.5 倍行距。",
+        "text_sha256": "a21be939aa7b7879f95428b765fb727a7fbb4611f60fa0a57852297d969fd7a9",
+        "text_kind": "summary"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "human_review"
+        ],
+        "reason": "模板写明 GB/T 7714—2005。请向提交方确认适用版次，再核对著录。",
+        "policy_refs": [],
+        "self_check": "模板写明 GB/T 7714—2005。请向提交方确认适用版次，再核对著录。"
+      },
+      "comments": {
+        "action": "模板写明 GB/T 7714—2005。请向提交方确认适用版次，再核对著录。",
+        "reason": "模板写明 GB/T 7714—2005。请向提交方确认适用版次，再核对著录。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "TECH-APPENDIX-19",
+    "title": "附录适用与编号",
+    "authority": "required",
+    "sources": [
+      {
+        "source_id": "P110",
+        "document_id": "template",
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/*[110]",
+        "display_reference": "用户提供的正文模板 · 第 110 个段落",
+        "text": "按需要设置附录，编号使用连续的大写拉丁字母。附录正文建议采用宋体、小四号、1.5 倍行距。",
+        "text_sha256": "1c673cb82d1672a11685d92197a798fd1700a571140c4d84f3abfee745369ef2",
+        "text_kind": "summary"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "status": "unsupported",
+        "notification": "never",
+        "roles": [],
+        "when": [],
+        "tests": null,
+        "requires": [
+          "human_review"
+        ],
+        "reason": "核对适用的附录是否以大写拉丁字母连续编号。附录按需要设置。",
+        "policy_refs": [],
+        "self_check": "核对适用的附录是否以大写拉丁字母连续编号。附录按需要设置。"
+      },
+      "comments": {
+        "action": "核对适用的附录是否以大写拉丁字母连续编号。附录按需要设置。",
+        "reason": "核对适用的附录是否以大写拉丁字母连续编号。附录按需要设置。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  }
+]

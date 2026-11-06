@@ -9,6 +9,7 @@ function element(tag, text, parent, cls) {
   return node;
 }
 function link(parent, label, href) {
+  if (!href) return;
   const a = element("a", label, parent);
   a.href = href;
   if (href.startsWith("https://")) {
@@ -50,14 +51,14 @@ function showRule(row, parent) {
     "span",
     row.interpretation.audit.status === "checkable"
       ? "有明确检查判据"
-      : "暂不支持自动检查",
+      : row.interpretation.audit.self_check ? "需用户自查" : "暂不支持自动检查",
     labels,
     "badge muted-badge",
   );
-  element("h4", "学校原文", body);
+  element("h4", row.sources.some(source => source.text_kind === "summary") ? "依据条款整理" : "学校原文", body);
   for (const source of row.sources) {
     element("p", source.display_reference, body, "source-label");
-    element("blockquote", source.text, body);
+    element(source.text_kind === "summary" ? "p" : "blockquote", source.text, body);
     const sourceDoc = release.standard.documents.find(
       (d) => d.id === source.document_id,
     );
@@ -79,7 +80,7 @@ function showRule(row, parent) {
         source.source_id,
         source.part,
         source.xpath || source.locator || source.display_reference,
-      ].filter(Boolean).join(" · ")}\n原文SHA256 ${source.text_sha256}`,
+      ].filter(Boolean).join(" · ")}\n${source.text_kind === "summary" ? "摘要" : "原文"}SHA256 ${source.text_sha256}`,
       precision,
     );
   }
@@ -198,7 +199,7 @@ try {
   }
   const standard = release.standard;
   $("source-date").textContent =
-    `资料核对日期：${standard.checked_at}。` +
+    (standard.checked_at ? `资料核对日期：${standard.checked_at}。` : "") +
     (standard.version_date_basis === "official_publication"
       ? `官网发布时间：${standard.published_date}。${standard.version_note}`
       : "");
@@ -218,6 +219,7 @@ try {
     );
     if (doc.repository_path)
       link(links, "下载原件", new URL(doc.repository_path, root).href);
+    if (!doc.sha256 || !Number.isFinite(doc.bytes)) continue;
     const details = element("details", null, card, "precision");
     element("summary", "文件校验信息", details);
     element(
