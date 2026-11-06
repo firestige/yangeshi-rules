@@ -344,7 +344,7 @@
       "toc_level_chinese": "([一二三])级目录",
       "caption_detect": "^[图表]\\s*\\d+[.\\-－]\\d+(?:[\\s\\u3000]+|[:：])\\S",
       "caption_style": "Caption|题注",
-      "school_identity": "南京大学|Nanjing University",
+      "school_identity": "(?!)",
       "chapter_parts": "^第\\s*([一二三四五六七八九十零〇\\d]+)\\s*章\\s*(.*)",
       "caption_parts": "^([图表])\\s*([A-Z\\d]+)([.\\-－])(\\d+)(.*)",
       "cover_date": "([二〇零一三四五六七八九十\\d]{4})年\\s*([一二三四五六七八九十\\d]{1,2})月",
@@ -643,11 +643,10 @@
       "fixed": "已修改格式【已解决】。",
       "advice": "排版建议【可自行决定】。",
       "review": "待处理【需要你操作】。"
-    },
-    "draft_scope_note": "独立南京大学草案；全部编号/文字变换、模板清理、创新及AI声明均禁用。解析技术上限不是学校格式要求；符号图表观察起点0不构成新增阈值或建议。关键词切分禁用，避免把分隔符猜成术语条目。"
+    }
   },
   "contract_digest": "16a57c163c7d55d3e334c54da3a6750e8b840c2b068052ffeb19ddf3b25cb856",
-  "runtime_digest": "b0c8e52781ffcc70b51d65916931ee6a8a808259880b47e4cef3afe7bec369c3",
+  "runtime_digest": "06f2cbf7c71a28a5266b0b4f7b61e1bac6ad8691114d682b1513ac282018cc5b",
   "source_index": {
     "P2": {
       "source_id": "P2",

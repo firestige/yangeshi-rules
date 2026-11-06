@@ -1,5 +1,5 @@
 {
-  "tree_sha256": "d5d267e2d09ea2df477434b93768508e945df9dbaa589e7a1af1b5531788b346",
+  "tree_sha256": "e4864a1de3e2643039168b0d46fbb328dd80a36e7c9960105b0da75aaff8385e",
   "files": {
     ".github/CODEOWNERS": {
       "sha256": "86f3e2af7b32656ee7ebf5f03f6dcdc87276d4dc5459e509d1505b25584d796a",
@@ -354,12 +354,12 @@
       "bytes": 229
     },
     "schools/technical-report/release.json": {
-      "sha256": "c2b27209e2403f221314bf76c83c8355402795dc33db3672e83b94827215e564",
+      "sha256": "054b6ef2298c0cd2c44835cf479bb1d142d46de141fc1160e1c22c9632137a31",
       "bytes": 1463
     },
     "schools/technical-report/rules.json": {
-      "sha256": "8e75139bd6dbe8d69954a483250a60d641f6434c49ab374a2ffa4378a522f866",
-      "bytes": 55518
+      "sha256": "737b97e2964e71dadf293420826e204680d12ae6cf184cb4d486c827383fb534",
+      "bytes": 55198
     },
     "schools/technical-report/source-map.json": {
       "sha256": "8e658ceffe34bda2660a15f32bf092af23b8032ebe343137acb44fde986c5629",

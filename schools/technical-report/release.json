@@ -8,7 +8,7 @@
     "institution": "通用科技报告",
     "name": "科技报告正文模板",
     "version": "模板无标注版次",
-    "profile_sha256": "8e75139bd6dbe8d69954a483250a60d641f6434c49ab374a2ffa4378a522f866",
+    "profile_sha256": "737b97e2964e71dadf293420826e204680d12ae6cf184cb4d486c827383fb534",
     "documents": [
       {
         "id": "template",
@@ -20,8 +20,8 @@
         "id": "rules",
         "title": "研格式执行规则",
         "version": "2026-11-06.1",
-        "bytes": 55518,
-        "sha256": "8e75139bd6dbe8d69954a483250a60d641f6434c49ab374a2ffa4378a522f866"
+        "bytes": 55198,
+        "sha256": "737b97e2964e71dadf293420826e204680d12ae6cf184cb4d486c827383fb534"
       }
     ]
   },
@@ -31,10 +31,10 @@
     "version": "2026-11-06.1",
     "published": true,
     "status": "public-preview",
-    "rules_sha256": "8e75139bd6dbe8d69954a483250a60d641f6434c49ab374a2ffa4378a522f866",
+    "rules_sha256": "737b97e2964e71dadf293420826e204680d12ae6cf184cb4d486c827383fb534",
     "source_map_sha256": "8e658ceffe34bda2660a15f32bf092af23b8032ebe343137acb44fde986c5629",
     "engine_contract_sha256": "16a57c163c7d55d3e334c54da3a6750e8b840c2b068052ffeb19ddf3b25cb856",
-    "runtime_digest": "b0c8e52781ffcc70b51d65916931ee6a8a808259880b47e4cef3afe7bec369c3",
+    "runtime_digest": "06f2cbf7c71a28a5266b0b4f7b61e1bac6ad8691114d682b1513ac282018cc5b",
     "repository_url": "https://github.com/firestige/yangeshi-rules"
   }
 }
