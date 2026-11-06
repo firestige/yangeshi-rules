@@ -1,0 +1,35 @@
+# 自动检查范围
+
+- `NJU-MBA-ABSTRACT-01` 中文摘要标题
+- `NJU-MBA-ABSTRACT-02` 中文摘要正文
+- `NJU-MBA-ABSTRACT-03` 摘要20磅行距数值
+- `NJU-MBA-ABSTRACT-05` 英文摘要标题
+- `NJU-MBA-ABSTRACT-06` 英文摘要正文
+- `NJU-MBA-KEYWORD-01` 关键词数量与标签
+- `NJU-MBA-TOC-01` 目录标题
+- `NJU-MBA-TOC-03` 章目录格式
+- `NJU-MBA-TOC-04` 一级节目录格式
+- `NJU-MBA-TOC-05` 二级节目录格式
+- `NJU-MBA-HEADING-01` 章标题样式
+- `NJU-MBA-HEADING-02` 一级节标题样式
+- `NJU-MBA-HEADING-03` 二级节标题样式
+- `NJU-MBA-BODY-01` 正文属性
+- `NJU-MBA-BODY-02` 正文20磅行距数值
+- `NJU-MBA-FIGURE-01` 图题字体间距
+- `NJU-MBA-FIGURE-02` 图题位置与编号间隔
+- `NJU-MBA-FIGURE-03` 图注缩进与续行
+- `NJU-MBA-FIGURE-04` 图中文字
+- `NJU-MBA-TABLE-01` 表题字体间距
+- `NJU-MBA-TABLE-02` 表题表注位置
+- `NJU-MBA-TABLE-03` 表注缩进与续行
+- `NJU-MBA-TABLE-04` 表中文字
+- `NJU-MBA-TABLE-05` 三线表
+- `NJU-MBA-NOTE-01` 页下注及连续圈号
+- `NJU-MBA-REF-04` 参考文献字体字号
+- `NJU-MBA-APPENDIX-03` 附录与致谢样式
+- `NJU-MBA-PAGE-01` A4纸张
+- `NJU-MBA-PAGE-05` 页面纵向编排
+- `NJU-MBA-PAGE-04` 页眉页脚距边界
+- `NJU-MBA-HEADER-01` 页眉字体字号
+- `NJU-MBA-PAGENO-01` 页码字体位置
+- `NJU-MBA-PAGENO-02` 前置罗马正文阿拉伯

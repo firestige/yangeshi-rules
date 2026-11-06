@@ -1,0 +1,93 @@
+{
+  "standard": {
+    "id": "sjtu-graduate-2025-11-draft",
+    "institution": "上海交通大学",
+    "name": "2025-11-24 官网发布论文规范",
+    "version": "2025-11-24 官网发布",
+    "checked_at": "2026-11-05",
+    "profile_sha256": "f01d130092ee0bc4e30bb6ffb4786c77406871fe64d4be8518338d66bcd2720a",
+    "documents": [
+      {
+        "id": "sjtu-guide-web",
+        "title": "上海交通大学博士、硕士学位论文撰写指南",
+        "version": "2025-11-24 官网发布",
+        "sha256": "411cea493b1afbed19c5df8a0cef4b4b6ca309452fe9ffaf16a4d46a1dd045c7",
+        "bytes": 100119,
+        "source_url": "https://www.gs.sjtu.edu.cn/post/detail/Z3MzNDA0",
+        "source_page": "https://www.gs.sjtu.edu.cn/post/detail/Z3MzNDA0",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "doc-1",
+        "title": "论文模板（word)",
+        "version": "官网现挂模板，内文版次待核对",
+        "sha256": "22dfebf3332939293b1b08bb158fd479b7267162ffb63a82d95c3e8366c1a81f",
+        "bytes": 218068,
+        "source_url": "https://www.gs.sjtu.edu.cn/storage/gs/web/cn/article/2024/07/8dff34547269297128145bdf67d7794b.docx",
+        "source_page": "https://www.gs.sjtu.edu.cn/post/detail/Z3M2MjU=",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "doc-2",
+        "title": "论文模板（LaTeX).zip",
+        "version": "官网现挂模板，内文版次待核对",
+        "sha256": "72aeeb4d1732cdab3c39c99a5bfe3c643ce2abbca92e492c39ecee45cfcf0235",
+        "bytes": 355646,
+        "source_url": "https://www.gs.sjtu.edu.cn/storage/gs/web/cn/article/2024/07/2c068a2cf7b32e491b190541e7d2ca5d.zip",
+        "source_page": "https://www.gs.sjtu.edu.cn/post/detail/Z3M2MjU=",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "doc-3",
+        "title": "研究生工作手册（2021修订本，含论文撰写指南）",
+        "version": "2021年修订本；历史参考",
+        "sha256": "4afdb7cc5cbf5045c2d652f3b98e6d540df716aed9f49a72110ee2ba8613e261",
+        "bytes": 2389458,
+        "source_url": "https://oce.sjtu.edu.cn/upload/file/20230807/20230807152942.pdf",
+        "source_page": "https://oce.sjtu.edu.cn/upload/file/20230807/20230807152942.pdf",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "doc-4",
+        "title": "研究生工作手册（2025修订本，含博士、硕士学位论文撰写指南）",
+        "version": "2025年11月修订本",
+        "sha256": "cf2402bb9b13a00009ccabe86acae75cd3454f587072786f8d5f5d50a8456b07",
+        "bytes": 1465804,
+        "source_url": "https://www.gs.sjtu.edu.cn/storage/gs/web/cn/article/2025/11/a11b68c3cf6d5138bce86f635d6e15ea.pdf",
+        "source_page": "https://www.gs.sjtu.edu.cn/post/detail/Z3MzNDA0",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "rules",
+        "title": "研格式执行规则（非学校原文）",
+        "version": "2026-11-06-preview.1",
+        "bytes": 107048,
+        "sha256": "f01d130092ee0bc4e30bb6ffb4786c77406871fe64d4be8518338d66bcd2720a"
+      }
+    ],
+    "version_date_basis": "official_publication",
+    "published_date": "2025-11-24",
+    "publication_source_url": "https://www.gs.sjtu.edu.cn/post/detail/Z3MzNDA0",
+    "version_note": "规范未标修订年月，展示版本以官网发布时间为准；该日期不表示规范的修订日期。",
+    "revision_date": null
+  },
+  "ruleset": {
+    "id": "sjtu-graduate-2025-11-draft",
+    "schema": "1.0",
+    "version": "2026-11-06-preview.1",
+    "status": "public-preview",
+    "published": true,
+    "rules_sha256": "f01d130092ee0bc4e30bb6ffb4786c77406871fe64d4be8518338d66bcd2720a",
+    "source_map_sha256": "485c62ec0296c195b6934b11af36547a894d4f6ec99036749f0aa795818c6e1d",
+    "engine_contract_sha256": "8ff2ce25c18561f5915bbf0cb9fa1c6660148149b89640a392719ddbc13f0c49",
+    "runtime_digest": "08e5938ba6b2e8758902e86898a73e190a24d81ac978c213c5ad667ca3a20ecf",
+    "repository_url": "https://github.com/firestige/yangeshi-rules"
+  },
+  "schema_version": 1,
+  "catalog_id": "sjtu",
+  "wiki_page": "sjtu.html",
+  "counts": {
+    "unsupported": 39,
+    "checkable": 16
+  }
+}

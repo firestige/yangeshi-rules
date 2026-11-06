@@ -1,0 +1,23 @@
+# 自动检查范围
+
+- `FUDAN-COVER-03` 学校代码
+- `FUDAN-COVER-05` 题名汉字上限与双语题名
+- `FUDAN-PAGE-01` A4纸张
+- `FUDAN-BODY-01` 正文中文字体
+- `FUDAN-BODY-02` 正文英文数字字体
+- `FUDAN-BODY-03` 正文小四号
+- `FUDAN-BODY-04` 正文字距标准
+- `FUDAN-BODY-05` 正文行距20磅
+- `FUDAN-KEYWORD-01` 中文关键词3至8个
+- `FUDAN-KEYWORD-02` 英文关键词3至8个
+- `FUDAN-LIFE-TOC-01` 目录深度与自动生成
+- `FUDAN-LIFE-TOC-02` 目录字体字号
+- `FUDAN-LIFE-HEAD-01` 一级标题
+- `FUDAN-LIFE-HEAD-02` 二级标题
+- `FUDAN-LIFE-HEAD-03` 三级标题
+- `FUDAN-LIFE-HEAD-04` 四级标题
+- `FUDAN-LIFE-LAYOUT-02` 同级格式一致
+- `FUDAN-LIFE-FIG-05` 题注11pt与字体
+- `FUDAN-LIFE-FIG-06` 题注间距及行距
+- `FUDAN-LIFE-FIG-09` 三线表与量单位
+- `FUDAN-LIFE-ABS-01` 摘要不含引用

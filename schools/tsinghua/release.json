@@ -1,0 +1,48 @@
+{
+  "standard": {
+    "id": "tsinghua-graduate-2025-03-draft-v1",
+    "institution": "清华大学",
+    "name": "2025-03论文规范",
+    "version": "2025-03",
+    "checked_at": "2026-11-05",
+    "profile_sha256": "7be085b478facf2cf80ae914631d0efc2018b851b48a7513ba3337895b2f7eb2",
+    "documents": [
+      {
+        "id": "doc-1",
+        "title": "清华大学研究生学位论文写作指南",
+        "version": "2025年3月",
+        "sha256": "32a82eb76f39ed6a3ab93cbc259fb376a960c05ad7e5ac6d490f4e9052f3fd41",
+        "bytes": 1208189,
+        "source_url": "https://www.dhs.tsinghua.edu.cn/wp-content/uploads/2023/12/2025032107444819.pdf",
+        "source_page": "https://www.dhs.tsinghua.edu.cn/wp-content/uploads/2023/12/2025032107444819.pdf",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "rules",
+        "title": "研格式执行规则（非学校原文）",
+        "version": "2026-11-06-preview.1",
+        "bytes": 216411,
+        "sha256": "7be085b478facf2cf80ae914631d0efc2018b851b48a7513ba3337895b2f7eb2"
+      }
+    ]
+  },
+  "ruleset": {
+    "id": "tsinghua-graduate-2025-03-draft-v1",
+    "schema": "1.0",
+    "version": "2026-11-06-preview.1",
+    "status": "public-preview",
+    "published": true,
+    "rules_sha256": "7be085b478facf2cf80ae914631d0efc2018b851b48a7513ba3337895b2f7eb2",
+    "source_map_sha256": "6eb65a137be641ec2020a6e01809bd35ab356c7350b80728a6dae043b324261e",
+    "engine_contract_sha256": "d3fd4244bb72ac335403b0a66043adc4ede9e7c5aef3177b57a6962da8c4a3ba",
+    "runtime_digest": "ac2945b88177f7e01af37a44ee336136acc6043f13c74d4eb23231eaa7daa650",
+    "repository_url": "https://github.com/firestige/yangeshi-rules"
+  },
+  "schema_version": 1,
+  "catalog_id": "tsinghua",
+  "wiki_page": "tsinghua.html",
+  "counts": {
+    "unsupported": 44,
+    "checkable": 63
+  }
+}

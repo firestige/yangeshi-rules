@@ -1,0 +1,3607 @@
+[
+  {
+    "rule_id": "SJTU-STRUCT-01",
+    "title": "组成部分及顺序",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（总述）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-STRUCT-01"
+        ],
+        "text_sha256": "94b1a315b8030759be4069f7b67adfbb1638e243cca7eee74fa1d607e5c30768",
+        "xpath": "line:12",
+        "source_id": "S001",
+        "document_id": "sjtu-guide-web",
+        "text": "学位论文依次应包括以下部分："
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "document"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "完整识别后，按封面、题名页、原创性声明和授权书、中英文摘要、目录、已有符号说明、正文、参考文献、已有注释、已有附录、致谢、学术论文和科研成果目录排列；三项“非必须”不要求存在。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "当前没有完整部件存在性和顺序事实，保留不执行；不创建缺失章节。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "document"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在组成部分及顺序对应位置核对：完整识别后，按封面、题名页、原创性声明和授权书、中英文摘要、目录、已有符号说明、正文、参考文献、已有注释、已有附录、致谢、学术论文和科研成果目录排列；三项“非必须”不要求存在。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（总述）。",
+        "fixed": null,
+        "reason": "当前没有完整部件存在性和顺序事实，保留不执行；不创建缺失章节。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-COVER-01",
+    "title": "统一封面",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（一）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-COVER-01"
+        ],
+        "text_sha256": "0d9ab88cf09039dd0f4163906cfd3e2f029316498e17bba90bd1698b2d6c39cf",
+        "xpath": "line:14",
+        "source_id": "S002",
+        "document_id": "sjtu-guide-web",
+        "text": "封面应采用学校统一印制的学位论文封面。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "cover"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "检查提交所需封面采用学校统一印制形式；文档中的封面识别与实物封面分别处理。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "未锁定统一封面固定形式及纸质实物，unsupported；不从样本姓名、日期或显示样式推导强制值。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "cover"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在统一封面对应位置核对：检查提交所需封面采用学校统一印制形式；文档中的封面识别与实物封面分别处理。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（一）。",
+        "fixed": null,
+        "reason": "未锁定统一封面固定形式及纸质实物，unsupported；不从样本姓名、日期或显示样式推导强制值。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-TITLE-01",
+    "title": "题名页",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（二）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-TITLE-01"
+        ],
+        "text_sha256": "099a238e7e6dd0e562d6a7280bbb613d4924b4f7ba1963636c0b98cc8591678a",
+        "xpath": "line:15",
+        "source_id": "S003",
+        "document_id": "sjtu-guide-web",
+        "text": "（二）题名页"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "title_page"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "完整结构扫描确认题名页存在；指南未在此规定其字段、双语形式及字号。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "缺项事实未实现；不代填信息，也不要求模板之外的字段。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "title_page"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在题名页对应位置核对：完整结构扫描确认题名页存在；指南未在此规定其字段、双语形式及字号。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（二）。",
+        "fixed": null,
+        "reason": "缺项事实未实现；不代填信息，也不要求模板之外的字段。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-DECL-01",
+    "title": "原创性声明及授权书",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（三）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-DECL-01"
+        ],
+        "text_sha256": "5fe259b7cf391a10648f40798869effa6bd2af32b694cccb859213a6b1898ffa",
+        "xpath": "line:16",
+        "source_id": "S004",
+        "document_id": "sjtu-guide-web",
+        "text": "（三）学位论文原创性声明以及学位论文使用授权书"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "document"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "检查原创性声明及使用授权书两种部件存在，顺序按组成要求；不核签名真实性。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "声明完整性与范围识别未实现，unsupported；不擅自代签或选择保密级别。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "document"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在原创性声明及授权书对应位置核对：检查原创性声明及使用授权书两种部件存在，顺序按组成要求；不核签名真实性。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（三）。",
+        "fixed": null,
+        "reason": "声明完整性与范围识别未实现，unsupported；不擅自代签或选择保密级别。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-ABSTRACT-01",
+    "title": "中英文摘要",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（四）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-ABSTRACT-01"
+        ],
+        "text_sha256": "d80a5b1a5f07c154f8e052e805f296cf6854a94e6c912c157d02e3e0e32d41d2",
+        "xpath": "line:17",
+        "source_id": "S005",
+        "document_id": "sjtu-guide-web",
+        "text": "（四）中英文摘要"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "document"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "完整扫描确认中文、英文摘要均存在；不推导每种摘要的字数、行距或强制独占页。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "存在性和完整范围尚未交付；缺摘要不检查其不存在的字号。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "document"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在中英文摘要对应位置核对：完整扫描确认中文、英文摘要均存在；不推导每种摘要的字数、行距或强制独占页。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（四）。",
+        "fixed": null,
+        "reason": "存在性和完整范围尚未交付；缺摘要不检查其不存在的字号。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-KEYWORD-01",
+    "title": "关键词4至6个",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（四）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-KEYWORD-01"
+        ],
+        "text_sha256": "3240bddd977d920b4f8b6fc13860aaf06c92c9732810c39a14d612fe2960081d",
+        "xpath": "line:18",
+        "source_id": "S006",
+        "document_id": "sjtu-guide-web",
+        "text": "摘要页的下方注明本文的关键词（4～6个）。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "keyword_group"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "assertions",
+        "tests": [
+          {
+            "fact": "keywords.confirmed_count",
+            "op": "between",
+            "value": [
+              4,
+              6
+            ]
+          }
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "notification": "on_confirmed_failure",
+        "policy_refs": [],
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。只使用边界全部确认的关键词组；不把标点计数当作词数。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "roles": [
+          "keyword_group"
+        ],
+        "status": "checkable",
+        "tests": [
+          {
+            "fact": "keywords.confirmed_count",
+            "op": "between",
+            "value": [
+              4,
+              6
+            ]
+          }
+        ],
+        "when": []
+      },
+      "comments": {
+        "action": "请核对本条已确认的Word对象及报告中列明的属性；只使用边界全部确认的关键词组；不把标点计数当作词数。",
+        "fixed": null,
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。只使用边界全部确认的关键词组；不把标点计数当作词数。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-KEYWORD-02",
+    "title": "关键词在摘要页下方",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（四）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-KEYWORD-02"
+        ],
+        "text_sha256": "3240bddd977d920b4f8b6fc13860aaf06c92c9732810c39a14d612fe2960081d",
+        "xpath": "line:18",
+        "source_id": "S007",
+        "document_id": "sjtu-guide-web",
+        "text": "摘要页的下方注明本文的关键词（4～6个）。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "keywords_zh",
+          "keywords_en"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "已存在关键词位于对应摘要页的下方，不凭XML顺序替代真实页面位置。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "需要真实分页及关键词与摘要关联；unsupported，不移动整段。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "keywords_zh",
+          "keywords_en"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在关键词在摘要页下方对应位置核对：已存在关键词位于对应摘要页的下方，不凭XML顺序替代真实页面位置。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（四）。",
+        "fixed": null,
+        "reason": "需要真实分页及关键词与摘要关联；unsupported，不移动整段。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-TOC-01",
+    "title": "目录列出各部分标题并依序排列",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（五）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-TOC-01"
+        ],
+        "text_sha256": "cf4c2bc18efb39a0d469e648223b704ca693345f23e394aa26c6b3a9761880a9",
+        "xpath": "line:20",
+        "source_id": "S008",
+        "document_id": "sjtu-guide-web",
+        "text": "应分别依次列出并注明页码。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "toc"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "目录条目对应已有组成部分的小标题并依次排列；不从这句推出固定标题层数或排除摘要。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "完整标题—目录对应未实现；不重建目录，不删除条目。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "toc"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在目录列出各部分标题并依序排列对应位置核对：目录条目对应已有组成部分的小标题并依次排列；不从这句推出固定标题层数或排除摘要。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（五）。",
+        "fixed": null,
+        "reason": "完整标题—目录对应未实现；不重建目录，不删除条目。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-TOC-02",
+    "title": "目录注明页码",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（五）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-TOC-02"
+        ],
+        "text_sha256": "cf4c2bc18efb39a0d469e648223b704ca693345f23e394aa26c6b3a9761880a9",
+        "xpath": "line:20",
+        "source_id": "S009",
+        "document_id": "sjtu-guide-web",
+        "text": "应分别依次列出并注明页码。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "toc_entry"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "已存在目录条目有页码；页码对应性须真实分页。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "真实分页与目录结构适配未实现；不直接改写页码缓存。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "toc_entry"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在目录注明页码对应位置核对：已存在目录条目有页码；页码对应性须真实分页。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（五）。",
+        "fixed": null,
+        "reason": "真实分页与目录结构适配未实现；不直接改写页码缓存。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-SYMBOL-01",
+    "title": "符号说明可选",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（六）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-SYMBOL-01"
+        ],
+        "text_sha256": "bfd714ad3380fab17867cfe8318d6ee89b442cf9971659d236e066b862d80aad",
+        "xpath": "line:21",
+        "source_id": "S010",
+        "document_id": "sjtu-guide-web",
+        "text": "（六）符号说明（非必须）"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "symbol_list"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "有符号说明时可记录符号含义和单位或量纲；没有说明不提示缺失。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "不设置7项或其他数量阈值；本条记录可选边界，不执行缺失检查。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "symbol_list"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在符号说明可选对应位置核对：有符号说明时可记录符号含义和单位或量纲；没有说明不提示缺失。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（六）。",
+        "fixed": null,
+        "reason": "不设置7项或其他数量阈值；本条记录可选边界，不执行缺失检查。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-BODY-01",
+    "title": "正文一般结构",
+    "authority": "advisory",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（七）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-BODY-01"
+        ],
+        "text_sha256": "fc9fb3f25ca10b39732bf1e20c71b86268c1a64c89b24cb77bc3227324451039",
+        "xpath": "line:24",
+        "source_id": "S011",
+        "document_id": "sjtu-guide-web",
+        "text": "正文是学位论文的主体和核心部分，一般包括以下几个方面："
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "document"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "正文一般含绪论、各具体章节和结论；“一般”按建议保留，不凭标题别名判断内容缺失。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "完整正文部件识别未实现，建议只在客观确认失败时提示且不代写正文。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "document"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在正文一般结构对应位置核对：正文一般含绪论、各具体章节和结论；“一般”按建议保留，不凭标题别名判断内容缺失。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（七）。",
+        "fixed": null,
+        "reason": "完整正文部件识别未实现，建议只在客观确认失败时提示且不代写正文。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-HEADING-01",
+    "title": "一级标题字号、粗黑体",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（一）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-HEADING-01"
+        ],
+        "text_sha256": "3f560d01cab4736514e4ddfaab69a9d8189b3d00bd33c74cf35ac56ac98c7198",
+        "xpath": "line:40",
+        "source_id": "S012",
+        "document_id": "sjtu-guide-web",
+        "text": "一级标题用三号粗黑体；二级标题用四号粗黑体；三级标题用小四号粗黑体。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "chapter_heading"
+        ]
+      },
+      "when": [],
+      "check": {
+        "expected": {
+          "font.bold": true,
+          "font.eastAsia": "黑体",
+          "size.pt": 16
+        },
+        "kind": "properties"
+      },
+      "fix": {
+        "permission": "properties_only",
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ],
+        "target": {
+          "font.bold": true,
+          "font.eastAsia": "黑体",
+          "size.pt": 16
+        }
+      },
+      "audit": {
+        "notification": "on_confirmed_failure",
+        "policy_refs": [],
+        "reason": "拟按有效属性检查；仅安全改字体、字号、加粗，保留文字、编号、域和标题层级。英文标题字体在本句未明示，不据中文黑体强制英文字体。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "roles": [
+          "chapter_heading"
+        ],
+        "status": "checkable",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在一级标题字号、粗黑体对应位置核对：只对明确识别的一级标题检查中文黑体、三号、加粗；按语义标题级别对应，目录条目和封面不套用。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（一）。",
+        "fixed": "已将此处格式由{before}调整为{expected}。依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（一）。",
+        "reason": "拟按有效属性检查；仅安全改字体、字号、加粗，保留文字、编号、域和标题层级。英文标题字体在本句未明示，不据中文黑体强制英文字体。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-HEADING-02",
+    "title": "二级标题字号、粗黑体",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（一）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-HEADING-02"
+        ],
+        "text_sha256": "3f560d01cab4736514e4ddfaab69a9d8189b3d00bd33c74cf35ac56ac98c7198",
+        "xpath": "line:40",
+        "source_id": "S013",
+        "document_id": "sjtu-guide-web",
+        "text": "一级标题用三号粗黑体；二级标题用四号粗黑体；三级标题用小四号粗黑体。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "section1_heading"
+        ]
+      },
+      "when": [],
+      "check": {
+        "expected": {
+          "font.bold": true,
+          "font.eastAsia": "黑体",
+          "size.pt": 14
+        },
+        "kind": "properties"
+      },
+      "fix": {
+        "permission": "properties_only",
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ],
+        "target": {
+          "font.bold": true,
+          "font.eastAsia": "黑体",
+          "size.pt": 14
+        }
+      },
+      "audit": {
+        "notification": "on_confirmed_failure",
+        "policy_refs": [],
+        "reason": "拟按有效属性检查；仅安全改字体、字号、加粗，保留文字、编号、域和标题层级。英文标题字体在本句未明示，不据中文黑体强制英文字体。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "roles": [
+          "section1_heading"
+        ],
+        "status": "checkable",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在二级标题字号、粗黑体对应位置核对：只对明确识别的二级标题检查中文黑体、四号、加粗；按语义标题级别对应，目录条目和封面不套用。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（一）。",
+        "fixed": "已将此处格式由{before}调整为{expected}。依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（一）。",
+        "reason": "拟按有效属性检查；仅安全改字体、字号、加粗，保留文字、编号、域和标题层级。英文标题字体在本句未明示，不据中文黑体强制英文字体。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-HEADING-03",
+    "title": "三级标题字号、粗黑体",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（一）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-HEADING-03"
+        ],
+        "text_sha256": "3f560d01cab4736514e4ddfaab69a9d8189b3d00bd33c74cf35ac56ac98c7198",
+        "xpath": "line:40",
+        "source_id": "S014",
+        "document_id": "sjtu-guide-web",
+        "text": "一级标题用三号粗黑体；二级标题用四号粗黑体；三级标题用小四号粗黑体。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "section2_heading"
+        ]
+      },
+      "when": [],
+      "check": {
+        "expected": {
+          "font.bold": true,
+          "font.eastAsia": "黑体",
+          "size.pt": 12
+        },
+        "kind": "properties"
+      },
+      "fix": {
+        "permission": "properties_only",
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ],
+        "target": {
+          "font.bold": true,
+          "font.eastAsia": "黑体",
+          "size.pt": 12
+        }
+      },
+      "audit": {
+        "notification": "on_confirmed_failure",
+        "policy_refs": [],
+        "reason": "拟按有效属性检查；仅安全改字体、字号、加粗，保留文字、编号、域和标题层级。英文标题字体在本句未明示，不据中文黑体强制英文字体。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "roles": [
+          "section2_heading"
+        ],
+        "status": "checkable",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在三级标题字号、粗黑体对应位置核对：只对明确识别的三级标题检查中文黑体、小四号、加粗；按语义标题级别对应，目录条目和封面不套用。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（一）。",
+        "fixed": "已将此处格式由{before}调整为{expected}。依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（一）。",
+        "reason": "拟按有效属性检查；仅安全改字体、字号、加粗，保留文字、编号、域和标题层级。英文标题字体在本句未明示，不据中文黑体强制英文字体。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-BODY-02",
+    "title": "正文中文宋体",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（一）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-BODY-02"
+        ],
+        "text_sha256": "713b3e8a3c75258f4f5fa824975fd4099a503faa8d9f9582b257c35a624e83c9",
+        "xpath": "line:40",
+        "source_id": "S015",
+        "document_id": "sjtu-guide-web",
+        "text": "正文中文用小四号或五号宋体"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "body_paragraph"
+        ]
+      },
+      "when": [],
+      "check": {
+        "expected": {
+          "font.eastAsia": "宋体"
+        },
+        "kind": "properties"
+      },
+      "fix": {
+        "permission": "properties_only",
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ],
+        "target": {
+          "font.eastAsia": "宋体"
+        }
+      },
+      "audit": {
+        "notification": "on_confirmed_failure",
+        "policy_refs": [],
+        "reason": "仅安全改中文字体，不改字号或内容；未知主题字体/角色静默跳过。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "roles": [
+          "body_paragraph"
+        ],
+        "status": "checkable",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在正文中文宋体对应位置核对：已识别正文普通文字的汉字字体为宋体；图表、公式及脚注不因正文角色继承而强制。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（一）。",
+        "fixed": "已将此处格式由{before}调整为{expected}。依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（一）。",
+        "reason": "仅安全改中文字体，不改字号或内容；未知主题字体/角色静默跳过。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-BODY-03",
+    "title": "正文英文数字Times New Roman",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（一）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-BODY-03"
+        ],
+        "text_sha256": "ee7c215c0be258c5c5bc50ee68ebf93820e1b7a8c6325cb68c91f237e3ac91d9",
+        "xpath": "line:40",
+        "source_id": "S016",
+        "document_id": "sjtu-guide-web",
+        "text": "英文或数字用小四号或五号Times New Roman。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "body_paragraph"
+        ]
+      },
+      "when": [],
+      "check": {
+        "expected": {
+          "font.latin": "Times New Roman"
+        },
+        "kind": "properties"
+      },
+      "fix": {
+        "permission": "properties_only",
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ],
+        "target": {
+          "font.latin": "Times New Roman"
+        }
+      },
+      "audit": {
+        "notification": "on_confirmed_failure",
+        "policy_refs": [],
+        "reason": "仅安全改英数文字字体，不改字号、数学对象或正文。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "roles": [
+          "body_paragraph"
+        ],
+        "status": "checkable",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在正文英文数字Times New Roman对应位置核对：已识别正文中的英文及数字采用Times New Roman；不把数学字体、符号字体当普通英数。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（一）。",
+        "fixed": "已将此处格式由{before}调整为{expected}。依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（一）。",
+        "reason": "仅安全改英数文字字体，不改字号、数学对象或正文。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-BODY-04",
+    "title": "正文中文允许小四或五号",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（一）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-BODY-04"
+        ],
+        "text_sha256": "713b3e8a3c75258f4f5fa824975fd4099a503faa8d9f9582b257c35a624e83c9",
+        "xpath": "line:40",
+        "source_id": "S017",
+        "document_id": "sjtu-guide-web",
+        "text": "正文中文用小四号或五号宋体"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "body_paragraph"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "size.pt": {
+            "one_of": [
+              12,
+              10.5
+            ]
+          }
+        },
+        "script": "eastAsia"
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "notification": "on_confirmed_failure",
+        "policy_refs": [],
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "roles": [
+          "body_paragraph"
+        ],
+        "status": "checkable",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请核对本条已确认的Word对象及报告中列明的属性；",
+        "fixed": null,
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-BODY-05",
+    "title": "正文英文数字允许小四或五号",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（一）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-BODY-05"
+        ],
+        "text_sha256": "ee7c215c0be258c5c5bc50ee68ebf93820e1b7a8c6325cb68c91f237e3ac91d9",
+        "xpath": "line:40",
+        "source_id": "S018",
+        "document_id": "sjtu-guide-web",
+        "text": "英文或数字用小四号或五号Times New Roman。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "body_paragraph"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "size.pt": {
+            "one_of": [
+              12,
+              10.5
+            ]
+          }
+        },
+        "script": "latin"
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "notification": "on_confirmed_failure",
+        "policy_refs": [],
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "roles": [
+          "body_paragraph"
+        ],
+        "status": "checkable",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请核对本条已确认的Word对象及报告中列明的属性；",
+        "fixed": null,
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-NUMBER-01",
+    "title": "图编号允许连续或分章",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（二）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-NUMBER-01"
+        ],
+        "text_sha256": "bca53a1a3514feadab40e7d85bb112e53f6ec9bac7108049fb0ad69f8d133993",
+        "xpath": "line:41",
+        "source_id": "S019",
+        "document_id": "sjtu-guide-web",
+        "text": "论文中图表、附注、参考文献、公式一律采用阿拉伯数字连续(或分章)编号。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "figure_caption"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "已存在图使用阿拉伯数字；允许全文连续或分章编号，不限定分隔符及前缀，也不套附录A制度。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "现有numbering.chapter_sequence_valid强制分章，不能表达两种合法制度和对应序列；本条整体unsupported，禁止编号变换。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "figure_caption"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在图编号允许连续或分章对应位置核对：已存在图使用阿拉伯数字；允许全文连续或分章编号，不限定分隔符及前缀，也不套附录A制度。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（二）。",
+        "fixed": null,
+        "reason": "现有numbering.chapter_sequence_valid强制分章，不能表达两种合法制度和对应序列；本条整体unsupported，禁止编号变换。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-NUMBER-02",
+    "title": "表编号允许连续或分章",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（二）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-NUMBER-02"
+        ],
+        "text_sha256": "bca53a1a3514feadab40e7d85bb112e53f6ec9bac7108049fb0ad69f8d133993",
+        "xpath": "line:41",
+        "source_id": "S020",
+        "document_id": "sjtu-guide-web",
+        "text": "论文中图表、附注、参考文献、公式一律采用阿拉伯数字连续(或分章)编号。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "table_caption"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "已存在表使用阿拉伯数字；允许全文连续或分章编号，不限定分隔符及前缀，也不套附录A制度。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "现有numbering.chapter_sequence_valid强制分章，不能表达两种合法制度和对应序列；本条整体unsupported，禁止编号变换。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "table_caption"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在表编号允许连续或分章对应位置核对：已存在表使用阿拉伯数字；允许全文连续或分章编号，不限定分隔符及前缀，也不套附录A制度。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（二）。",
+        "fixed": null,
+        "reason": "现有numbering.chapter_sequence_valid强制分章，不能表达两种合法制度和对应序列；本条整体unsupported，禁止编号变换。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-NUMBER-03",
+    "title": "附注编号允许连续或分章",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（二）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-NUMBER-03"
+        ],
+        "text_sha256": "bca53a1a3514feadab40e7d85bb112e53f6ec9bac7108049fb0ad69f8d133993",
+        "xpath": "line:41",
+        "source_id": "S021",
+        "document_id": "sjtu-guide-web",
+        "text": "论文中图表、附注、参考文献、公式一律采用阿拉伯数字连续(或分章)编号。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "note"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "已存在附注使用阿拉伯数字；允许全文连续或分章编号，不限定分隔符及前缀，也不套附录A制度。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "现有numbering.chapter_sequence_valid强制分章，不能表达两种合法制度和对应序列；本条整体unsupported，禁止编号变换。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "note"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在附注编号允许连续或分章对应位置核对：已存在附注使用阿拉伯数字；允许全文连续或分章编号，不限定分隔符及前缀，也不套附录A制度。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（二）。",
+        "fixed": null,
+        "reason": "现有numbering.chapter_sequence_valid强制分章，不能表达两种合法制度和对应序列；本条整体unsupported，禁止编号变换。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-NUMBER-04",
+    "title": "参考文献编号允许连续或分章",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（二）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-NUMBER-04"
+        ],
+        "text_sha256": "bca53a1a3514feadab40e7d85bb112e53f6ec9bac7108049fb0ad69f8d133993",
+        "xpath": "line:41",
+        "source_id": "S022",
+        "document_id": "sjtu-guide-web",
+        "text": "论文中图表、附注、参考文献、公式一律采用阿拉伯数字连续(或分章)编号。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "reference_entry"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "已存在参考文献使用阿拉伯数字；允许全文连续或分章编号，不限定分隔符及前缀，也不套附录A制度。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "现有numbering.chapter_sequence_valid强制分章，不能表达两种合法制度和对应序列；本条整体unsupported，禁止编号变换。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "reference_entry"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在参考文献编号允许连续或分章对应位置核对：已存在参考文献使用阿拉伯数字；允许全文连续或分章编号，不限定分隔符及前缀，也不套附录A制度。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（二）。",
+        "fixed": null,
+        "reason": "现有numbering.chapter_sequence_valid强制分章，不能表达两种合法制度和对应序列；本条整体unsupported，禁止编号变换。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-NUMBER-05",
+    "title": "公式编号允许连续或分章",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（二）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-NUMBER-05"
+        ],
+        "text_sha256": "bca53a1a3514feadab40e7d85bb112e53f6ec9bac7108049fb0ad69f8d133993",
+        "xpath": "line:41",
+        "source_id": "S023",
+        "document_id": "sjtu-guide-web",
+        "text": "论文中图表、附注、参考文献、公式一律采用阿拉伯数字连续(或分章)编号。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "numbered_equation"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "已存在公式使用阿拉伯数字；允许全文连续或分章编号，不限定分隔符及前缀，也不套附录A制度。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "现有numbering.chapter_sequence_valid强制分章，不能表达两种合法制度和对应序列；本条整体unsupported，禁止编号变换。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "numbered_equation"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在公式编号允许连续或分章对应位置核对：已存在公式使用阿拉伯数字；允许全文连续或分章编号，不限定分隔符及前缀，也不套附录A制度。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（二）。",
+        "fixed": null,
+        "reason": "现有numbering.chapter_sequence_valid强制分章，不能表达两种合法制度和对应序列；本条整体unsupported，禁止编号变换。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-FIGURE-01",
+    "title": "图序图名在下方",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（二）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-FIGURE-01"
+        ],
+        "text_sha256": "974d0c33a28165a2706ceec70202e076d09075abdccef8663a9b28af2ddde883",
+        "xpath": "line:41",
+        "source_id": "S024",
+        "document_id": "sjtu-guide-web",
+        "text": "图序及图名置于图的下方"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "figure_caption"
+        ]
+      },
+      "when": [],
+      "check": {
+        "kind": "assertions",
+        "tests": [
+          {
+            "fact": "caption.position",
+            "op": "eq",
+            "value": "below"
+          }
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "on_confirmed_failure",
+        "policy_refs": [],
+        "reason": "拟检查已唯一关联的行内图片位置；浮动图、文本框和关联不清时unknown。位置差异只提醒，由作者移动并核对引用，不自动搬图或题注。",
+        "requires": [
+          "semantic_roles",
+          "text"
+        ],
+        "roles": [
+          "figure_caption"
+        ],
+        "status": "checkable",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在图序图名在下方对应位置核对：图与图序、图名的对应关系唯一明确时，题注位于图下方。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（二）。",
+        "fixed": null,
+        "reason": "拟检查已唯一关联的行内图片位置；浮动图、文本框和关联不清时unknown。位置差异只提醒，由作者移动并核对引用，不自动搬图或题注。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "semantic_roles",
+        "text"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-TABLE-01",
+    "title": "表序表名在上方",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（二）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-TABLE-01"
+        ],
+        "text_sha256": "689e0f38b326459b6950eba80a6e849321ea7ac7f5da4e00242367b61e7a5796",
+        "xpath": "line:41",
+        "source_id": "S025",
+        "document_id": "sjtu-guide-web",
+        "text": "表序及表名置于表的上方"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "table_caption"
+        ]
+      },
+      "when": [],
+      "check": {
+        "kind": "assertions",
+        "tests": [
+          {
+            "fact": "caption.position",
+            "op": "eq",
+            "value": "above"
+          }
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "on_confirmed_failure",
+        "policy_refs": [],
+        "reason": "拟检查唯一关联表格的位置；复杂嵌套或关联不清时unknown。只提醒作者移动并核对引用，不搬表。",
+        "requires": [
+          "semantic_roles",
+          "text"
+        ],
+        "roles": [
+          "table_caption"
+        ],
+        "status": "checkable",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在表序表名在上方对应位置核对：表与表序、表名的对应关系唯一明确时，题注位于表上方。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（二）。",
+        "fixed": null,
+        "reason": "拟检查唯一关联表格的位置；复杂嵌套或关联不清时unknown。只提醒作者移动并核对引用，不搬表。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "semantic_roles",
+        "text"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-EQUATION-01",
+    "title": "公式编号用括弧",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（二）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-EQUATION-01"
+        ],
+        "text_sha256": "da8b75709253e6f73880c159ec26935bac06e6aceb74278a3c8e126ae0ffc971",
+        "xpath": "line:41",
+        "source_id": "S026",
+        "document_id": "sjtu-guide-web",
+        "text": "论文中的公式编号，用括弧括起写在右边行末，其间不加虚线。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "equation_number"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "assertions",
+        "tests": [
+          {
+            "fact": "equation_number.parenthesized",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "notification": "on_confirmed_failure",
+        "policy_refs": [],
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "roles": [
+          "equation_number"
+        ],
+        "status": "checkable",
+        "tests": [
+          {
+            "fact": "equation_number.parenthesized",
+            "op": "eq",
+            "value": true
+          }
+        ],
+        "when": []
+      },
+      "comments": {
+        "action": "请核对本条已确认的Word对象及报告中列明的属性；",
+        "fixed": null,
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-EQUATION-02",
+    "title": "公式编号在右边行末",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（二）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-EQUATION-02"
+        ],
+        "text_sha256": "da8b75709253e6f73880c159ec26935bac06e6aceb74278a3c8e126ae0ffc971",
+        "xpath": "line:41",
+        "source_id": "S027",
+        "document_id": "sjtu-guide-web",
+        "text": "论文中的公式编号，用括弧括起写在右边行末，其间不加虚线。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "equation_number"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "公式编号实际位于右边行末；不以整段右对齐替代此要求。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "依赖排版测量与公式容器定位，unsupported；不重建公式表格或制表位。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "equation_number"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在公式编号在右边行末对应位置核对：公式编号实际位于右边行末；不以整段右对齐替代此要求。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（二）。",
+        "fixed": null,
+        "reason": "依赖排版测量与公式容器定位，unsupported；不重建公式表格或制表位。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-EQUATION-03",
+    "title": "公式与编号间不加虚线",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（二）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-EQUATION-03"
+        ],
+        "text_sha256": "da8b75709253e6f73880c159ec26935bac06e6aceb74278a3c8e126ae0ffc971",
+        "xpath": "line:41",
+        "source_id": "S028",
+        "document_id": "sjtu-guide-web",
+        "text": "论文中的公式编号，用括弧括起写在右边行末，其间不加虚线。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "equation_number"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "确认公式至编号之间存在装饰性虚线时判失败；不把公式运算符或实线当虚线。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "已有has_connector范围宽于“虚线”，不能忠实表达；unsupported，不借此删除公式字符。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "equation_number"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在公式与编号间不加虚线对应位置核对：确认公式至编号之间存在装饰性虚线时判失败；不把公式运算符或实线当虚线。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（二）。",
+        "fixed": null,
+        "reason": "已有has_connector范围宽于“虚线”，不能忠实表达；unsupported，不借此删除公式字符。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-REFERENCE-01",
+    "title": "引用成果列在文末",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（八）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-REFERENCE-01"
+        ],
+        "text_sha256": "ff5836ab492f1fcb7794fdb7c641d4253fdef3f4f9569322ab0385b03a61e117",
+        "xpath": "line:29",
+        "source_id": "S029",
+        "document_id": "sjtu-guide-web",
+        "text": "凡有引用他人成果之处，按不同学科论文的引用规范列于文末。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "references"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "已有引用与文末文献列表按适用学科规范对应；文末按组成顺序理解，后面仍可有附录等。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "学科规范、引文关系完整性和部件范围未实现；不推断唯一引用制，不核文献真实性。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "references"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在引用成果列在文末对应位置核对：已有引用与文末文献列表按适用学科规范对应；文末按组成顺序理解，后面仍可有附录等。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（八）。",
+        "fixed": null,
+        "reason": "学科规范、引文关系完整性和部件范围未实现；不推断唯一引用制，不核文献真实性。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-REFERENCE-02",
+    "title": "建议GB/T 7714—2015",
+    "authority": "advisory",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（八）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-REFERENCE-02"
+        ],
+        "text_sha256": "9de05f59fd1a6d536602ddca9d7aabec4dc37bc8787e39b25cad2f716dc6633a",
+        "xpath": "line:29",
+        "source_id": "S030",
+        "document_id": "sjtu-guide-web",
+        "text": "参考文献格式建议参照国标GB/T7714-2015。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "reference_entry"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "仅当完整格式与采用的著录制度已确认时，对GB/T 7714—2015的客观差异提出建议。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "国标原文未随本包锁定，不移植中科大文种排序、悬挂、标点和引文上标细则；unsupported；建议不自动修复。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "reference_entry"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在建议GB/T 7714—2015对应位置核对：仅当完整格式与采用的著录制度已确认时，对GB/T 7714—2015的客观差异提出建议。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（八）。",
+        "fixed": null,
+        "reason": "国标原文未随本包锁定，不移植中科大文种排序、悬挂、标点和引文上标细则；unsupported；建议不自动修复。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-NOTES-01",
+    "title": "注释可选，避免文中注释",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（九）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-NOTES-01"
+        ],
+        "text_sha256": "ddf0b54d93d1aa0b8a016412516be8b114b6175094bf12bf772f28bc3e36eaff",
+        "xpath": "line:31",
+        "source_id": "S031",
+        "document_id": "sjtu-guide-web",
+        "text": "可作为脚注在页下分别著录，切忌在文中注释。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "note"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "注释非必须；如有注释，可采用页下注，识别到明确文中注释时才核对；不据本句要求每页从1或最多5注。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "脚注与行内解释的语义边界不可靠，unsupported；不将普通括号解释移作脚注。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "note"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在注释可选，避免文中注释对应位置核对：注释非必须；如有注释，可采用页下注，识别到明确文中注释时才核对；不据本句要求每页从1或最多5注。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（九）。",
+        "fixed": null,
+        "reason": "脚注与行内解释的语义边界不可靠，unsupported；不将普通括号解释移作脚注。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-APPENDIX-01",
+    "title": "附录可选",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（十）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-APPENDIX-01"
+        ],
+        "text_sha256": "bae241036b87f8747e56697610b0cc191c80ad15941ada6bfb768736f0bb4fd6",
+        "xpath": "line:32",
+        "source_id": "S032",
+        "document_id": "sjtu-guide-web",
+        "text": "（十）附录（非必须）"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "appendix"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "已有附录在组成顺序中置于注释后、致谢前；没有附录不提示缺失。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "不新增附录，不要求单附录A或字母编号；完整附录归属与顺序事实未实现。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "appendix"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在附录可选对应位置核对：已有附录在组成顺序中置于注释后、致谢前；没有附录不提示缺失。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（十）。",
+        "fixed": null,
+        "reason": "不新增附录，不要求单附录A或字母编号；完整附录归属与顺序事实未实现。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-ACK-01",
+    "title": "致谢组成部分",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（十一）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-ACK-01"
+        ],
+        "text_sha256": "f607fcd6bb62fdc18123ccd9ed6a0cb82c9346b7c4a687a15dd810ae79002883",
+        "xpath": "line:34",
+        "source_id": "S033",
+        "document_id": "sjtu-guide-web",
+        "text": "（十一）致谢"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "acknowledgements"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "完整扫描后确认致谢部分存在，且位于已有附录之后、成果目录之前。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "当前完整存在性/顺序检查未交付，unsupported；不代写感谢内容。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "acknowledgements"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在致谢组成部分对应位置核对：完整扫描后确认致谢部分存在，且位于已有附录之后、成果目录之前。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（十一）。",
+        "fixed": null,
+        "reason": "当前完整存在性/顺序检查未交付，unsupported；不代写感谢内容。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-ACHIEVEMENTS-01",
+    "title": "学术论文和科研成果目录",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（十二）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-ACHIEVEMENTS-01"
+        ],
+        "text_sha256": "b3ec0f4e31d85fb8cb5a0d432928e6fad75ae29ea3e1bdcb2f354a189bd3ca25",
+        "xpath": "line:36",
+        "source_id": "S034",
+        "document_id": "sjtu-guide-web",
+        "text": "（十二）学术论文和科研成果目录"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "research_achievements"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "完整扫描确认成果目录部件存在；无成果的写法原文未规定，不凭空要求成果条目。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "存在性未可靠实现；不编造成果或核查发表真实性。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "research_achievements"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在学术论文和科研成果目录对应位置核对：完整扫描确认成果目录部件存在；无成果的写法原文未规定，不凭空要求成果条目。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（十二）。",
+        "fixed": null,
+        "reason": "存在性未可靠实现；不编造成果或核查发表真实性。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-PAGE-01",
+    "title": "A4纸页面排版",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（三）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-PAGE-01"
+        ],
+        "text_sha256": "7332fbe04fc07f8ce4adf187eeae184196dc9334a1dafeef04fd1f0d8ab8fbeb",
+        "xpath": "line:43",
+        "source_id": "S035",
+        "document_id": "sjtu-guide-web",
+        "text": "学位论文以A4纸页面排版，双面打印（长边翻页）。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "section"
+        ]
+      },
+      "when": [],
+      "check": {
+        "expected": {
+          "page.long_edge.mm": 297,
+          "page.short_edge.mm": 210
+        },
+        "kind": "properties"
+      },
+      "fix": {
+        "permission": "properties_only",
+        "preconditions": [
+          "no_unresolved_revision",
+          "no_protected_content",
+          "no_ambiguous_role",
+          "all_required_facts_known"
+        ],
+        "target": {
+          "page.long_edge.mm": 297,
+          "page.short_edge.mm": 210
+        }
+      },
+      "audit": {
+        "notification": "on_confirmed_failure",
+        "policy_refs": [],
+        "reason": "拟检查有效纸张尺寸，安全时仅改本节纸张边长；保留原有方向，作者核对对象位置和分页。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "roles": [
+          "section"
+        ],
+        "status": "checkable",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在A4纸页面排版对应位置核对：各已存在节纸张短边210毫米、长边297毫米；不由A4推出页边距或固定横竖方向。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（三）。",
+        "fixed": "已将此处格式由{before}调整为{expected}。依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（三）。",
+        "reason": "拟检查有效纸张尺寸，安全时仅改本节纸张边长；保留原有方向，作者核对对象位置和分页。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-PRINT-01",
+    "title": "双面打印，长边翻页",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（三）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-PRINT-01"
+        ],
+        "text_sha256": "7332fbe04fc07f8ce4adf187eeae184196dc9334a1dafeef04fd1f0d8ab8fbeb",
+        "xpath": "line:43",
+        "source_id": "S036",
+        "document_id": "sjtu-guide-web",
+        "text": "学位论文以A4纸页面排版，双面打印（长边翻页）。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "document"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "实物打印采用双面、长边翻页；DOCX页面设置不能证明打印机实际作业。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "文档格式工具无法证明打印输出；unsupported，不以奇偶页眉设置冒充双面打印。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "document"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在双面打印，长边翻页对应位置核对：实物打印采用双面、长边翻页；DOCX页面设置不能证明打印机实际作业。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（三）。",
+        "fixed": null,
+        "reason": "文档格式工具无法证明打印输出；unsupported，不以奇偶页眉设置冒充双面打印。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-BIND-01",
+    "title": "归档纸质统一封面并成册",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（四）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-BIND-01"
+        ],
+        "text_sha256": "d7205437bdd72c0b599ad6229cbc782c41087c325e391b6c46f524a4032f7d5f",
+        "xpath": "line:45",
+        "source_id": "S037",
+        "document_id": "sjtu-guide-web",
+        "text": "归档纸质论文须使用学校统一印制的学位论文封面、装订成册。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "document"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "仅归档纸质论文核对统一印制封面及成册状态；不推出装订方向。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "实物办理要求，不执行文档批注与修复。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "document"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在归档纸质统一封面并成册对应位置核对：仅归档纸质论文核对统一印制封面及成册状态；不推出装订方向。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§三（四）。",
+        "fixed": null,
+        "reason": "实物办理要求，不执行文档批注与修复。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-TEMPLATE-01",
+    "title": "各部分从新页开始",
+    "authority": "advisory",
+    "sources": [
+      {
+        "display_reference": "上海交通大学研究生学位论文参考Word模板§模板§2.1，B85",
+        "part": "source-text/template-reference.txt",
+        "rules": [
+          "SJTU-TEMPLATE-01"
+        ],
+        "text_sha256": "c009094a82f2ad746995a807a1050064c125c5a9372593be2b886206582382af",
+        "xpath": "line:89",
+        "source_id": "S038",
+        "document_id": "doc-1",
+        "text": "以上各部分独立为一部分，每部分应从新的一页开始"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "document"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "参考模板建议其列出的各部分新页开始；其B84十项组成不替代官网二的十二项。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "真实分页与部件范围未实现；只保留参考建议，不增删声明或题名页。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "document"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在各部分从新页开始对应位置核对：参考模板建议其列出的各部分新页开始；其B84十项组成不替代官网二的十二项。\n依据：上海交通大学研究生学位论文参考Word模板§模板§2.1，B85。",
+        "fixed": null,
+        "reason": "真实分页与部件范围未实现；只保留参考建议，不增删声明或题名页。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-TEMPLATE-02",
+    "title": "模板纸质装订右侧",
+    "authority": "advisory",
+    "sources": [
+      {
+        "display_reference": "上海交通大学研究生学位论文参考Word模板§模板§2.1，B85",
+        "part": "source-text/template-reference.txt",
+        "rules": [
+          "SJTU-TEMPLATE-02"
+        ],
+        "text_sha256": "b063cf9cdfc8580b4eb3a335261fb97e4897050f2114e5ff6c9b80182d6158e2",
+        "xpath": "line:89",
+        "source_id": "S039",
+        "document_id": "doc-1",
+        "text": "且纸质论文应装订在论文的右侧。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "document"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "B85文字写“右侧”，B93却写装订线靠左；原文如此，不能自行纠错为左或右。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "内部歧义且现行网页未明确方向，unsupported；不自动改装订线。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "document"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在模板纸质装订右侧对应位置核对：B85文字写“右侧”，B93却写装订线靠左；原文如此，不能自行纠错为左或右。\n依据：上海交通大学研究生学位论文参考Word模板§模板§2.1，B85。",
+        "fixed": null,
+        "reason": "内部歧义且现行网页未明确方向，unsupported；不自动改装订线。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-TEMPLATE-03",
+    "title": "模板页边距",
+    "authority": "advisory",
+    "sources": [
+      {
+        "display_reference": "上海交通大学研究生学位论文参考Word模板§模板§2.3.1，B93",
+        "part": "source-text/template-reference.txt",
+        "rules": [
+          "SJTU-TEMPLATE-03"
+        ],
+        "text_sha256": "794c5d69df68510206a3eeee50c63aa0ed660e5f9f1b219acaaac9aff20f52bc",
+        "xpath": "line:97",
+        "source_id": "S040",
+        "document_id": "doc-1",
+        "text": "页边距：上3.5厘米，下4厘米，左右均为2.5厘米，装订线靠左0.5厘米位置。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "section"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "page.margin.top.mm": 35,
+          "page.margin.bottom.mm": 40,
+          "page.margin.left.mm": 25,
+          "page.margin.right.mm": 25
+        }
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "notification": "on_confirmed_failure",
+        "policy_refs": [],
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。参考模板建议参数；只作为建议，不自动覆盖学院规范。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "roles": [
+          "section"
+        ],
+        "status": "checkable",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请核对本条已确认的Word对象及报告中列明的属性；参考模板建议参数；只作为建议，不自动覆盖学院规范。",
+        "fixed": null,
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。参考模板建议参数；只作为建议，不自动覆盖学院规范。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-TEMPLATE-04",
+    "title": "模板左装订线0.5厘米",
+    "authority": "advisory",
+    "sources": [
+      {
+        "display_reference": "上海交通大学研究生学位论文参考Word模板§模板§2.3.1，B93",
+        "part": "source-text/template-reference.txt",
+        "rules": [
+          "SJTU-TEMPLATE-04"
+        ],
+        "text_sha256": "794c5d69df68510206a3eeee50c63aa0ed660e5f9f1b219acaaac9aff20f52bc",
+        "xpath": "line:97",
+        "source_id": "S041",
+        "document_id": "doc-1",
+        "text": "页边距：上3.5厘米，下4厘米，左右均为2.5厘米，装订线靠左0.5厘米位置。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "section"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "page.gutter.mm": 5
+        }
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "notification": "on_confirmed_failure",
+        "policy_refs": [],
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。只检查明确0.5厘米数值，左右方向有原文冲突，不选择或改写方向。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "roles": [
+          "section"
+        ],
+        "status": "checkable",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请核对本条已确认的Word对象及报告中列明的属性；只检查明确0.5厘米数值，左右方向有原文冲突，不选择或改写方向。",
+        "fixed": null,
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。只检查明确0.5厘米数值，左右方向有原文冲突，不选择或改写方向。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-TEMPLATE-05",
+    "title": "模板页眉页脚距边界",
+    "authority": "advisory",
+    "sources": [
+      {
+        "display_reference": "上海交通大学研究生学位论文参考Word模板§模板§2.3.1，B94",
+        "part": "source-text/template-reference.txt",
+        "rules": [
+          "SJTU-TEMPLATE-05"
+        ],
+        "text_sha256": "e5c69b57fd434f270cd5b6ac2c5a0c2bc18727469aa1f1d0d29abd964d2f2e69",
+        "xpath": "line:98",
+        "source_id": "S042",
+        "document_id": "doc-1",
+        "text": "页眉：2.5厘米。页脚：3厘米。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "section"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "page.header_distance.mm": 25,
+          "page.footer_distance.mm": 30
+        }
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "notification": "on_confirmed_failure",
+        "policy_refs": [],
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。参考模板建议距离；只提示，不按校级强制要求修复。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "roles": [
+          "section"
+        ],
+        "status": "checkable",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请核对本条已确认的Word对象及报告中列明的属性；参考模板建议距离；只提示，不按校级强制要求修复。",
+        "fixed": null,
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。参考模板建议距离；只提示，不按校级强制要求修复。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-TEMPLATE-06",
+    "title": "模板无网格",
+    "authority": "advisory",
+    "sources": [
+      {
+        "display_reference": "上海交通大学研究生学位论文参考Word模板§模板§2.3.1，B95",
+        "part": "source-text/template-reference.txt",
+        "rules": [
+          "SJTU-TEMPLATE-06"
+        ],
+        "text_sha256": "ec7dbeca93dca461c3316c0ea30942d8f189b170219cf6da2dbeccf1432f4178",
+        "xpath": "line:99",
+        "source_id": "S043",
+        "document_id": "doc-1",
+        "text": "无网格。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "roles": [
+          "section"
+        ],
+        "confidence": "confirmed",
+        "mode": "each"
+      },
+      "when": [],
+      "check": {
+        "kind": "properties",
+        "expected": {
+          "page.grid": "default"
+        }
+      },
+      "fix": {
+        "permission": "none",
+        "target": {},
+        "preconditions": []
+      },
+      "audit": {
+        "notification": "on_confirmed_failure",
+        "policy_refs": [],
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。参考模板建议无网格，不自动改页面。",
+        "requires": [
+          "semantic_roles",
+          "effective_properties"
+        ],
+        "roles": [
+          "section"
+        ],
+        "status": "checkable",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请核对本条已确认的Word对象及报告中列明的属性；参考模板建议无网格，不自动改页面。",
+        "fixed": null,
+        "reason": "按已确认Word对象及有效属性逐项检查；未知静默跳过。参考模板建议无网格，不自动改页面。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "semantic_roles",
+        "effective_properties"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-TEMPLATE-07",
+    "title": "黑体中文夹杂英数加粗",
+    "authority": "advisory",
+    "sources": [
+      {
+        "display_reference": "上海交通大学研究生学位论文参考Word模板§模板§2.3.2，B97",
+        "part": "source-text/template-reference.txt",
+        "rules": [
+          "SJTU-TEMPLATE-07"
+        ],
+        "text_sha256": "368db66ab6ab39616f60525a0331762708084132f98059baf21d10f19da4ab92",
+        "xpath": "line:101",
+        "source_id": "S044",
+        "document_id": "doc-1",
+        "text": "如果英文与数字夹杂出现在黑体中文中，则将英文与数字采用Times New Roman字体再加粗。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "document"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "参考模板建议黑体中文中的英文数字为Times New Roman并加粗；须确认混排范围。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "现行三（一）只明示中文标题粗黑体，不能借参考模板强制所有英文标题；混排范围未实现，unsupported。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "document"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在黑体中文夹杂英数加粗对应位置核对：参考模板建议黑体中文中的英文数字为Times New Roman并加粗；须确认混排范围。\n依据：上海交通大学研究生学位论文参考Word模板§模板§2.3.2，B97。",
+        "fixed": null,
+        "reason": "现行三（一）只明示中文标题粗黑体，不能借参考模板强制所有英文标题；混排范围未实现，unsupported。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-TEMPLATE-08",
+    "title": "字数由学科和学院自定",
+    "authority": "advisory",
+    "sources": [
+      {
+        "display_reference": "上海交通大学研究生学位论文参考Word模板§模板§2.2.1及§2.2.2，B88/B90",
+        "part": "source-text/template-reference.txt",
+        "rules": [
+          "SJTU-TEMPLATE-08"
+        ],
+        "text_sha256": "62ab5dc88e6a662b6fed32eed34d39ea766631351b02af10e2c78f5a150da2da",
+        "xpath": "line:92",
+        "source_id": "S045",
+        "document_id": "doc-1",
+        "text": "各学科和学院自定。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "document"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "硕士、博士字数均由学科和学院自定；校级不录入字数数值。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "缺少特定学科/学院现行文字；不要求用户补表，不套用其他学校字数。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "document"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在字数由学科和学院自定对应位置核对：硕士、博士字数均由学科和学院自定；校级不录入字数数值。\n依据：上海交通大学研究生学位论文参考Word模板§模板§2.2.1及§2.2.2，B88/B90。",
+        "fixed": null,
+        "reason": "缺少特定学科/学院现行文字；不要求用户补表，不套用其他学校字数。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-CONTENT-01",
+    "title": "一般中文撰写",
+    "authority": "advisory",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§一",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-CONTENT-01"
+        ],
+        "text_sha256": "a8f40541295fcdfbff7a75c3202a78dc1aca2e4e821b1ad069406b882901fa81",
+        "xpath": "line:7",
+        "source_id": "S046",
+        "document_id": "sjtu-guide-web",
+        "text": "学位论文一般应使用中文撰写。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "document"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "一般中文撰写，保留“一般”的例外；不推断外文论文违规。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "写作语言及例外属作者/院系要求，不改论文语言，不要求另填表。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "document"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在一般中文撰写对应位置核对：一般中文撰写，保留“一般”的例外；不推断外文论文违规。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§一。",
+        "fixed": null,
+        "reason": "写作语言及例外属作者/院系要求，不改论文语言，不要求另填表。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-CONTENT-02",
+    "title": "原创性和学术质量",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§一",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-CONTENT-02"
+        ],
+        "text_sha256": "502e7f0987127787374d2c03185dc26d30d846e287fc2ff095f63f1813623404",
+        "xpath": "line:7",
+        "source_id": "S047",
+        "document_id": "sjtu-guide-web",
+        "text": "不得抄袭和剽窃他人成果。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "document"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "独立研究、不抄袭，并有明确观点、正确立论、严谨推理和可靠数据。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "内容真实性、抄袭和学术水平不属格式审查；never。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "document"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在原创性和学术质量对应位置核对：独立研究、不抄袭，并有明确观点、正确立论、严谨推理和可靠数据。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§一。",
+        "fixed": null,
+        "reason": "内容真实性、抄袭和学术水平不属格式审查；never。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-CONTENT-03",
+    "title": "硕士学术贡献",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§一（硕士）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-CONTENT-03"
+        ],
+        "text_sha256": "e22c7469a88a47cb4809b9d6cbde74d376d5b35b497460b808edc7daa39b323e",
+        "xpath": "line:8",
+        "source_id": "S048",
+        "document_id": "sjtu-guide-web",
+        "text": "硕士学位论文，要求对所研究的课题有新见解或新成果"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "document"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "硕士论文的学科贡献和研究能力要求。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "内容性评价，不自动检查、改写或批注。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "document"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在硕士学术贡献对应位置核对：硕士论文的学科贡献和研究能力要求。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§一（硕士）。",
+        "fixed": null,
+        "reason": "内容性评价，不自动检查、改写或批注。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-CONTENT-04",
+    "title": "博士学术贡献",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§一（博士）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-CONTENT-04"
+        ],
+        "text_sha256": "c481226ad0aee09b41f51379f1fb8d8603803412b78f425ff2b7df583291e8d9",
+        "xpath": "line:9",
+        "source_id": "S049",
+        "document_id": "sjtu-guide-web",
+        "text": "博士学位论文，要求对所研究的课题在材料、角度、观点、方法、理论等方面或某方面有创造性成果"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "document"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "博士论文的创造性贡献和独立研究能力要求。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "内容性评价，不自动检查、改写或批注。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "document"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在博士学术贡献对应位置核对：博士论文的创造性贡献和独立研究能力要求。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§一（博士）。",
+        "fixed": null,
+        "reason": "内容性评价，不自动检查、改写或批注。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-CONTENT-05",
+    "title": "语言术语符号及计量规范",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§一",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-CONTENT-05"
+        ],
+        "text_sha256": "fb0d2e0a310e2df104071b6c46e602fbcb8c9a07ea67c22f51e05855b0a0b2d9",
+        "xpath": "line:10",
+        "source_id": "S050",
+        "document_id": "sjtu-guide-web",
+        "text": "使用的术语、符号、代号必须全文统一并符合规范。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "document"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "语言文字、标点、数字、计量单位规范，术语符号代号全文统一。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "具体词义、单位及学科标准未锁定，不作全文替换或内容校对。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "document"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在语言术语符号及计量规范对应位置核对：语言文字、标点、数字、计量单位规范，术语符号代号全文统一。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§一。",
+        "fixed": null,
+        "reason": "具体词义、单位及学科标准未锁定，不作全文替换或内容校对。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-CONTENT-06",
+    "title": "摘要概括与双语内容一致",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（四）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-CONTENT-06"
+        ],
+        "text_sha256": "3640791478ac58b93a3aa2e25d3a74a869b6d341c1f2c79e74207d6d5ce4cc93",
+        "xpath": "line:18",
+        "source_id": "S051",
+        "document_id": "sjtu-guide-web",
+        "text": "英文摘要内容应与中文摘要内容一致。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "document"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "摘要突出成果、简明准确概括目的内容方法成果结论，双语内容一致。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "内容/翻译质量不属格式审查，不按关键词重合度判定。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "document"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在摘要概括与双语内容一致对应位置核对：摘要突出成果、简明准确概括目的内容方法成果结论，双语内容一致。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（四）。",
+        "fixed": null,
+        "reason": "内容/翻译质量不属格式审查，不按关键词重合度判定。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-CONTENT-07",
+    "title": "绪论内容",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（七）1",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-CONTENT-07"
+        ],
+        "text_sha256": "a52aec6044682240c6c7d186ab7e59fffac936f06606d3fc48f1e2ee9bb2a495",
+        "xpath": "line:25",
+        "source_id": "S052",
+        "document_id": "sjtu-guide-web",
+        "text": "绪论是学位论文主体部分的开端，应言简意赅"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "document"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "绪论简明，说明研究基础、现状、任务和所解决问题。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "内容完整性和综述质量不执行。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "document"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在绪论内容对应位置核对：绪论简明，说明研究基础、现状、任务和所解决问题。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（七）1。",
+        "fixed": null,
+        "reason": "内容完整性和综述质量不执行。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-CONTENT-08",
+    "title": "各章内容与学科规范",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（七）2",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-CONTENT-08"
+        ],
+        "text_sha256": "221e3622ee4bf8992c66d40cf03582165372617c8c306987af7cafd8021a2acd",
+        "xpath": "line:26",
+        "source_id": "S053",
+        "document_id": "sjtu-guide-web",
+        "text": "不同的学科专业可有不同的规定。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "document"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "各章节客观真实准确完整、合逻辑可读并符合本学科学术规范。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "不判断内容真伪、逻辑正确性或学术规范实质。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "document"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在各章内容与学科规范对应位置核对：各章节客观真实准确完整、合逻辑可读并符合本学科学术规范。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（七）2。",
+        "fixed": null,
+        "reason": "不判断内容真伪、逻辑正确性或学术规范实质。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-CONTENT-09",
+    "title": "结论内容",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（七）3",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-CONTENT-09"
+        ],
+        "text_sha256": "5ad86a32733a710bba5dfe493de37fcf5d2eaa174f6de1528cf9d19f6c4f7339",
+        "xpath": "line:27",
+        "source_id": "S054",
+        "document_id": "sjtu-guide-web",
+        "text": "结论是学位论文最终和总体的结论，应精炼、准确、完整。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "document"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "结论阐述创造性成果及意义，可提问题建议。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "不判断结论质量，不代写结论。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "document"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在结论内容对应位置核对：结论阐述创造性成果及意义，可提问题建议。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（七）3。",
+        "fixed": null,
+        "reason": "不判断结论质量，不代写结论。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  },
+  {
+    "rule_id": "SJTU-CONTENT-10",
+    "title": "成果目录内容",
+    "authority": "required",
+    "sources": [
+      {
+        "display_reference": "上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（十二）",
+        "part": "source-text/guide-2025-11-24.txt",
+        "rules": [
+          "SJTU-CONTENT-10"
+        ],
+        "text_sha256": "0fad6823d224ef16232b81173cae0e5958c5a2952168ee6de45dee2983b19fba",
+        "xpath": "line:37",
+        "source_id": "S055",
+        "document_id": "sjtu-guide-web",
+        "text": "目录应列出本人攻读学位期间发表（或录用）的学术论文、获得的科研成果、专利等。"
+      }
+    ],
+    "interpretation": {
+      "selector": {
+        "confidence": "confirmed",
+        "mode": "each",
+        "roles": [
+          "document"
+        ]
+      },
+      "when": [],
+      "check": {
+        "items": [
+          "成果目录列本人在攻读期间发表或录用论文、科研成果、专利等。"
+        ],
+        "kind": "review"
+      },
+      "fix": {
+        "permission": "none",
+        "preconditions": [],
+        "target": {}
+      },
+      "audit": {
+        "notification": "never",
+        "policy_refs": [],
+        "reason": "本人归属、时间、真实性为内容事项，不联网核验或生成条目。",
+        "requires": [
+          "human_review"
+        ],
+        "roles": [
+          "document"
+        ],
+        "status": "unsupported",
+        "tests": null,
+        "when": []
+      },
+      "comments": {
+        "action": "请在成果目录内容对应位置核对：成果目录列本人在攻读期间发表或录用论文、科研成果、专利等。\n依据：上海交通大学博士、硕士学位论文撰写指南（官网2025-11-24发布）§二（十二）。",
+        "fixed": null,
+        "reason": "本人归属、时间、真实性为内容事项，不联网核验或生成条目。",
+        "risk": "保留作者文字、图表数据、公式及域关联；不能确认对象、适用性或安全前提时不修改。"
+      },
+      "requires": [
+        "human_review"
+      ]
+    }
+  }
+]

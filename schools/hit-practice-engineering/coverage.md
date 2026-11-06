@@ -1,0 +1,35 @@
+# 自动检查范围
+
+- `HIT-PENG-COVER-02` 封面明文字体字号
+- `HIT-PENG-TITLEPAGE-01` 内封字段格式
+- `HIT-PENG-ABS-05` 摘要题头格式
+- `HIT-PENG-ABS-06` 摘要间距及题头空格
+- `HIT-PENG-KEY-01` 关键词数量
+- `HIT-PENG-KEY-02` 关键词分隔与对应
+- `HIT-PENG-KEY-04` 关键词换行尾标点
+- `HIT-PENG-ABS-07` 摘要引用标注
+- `HIT-PENG-TOC-02` 目录章标题格式
+- `HIT-PENG-TOC-03` 目录其他条目格式
+- `HIT-PENG-TOC-04` 英文目录
+- `HIT-PENG-BODY-01` 正文中文与西文字体
+- `HIT-PENG-BODY-02` 正文字号
+- `HIT-PENG-HEAD-01` 章标题字体字号
+- `HIT-PENG-HEAD-02` 节标题字体字号
+- `HIT-PENG-HEAD-03` 条标题字体字号
+- `HIT-PENG-HEAD-04` 款、项标题字体字号
+- `HIT-PENG-SPACE-01` 正文和标题段落建议
+- `HIT-PENG-HEAD-06` 标题字数建议
+- `HIT-PENG-HEAD-08` 层次编号建议
+- `HIT-PENG-CITE-02` 标题禁引文和重复引文页码
+- `HIT-PENG-EQ-01` 公式另行居中
+- `HIT-PENG-TABLE-01` 表格边框与三线表
+- `HIT-PENG-TABLE-02` 表内字样与字号建议
+- `HIT-PENG-TABLE-03` 表题格式
+- `HIT-PENG-TABLE-05` 表格空格与重复值
+- `HIT-PENG-FIG-01` 图题与图注
+- `HIT-PENG-FIG-04` 图中文字
+- `HIT-PENG-PAGE-01` 纸型
+- `HIT-PENG-PAGE-04` 页码分段与位置
+- `HIT-PENG-HEADER-01` 页眉文字格式
+- `HIT-PENG-HEADER-02` 页眉线与适用页
+- `HIT-PENG-COVER-04` 英文封面题名大写

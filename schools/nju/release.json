@@ -1,0 +1,143 @@
+{
+  "standard": {
+    "id": "nju-graduate-trial-undated-draft-v1",
+    "institution": "南京大学",
+    "name": "校级试行 · 2026-07-07 官网发布（含 2026-11-03 补充）论文规范",
+    "version": "校级试行 · 2026-07-07 官网发布（含 2026-11-03 补充）",
+    "checked_at": "2026-11-05",
+    "profile_sha256": "8f8c313716bb4dd369b9e1b837c81c0b3d7bf0db4e06388b0606912092e7e410",
+    "documents": [
+      {
+        "id": "nju-trial-doc",
+        "title": "博士（硕士）学位论文编写格式规定（试行）",
+        "version": "2026-07-07（官网发布；未标修订年月）",
+        "sha256": "bec0fb4539751128863b51b7ee1a43ae4f6bb2a0082ff6fd017bc18200e814fa",
+        "bytes": 34304,
+        "source_url": "https://chin.nju.edu.cn/DFS//file/2020/01/02/20200102111051820h582f7.doc",
+        "source_page": "https://chin.nju.edu.cn/tzgg/yjs/20260707/i400628.html",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "doc-2",
+        "title": "学位论文写作要求规范（数学系PDF）",
+        "version": "内文未标版次或修订年月",
+        "sha256": "1148c832d675dd50acdaa35832e0554fe182514ccd00dc7cd730e967048ee68a",
+        "bytes": 331940,
+        "source_url": "https://math.nju.edu.cn/DFS/file/2023/12/18/202312181106183944647zm.pdf",
+        "source_page": "https://ai.nju.edu.cn/da/1e/c18530a645662/page.htm",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "current-1",
+        "title": "10.南京大学封面（新格式模板）.doc",
+        "version": "2026-11-03官网发布；2026年12月申请批次",
+        "sha256": "00b685ed80fc7d7c246999f7c1db89639a3151d03d3b842514f86a906cbd3869",
+        "bytes": 896000,
+        "source_url": "https://grawww.nju.edu.cn/_upload/article/files/be/0b/e098c0e348cb9381f605e318369d/c7a636b6-2d3a-418e-b916-bb625b5d2edb.zip",
+        "source_page": "https://grawww.nju.edu.cn/ef/74/c905a847732/page.htm",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "current-2",
+        "title": "8.博士学位论文中英文摘要（格式模板）.doc",
+        "version": "2026-11-03官网发布；2026年12月申请批次",
+        "sha256": "6e7aebaa42247d58685473e3cc2cbcdbd1bca81ea44a8150c7b7bb000256c6a1",
+        "bytes": 13824,
+        "source_url": "https://grawww.nju.edu.cn/_upload/article/files/be/0b/e098c0e348cb9381f605e318369d/c7a636b6-2d3a-418e-b916-bb625b5d2edb.zip",
+        "source_page": "https://grawww.nju.edu.cn/ef/74/c905a847732/page.htm",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "current-3",
+        "title": "4-1学术型硕士学位论文封面.doc",
+        "version": "2026-11-03官网发布；2026年12月申请批次",
+        "sha256": "3907b0cbce05ea661e2e0e0e0f9b175688bfa437d69e5062c793ae73bf95ef34",
+        "bytes": 894464,
+        "source_url": "https://grawww.nju.edu.cn/_upload/article/files/be/0b/e098c0e348cb9381f605e318369d/c7a636b6-2d3a-418e-b916-bb625b5d2edb.zip",
+        "source_page": "https://grawww.nju.edu.cn/ef/74/c905a847732/page.htm",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "current-4",
+        "title": "4-2专业型硕士学位论文封面.doc",
+        "version": "2026-11-03官网发布；2026年12月申请批次",
+        "sha256": "2cc3bab52d1fab6f6c09061ba7bad66672f0958f6d7f92d79b0fcd75f7dbadeb",
+        "bytes": 894464,
+        "source_url": "https://grawww.nju.edu.cn/_upload/article/files/be/0b/e098c0e348cb9381f605e318369d/c7a636b6-2d3a-418e-b916-bb625b5d2edb.zip",
+        "source_page": "https://grawww.nju.edu.cn/ef/74/c905a847732/page.htm",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "current-5",
+        "title": "5.学位论文中、英文摘要首页用纸.doc",
+        "version": "2026-11-03官网发布；2026年12月申请批次",
+        "sha256": "25d89c413c2e363e1e19fd3e42b80c36ced57af16c4d663d30726d4fe7738d24",
+        "bytes": 14336,
+        "source_url": "https://grawww.nju.edu.cn/_upload/article/files/be/0b/e098c0e348cb9381f605e318369d/c7a636b6-2d3a-418e-b916-bb625b5d2edb.zip",
+        "source_page": "https://grawww.nju.edu.cn/ef/74/c905a847732/page.htm",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "current-6",
+        "title": "13.南京大学学位论文实践成果原创性声明、版权使用授权书.docx",
+        "version": "2026-11-03官网发布；2026年12月申请批次",
+        "sha256": "4236ccfa06edd357added5791d4a27057942ee7b758e79e4ae0b3ac6d390a924",
+        "bytes": 13758,
+        "source_url": "https://grawww.nju.edu.cn/_upload/article/files/be/0b/e098c0e348cb9381f605e318369d/c7a636b6-2d3a-418e-b916-bb625b5d2edb.zip",
+        "source_page": "https://grawww.nju.edu.cn/ef/74/c905a847732/page.htm",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "current-7",
+        "title": "14.南京大学研究生人工智能（AI）工具使用声明.docx",
+        "version": "2026-11-03官网发布；2026年12月申请批次",
+        "sha256": "aec412f6afa483e28bcc291138e18edb817dd4ff87d1e18c8e5ad3ac4e3bcb8d",
+        "bytes": 19982,
+        "source_url": "https://grawww.nju.edu.cn/_upload/article/files/be/0b/e098c0e348cb9381f605e318369d/c7a636b6-2d3a-418e-b916-bb625b5d2edb.zip",
+        "source_page": "https://grawww.nju.edu.cn/ef/74/c905a847732/page.htm",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "nju-202612-notice",
+        "title": "关于开展2026年12月学位申请与审核工作的通知",
+        "version": "2026-11-03官网发布；2026年12月申请批次",
+        "sha256": "2d3f8b22fd69ecff74f6c21883e09aad9df98dc7c9183c07d925b09d2bf90c26",
+        "bytes": 51306,
+        "source_url": "https://grawww.nju.edu.cn/ef/74/c905a847732/page.htm",
+        "source_page": "https://grawww.nju.edu.cn/ef/74/c905a847732/page.htm",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "rules",
+        "title": "研格式执行规则（非学校原文）",
+        "version": "2026-11-06-preview.1",
+        "bytes": 119341,
+        "sha256": "8f8c313716bb4dd369b9e1b837c81c0b3d7bf0db4e06388b0606912092e7e410"
+      }
+    ],
+    "version_date_basis": "official_publication",
+    "published_date": "2026-07-07",
+    "publication_source_url": "https://chin.nju.edu.cn/tzgg/yjs/20260707/i400628.html",
+    "version_note": "规范未标修订年月，展示版本以官网发布时间为准；该日期不表示规范的修订日期。本包另含研究生院于2026-11-03发布的2026年12月申请批次补充要求，不将该补充日期视为试行规定的修订日期。",
+    "revision_date": null
+  },
+  "ruleset": {
+    "id": "nju-graduate-trial-undated-draft-v1",
+    "schema": "1.0",
+    "version": "2026-11-06-preview.1",
+    "status": "public-preview",
+    "published": true,
+    "rules_sha256": "8f8c313716bb4dd369b9e1b837c81c0b3d7bf0db4e06388b0606912092e7e410",
+    "source_map_sha256": "19762ad2ef88f4992a0915fa29c3345b1e52c4aad4de5d18fc01938a9e6d95d7",
+    "engine_contract_sha256": "8d467e42efc38c329141c3d4995b2ef0601226be5eacf605c5d7c2a7173c0416",
+    "runtime_digest": "f8a28ca51da21884725a39c0aeb9e7e331b097bd5cad29b1b730bf3bced285f3",
+    "repository_url": "https://github.com/firestige/yangeshi-rules"
+  },
+  "schema_version": 1,
+  "catalog_id": "nju",
+  "wiki_page": "nju.html",
+  "counts": {
+    "checkable": 11,
+    "unsupported": 45
+  }
+}

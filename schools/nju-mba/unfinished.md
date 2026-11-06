@@ -1,0 +1,22 @@
+# 需人工核对与执行限制
+
+- `NJU-MBA-COVER-01` 硕士标准封面及声明
+- `NJU-MBA-ABSTRACT-04` 中文摘要不少于800字
+- `NJU-MBA-TITLE-SPACE-01` 摘要目录致谢标题字距
+- `NJU-MBA-TOC-02` 目录从绪论及页码
+- `NJU-MBA-TOC-06` 目录页码与间隔
+- `NJU-MBA-HEADING-04` 三级节标题与正文同段
+- `NJU-MBA-HEADING-05` 章分页与编号间隔
+- `NJU-MBA-NUMBER-01` 图表公式分章连续编码
+- `NJU-MBA-REF-01` 引用与参考条目对应
+- `NJU-MBA-REF-02` 文种分组与字母排序
+- `NJU-MBA-REF-03` 中文参考文献全角标点
+- `NJU-MBA-REF-05` 正文著者年引用
+- `NJU-MBA-REF-06` 文后字段与同年a/b
+- `NJU-MBA-APPENDIX-01` 附录编号例外
+- `NJU-MBA-APPENDIX-02` 附录对象独立编号
+- `NJU-MBA-PAGE-02` 白纸与双面印制
+- `NJU-MBA-PAGE-03` 页边距疑误原文
+- `NJU-MBA-HEADER-02` 页眉内容及范围
+- `NJU-MBA-CONTENT-01` 正文章节与篇幅
+- `NJU-MBA-CONTENT-02` 致谢及学术规范

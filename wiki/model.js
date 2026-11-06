@@ -2,23 +2,23 @@
 export const categories = [
   {
     name: "适用范围与内容",
-    prefixes: ["SCOPE", "AI", "CONTENT", "CLEAN", "LENGTH", "TEXT"],
+    prefixes: ["SCOPE", "AI", "CONTENT", "CLEAN", "STRUCT", "PROCESS", "NONFORMAT", "FILE", "TERM", "LENGTH", "TEXT"],
   },
-  { name: "封面与声明", prefixes: ["COVER", "TITLE", "DECL"] },
-  { name: "摘要与关键词", prefixes: ["ABSTRACT", "KEYWORD"] },
-  { name: "目录与清单", prefixes: ["TOC", "LISTS", "SYMBOL"] },
-  { name: "正文与标题", prefixes: ["BODY", "HEADING", "CHAPTER", "PUNCT"] },
-  { name: "图表与公式", prefixes: ["FIGURE", "TABLE", "EQUATION", "OBJECT"] },
-  { name: "引文与注释", prefixes: ["REF", "NOTE"] },
-  { name: "附录与致谢", prefixes: ["APPENDIX", "THANKS", "INNOV", "RESULT"] },
+  { name: "封面与声明", prefixes: ["COVER", "TITLE", "TITLEPAGE", "DECL", "FRONT", "SPINE", "BLIND", "DEFENSE", "TYPE", "REVIEWERS", "EXAMPLE"] },
+  { name: "摘要与关键词", prefixes: ["ABSTRACT", "ABS", "KEYWORD", "KEY"] },
+  { name: "目录与清单", prefixes: ["TOC", "LISTS", "LIST", "SYMBOL", "SYM", "INDEX"] },
+  { name: "正文与标题", prefixes: ["BODY", "HEADING", "CHAPTER", "PUNCT", "HEAD", "FONT", "SPACE", "LAYOUT", "UNIT", "DIGIT", "INTRO"] },
+  { name: "图表与公式", prefixes: ["FIGURE", "TABLE", "EQUATION", "OBJECT", "FIG", "EQ", "OBJ", "CAP", "SUBFIG", "NUMBER"] },
+  { name: "引文与注释", prefixes: ["REF", "NOTE", "CITE", "CITATION", "REFERENCE", "NOTES"] },
+  { name: "附录与致谢", prefixes: ["APPENDIX", "THANKS", "INNOV", "RESULT", "APP", "ACK", "ACH", "ACHIEVEMENTS", "BACK", "BIO", "CV"] },
   {
     name: "页面与页码",
-    prefixes: ["PAGE", "ORIENTATION", "HEADER", "PAGENUM"],
+    prefixes: ["PAGE", "ORIENTATION", "HEADER", "PAGENUM", "PAGENO", "NUM", "FOOT", "BREAK", "BIND", "PRINT", "TEMPLATE"],
   },
 ];
 export function categoryFor(id) {
   const category = categories.find((c) =>
-    c.prefixes.includes(id.split("-")[1]),
+    c.prefixes.includes(id.split("-").at(-2)),
   );
   if (!category) throw Error(`未分类规则：${id}`);
   return category.name;
@@ -41,7 +41,7 @@ export function issueLink(rule, release) {
   const url = new URL("https://github.com/firestige/yangeshi-rules/issues/new");
   url.search = new URLSearchParams({
     template: "rule-correction.yml",
-    title: `[USTC] ${rule.rule_id} ${rule.title}`,
+    title: `[${release.standard.institution}] ${rule.rule_id} ${rule.title}`,
     rule_id: rule.rule_id,
     ruleset_version: `${release.ruleset.version} / ${release.ruleset.rules_sha256}`,
   }).toString();

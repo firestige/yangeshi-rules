@@ -18,6 +18,9 @@ function link(parent, label, href) {
   return a;
 }
 const root = new URL("../", import.meta.url);
+const sourcePath =
+  document.querySelector('meta[name="rule-source"]')?.content ||
+  "schools/ustc/2026-09-21/";
 let rows = [],
   release,
   category = "全部规则";
@@ -62,7 +65,7 @@ function showRule(row, parent) {
     if (sourceDoc) {
       link(anchors, "官方来源", sourceDoc.source_page);
       link(anchors, "官方原件", sourceDoc.source_url);
-      link(
+      if (sourceDoc.repository_path) link(
         anchors,
         "核对仓库原件",
         `https://github.com/firestige/yangeshi-rules/blob/main/${sourceDoc.repository_path}`,
@@ -112,7 +115,7 @@ function showRule(row, parent) {
   link(
     actions,
     "完整规范说明",
-    "https://github.com/firestige/yangeshi-rules/blob/main/schools/ustc/2026-09-21/guide.md",
+    `https://github.com/firestige/yangeshi-rules/blob/main/${sourcePath}guide.md`,
   );
 }
 function render() {
@@ -153,9 +156,8 @@ function openHash() {
   target.scrollIntoView({ block: "start" });
 }
 try {
-  const path = "schools/ustc/2026-09-21/";
   async function bytes(file) {
-    const response = await fetch(new URL(path + file, root));
+    const response = await fetch(new URL(sourcePath + file, root));
     if (!response.ok)
       throw Error(`资料加载失败：${file}（${response.status}）`);
     return response.arrayBuffer();
@@ -190,8 +192,12 @@ try {
       $("rules-section").scrollIntoView({ block: "start" });
     };
   }
+  const standard = release.standard;
   $("source-date").textContent =
-    `资料历史核对日期：${release.standard.checked_at}。以下原件用于核对出处，手册的参考地位与当前模板分开说明。`;
+    `资料核对日期：${standard.checked_at}。` +
+    (standard.version_date_basis === "official_publication"
+      ? `官网发布时间：${standard.published_date}。${standard.version_note}`
+      : "");
   for (const doc of release.standard.documents.filter(
     (d) => d.id !== "rules",
   )) {
@@ -201,12 +207,13 @@ try {
     const links = element("div", null, card, "links");
     link(links, "学校官方入口", doc.source_page);
     link(links, "官方文件", doc.source_url);
-    link(
+    if (doc.repository_path) link(
       links,
       "仓库原件",
       `https://github.com/firestige/yangeshi-rules/blob/main/${doc.repository_path}`,
     );
-    link(links, "下载原件", new URL(doc.repository_path, root).href);
+    if (doc.repository_path)
+      link(links, "下载原件", new URL(doc.repository_path, root).href);
     const details = element("details", null, card, "precision");
     element("summary", "文件校验信息", details);
     element(
@@ -232,6 +239,6 @@ try {
   link(
     $("rules"),
     "在 GitHub 查阅规则与来源",
-    "https://github.com/firestige/yangeshi-rules/tree/main/schools/ustc/2026-09-21",
+    `https://github.com/firestige/yangeshi-rules/tree/main/${sourcePath}`,
   );
 }

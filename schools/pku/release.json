@@ -1,0 +1,58 @@
+{
+  "standard": {
+    "id": "pku-graduate-2014-v2-draft-2026-10-23",
+    "institution": "北京大学",
+    "name": "2014 V2.0论文规范",
+    "version": "2014 V2.0",
+    "checked_at": "2026-11-05",
+    "profile_sha256": "52dd3c10013ddc997020013cc9ab96b994157559200f07aa713471a24fca1cf9",
+    "documents": [
+      {
+        "id": "doc-1",
+        "title": "北京大学研究生学位论文写作指南V2.0",
+        "version": "2014年5月版（V2.0）；官网2018-03-01发布",
+        "sha256": "e5a410856b800e1111e5559230056d98bd2a48770f2abce8359f196160d86d5d",
+        "bytes": 953185,
+        "source_url": "https://grs.pku.edu.cn/docs/2018-03/20180301082929918531.pdf",
+        "source_page": "https://grs.pku.edu.cn/xwgz11/xwsy11/ssxw111/clxz08/50118yjsy346392.htm",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "doc-2",
+        "title": "硕士研究生学位论文格式模板(2024)",
+        "version": "2024年版（硕士）",
+        "sha256": "bcdf2bbd7cac76a1cb281397580004eb1f23f0f8a56d5c1dc782fd3d2f5c9f36",
+        "bytes": 297472,
+        "source_url": "https://grs.pku.edu.cn/docs/2024-02/20240229092055895909.doc",
+        "source_page": "https://grs.pku.edu.cn/xwgz11/xwsy11/ssxw111/clxz08/50118yjsy346393.htm",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "rules",
+        "title": "研格式执行规则（非学校原文）",
+        "version": "2026-11-06-preview.1",
+        "bytes": 219700,
+        "sha256": "52dd3c10013ddc997020013cc9ab96b994157559200f07aa713471a24fca1cf9"
+      }
+    ]
+  },
+  "ruleset": {
+    "id": "pku-graduate-2014-v2-draft-2026-10-23",
+    "schema": "1.0",
+    "version": "2026-11-06-preview.1",
+    "status": "public-preview",
+    "published": true,
+    "rules_sha256": "52dd3c10013ddc997020013cc9ab96b994157559200f07aa713471a24fca1cf9",
+    "source_map_sha256": "ae5488598ff6ebeb96392fa80966f93122e42f81491769e7c11b26932b554667",
+    "engine_contract_sha256": "cdc392625571a92859c50534f265da354c9dfc72366698f90d6e96a80d375a4e",
+    "runtime_digest": "1054edd8b823ad2c3fb3bb4b3d63eeaf5626bee2046745be525186dd50209386",
+    "repository_url": "https://github.com/firestige/yangeshi-rules"
+  },
+  "schema_version": 1,
+  "catalog_id": "pku",
+  "wiki_page": "pku.html",
+  "counts": {
+    "unsupported": 33,
+    "checkable": 59
+  }
+}

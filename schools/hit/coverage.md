@@ -1,0 +1,35 @@
+# 自动检查范围
+
+- `HIT-ENG-COVER-02` 封面明文字体字号
+- `HIT-ENG-TITLEPAGE-01` 内封字段格式
+- `HIT-ENG-ABS-05` 摘要题头格式
+- `HIT-ENG-ABS-06` 摘要间距及题头空格
+- `HIT-ENG-KEY-01` 关键词数量
+- `HIT-ENG-KEY-02` 关键词分隔与对应
+- `HIT-ENG-KEY-04` 关键词换行尾标点
+- `HIT-ENG-ABS-07` 摘要引用标注
+- `HIT-ENG-TOC-02` 目录章标题格式
+- `HIT-ENG-TOC-03` 目录其他条目格式
+- `HIT-ENG-TOC-04` 英文目录
+- `HIT-ENG-BODY-01` 正文中文与西文字体
+- `HIT-ENG-BODY-02` 正文字号
+- `HIT-ENG-HEAD-01` 章标题字体字号
+- `HIT-ENG-HEAD-02` 节标题字体字号
+- `HIT-ENG-HEAD-03` 条标题字体字号
+- `HIT-ENG-HEAD-04` 款、项标题字体字号
+- `HIT-ENG-SPACE-01` 正文和标题段落建议
+- `HIT-ENG-HEAD-06` 标题字数建议
+- `HIT-ENG-HEAD-08` 层次编号建议
+- `HIT-ENG-CITE-02` 标题禁引文和重复引文页码
+- `HIT-ENG-EQ-01` 公式另行居中
+- `HIT-ENG-TABLE-01` 表格边框与三线表
+- `HIT-ENG-TABLE-02` 表内字样与字号建议
+- `HIT-ENG-TABLE-03` 表题格式
+- `HIT-ENG-TABLE-05` 表格空格与重复值
+- `HIT-ENG-FIG-01` 图题与图注
+- `HIT-ENG-FIG-04` 图中文字
+- `HIT-ENG-PAGE-01` 纸型
+- `HIT-ENG-PAGE-04` 页码分段与位置
+- `HIT-ENG-HEADER-01` 页眉文字格式
+- `HIT-ENG-HEADER-02` 页眉线与适用页
+- `HIT-ENG-COVER-04` 英文封面题名大写

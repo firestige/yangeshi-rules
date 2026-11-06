@@ -1,0 +1,53 @@
+{
+  "standard": {
+    "id": "nju-mba-undated-draft-v1",
+    "institution": "南京大学",
+    "name": "MBA · 2026-10-10 官网发布论文规范",
+    "version": "MBA · 2026-10-10 官网发布",
+    "checked_at": "2026-11-05",
+    "profile_sha256": "d634ea510b03256ecbc3b03b63006520ba465a5f7fdd79a3117065ac152ee8f5",
+    "documents": [
+      {
+        "id": "nju-mba-pdf",
+        "title": "南京大学商学院MBA学位论文写作要求与规范",
+        "version": "2026-10-10（官网发布；未标修订年月）",
+        "sha256": "2c7e1ff58418107634725f681d0e3baecadbdb424b0c5f62f496f5f4bf9a6379",
+        "bytes": 334558,
+        "source_url": "https://mba.nju.edu.cn/_upload/article/files/a5/c3/ba63411a4a5cbb958c311812242c/f3a0d348-0c58-46f5-9980-f86a4bbb0ed8.pdf",
+        "source_page": "https://mba.nju.edu.cn/e7/98/c11610a845720/page.htm",
+        "note": "原件请从校方入口获取。"
+      },
+      {
+        "id": "rules",
+        "title": "研格式执行规则（非学校原文）",
+        "version": "2026-11-06-preview.1",
+        "bytes": 126528,
+        "sha256": "d634ea510b03256ecbc3b03b63006520ba465a5f7fdd79a3117065ac152ee8f5"
+      }
+    ],
+    "version_date_basis": "official_publication",
+    "published_date": "2026-10-10",
+    "publication_source_url": "https://mba.nju.edu.cn/e7/98/c11610a845720/page.htm",
+    "version_note": "规范未标修订年月，展示版本以官网发布时间为准；该日期不表示规范的修订日期。该日期为挂载当前规范附件的官方通知发布日期。",
+    "revision_date": null
+  },
+  "ruleset": {
+    "id": "nju-mba-undated-draft-v1",
+    "schema": "1.0",
+    "version": "2026-11-06-preview.1",
+    "status": "public-preview",
+    "published": true,
+    "rules_sha256": "d634ea510b03256ecbc3b03b63006520ba465a5f7fdd79a3117065ac152ee8f5",
+    "source_map_sha256": "c0ffe5c241109bcc13251609fa0e58e313f99a685f67f2d493e0f9c1f25b8b62",
+    "engine_contract_sha256": "4962daa73b08815dc2bcc2440fbef7d6e9bfb635228cd85b85868d2e05106699",
+    "runtime_digest": "4c7bb5f36271220bca4d8ac8426b234c403c8dddf51b22e55aadacdf7fd5fb7e",
+    "repository_url": "https://github.com/firestige/yangeshi-rules"
+  },
+  "schema_version": 1,
+  "catalog_id": "nju-mba",
+  "wiki_page": "nju-mba.html",
+  "counts": {
+    "unsupported": 20,
+    "checkable": 33
+  }
+}

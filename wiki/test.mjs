@@ -46,3 +46,14 @@ for (const row of rows)
 console.log(
   `${rows.length} rules classified exactly once; search, mapping, hash rejection and feedback metadata passed.`,
 );
+
+for await (const name of fs.glob("schools/**/release.json", { cwd: new URL("../", import.meta.url) })) {
+  const file = new URL(`../${name}`, import.meta.url);
+  const release = JSON.parse(await fs.readFile(file));
+  const rows = await verifyData(
+    await fs.readFile(new URL("rules.json", file)),
+    await fs.readFile(new URL("source-map.json", file)),
+    release,
+  );
+  assert.equal(categories.reduce((n, c) => n + selectRules(rows, c.name, "").length, 0), rows.length, name);
+}
